@@ -17,6 +17,14 @@ backups/
 *.7z
 *.rar
 
+# .NET build outputs
+bin/
+obj/
+src/bin/
+src/obj/
+*.dll
+*.pdb
+
 # Vintage Story / VSMC local noise
 VSMC2_Backups/
 *.old

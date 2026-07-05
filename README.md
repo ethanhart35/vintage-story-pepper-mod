@@ -31,7 +31,13 @@ ghost-pepper
 
 ## Install For Testing
 
-Zip the contents of this folder and place the zip in your Vintage Story `Mods` folder. This is now a code mod, so `modinfo.json` uses `"type": "code"` and the C# source lives in `src`.
+Build and install the compiled test package with:
+
+```powershell
+powershell -ExecutionPolicy Bypass -File .\tools\Build-PepperMod.ps1 -VintageStory "E:\Vintagestory" -Install
+```
+
+This is a code mod, so the release zip needs the compiled `peppermod.dll` at the root of the package. The build script creates `peppermod-0.1.0.zip` and copies it into your Vintage Story `Mods` folder when `-Install` is used.
 
 ## VSMC2 Workflow
 

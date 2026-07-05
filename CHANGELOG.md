@@ -14,3 +14,4 @@
 - Added random rotated crop shape alternates for more natural planting variation.
 - Adjusted leaf and flower wind flags so plant parts stay anchored while tips sway lightly.
 - Updated harvest behavior to drop peppers onto the ground in small scattered stacks.
+- Retargeted the C# project to .NET 10 for Vintage Story 1.22.3 and added a compiled package build/install script.
