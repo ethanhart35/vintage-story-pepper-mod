@@ -1,0 +1,32 @@
+﻿{
+    "code":  "seeds",
+    "class":  "ItemPepperSeeds",
+    "variantgroups":  [
+                          {
+                              "code":  "type",
+                              "states":  [
+                                             "jalapeno",
+                                             "habanero",
+                                             "serrano",
+                                             "cayenne",
+                                             "poblano",
+                                             "bell-pepper",
+                                             "banana-pepper",
+                                             "ghost-pepper"
+                                         ]
+                          }
+                      ],
+    "creativeinventory":  {
+                              "general":  [
+                                              "*"
+                                          ],
+                              "items":  [
+                                            "*"
+                                        ]
+                          },
+    "texture":  {
+                    "base":  "item/seeds/{type}"
+                },
+    "maxstacksize":  64,
+    "materialDensity":  200
+}

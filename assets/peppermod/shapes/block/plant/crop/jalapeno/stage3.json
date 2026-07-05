@@ -1,0 +1,2068 @@
+﻿{
+    "editor":  {
+                   "allAngles":  true,
+                   "backdrops":  [
+
+                                 ],
+                   "attachments":  [
+
+                                   ]
+               },
+    "textures":  {
+                     "stem":  "block/plant/jalapeno/stem",
+                     "leaf":  "block/plant/jalapeno/leaf",
+                     "flower":  "block/plant/jalapeno/flower",
+                     "pepper":  "block/plant/jalapeno/pepper"
+                 },
+    "elements":  [
+                     {
+                         "name":  "JalapenoRoot",
+                         "from":  [
+                                      -8,
+                                      0,
+                                      -8
+                                  ],
+                         "to":  [
+                                    -8,
+                                    0,
+                                    -8
+                                ],
+                         "shade":  true,
+                         "faces":  {
+
+                                   },
+                         "rotationOrigin":  [
+                                                -8,
+                                                0,
+                                                8
+                                            ],
+                         "scaleX":  1.0,
+                         "scaleY":  1.0,
+                         "scaleZ":  1.0,
+                         "renderPass":  -1,
+                         "children":  [
+
+                                      ],
+                         "renderInEditor":  true,
+                         "uv":  [
+                                    0.0,
+                                    0.0
+                                ]
+                     },
+                     {
+                         "name":  "Stem",
+                         "from":  [
+                                      7,
+                                      0,
+                                      7
+                                  ],
+                         "to":  [
+                                    8,
+                                    4,
+                                    8
+                                ],
+                         "shade":  true,
+                         "faces":  {
+                                       "north":  {
+                                                     "texture":  "#stem",
+                                                     "uv":  [
+                                                                3.3,
+                                                                1.5,
+                                                                2.0,
+                                                                6.5
+                                                            ],
+                                                     "enabled":  true,
+                                                     "autoUv":  false,
+                                                     "snapUV":  false,
+                                                     "windMode":  [
+                                                                      0,
+                                                                      0,
+                                                                      0,
+                                                                      0
+                                                                  ]
+                                                 },
+                                       "east":  {
+                                                    "texture":  "#stem",
+                                                    "uv":  [
+                                                               1.80000019,
+                                                               2.5,
+                                                               3.0,
+                                                               6.0
+                                                           ],
+                                                    "enabled":  true,
+                                                    "autoUv":  false,
+                                                    "snapUV":  false,
+                                                    "windMode":  [
+                                                                     0,
+                                                                     0,
+                                                                     0,
+                                                                     0
+                                                                 ]
+                                                },
+                                       "south":  {
+                                                     "texture":  "#stem",
+                                                     "uv":  [
+                                                                3.3,
+                                                                2.0,
+                                                                1.5,
+                                                                6.0
+                                                            ],
+                                                     "enabled":  true,
+                                                     "autoUv":  false,
+                                                     "snapUV":  false,
+                                                     "windMode":  [
+                                                                      0,
+                                                                      0,
+                                                                      0,
+                                                                      0
+                                                                  ]
+                                                 },
+                                       "west":  {
+                                                    "texture":  "#stem",
+                                                    "uv":  [
+                                                               3.0,
+                                                               2.0,
+                                                               1.5,
+                                                               7.0
+                                                           ],
+                                                    "enabled":  true,
+                                                    "autoUv":  false,
+                                                    "snapUV":  false,
+                                                    "windMode":  [
+                                                                     0,
+                                                                     0,
+                                                                     0,
+                                                                     0
+                                                                 ]
+                                                },
+                                       "up":  {
+                                                  "texture":  "#stem",
+                                                  "uv":  [
+                                                             3.54,
+                                                             6.0,
+                                                             1.5,
+                                                             1.5
+                                                         ],
+                                                  "enabled":  true,
+                                                  "autoUv":  false,
+                                                  "snapUV":  false,
+                                                  "windMode":  [
+                                                                   0,
+                                                                   0,
+                                                                   0,
+                                                                   0
+                                                               ]
+                                              },
+                                       "down":  {
+                                                    "texture":  "#stem",
+                                                    "uv":  [
+                                                               3.5,
+                                                               6.0,
+                                                               2.0,
+                                                               3.5
+                                                           ],
+                                                    "enabled":  true,
+                                                    "autoUv":  false,
+                                                    "snapUV":  false,
+                                                    "windMode":  [
+                                                                     0,
+                                                                     0,
+                                                                     0,
+                                                                     0
+                                                                 ]
+                                                }
+                                   },
+                         "rotationOrigin":  [
+                                                7,
+                                                0,
+                                                7
+                                            ],
+                         "scaleX":  1.0,
+                         "scaleY":  1.0,
+                         "scaleZ":  1.0,
+                         "renderPass":  -1,
+                         "stepParentName":  "JalapenoRoot",
+                         "renderInEditor":  true,
+                         "uv":  [
+                                    0.0,
+                                    0.0
+                                ]
+                     },
+                     {
+                         "name":  "Leaf-Left",
+                         "from":  [
+                                      9.266749,
+                                      3.020965,
+                                      12.853161
+                                  ],
+                         "to":  [
+                                    12.266749,
+                                    3.040965,
+                                    17.853161
+                                ],
+                         "shade":  true,
+                         "faces":  {
+                                       "north":  {
+                                                     "texture":  "#stem",
+                                                     "uv":  [
+                                                                0.0,
+                                                                0.0,
+                                                                1.5,
+                                                                0.5
+                                                            ],
+                                                     "enabled":  true,
+                                                     "windMode":  [
+                                                                      0,
+                                                                      0,
+                                                                      0,
+                                                                      0
+                                                                  ]
+                                                 },
+                                       "up":  {
+                                                  "texture":  "#leaf",
+                                                  "uv":  [
+                                                             1.5,
+                                                             1.0,
+                                                             4.0,
+                                                             7.0
+                                                         ],
+                                                  "enabled":  true,
+                                                  "autoUv":  false,
+                                                  "snapUV":  false,
+                                                  "windMode":  [
+                                                                   0,
+                                                                   0,
+                                                                   7,
+                                                                   7
+                                                               ]
+                                              }
+                                   },
+                         "rotationOrigin":  [
+                                                9.266749,
+                                                3.020965,
+                                                12.853161
+                                            ],
+                         "rotationX":  10.0,
+                         "rotationY":  -180.0,
+                         "scaleX":  1.0,
+                         "scaleY":  1.0,
+                         "scaleZ":  1.0,
+                         "renderPass":  -1,
+                         "stepParentName":  "JalapenoRoot",
+                         "renderInEditor":  true,
+                         "uv":  [
+                                    0.0,
+                                    0.0
+                                ]
+                     },
+                     {
+                         "name":  "Leaf-Right",
+                         "from":  [
+                                      5.874828,
+                                      3.061659,
+                                      3.141121
+                                  ],
+                         "to":  [
+                                    8.874828,
+                                    3.081659,
+                                    7.741121
+                                ],
+                         "shade":  true,
+                         "faces":  {
+                                       "up":  {
+                                                  "texture":  "#leaf",
+                                                  "uv":  [
+                                                             11.5,
+                                                             1.0,
+                                                             14.0,
+                                                             7.5
+                                                         ],
+                                                  "enabled":  true,
+                                                  "autoUv":  false,
+                                                  "snapUV":  false,
+                                                  "windMode":  [
+                                                                   0,
+                                                                   0,
+                                                                   7,
+                                                                   7
+                                                               ]
+                                              }
+                                   },
+                         "rotationOrigin":  [
+                                                5.874828,
+                                                3.061659,
+                                                3.141121
+                                            ],
+                         "rotationX":  -10.0,
+                         "rotationY":  -3.0,
+                         "rotationZ":  -3.0,
+                         "scaleX":  1.0,
+                         "scaleY":  1.0,
+                         "scaleZ":  1.0,
+                         "renderPass":  -1,
+                         "stepParentName":  "JalapenoRoot",
+                         "renderInEditor":  true,
+                         "uv":  [
+                                    0.0,
+                                    0.0
+                                ]
+                     },
+                     {
+                         "name":  "Stem2",
+                         "from":  [
+                                      6.98,
+                                      4,
+                                      7
+                                  ],
+                         "to":  [
+                                    7.96,
+                                    8,
+                                    7.98
+                                ],
+                         "shade":  true,
+                         "faces":  {
+                                       "north":  {
+                                                     "texture":  "#stem",
+                                                     "uv":  [
+                                                                1.5,
+                                                                2.0,
+                                                                3.0,
+                                                                6.0
+                                                            ],
+                                                     "enabled":  true,
+                                                     "autoUv":  false,
+                                                     "snapUV":  false,
+                                                     "windMode":  [
+                                                                      0,
+                                                                      0,
+                                                                      0,
+                                                                      0
+                                                                  ]
+                                                 },
+                                       "east":  {
+                                                    "texture":  "#stem",
+                                                    "uv":  [
+                                                               1.5,
+                                                               2.0,
+                                                               3.0,
+                                                               6.0
+                                                           ],
+                                                    "enabled":  true,
+                                                    "autoUv":  false,
+                                                    "snapUV":  false,
+                                                    "windMode":  [
+                                                                     0,
+                                                                     0,
+                                                                     0,
+                                                                     0
+                                                                 ]
+                                                },
+                                       "south":  {
+                                                     "texture":  "#stem",
+                                                     "uv":  [
+                                                                1.5,
+                                                                2.0,
+                                                                3.0,
+                                                                6.0
+                                                            ],
+                                                     "enabled":  true,
+                                                     "autoUv":  false,
+                                                     "snapUV":  false,
+                                                     "windMode":  [
+                                                                      0,
+                                                                      0,
+                                                                      0,
+                                                                      0
+                                                                  ]
+                                                 },
+                                       "west":  {
+                                                    "texture":  "#stem",
+                                                    "uv":  [
+                                                               1.5,
+                                                               2.0,
+                                                               3.5,
+                                                               6.5
+                                                           ],
+                                                    "enabled":  true,
+                                                    "autoUv":  false,
+                                                    "snapUV":  false,
+                                                    "windMode":  [
+                                                                     0,
+                                                                     0,
+                                                                     0,
+                                                                     0
+                                                                 ]
+                                                },
+                                       "up":  {
+                                                  "texture":  "#stem",
+                                                  "uv":  [
+                                                             3.0,
+                                                             4.5,
+                                                             1.5,
+                                                             2.0
+                                                         ],
+                                                  "enabled":  true,
+                                                  "autoUv":  false,
+                                                  "snapUV":  false,
+                                                  "windMode":  [
+                                                                   0,
+                                                                   0,
+                                                                   0,
+                                                                   0
+                                                               ]
+                                              },
+                                       "down":  {
+                                                    "texture":  "#stem",
+                                                    "uv":  [
+                                                               3.0,
+                                                               5.5,
+                                                               1.5,
+                                                               3.0
+                                                           ],
+                                                    "enabled":  true,
+                                                    "autoUv":  false,
+                                                    "snapUV":  false,
+                                                    "windMode":  [
+                                                                     0,
+                                                                     0,
+                                                                     0,
+                                                                     0
+                                                                 ]
+                                                }
+                                   },
+                         "rotationOrigin":  [
+                                                6.78,
+                                                4,
+                                                7
+                                            ],
+                         "rotationX":  7.0,
+                         "scaleX":  1.0,
+                         "scaleY":  1.0,
+                         "scaleZ":  1.0,
+                         "renderPass":  -1,
+                         "stepParentName":  "JalapenoRoot",
+                         "renderInEditor":  true,
+                         "uv":  [
+                                    0.0,
+                                    0.0
+                                ]
+                     },
+                     {
+                         "name":  "Leaf3",
+                         "from":  [
+                                      2.985514,
+                                      7.635931,
+                                      6.420425
+                                  ],
+                         "to":  [
+                                    7.985514,
+                                    7.655931,
+                                    9.420425
+                                ],
+                         "shade":  true,
+                         "faces":  {
+                                       "up":  {
+                                                  "texture":  "#leaf",
+                                                  "uv":  [
+                                                             6.5,
+                                                             1.0,
+                                                             9.5,
+                                                             7.5
+                                                         ],
+                                                  "rotation":  270.0,
+                                                  "enabled":  true,
+                                                  "autoUv":  false,
+                                                  "snapUV":  false,
+                                                  "rotationIndex":  3,
+                                                  "windMode":  [
+                                                                   7,
+                                                                   0,
+                                                                   0,
+                                                                   7
+                                                               ]
+                                              }
+                                   },
+                         "rotationOrigin":  [
+                                                6.985994,
+                                                7.635931,
+                                                6.420425
+                                            ],
+                         "rotationY":  -19.0,
+                         "rotationZ":  13.0,
+                         "scaleX":  1.0,
+                         "scaleY":  1.0,
+                         "scaleZ":  1.0,
+                         "renderPass":  -1,
+                         "stepParentName":  "JalapenoRoot",
+                         "renderInEditor":  true,
+                         "uv":  [
+                                    0.0,
+                                    0.0
+                                ]
+                     },
+                     {
+                         "name":  "Leaf4",
+                         "from":  [
+                                      7.188043,
+                                      7.743014,
+                                      6.992657
+                                  ],
+                         "to":  [
+                                    12.188043,
+                                    7.763014,
+                                    9.992657
+                                ],
+                         "shade":  true,
+                         "faces":  {
+                                       "up":  {
+                                                  "texture":  "#leaf",
+                                                  "uv":  [
+                                                             6.5,
+                                                             8.5,
+                                                             9.5,
+                                                             15.0
+                                                         ],
+                                                  "rotation":  90.0,
+                                                  "enabled":  true,
+                                                  "autoUv":  false,
+                                                  "snapUV":  false,
+                                                  "rotationIndex":  1,
+                                                  "windMode":  [
+                                                                   0,
+                                                                   7,
+                                                                   7,
+                                                                   0
+                                                               ]
+                                              }
+                                   },
+                         "rotationOrigin":  [
+                                                7.188043,
+                                                7.743014,
+                                                6.992657
+                                            ],
+                         "rotationY":  14.0,
+                         "rotationZ":  -17.0,
+                         "scaleX":  1.0,
+                         "scaleY":  1.0,
+                         "scaleZ":  1.0,
+                         "renderPass":  -1,
+                         "stepParentName":  "JalapenoRoot",
+                         "renderInEditor":  true,
+                         "uv":  [
+                                    0.0,
+                                    0.0
+                                ]
+                     },
+                     {
+                         "name":  "Leaf5",
+                         "from":  [
+                                      6.140374,
+                                      6.401936,
+                                      3.016291
+                                  ],
+                         "to":  [
+                                    10.140374,
+                                    6.421936,
+                                    7.016291
+                                ],
+                         "shade":  true,
+                         "faces":  {
+                                       "up":  {
+                                                  "texture":  "#leaf",
+                                                  "uv":  [
+                                                             9.5,
+                                                             8.0,
+                                                             14.5,
+                                                             15.0
+                                                         ],
+                                                  "enabled":  true,
+                                                  "autoUv":  false,
+                                                  "snapUV":  false,
+                                                  "windMode":  [
+                                                                   0,
+                                                                   0,
+                                                                   7,
+                                                                   7
+                                                               ]
+                                              }
+                                   },
+                         "rotationOrigin":  [
+                                                6.140374,
+                                                6.401936,
+                                                3.016291
+                                            ],
+                         "rotationX":  -13.0,
+                         "rotationY":  -20.0,
+                         "scaleX":  1.0,
+                         "scaleY":  1.0,
+                         "scaleZ":  1.0,
+                         "renderPass":  -1,
+                         "stepParentName":  "JalapenoRoot",
+                         "renderInEditor":  true,
+                         "uv":  [
+                                    0.0,
+                                    0.0
+                                ]
+                     },
+                     {
+                         "name":  "Stem3",
+                         "from":  [
+                                      7,
+                                      7.766216,
+                                      7.496405
+                                  ],
+                         "to":  [
+                                    7.94,
+                                    11.766216,
+                                    8.436405
+                                ],
+                         "shade":  true,
+                         "faces":  {
+                                       "north":  {
+                                                     "texture":  "#stem",
+                                                     "uv":  [
+                                                                2.0,
+                                                                7.0,
+                                                                3.5,
+                                                                2.0
+                                                            ],
+                                                     "enabled":  true,
+                                                     "autoUv":  false,
+                                                     "snapUV":  false,
+                                                     "windMode":  [
+                                                                      0,
+                                                                      0,
+                                                                      0,
+                                                                      0
+                                                                  ]
+                                                 },
+                                       "east":  {
+                                                    "texture":  "#stem",
+                                                    "uv":  [
+                                                               2.0,
+                                                               7.0,
+                                                               3.5,
+                                                               2.0
+                                                           ],
+                                                    "enabled":  true,
+                                                    "autoUv":  false,
+                                                    "snapUV":  false,
+                                                    "windMode":  [
+                                                                     0,
+                                                                     0,
+                                                                     0,
+                                                                     0
+                                                                 ]
+                                                },
+                                       "south":  {
+                                                     "texture":  "#stem",
+                                                     "uv":  [
+                                                                2.0,
+                                                                7.0,
+                                                                3.5,
+                                                                2.0
+                                                            ],
+                                                     "enabled":  true,
+                                                     "autoUv":  false,
+                                                     "snapUV":  false,
+                                                     "windMode":  [
+                                                                      0,
+                                                                      0,
+                                                                      0,
+                                                                      0
+                                                                  ]
+                                                 },
+                                       "west":  {
+                                                    "texture":  "#stem",
+                                                    "uv":  [
+                                                               2.0,
+                                                               7.0,
+                                                               3.5,
+                                                               2.0
+                                                           ],
+                                                    "enabled":  true,
+                                                    "autoUv":  false,
+                                                    "snapUV":  false,
+                                                    "windMode":  [
+                                                                     0,
+                                                                     0,
+                                                                     0,
+                                                                     0
+                                                                 ]
+                                                },
+                                       "up":  {
+                                                  "texture":  "#stem",
+                                                  "uv":  [
+                                                             2.0,
+                                                             4.0,
+                                                             3.5,
+                                                             1.5
+                                                         ],
+                                                  "enabled":  true,
+                                                  "autoUv":  false,
+                                                  "snapUV":  false,
+                                                  "windMode":  [
+                                                                   0,
+                                                                   0,
+                                                                   0,
+                                                                   0
+                                                               ]
+                                              },
+                                       "down":  {
+                                                    "texture":  "#stem",
+                                                    "uv":  [
+                                                               2.0,
+                                                               4.0,
+                                                               3.5,
+                                                               1.5
+                                                           ],
+                                                    "enabled":  true,
+                                                    "autoUv":  false,
+                                                    "snapUV":  false,
+                                                    "windMode":  [
+                                                                     0,
+                                                                     0,
+                                                                     0,
+                                                                     0
+                                                                 ]
+                                                }
+                                   },
+                         "rotationOrigin":  [
+                                                7,
+                                                7.766216,
+                                                7.496405
+                                            ],
+                         "scaleX":  1.0,
+                         "scaleY":  1.0,
+                         "scaleZ":  1.0,
+                         "renderPass":  -1,
+                         "stepParentName":  "JalapenoRoot",
+                         "renderInEditor":  true,
+                         "uv":  [
+                                    0.0,
+                                    0.0
+                                ]
+                     },
+                     {
+                         "name":  "Branch1",
+                         "from":  [
+                                      7.302716,
+                                      8.646685,
+                                      8.366931
+                                  ],
+                         "to":  [
+                                    7.702716,
+                                    10.646685,
+                                    8.766931
+                                ],
+                         "shade":  true,
+                         "faces":  {
+                                       "north":  {
+                                                     "texture":  "#stem",
+                                                     "uv":  [
+                                                                3.0,
+                                                                7.0,
+                                                                1.5,
+                                                                1.0
+                                                            ],
+                                                     "enabled":  true,
+                                                     "autoUv":  false,
+                                                     "snapUV":  false,
+                                                     "windMode":  [
+                                                                      0,
+                                                                      0,
+                                                                      0,
+                                                                      0
+                                                                  ]
+                                                 },
+                                       "east":  {
+                                                    "texture":  "#stem",
+                                                    "uv":  [
+                                                               3.0,
+                                                               7.0,
+                                                               1.5,
+                                                               1.0
+                                                           ],
+                                                    "enabled":  true,
+                                                    "autoUv":  false,
+                                                    "snapUV":  false,
+                                                    "windMode":  [
+                                                                     0,
+                                                                     0,
+                                                                     0,
+                                                                     0
+                                                                 ]
+                                                },
+                                       "south":  {
+                                                     "texture":  "#stem",
+                                                     "uv":  [
+                                                                3.0,
+                                                                7.0,
+                                                                1.5,
+                                                                1.0
+                                                            ],
+                                                     "enabled":  true,
+                                                     "autoUv":  false,
+                                                     "snapUV":  false,
+                                                     "windMode":  [
+                                                                      0,
+                                                                      0,
+                                                                      0,
+                                                                      0
+                                                                  ]
+                                                 },
+                                       "west":  {
+                                                    "texture":  "#stem",
+                                                    "uv":  [
+                                                               3.0,
+                                                               7.0,
+                                                               1.5,
+                                                               1.0
+                                                           ],
+                                                    "enabled":  true,
+                                                    "autoUv":  false,
+                                                    "snapUV":  false,
+                                                    "windMode":  [
+                                                                     0,
+                                                                     0,
+                                                                     0,
+                                                                     0
+                                                                 ]
+                                                },
+                                       "up":  {
+                                                  "texture":  "#stem",
+                                                  "uv":  [
+                                                             2.0,
+                                                             5.0,
+                                                             3.5,
+                                                             1.5
+                                                         ],
+                                                  "enabled":  true,
+                                                  "autoUv":  false,
+                                                  "snapUV":  false,
+                                                  "windMode":  [
+                                                                   0,
+                                                                   0,
+                                                                   0,
+                                                                   0
+                                                               ]
+                                              },
+                                       "down":  {
+                                                    "texture":  "#stem",
+                                                    "uv":  [
+                                                               2.0,
+                                                               5.0,
+                                                               3.5,
+                                                               1.5
+                                                           ],
+                                                    "enabled":  true,
+                                                    "autoUv":  false,
+                                                    "snapUV":  false,
+                                                    "windMode":  [
+                                                                     0,
+                                                                     0,
+                                                                     0,
+                                                                     0
+                                                                 ]
+                                                }
+                                   },
+                         "rotationOrigin":  [
+                                                7.302716,
+                                                8.646685,
+                                                8.366931
+                                            ],
+                         "rotationX":  94.0,
+                         "scaleX":  1.0,
+                         "scaleY":  1.0,
+                         "scaleZ":  1.0,
+                         "renderPass":  -1,
+                         "stepParentName":  "JalapenoRoot",
+                         "renderInEditor":  true,
+                         "uv":  [
+                                    0.0,
+                                    0.0
+                                ]
+                     },
+                     {
+                         "name":  "Branch2",
+                         "from":  [
+                                      7,
+                                      6.056711,
+                                      7.436558
+                                  ],
+                         "to":  [
+                                    7.4,
+                                    9.056711,
+                                    7.836558
+                                ],
+                         "shade":  true,
+                         "faces":  {
+                                       "north":  {
+                                                     "texture":  "#stem",
+                                                     "uv":  [
+                                                                3.0,
+                                                                7.0,
+                                                                1.5,
+                                                                1.5
+                                                            ],
+                                                     "enabled":  true,
+                                                     "autoUv":  false,
+                                                     "snapUV":  false,
+                                                     "windMode":  [
+                                                                      0,
+                                                                      0,
+                                                                      0,
+                                                                      0
+                                                                  ]
+                                                 },
+                                       "east":  {
+                                                    "texture":  "#stem",
+                                                    "uv":  [
+                                                               3.0,
+                                                               7.0,
+                                                               1.5,
+                                                               1.5
+                                                           ],
+                                                    "enabled":  true,
+                                                    "autoUv":  false,
+                                                    "snapUV":  false,
+                                                    "windMode":  [
+                                                                     0,
+                                                                     0,
+                                                                     0,
+                                                                     0
+                                                                 ]
+                                                },
+                                       "south":  {
+                                                     "texture":  "#stem",
+                                                     "uv":  [
+                                                                3.0,
+                                                                7.0,
+                                                                1.5,
+                                                                1.5
+                                                            ],
+                                                     "enabled":  true,
+                                                     "autoUv":  false,
+                                                     "snapUV":  false,
+                                                     "windMode":  [
+                                                                      0,
+                                                                      0,
+                                                                      0,
+                                                                      0
+                                                                  ]
+                                                 },
+                                       "west":  {
+                                                    "texture":  "#stem",
+                                                    "uv":  [
+                                                               3.0,
+                                                               7.0,
+                                                               1.5,
+                                                               1.5
+                                                           ],
+                                                    "enabled":  true,
+                                                    "autoUv":  false,
+                                                    "snapUV":  false,
+                                                    "windMode":  [
+                                                                     0,
+                                                                     0,
+                                                                     0,
+                                                                     0
+                                                                 ]
+                                                },
+                                       "up":  {
+                                                  "texture":  "#stem",
+                                                  "uv":  [
+                                                             1.5,
+                                                             7.0,
+                                                             3.0,
+                                                             1.5
+                                                         ],
+                                                  "enabled":  true,
+                                                  "autoUv":  false,
+                                                  "snapUV":  false,
+                                                  "windMode":  [
+                                                                   0,
+                                                                   0,
+                                                                   0,
+                                                                   0
+                                                               ]
+                                              },
+                                       "down":  {
+                                                    "texture":  "#stem",
+                                                    "uv":  [
+                                                               1.5,
+                                                               7.0,
+                                                               3.0,
+                                                               1.5
+                                                           ],
+                                                    "enabled":  true,
+                                                    "autoUv":  false,
+                                                    "snapUV":  false,
+                                                    "windMode":  [
+                                                                     0,
+                                                                     0,
+                                                                     0,
+                                                                     0
+                                                                 ]
+                                                }
+                                   },
+                         "rotationOrigin":  [
+                                                7,
+                                                6.056711,
+                                                7.436558
+                                            ],
+                         "rotationX":  -81.0,
+                         "scaleX":  1.0,
+                         "scaleY":  1.0,
+                         "scaleZ":  1.0,
+                         "renderPass":  -1,
+                         "stepParentName":  "JalapenoRoot",
+                         "renderInEditor":  true,
+                         "uv":  [
+                                    0.0,
+                                    0.0
+                                ]
+                     },
+                     {
+                         "name":  "Leaf6",
+                         "from":  [
+                                      6.585019,
+                                      11.355336,
+                                      6.012824
+                                  ],
+                         "to":  [
+                                    8.585019,
+                                    11.375336,
+                                    8.012824
+                                ],
+                         "shade":  true,
+                         "faces":  {
+                                       "up":  {
+                                                  "texture":  "#leaf",
+                                                  "uv":  [
+                                                             0.5,
+                                                             1.0,
+                                                             5.5,
+                                                             8.0
+                                                         ],
+                                                  "enabled":  true,
+                                                  "autoUv":  false,
+                                                  "snapUV":  false,
+                                                  "windMode":  [
+                                                                   0,
+                                                                   7,
+                                                                   7,
+                                                                   0
+                                                               ]
+                                              }
+                                   },
+                         "rotationOrigin":  [
+                                                6.585019,
+                                                11.355336,
+                                                6.012824
+                                            ],
+                         "rotationX":  -13.0,
+                         "scaleX":  1.0,
+                         "scaleY":  1.0,
+                         "scaleZ":  1.0,
+                         "renderPass":  -1,
+                         "stepParentName":  "JalapenoRoot",
+                         "renderInEditor":  true,
+                         "uv":  [
+                                    0.0,
+                                    0.0
+                                ]
+                     },
+                     {
+                         "name":  "Leaf7",
+                         "from":  [
+                                      6.265132,
+                                      7.672471,
+                                      13.812016
+                                  ],
+                         "to":  [
+                                    8.265132,
+                                    7.692471,
+                                    17.812016
+                                ],
+                         "shade":  true,
+                         "faces":  {
+                                       "up":  {
+                                                  "texture":  "#leaf",
+                                                  "uv":  [
+                                                             11.9069767,
+                                                             0.906976759,
+                                                             13.90698,
+                                                             6.906977
+                                                         ],
+                                                  "enabled":  true,
+                                                  "autoUv":  false,
+                                                  "snapUV":  false,
+                                                  "windMode":  [
+                                                                   0,
+                                                                   0,
+                                                                   7,
+                                                                   7
+                                                               ]
+                                              }
+                                   },
+                         "rotationOrigin":  [
+                                                6.265132,
+                                                7.672471,
+                                                13.812016
+                                            ],
+                         "rotationX":  13.0,
+                         "rotationY":  148.0,
+                         "rotationZ":  -10.0,
+                         "scaleX":  1.0,
+                         "scaleY":  1.0,
+                         "scaleZ":  1.0,
+                         "renderPass":  -1,
+                         "stepParentName":  "JalapenoRoot",
+                         "renderInEditor":  true,
+                         "uv":  [
+                                    0.0,
+                                    0.0
+                                ]
+                     },
+                     {
+                         "name":  "Leaf8",
+                         "from":  [
+                                      5.896017,
+                                      6.71326,
+                                      4.887692
+                                  ],
+                         "to":  [
+                                    7.896017,
+                                    6.73326,
+                                    6.887692
+                                ],
+                         "shade":  true,
+                         "faces":  {
+                                       "down":  {
+                                                    "texture":  "#leaf",
+                                                    "uv":  [
+                                                               4.0,
+                                                               8.0,
+                                                               1.0,
+                                                               1.0
+                                                           ],
+                                                    "enabled":  true,
+                                                    "autoUv":  false,
+                                                    "snapUV":  false,
+                                                    "windMode":  [
+                                                                     7,
+                                                                     7,
+                                                                     0,
+                                                                     0
+                                                                 ]
+                                                }
+                                   },
+                         "rotationOrigin":  [
+                                                5.896017,
+                                                6.71326,
+                                                4.887692
+                                            ],
+                         "rotationY":  180.0,
+                         "rotationZ":  180.0,
+                         "scaleX":  1.0,
+                         "scaleY":  1.0,
+                         "scaleZ":  1.0,
+                         "renderPass":  -1,
+                         "stepParentName":  "JalapenoRoot",
+                         "renderInEditor":  true,
+                         "uv":  [
+                                    0.0,
+                                    0.0
+                                ]
+                     },
+                     {
+                         "name":  "Leaf9",
+                         "from":  [
+                                      13.155761,
+                                      8.615232,
+                                      9.965854
+                                  ],
+                         "to":  [
+                                    17.155761,
+                                    8.635232,
+                                    15.965854
+                                ],
+                         "shade":  true,
+                         "faces":  {
+                                       "up":  {
+                                                  "texture":  "#leaf",
+                                                  "uv":  [
+                                                             6.5,
+                                                             8.5,
+                                                             9.5,
+                                                             15.5
+                                                         ],
+                                                  "enabled":  true,
+                                                  "autoUv":  false,
+                                                  "snapUV":  false,
+                                                  "windMode":  [
+                                                                   0,
+                                                                   0,
+                                                                   7,
+                                                                   7
+                                                               ]
+                                              }
+                                   },
+                         "rotationOrigin":  [
+                                                13.155761,
+                                                8.615232,
+                                                9.965854
+                                            ],
+                         "rotationX":  27.0,
+                         "rotationY":  -112.0,
+                         "rotationZ":  -30.0,
+                         "scaleX":  1.0,
+                         "scaleY":  1.0,
+                         "scaleZ":  1.0,
+                         "renderPass":  -1,
+                         "stepParentName":  "JalapenoRoot",
+                         "renderInEditor":  true,
+                         "uv":  [
+                                    0.0,
+                                    0.0
+                                ]
+                     },
+                     {
+                         "name":  "Leaf10",
+                         "from":  [
+                                      2.514322,
+                                      9.668763,
+                                      3.617523
+                                  ],
+                         "to":  [
+                                    6.514322,
+                                    9.688763,
+                                    9.617523
+                                ],
+                         "shade":  true,
+                         "faces":  {
+                                       "up":  {
+                                                  "texture":  "#leaf",
+                                                  "uv":  [
+                                                             1.0,
+                                                             0.0,
+                                                             5.0,
+                                                             7.0
+                                                         ],
+                                                  "enabled":  true,
+                                                  "autoUv":  false,
+                                                  "snapUV":  false,
+                                                  "windMode":  [
+                                                                   0,
+                                                                   0,
+                                                                   7,
+                                                                   7
+                                                               ]
+                                              }
+                                   },
+                         "rotationOrigin":  [
+                                                2.514322,
+                                                9.668763,
+                                                3.617523
+                                            ],
+                         "rotationX":  -10.0,
+                         "rotationY":  30.0,
+                         "scaleX":  1.0,
+                         "scaleY":  1.0,
+                         "scaleZ":  1.0,
+                         "renderPass":  -1,
+                         "stepParentName":  "JalapenoRoot",
+                         "renderInEditor":  true,
+                         "uv":  [
+                                    0.0,
+                                    0.0
+                                ]
+                     },
+                     {
+                         "name":  "Leaf11",
+                         "from":  [
+                                      10.760423,
+                                      8.275285,
+                                      3.165716
+                                  ],
+                         "to":  [
+                                    14.760423,
+                                    8.295285,
+                                    9.165716
+                                ],
+                         "shade":  true,
+                         "faces":  {
+                                       "up":  {
+                                                  "texture":  "#leaf",
+                                                  "uv":  [
+                                                             1.0,
+                                                             8.5,
+                                                             4.0,
+                                                             15.5
+                                                         ],
+                                                  "enabled":  true,
+                                                  "autoUv":  false,
+                                                  "snapUV":  false,
+                                                  "windMode":  [
+                                                                   0,
+                                                                   0,
+                                                                   7,
+                                                                   7
+                                                               ]
+                                              }
+                                   },
+                         "rotationOrigin":  [
+                                                10.760423,
+                                                8.275285,
+                                                3.165716
+                                            ],
+                         "rotationX":  -20.0,
+                         "rotationY":  -51.0,
+                         "rotationZ":  -27.0,
+                         "scaleX":  1.0,
+                         "scaleY":  1.0,
+                         "scaleZ":  1.0,
+                         "renderPass":  -1,
+                         "stepParentName":  "JalapenoRoot",
+                         "renderInEditor":  true,
+                         "uv":  [
+                                    0.0,
+                                    0.0
+                                ]
+                     },
+                     {
+                         "name":  "Stem4",
+                         "from":  [
+                                      7.611193,
+                                      11.003834,
+                                      7.808818
+                                  ],
+                         "to":  [
+                                    8.011193,
+                                    11.903834,
+                                    8.208818
+                                ],
+                         "shade":  true,
+                         "faces":  {
+                                       "north":  {
+                                                     "texture":  "#stem",
+                                                     "uv":  [
+                                                                3.0,
+                                                                7.0,
+                                                                1.5,
+                                                                1.5
+                                                            ],
+                                                     "enabled":  true,
+                                                     "autoUv":  false,
+                                                     "snapUV":  false,
+                                                     "windMode":  [
+                                                                      0,
+                                                                      0,
+                                                                      0,
+                                                                      0
+                                                                  ]
+                                                 },
+                                       "east":  {
+                                                    "texture":  "#stem",
+                                                    "uv":  [
+                                                               3.0,
+                                                               7.0,
+                                                               1.5,
+                                                               1.5
+                                                           ],
+                                                    "enabled":  true,
+                                                    "autoUv":  false,
+                                                    "snapUV":  false,
+                                                    "windMode":  [
+                                                                     0,
+                                                                     0,
+                                                                     0,
+                                                                     0
+                                                                 ]
+                                                },
+                                       "south":  {
+                                                     "texture":  "#stem",
+                                                     "uv":  [
+                                                                3.0,
+                                                                7.0,
+                                                                1.5,
+                                                                1.5
+                                                            ],
+                                                     "enabled":  true,
+                                                     "autoUv":  false,
+                                                     "snapUV":  false,
+                                                     "windMode":  [
+                                                                      0,
+                                                                      0,
+                                                                      0,
+                                                                      0
+                                                                  ]
+                                                 },
+                                       "west":  {
+                                                    "texture":  "#stem",
+                                                    "uv":  [
+                                                               3.0,
+                                                               7.0,
+                                                               1.5,
+                                                               1.5
+                                                           ],
+                                                    "enabled":  true,
+                                                    "autoUv":  false,
+                                                    "snapUV":  false,
+                                                    "windMode":  [
+                                                                     0,
+                                                                     0,
+                                                                     0,
+                                                                     0
+                                                                 ]
+                                                },
+                                       "up":  {
+                                                  "texture":  "#stem",
+                                                  "uv":  [
+                                                             3.0,
+                                                             7.0,
+                                                             1.5,
+                                                             1.5
+                                                         ],
+                                                  "enabled":  true,
+                                                  "autoUv":  false,
+                                                  "snapUV":  false,
+                                                  "windMode":  [
+                                                                   0,
+                                                                   0,
+                                                                   0,
+                                                                   0
+                                                               ]
+                                              },
+                                       "down":  {
+                                                    "texture":  "#stem",
+                                                    "uv":  [
+                                                               3.0,
+                                                               7.0,
+                                                               1.5,
+                                                               1.5
+                                                           ],
+                                                    "enabled":  true,
+                                                    "autoUv":  false,
+                                                    "snapUV":  false,
+                                                    "windMode":  [
+                                                                     0,
+                                                                     0,
+                                                                     0,
+                                                                     0
+                                                                 ]
+                                                }
+                                   },
+                         "rotationOrigin":  [
+                                                7.611193,
+                                                11.003834,
+                                                7.808818
+                                            ],
+                         "rotationZ":  -37.0,
+                         "scaleX":  1.0,
+                         "scaleY":  1.0,
+                         "scaleZ":  1.0,
+                         "renderPass":  -1,
+                         "stepParentName":  "JalapenoRoot",
+                         "renderInEditor":  true,
+                         "uv":  [
+                                    0.0,
+                                    0.0
+                                ]
+                     },
+                     {
+                         "name":  "Leaf12",
+                         "from":  [
+                                      1.475035,
+                                      6.706201,
+                                      6.791828
+                                  ],
+                         "to":  [
+                                    5.475035,
+                                    6.726201,
+                                    12.791828
+                                ],
+                         "shade":  true,
+                         "faces":  {
+                                       "up":  {
+                                                  "texture":  "#leaf",
+                                                  "uv":  [
+                                                             6.5,
+                                                             8.5,
+                                                             9.5,
+                                                             15.5
+                                                         ],
+                                                  "enabled":  true,
+                                                  "autoUv":  false,
+                                                  "snapUV":  false,
+                                                  "windMode":  [
+                                                                   0,
+                                                                   0,
+                                                                   7,
+                                                                   7
+                                                               ]
+                                              }
+                                   },
+                         "rotationOrigin":  [
+                                                1.475035,
+                                                6.706201,
+                                                6.791828
+                                            ],
+                         "rotationX":  -17.0,
+                         "rotationY":  81.0,
+                         "scaleX":  1.0,
+                         "scaleY":  1.0,
+                         "scaleZ":  1.0,
+                         "renderPass":  -1,
+                         "stepParentName":  "JalapenoRoot",
+                         "renderInEditor":  true,
+                         "uv":  [
+                                    0.0,
+                                    0.0
+                                ]
+                     },
+                     {
+                         "name":  "Leaf13",
+                         "from":  [
+                                      6.665527,
+                                      13.71114,
+                                      11.86696
+                                  ],
+                         "to":  [
+                                    9.265526,
+                                    13.73114,
+                                    15.86696
+                                ],
+                         "shade":  true,
+                         "faces":  {
+                                       "up":  {
+                                                  "texture":  "#leaf",
+                                                  "uv":  [
+                                                             6.0,
+                                                             1.0,
+                                                             10.0,
+                                                             7.0
+                                                         ],
+                                                  "enabled":  true,
+                                                  "autoUv":  false,
+                                                  "snapUV":  false,
+                                                  "windMode":  [
+                                                                   0,
+                                                                   0,
+                                                                   7,
+                                                                   7
+                                                               ]
+                                              }
+                                   },
+                         "rotationOrigin":  [
+                                                6.665527,
+                                                13.71114,
+                                                11.86696
+                                            ],
+                         "rotationX":  -30.0,
+                         "rotationY":  156.0,
+                         "scaleX":  1.0,
+                         "scaleY":  1.0,
+                         "scaleZ":  1.0,
+                         "renderPass":  -1,
+                         "stepParentName":  "JalapenoRoot",
+                         "renderInEditor":  true,
+                         "uv":  [
+                                    0.0,
+                                    0.0
+                                ]
+                     },
+                     {
+                         "name":  "Leaf14",
+                         "from":  [
+                                      7.281862,
+                                      11.215665,
+                                      8.520374
+                                  ],
+                         "to":  [
+                                    9.281862,
+                                    11.235665,
+                                    12.520374
+                                ],
+                         "shade":  true,
+                         "faces":  {
+                                       "up":  {
+                                                  "texture":  "#leaf",
+                                                  "uv":  [
+                                                             11.0,
+                                                             1.0,
+                                                             15.0,
+                                                             7.0
+                                                         ],
+                                                  "rotation":  180.0,
+                                                  "enabled":  true,
+                                                  "autoUv":  false,
+                                                  "snapUV":  false,
+                                                  "rotationIndex":  2,
+                                                  "windMode":  [
+                                                                   0,
+                                                                   0,
+                                                                   7,
+                                                                   7
+                                                               ]
+                                              }
+                                   },
+                         "rotationOrigin":  [
+                                                7.281862,
+                                                11.215665,
+                                                8.520374
+                                            ],
+                         "rotationX":  30.0,
+                         "rotationY":  44.0,
+                         "scaleX":  1.0,
+                         "scaleY":  1.0,
+                         "scaleZ":  1.0,
+                         "renderPass":  -1,
+                         "stepParentName":  "JalapenoRoot",
+                         "renderInEditor":  true,
+                         "uv":  [
+                                    0.0,
+                                    0.0
+                                ]
+                     },
+                     {
+                         "name":  "Leaf15",
+                         "from":  [
+                                      7.294311,
+                                      11.545728,
+                                      6.725132
+                                  ],
+                         "to":  [
+                                    9.294311,
+                                    11.565728,
+                                    10.725132
+                                ],
+                         "shade":  true,
+                         "faces":  {
+                                       "up":  {
+                                                  "texture":  "#leaf",
+                                                  "uv":  [
+                                                             11.0,
+                                                             1.0,
+                                                             15.0,
+                                                             7.0
+                                                         ],
+                                                  "rotation":  180.0,
+                                                  "enabled":  true,
+                                                  "autoUv":  false,
+                                                  "snapUV":  false,
+                                                  "rotationIndex":  2,
+                                                  "windMode":  [
+                                                                   0,
+                                                                   0,
+                                                                   7,
+                                                                   7
+                                                               ]
+                                              }
+                                   },
+                         "rotationOrigin":  [
+                                                7.294311,
+                                                11.545728,
+                                                6.725132
+                                            ],
+                         "rotationX":  30.0,
+                         "rotationY":  -90.0,
+                         "scaleX":  1.0,
+                         "scaleY":  1.0,
+                         "scaleZ":  1.0,
+                         "renderPass":  -1,
+                         "stepParentName":  "JalapenoRoot",
+                         "renderInEditor":  true,
+                         "uv":  [
+                                    0.0,
+                                    0.0
+                                ]
+                     },
+                     {
+                         "name":  "Leaf16",
+                         "from":  [
+                                      5.820018,
+                                      8.202597,
+                                      4.3673
+                                  ],
+                         "to":  [
+                                    7.820018,
+                                    8.222597,
+                                    8.3673
+                                ],
+                         "shade":  true,
+                         "faces":  {
+                                       "up":  {
+                                                  "texture":  "#leaf",
+                                                  "uv":  [
+                                                             11.9069767,
+                                                             0.906976759,
+                                                             13.90698,
+                                                             6.906977
+                                                         ],
+                                                  "enabled":  true,
+                                                  "autoUv":  false,
+                                                  "snapUV":  false,
+                                                  "windMode":  [
+                                                                   0,
+                                                                   0,
+                                                                   7,
+                                                                   7
+                                                               ]
+                                              }
+                                   },
+                         "rotationOrigin":  [
+                                                5.820018,
+                                                8.202597,
+                                                4.3673
+                                            ],
+                         "rotationX":  -27.0,
+                         "rotationY":  9.0,
+                         "rotationZ":  -10.0,
+                         "scaleX":  1.0,
+                         "scaleY":  1.0,
+                         "scaleZ":  1.0,
+                         "renderPass":  -1,
+                         "stepParentName":  "JalapenoRoot",
+                         "renderInEditor":  true,
+                         "uv":  [
+                                    0.0,
+                                    0.0
+                                ]
+                     },
+                     {
+                         "name":  "Leaf17",
+                         "from":  [
+                                      9.968738,
+                                      8.100058,
+                                      9.694313
+                                  ],
+                         "to":  [
+                                    12.168738,
+                                    8.120058,
+                                    12.294313
+                                ],
+                         "shade":  true,
+                         "faces":  {
+                                       "up":  {
+                                                  "texture":  "#leaf",
+                                                  "uv":  [
+                                                             0.5,
+                                                             1.0,
+                                                             5.5,
+                                                             8.0
+                                                         ],
+                                                  "enabled":  true,
+                                                  "autoUv":  false,
+                                                  "snapUV":  false,
+                                                  "windMode":  [
+                                                                   0,
+                                                                   0,
+                                                                   7,
+                                                                   7
+                                                               ]
+                                              }
+                                   },
+                         "rotationOrigin":  [
+                                                9.968738,
+                                                8.100058,
+                                                9.694313
+                                            ],
+                         "rotationX":  -13.0,
+                         "rotationY":  -108.0,
+                         "scaleX":  1.0,
+                         "scaleY":  1.0,
+                         "scaleZ":  1.0,
+                         "renderPass":  -1,
+                         "stepParentName":  "JalapenoRoot",
+                         "renderInEditor":  true,
+                         "uv":  [
+                                    0.0,
+                                    0.0
+                                ]
+                     },
+                     {
+                         "name":  "Leaf18",
+                         "from":  [
+                                      6.356454,
+                                      6.567991,
+                                      4.506788
+                                  ],
+                         "to":  [
+                                    10.956454,
+                                    6.587991,
+                                    6.906788
+                                ],
+                         "shade":  true,
+                         "faces":  {
+                                       "up":  {
+                                                  "texture":  "#leaf",
+                                                  "uv":  [
+                                                             6.5,
+                                                             8.5,
+                                                             9.5,
+                                                             15.0
+                                                         ],
+                                                  "rotation":  90.0,
+                                                  "enabled":  true,
+                                                  "autoUv":  false,
+                                                  "snapUV":  false,
+                                                  "rotationIndex":  1,
+                                                  "windMode":  [
+                                                                   0,
+                                                                   7,
+                                                                   7,
+                                                                   0
+                                                               ]
+                                              }
+                                   },
+                         "rotationOrigin":  [
+                                                6.356454,
+                                                6.567991,
+                                                4.506788
+                                            ],
+                         "rotationY":  27.0,
+                         "rotationZ":  -17.0,
+                         "scaleX":  1.0,
+                         "scaleY":  1.0,
+                         "scaleZ":  1.0,
+                         "renderPass":  -1,
+                         "stepParentName":  "JalapenoRoot",
+                         "renderInEditor":  true,
+                         "uv":  [
+                                    0.0,
+                                    0.0
+                                ]
+                     },
+                     {
+                         "name":  "Leaf19",
+                         "from":  [
+                                      8.988211,
+                                      9.387186,
+                                      13.456132
+                                  ],
+                         "to":  [
+                                    12.988211,
+                                    9.407186,
+                                    19.456132
+                                ],
+                         "shade":  true,
+                         "faces":  {
+                                       "up":  {
+                                                  "texture":  "#leaf",
+                                                  "uv":  [
+                                                             6.5,
+                                                             8.5,
+                                                             9.5,
+                                                             15.5
+                                                         ],
+                                                  "enabled":  true,
+                                                  "autoUv":  false,
+                                                  "snapUV":  false,
+                                                  "windMode":  [
+                                                                   0,
+                                                                   0,
+                                                                   7,
+                                                                   7
+                                                               ]
+                                              }
+                                   },
+                         "rotationOrigin":  [
+                                                8.988211,
+                                                9.387186,
+                                                13.456132
+                                            ],
+                         "rotationX":  20.0,
+                         "rotationY":  -180.0,
+                         "scaleX":  1.0,
+                         "scaleY":  1.0,
+                         "scaleZ":  1.0,
+                         "renderPass":  -1,
+                         "stepParentName":  "JalapenoRoot",
+                         "renderInEditor":  true,
+                         "uv":  [
+                                    0.0,
+                                    0.0
+                                ]
+                     },
+                     {
+                         "name":  "Leaf20",
+                         "from":  [
+                                      8.562075,
+                                      6.376271,
+                                      7.550217
+                                  ],
+                         "to":  [
+                                    13.562075,
+                                    6.396271,
+                                    10.550217
+                                ],
+                         "shade":  true,
+                         "faces":  {
+                                       "up":  {
+                                                  "texture":  "#leaf",
+                                                  "uv":  [
+                                                             6.5,
+                                                             8.5,
+                                                             9.5,
+                                                             15.0
+                                                         ],
+                                                  "rotation":  90.0,
+                                                  "enabled":  true,
+                                                  "autoUv":  false,
+                                                  "snapUV":  false,
+                                                  "rotationIndex":  1,
+                                                  "windMode":  [
+                                                                   0,
+                                                                   7,
+                                                                   7,
+                                                                   0
+                                                               ]
+                                              }
+                                   },
+                         "rotationOrigin":  [
+                                                8.562075,
+                                                6.376271,
+                                                7.550217
+                                            ],
+                         "rotationY":  -67.0,
+                         "rotationZ":  -17.0,
+                         "scaleX":  1.0,
+                         "scaleY":  1.0,
+                         "scaleZ":  1.0,
+                         "renderPass":  -1,
+                         "stepParentName":  "JalapenoRoot",
+                         "renderInEditor":  true,
+                         "uv":  [
+                                    0.0,
+                                    0.0
+                                ]
+                     },
+                     {
+                         "name":  "Leaf21",
+                         "from":  [
+                                      6.656208,
+                                      10.597583,
+                                      7.134086
+                                  ],
+                         "to":  [
+                                    9.656208,
+                                    10.617583,
+                                    10.134086
+                                ],
+                         "shade":  true,
+                         "faces":  {
+                                       "up":  {
+                                                  "texture":  "#leaf",
+                                                  "uv":  [
+                                                             6.5,
+                                                             8.5,
+                                                             9.5,
+                                                             15.0
+                                                         ],
+                                                  "rotation":  90.0,
+                                                  "enabled":  true,
+                                                  "autoUv":  false,
+                                                  "snapUV":  false,
+                                                  "rotationIndex":  1,
+                                                  "windMode":  [
+                                                                   0,
+                                                                   0,
+                                                                   7,
+                                                                   7
+                                                               ]
+                                              }
+                                   },
+                         "rotationOrigin":  [
+                                                6.656208,
+                                                10.597583,
+                                                7.134086
+                                            ],
+                         "rotationY":  61.0,
+                         "rotationZ":  -17.0,
+                         "scaleX":  1.0,
+                         "scaleY":  1.0,
+                         "scaleZ":  1.0,
+                         "renderPass":  -1,
+                         "stepParentName":  "JalapenoRoot",
+                         "renderInEditor":  true,
+                         "uv":  [
+                                    0.0,
+                                    0.0
+                                ]
+                     },
+                     {
+                         "name":  "Leaf13 (2)",
+                         "from":  [
+                                      5.006988,
+                                      6.746115,
+                                      11.579412
+                                  ],
+                         "to":  [
+                                    7.606988,
+                                    6.766115,
+                                    15.579412
+                                ],
+                         "shade":  true,
+                         "faces":  {
+                                       "up":  {
+                                                  "texture":  "#leaf",
+                                                  "uv":  [
+                                                             6.0,
+                                                             1.0,
+                                                             10.0,
+                                                             7.0
+                                                         ],
+                                                  "enabled":  true,
+                                                  "autoUv":  false,
+                                                  "snapUV":  false,
+                                                  "windMode":  [
+                                                                   0,
+                                                                   0,
+                                                                   7,
+                                                                   7
+                                                               ]
+                                              }
+                                   },
+                         "rotationOrigin":  [
+                                                5.006988,
+                                                6.746115,
+                                                11.579412
+                                            ],
+                         "rotationX":  47.0,
+                         "rotationY":  128.0,
+                         "rotationZ":  -44.0,
+                         "scaleX":  1.0,
+                         "scaleY":  1.0,
+                         "scaleZ":  1.0,
+                         "renderPass":  -1,
+                         "stepParentName":  "JalapenoRoot",
+                         "renderInEditor":  true,
+                         "uv":  [
+                                    0.0,
+                                    0.0
+                                ]
+                     }
+                 ],
+    "textureWidth":  16,
+    "textureHeight":  16,
+    "textureSizes":  {
+                         "stem":  [
+                                      16,
+                                      16
+                                  ],
+                         "leaf":  [
+                                      16,
+                                      16
+                                  ],
+                         "flower":  [
+                                        16,
+                                        16
+                                    ],
+                         "pepper":  [
+                                        16,
+                                        16
+                                    ]
+                     }
+}

@@ -1,0 +1,228 @@
+﻿{
+    "code":  "crop",
+    "class":  "BlockPerennialPepperPlant",
+    "variantgroups":  [
+                          {
+                              "code":  "type",
+                              "states":  [
+                                             "jalapeno",
+                                             "habanero",
+                                             "serrano",
+                                             "cayenne",
+                                             "poblano",
+                                             "bell-pepper",
+                                             "banana-pepper",
+                                             "ghost-pepper"
+                                         ]
+                          },
+                          {
+                              "code":  "stage",
+                              "states":  [
+                                             "1",
+                                             "2",
+                                             "3",
+                                             "4",
+                                             "5",
+                                             "6",
+                                             "7",
+                                             "8",
+                                             "9",
+                                             "10",
+                                             "11"
+                                         ]
+                          }
+                      ],
+    "creativeinventory":  {
+                              "general":  [
+                                              "*-8"
+                                          ],
+                              "flora":  [
+                                            "*-8"
+                                        ]
+                          },
+    "renderpass":  "OpaqueNoCull",
+    "shape":  {
+                  "base":  "block/plant/crop/{type}/stage{stage}",
+                  "alternates":  [
+                                     {
+                                         "base":  "block/plant/crop/{type}/stage{stage}",
+                                         "rotateY":  90
+                                     },
+                                     {
+                                         "base":  "block/plant/crop/{type}/stage{stage}",
+                                         "rotateY":  180
+                                     },
+                                     {
+                                         "base":  "block/plant/crop/{type}/stage{stage}",
+                                         "rotateY":  270
+                                     }
+                                 ]
+              },
+    "textures":  {
+                     "stem":  {
+                                  "base":  "block/plant/{type}/stem"
+                              },
+                     "leaf":  {
+                                  "base":  "block/plant/{type}/leaf"
+                              },
+                     "flower":  {
+                                    "base":  "block/plant/{type}/flower"
+                                },
+                     "pepper":  {
+                                    "base":  "block/plant/{type}/pepper"
+                                }
+                 },
+    "blockmaterial":  "Plant",
+    "faceCullMode":  "NeverCull",
+    "attributes":  {
+                       "foodTagsByType":  {
+                                              "*-1":  [
+                                                          "nibbleCrop"
+                                                      ],
+                                              "*-2":  [
+                                                          "nibbleCrop"
+                                                      ],
+                                              "*-3":  [
+                                                          "nibbleCrop"
+                                                      ]
+                                          },
+                       "butterflyFeedByType":  {
+                                                   "*-5":  true,
+                                                   "*-6":  true,
+                                                   "*-7":  true,
+                                                   "*-8":  true,
+                                                   "*":  false
+                                               },
+                       "beeFeedByType":  {
+                                             "*-5":  true,
+                                             "*-6":  true,
+                                             "*-7":  true,
+                                             "*-8":  true,
+                                             "*":  false
+                                         },
+                       "handbook":  {
+                                        "include":  true
+                                    },
+                       "perennialPepperPlant":  {
+                                                    "growTemperature":  8,
+                                                    "heatStopTemperature":  38,
+                                                    "initialHoursPerStage":  31,
+                                                    "fruitingHoursPerStage":  24,
+                                                    "matureLeafyStage":  4,
+                                                    "floweringStage":  5,
+                                                    "postHarvestStage":  10,
+                                                    "harvestStage":  8,
+                                                    "dormantStage":  9,
+                                                    "harvestPepperMin":  16,
+                                                    "harvestPepperMax":  24,
+                                                    "seedChanceOnHarvest":  0.15,
+                                                    "matureRegrowthStage":  11,
+                                                    "harvestDropStackSize":  4
+                                                }
+                   },
+    "sideopaque":  {
+                       "all":  false
+                   },
+    "sidesolid":  {
+                      "all":  false
+                  },
+    "replaceable":  3000,
+    "lightAbsorption":  0,
+    "resistance":  0.5,
+    "sounds":  {
+                   "place":  "block/plant",
+                   "break":  "block/plant",
+                   "hit":  "block/plant"
+               },
+    "rainPermeable":  false,
+    "dropsByType":  {
+                        "*jalapeno-*":  [
+                                            {
+                                                "type":  "item",
+                                                "code":  "seeds-jalapeno",
+                                                "quantity":  {
+                                                                 "avg":  1
+                                                             }
+                                            }
+                                        ],
+                        "*habanero-*":  [
+                                            {
+                                                "type":  "item",
+                                                "code":  "seeds-habanero",
+                                                "quantity":  {
+                                                                 "avg":  1
+                                                             }
+                                            }
+                                        ],
+                        "*serrano-*":  [
+                                           {
+                                               "type":  "item",
+                                               "code":  "seeds-serrano",
+                                               "quantity":  {
+                                                                "avg":  1
+                                                            }
+                                           }
+                                       ],
+                        "*cayenne-*":  [
+                                           {
+                                               "type":  "item",
+                                               "code":  "seeds-cayenne",
+                                               "quantity":  {
+                                                                "avg":  1
+                                                            }
+                                           }
+                                       ],
+                        "*poblano-*":  [
+                                           {
+                                               "type":  "item",
+                                               "code":  "seeds-poblano",
+                                               "quantity":  {
+                                                                "avg":  1
+                                                            }
+                                           }
+                                       ],
+                        "*bell-pepper-*":  [
+                                               {
+                                                   "type":  "item",
+                                                   "code":  "seeds-bell-pepper",
+                                                   "quantity":  {
+                                                                    "avg":  1
+                                                                }
+                                               }
+                                           ],
+                        "*banana-pepper-*":  [
+                                                 {
+                                                     "type":  "item",
+                                                     "code":  "seeds-banana-pepper",
+                                                     "quantity":  {
+                                                                      "avg":  1
+                                                                  }
+                                                 }
+                                             ],
+                        "*ghost-pepper-*":  [
+                                                {
+                                                    "type":  "item",
+                                                    "code":  "seeds-ghost-pepper",
+                                                    "quantity":  {
+                                                                     "avg":  1
+                                                                 }
+                                                }
+                                            ]
+                    },
+    "collisionbox":  null,
+    "selectionbox":  {
+                         "x1":  0.0625,
+                         "y1":  0,
+                         "z1":  0.0625,
+                         "x2":  0.9375,
+                         "y2":  1,
+                         "z2":  0.9375
+                     },
+    "materialDensity":  200,
+    "combustibleProps":  {
+                             "burnTemperature":  600,
+                             "burnDuration":  10
+                         },
+    "frostable":  true,
+    "entityClass":  "PerennialPepperPlant"
+}

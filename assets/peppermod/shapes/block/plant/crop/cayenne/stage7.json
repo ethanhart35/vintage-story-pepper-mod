@@ -1,0 +1,633 @@
+﻿{
+    "editor":  {
+                   "allAngles":  true,
+                   "backdrops":  [
+
+                                 ],
+                   "attachments":  [
+
+                                   ]
+               },
+    "textures":  {
+                     "stem":  "block/plant/cayenne/stem",
+                     "leaf":  "block/plant/cayenne/leaf",
+                     "flower":  "block/plant/cayenne/flower",
+                     "pepper":  "block/plant/cayenne/pepper"
+                 },
+    "elements":  [
+                     {
+                         "name":  "CayenneRoot",
+                         "from":  [
+                                      0,
+                                      0,
+                                      0
+                                  ],
+                         "to":  [
+                                    0,
+                                    0,
+                                    0
+                                ],
+                         "faces":  {
+
+                                   },
+                         "rotationOrigin":  [
+                                                0,
+                                                0,
+                                                0
+                                            ],
+                         "scaleX":  1,
+                         "scaleY":  1,
+                         "scaleZ":  1,
+                         "renderPass":  -1,
+                         "children":  [
+
+                                      ],
+                         "renderInEditor":  true,
+                         "uv":  [
+                                    0,
+                                    0
+                                ]
+                     },
+                     {
+                         "name":  "Placeholder-Stem",
+                         "from":  [
+                                      7.75,
+                                      0,
+                                      7.75
+                                  ],
+                         "to":  [
+                                    8.25,
+                                    9.25,
+                                    8.25
+                                ],
+                         "shade":  true,
+                         "faces":  {
+                                       "north":  {
+                                                     "texture":  "#stem",
+                                                     "uv":  [
+                                                                0,
+                                                                0,
+                                                                4,
+                                                                4
+                                                            ],
+                                                     "enabled":  true,
+                                                     "autoUv":  false,
+                                                     "snapUV":  false,
+                                                     "windMode":  [
+                                                                      0,
+                                                                      0,
+                                                                      0,
+                                                                      0
+                                                                  ]
+                                                 },
+                                       "east":  {
+                                                    "texture":  "#stem",
+                                                    "uv":  [
+                                                               0,
+                                                               0,
+                                                               4,
+                                                               4
+                                                           ],
+                                                    "enabled":  true,
+                                                    "autoUv":  false,
+                                                    "snapUV":  false,
+                                                    "windMode":  [
+                                                                     0,
+                                                                     0,
+                                                                     0,
+                                                                     0
+                                                                 ]
+                                                },
+                                       "south":  {
+                                                     "texture":  "#stem",
+                                                     "uv":  [
+                                                                0,
+                                                                0,
+                                                                4,
+                                                                4
+                                                            ],
+                                                     "enabled":  true,
+                                                     "autoUv":  false,
+                                                     "snapUV":  false,
+                                                     "windMode":  [
+                                                                      0,
+                                                                      0,
+                                                                      0,
+                                                                      0
+                                                                  ]
+                                                 },
+                                       "west":  {
+                                                    "texture":  "#stem",
+                                                    "uv":  [
+                                                               0,
+                                                               0,
+                                                               4,
+                                                               4
+                                                           ],
+                                                    "enabled":  true,
+                                                    "autoUv":  false,
+                                                    "snapUV":  false,
+                                                    "windMode":  [
+                                                                     0,
+                                                                     0,
+                                                                     0,
+                                                                     0
+                                                                 ]
+                                                },
+                                       "up":  {
+                                                  "texture":  "#stem",
+                                                  "uv":  [
+                                                             0,
+                                                             0,
+                                                             4,
+                                                             4
+                                                         ],
+                                                  "enabled":  true,
+                                                  "autoUv":  false,
+                                                  "snapUV":  false,
+                                                  "windMode":  [
+                                                                   0,
+                                                                   0,
+                                                                   0,
+                                                                   0
+                                                               ]
+                                              },
+                                       "down":  {
+                                                    "texture":  "#stem",
+                                                    "uv":  [
+                                                               0,
+                                                               0,
+                                                               4,
+                                                               4
+                                                           ],
+                                                    "enabled":  true,
+                                                    "autoUv":  false,
+                                                    "snapUV":  false,
+                                                    "windMode":  [
+                                                                     0,
+                                                                     0,
+                                                                     0,
+                                                                     0
+                                                                 ]
+                                                }
+                                   },
+                         "rotationOrigin":  [
+                                                8,
+                                                0,
+                                                8
+                                            ],
+                         "scaleX":  1,
+                         "scaleY":  1,
+                         "scaleZ":  1,
+                         "renderPass":  -1,
+                         "stepParentName":  "CayenneRoot",
+                         "renderInEditor":  true,
+                         "uv":  [
+                                    0,
+                                    0
+                                ]
+                     },
+                     {
+                         "name":  "Placeholder-Leaf-Left",
+                         "from":  [
+                                      8,
+                                      4.1625000000000005,
+                                      8
+                                  ],
+                         "to":  [
+                                    11.649999999999999,
+                                    4.1925000000000008,
+                                    11.649999999999999
+                                ],
+                         "shade":  true,
+                         "faces":  {
+                                       "up":  {
+                                                  "texture":  "#leaf",
+                                                  "uv":  [
+                                                             1,
+                                                             1,
+                                                             7,
+                                                             10
+                                                         ],
+                                                  "enabled":  true,
+                                                  "autoUv":  false,
+                                                  "snapUV":  false,
+                                                  "windMode":  [
+                                                                   0,
+                                                                   7,
+                                                                   7,
+                                                                   0
+                                                               ]
+                                              },
+                                       "down":  {
+                                                    "texture":  "#leaf",
+                                                    "uv":  [
+                                                               1,
+                                                               1,
+                                                               7,
+                                                               10
+                                                           ],
+                                                    "enabled":  true,
+                                                    "autoUv":  false,
+                                                    "snapUV":  false,
+                                                    "windMode":  [
+                                                                     7,
+                                                                     7,
+                                                                     0,
+                                                                     0
+                                                                 ]
+                                                }
+                                   },
+                         "rotationOrigin":  [
+                                                8,
+                                                4.1625000000000005,
+                                                8
+                                            ],
+                         "scaleX":  1,
+                         "scaleY":  1,
+                         "scaleZ":  1,
+                         "renderPass":  -1,
+                         "stepParentName":  "CayenneRoot",
+                         "renderInEditor":  true,
+                         "uv":  [
+                                    0,
+                                    0
+                                ],
+                         "rotationX":  15,
+                         "rotationY":  -35,
+                         "rotationZ":  0
+                     },
+                     {
+                         "name":  "Placeholder-Leaf-Right",
+                         "from":  [
+                                      4.3500000000000005,
+                                      4.2625,
+                                      4.3500000000000005
+                                  ],
+                         "to":  [
+                                    8,
+                                    4.2925,
+                                    8
+                                ],
+                         "shade":  true,
+                         "faces":  {
+                                       "up":  {
+                                                  "texture":  "#leaf",
+                                                  "uv":  [
+                                                             8,
+                                                             1,
+                                                             14,
+                                                             10
+                                                         ],
+                                                  "enabled":  true,
+                                                  "autoUv":  false,
+                                                  "snapUV":  false,
+                                                  "windMode":  [
+                                                                   7,
+                                                                   7,
+                                                                   0,
+                                                                   0
+                                                               ]
+                                              },
+                                       "down":  {
+                                                    "texture":  "#leaf",
+                                                    "uv":  [
+                                                               8,
+                                                               1,
+                                                               14,
+                                                               10
+                                                           ],
+                                                    "enabled":  true,
+                                                    "autoUv":  false,
+                                                    "snapUV":  false,
+                                                    "windMode":  [
+                                                                     7,
+                                                                     0,
+                                                                     0,
+                                                                     7
+                                                                 ]
+                                                }
+                                   },
+                         "rotationOrigin":  [
+                                                8,
+                                                4.1625000000000005,
+                                                8
+                                            ],
+                         "scaleX":  1,
+                         "scaleY":  1,
+                         "scaleZ":  1,
+                         "renderPass":  -1,
+                         "stepParentName":  "CayenneRoot",
+                         "renderInEditor":  true,
+                         "uv":  [
+                                    0,
+                                    0
+                                ],
+                         "rotationX":  -15,
+                         "rotationY":  35,
+                         "rotationZ":  0
+                     },
+                     {
+                         "name":  "Placeholder-Leaf-Back",
+                         "from":  [
+                                      7,
+                                      4.7625,
+                                      8
+                                  ],
+                         "to":  [
+                                    9,
+                                    4.7925,
+                                    11.649999999999999
+                                ],
+                         "shade":  true,
+                         "faces":  {
+                                       "up":  {
+                                                  "texture":  "#leaf",
+                                                  "uv":  [
+                                                             2,
+                                                             7,
+                                                             8,
+                                                             15
+                                                         ],
+                                                  "enabled":  true,
+                                                  "autoUv":  false,
+                                                  "snapUV":  false,
+                                                  "windMode":  [
+                                                                   0,
+                                                                   0,
+                                                                   7,
+                                                                   7
+                                                               ]
+                                              },
+                                       "down":  {
+                                                    "texture":  "#leaf",
+                                                    "uv":  [
+                                                               2,
+                                                               7,
+                                                               8,
+                                                               15
+                                                           ],
+                                                    "enabled":  true,
+                                                    "autoUv":  false,
+                                                    "snapUV":  false,
+                                                    "windMode":  [
+                                                                     7,
+                                                                     7,
+                                                                     0,
+                                                                     0
+                                                                 ]
+                                                }
+                                   },
+                         "rotationOrigin":  [
+                                                8,
+                                                4.7625,
+                                                8
+                                            ],
+                         "scaleX":  1,
+                         "scaleY":  1,
+                         "scaleZ":  1,
+                         "renderPass":  -1,
+                         "stepParentName":  "CayenneRoot",
+                         "renderInEditor":  true,
+                         "uv":  [
+                                    0,
+                                    0
+                                ],
+                         "rotationX":  12,
+                         "rotationY":  180,
+                         "rotationZ":  0
+                     },
+                     {
+                         "name":  "Placeholder-Flower",
+                         "from":  [
+                                      7.35,
+                                      8.75,
+                                      8.2
+                                  ],
+                         "to":  [
+                                    8.65,
+                                    8.78,
+                                    9.5
+                                ],
+                         "shade":  true,
+                         "faces":  {
+                                       "up":  {
+                                                  "texture":  "#flower",
+                                                  "uv":  [
+                                                             0,
+                                                             0,
+                                                             16,
+                                                             16
+                                                         ],
+                                                  "enabled":  true,
+                                                  "autoUv":  false,
+                                                  "snapUV":  false,
+                                                  "windMode":  [
+                                                                   0,
+                                                                   0,
+                                                                   7,
+                                                                   7
+                                                               ]
+                                              },
+                                       "down":  {
+                                                    "texture":  "#flower",
+                                                    "uv":  [
+                                                               0,
+                                                               0,
+                                                               16,
+                                                               16
+                                                           ],
+                                                    "enabled":  true,
+                                                    "autoUv":  false,
+                                                    "snapUV":  false,
+                                                    "windMode":  [
+                                                                     7,
+                                                                     7,
+                                                                     0,
+                                                                     0
+                                                                 ]
+                                                }
+                                   },
+                         "rotationOrigin":  [
+                                                8,
+                                                8.75,
+                                                8.2
+                                            ],
+                         "scaleX":  1,
+                         "scaleY":  1,
+                         "scaleZ":  1,
+                         "renderPass":  -1,
+                         "stepParentName":  "CayenneRoot",
+                         "renderInEditor":  true,
+                         "uv":  [
+                                    0,
+                                    0
+                                ],
+                         "rotationX":  25,
+                         "rotationY":  0,
+                         "rotationZ":  0
+                     },
+                     {
+                         "name":  "Placeholder-Pepper",
+                         "from":  [
+                                      8.25,
+                                      7.25,
+                                      7
+                                  ],
+                         "to":  [
+                                    9.05,
+                                    8.5300000000000011,
+                                    7.8
+                                ],
+                         "shade":  true,
+                         "faces":  {
+                                       "north":  {
+                                                     "texture":  "#pepper",
+                                                     "uv":  [
+                                                                0,
+                                                                0,
+                                                                4,
+                                                                4
+                                                            ],
+                                                     "enabled":  true,
+                                                     "autoUv":  false,
+                                                     "snapUV":  false,
+                                                     "windMode":  [
+                                                                      0,
+                                                                      0,
+                                                                      0,
+                                                                      0
+                                                                  ]
+                                                 },
+                                       "east":  {
+                                                    "texture":  "#pepper",
+                                                    "uv":  [
+                                                               0,
+                                                               0,
+                                                               4,
+                                                               4
+                                                           ],
+                                                    "enabled":  true,
+                                                    "autoUv":  false,
+                                                    "snapUV":  false,
+                                                    "windMode":  [
+                                                                     0,
+                                                                     0,
+                                                                     0,
+                                                                     0
+                                                                 ]
+                                                },
+                                       "south":  {
+                                                     "texture":  "#pepper",
+                                                     "uv":  [
+                                                                0,
+                                                                0,
+                                                                4,
+                                                                4
+                                                            ],
+                                                     "enabled":  true,
+                                                     "autoUv":  false,
+                                                     "snapUV":  false,
+                                                     "windMode":  [
+                                                                      0,
+                                                                      0,
+                                                                      0,
+                                                                      0
+                                                                  ]
+                                                 },
+                                       "west":  {
+                                                    "texture":  "#pepper",
+                                                    "uv":  [
+                                                               0,
+                                                               0,
+                                                               4,
+                                                               4
+                                                           ],
+                                                    "enabled":  true,
+                                                    "autoUv":  false,
+                                                    "snapUV":  false,
+                                                    "windMode":  [
+                                                                     0,
+                                                                     0,
+                                                                     0,
+                                                                     0
+                                                                 ]
+                                                },
+                                       "up":  {
+                                                  "texture":  "#pepper",
+                                                  "uv":  [
+                                                             0,
+                                                             0,
+                                                             4,
+                                                             4
+                                                         ],
+                                                  "enabled":  true,
+                                                  "autoUv":  false,
+                                                  "snapUV":  false,
+                                                  "windMode":  [
+                                                                   0,
+                                                                   0,
+                                                                   0,
+                                                                   0
+                                                               ]
+                                              },
+                                       "down":  {
+                                                    "texture":  "#pepper",
+                                                    "uv":  [
+                                                               0,
+                                                               0,
+                                                               4,
+                                                               4
+                                                           ],
+                                                    "enabled":  true,
+                                                    "autoUv":  false,
+                                                    "snapUV":  false,
+                                                    "windMode":  [
+                                                                     0,
+                                                                     0,
+                                                                     0,
+                                                                     0
+                                                                 ]
+                                                }
+                                   },
+                         "rotationOrigin":  [
+                                                8.25,
+                                                7.25,
+                                                7
+                                            ],
+                         "scaleX":  1,
+                         "scaleY":  1,
+                         "scaleZ":  1,
+                         "renderPass":  -1,
+                         "stepParentName":  "CayenneRoot",
+                         "renderInEditor":  true,
+                         "uv":  [
+                                    0,
+                                    0
+                                ],
+                         "rotationX":  0,
+                         "rotationY":  0,
+                         "rotationZ":  -10
+                     }
+                 ],
+    "textureWidth":  16,
+    "textureHeight":  16,
+    "textureSizes":  {
+                         "stem":  [
+                                      16,
+                                      16
+                                  ],
+                         "leaf":  [
+                                      16,
+                                      16
+                                  ],
+                         "flower":  [
+                                        16,
+                                        16
+                                    ],
+                         "pepper":  [
+                                        16,
+                                        16
+                                    ]
+                     }
+}

@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <OutputType>Library</OutputType>
+    <AssemblyName>peppermod</AssemblyName>
+    <RootNamespace>PepperMod</RootNamespace>
+    <Nullable>disable</Nullable>
+    <LangVersion>latest</LangVersion>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(VINTAGE_STORY)' == ''">
+    <VintageStoryInstall>$(AppData)\Vintagestory</VintageStoryInstall>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(VINTAGE_STORY)' != ''">
+    <VintageStoryInstall>$(VINTAGE_STORY)</VintageStoryInstall>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="VintagestoryAPI">
+      <HintPath>$(VintageStoryInstall)\VintagestoryAPI.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,114 @@
+[
+  {
+    "comment": "Rare wild jalapeno and serrano pepper plants in warm fertile regions",
+    "blockCodes": [
+      "peppermod:crop-jalapeno-4",
+      "peppermod:crop-jalapeno-5",
+      "peppermod:crop-jalapeno-6",
+      "peppermod:crop-jalapeno-7",
+      "peppermod:crop-jalapeno-8",
+      "peppermod:crop-serrano-4",
+      "peppermod:crop-serrano-5",
+      "peppermod:crop-serrano-6",
+      "peppermod:crop-serrano-7",
+      "peppermod:crop-serrano-8"
+    ],
+    "quantity": {
+      "avg": 2,
+      "var": 1
+    },
+    "chance": 0.025,
+    "placement": "OnSurface",
+    "minTemp": 12,
+    "maxTemp": 34,
+    "minRain": 0.25,
+    "maxRain": 0.95,
+    "minFertility": 20,
+    "minY": 0.42,
+    "maxY": 0.85
+  },
+  {
+    "comment": "Rare sweet and mild pepper plants in warm fertile regions",
+    "blockCodes": [
+      "peppermod:crop-poblano-4",
+      "peppermod:crop-poblano-5",
+      "peppermod:crop-poblano-6",
+      "peppermod:crop-poblano-7",
+      "peppermod:crop-poblano-8",
+      "peppermod:crop-bell-pepper-4",
+      "peppermod:crop-bell-pepper-5",
+      "peppermod:crop-bell-pepper-6",
+      "peppermod:crop-bell-pepper-7",
+      "peppermod:crop-bell-pepper-8",
+      "peppermod:crop-banana-pepper-4",
+      "peppermod:crop-banana-pepper-5",
+      "peppermod:crop-banana-pepper-6",
+      "peppermod:crop-banana-pepper-7",
+      "peppermod:crop-banana-pepper-8"
+    ],
+    "quantity": {
+      "avg": 2,
+      "var": 1
+    },
+    "chance": 0.018,
+    "placement": "OnSurface",
+    "minTemp": 15,
+    "maxTemp": 35,
+    "minRain": 0.25,
+    "maxRain": 0.9,
+    "minFertility": 25,
+    "minY": 0.42,
+    "maxY": 0.85
+  },
+  {
+    "comment": "Sparse cayenne pepper plants in hot, somewhat dry regions",
+    "blockCodes": [
+      "peppermod:crop-cayenne-4",
+      "peppermod:crop-cayenne-5",
+      "peppermod:crop-cayenne-6",
+      "peppermod:crop-cayenne-7",
+      "peppermod:crop-cayenne-8"
+    ],
+    "quantity": {
+      "avg": 1.5,
+      "var": 1
+    },
+    "chance": 0.012,
+    "placement": "OnSurface",
+    "minTemp": 18,
+    "maxTemp": 40,
+    "minRain": 0.1,
+    "maxRain": 0.7,
+    "minFertility": 15,
+    "minY": 0.42,
+    "maxY": 0.85
+  },
+  {
+    "comment": "Very rare tropical hot pepper plants",
+    "blockCodes": [
+      "peppermod:crop-habanero-4",
+      "peppermod:crop-habanero-5",
+      "peppermod:crop-habanero-6",
+      "peppermod:crop-habanero-7",
+      "peppermod:crop-habanero-8",
+      "peppermod:crop-ghost-pepper-4",
+      "peppermod:crop-ghost-pepper-5",
+      "peppermod:crop-ghost-pepper-6",
+      "peppermod:crop-ghost-pepper-7",
+      "peppermod:crop-ghost-pepper-8"
+    ],
+    "quantity": {
+      "avg": 1.5,
+      "var": 1
+    },
+    "chance": 0.008,
+    "placement": "OnSurface",
+    "minTemp": 22,
+    "maxTemp": 42,
+    "minRain": 0.35,
+    "maxRain": 0.95,
+    "minFertility": 25,
+    "minY": 0.42,
+    "maxY": 0.85
+  }
+]

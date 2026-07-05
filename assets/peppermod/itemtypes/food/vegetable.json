@@ -1,0 +1,128 @@
+﻿{
+    "code":  "vegetable",
+    "variantgroups":  [
+                          {
+                              "code":  "type",
+                              "states":  [
+                                             "jalapeno",
+                                             "habanero",
+                                             "serrano",
+                                             "cayenne",
+                                             "poblano",
+                                             "bell-pepper",
+                                             "banana-pepper",
+                                             "ghost-pepper"
+                                         ]
+                          }
+                      ],
+    "creativeinventory":  {
+                              "general":  [
+                                              "*"
+                                          ],
+                              "items":  [
+                                            "*"
+                                        ]
+                          },
+    "texture":  {
+                    "base":  "item/food/vegetable/{type}"
+                },
+    "maxstacksize":  64,
+    "nutritionProps":  {
+                           "satiety":  80,
+                           "health":  0,
+                           "foodcategory":  "Vegetable"
+                       },
+    "transitionableProps":  [
+                                {
+                                    "type":  "Perish",
+                                    "freshHours":  {
+                                                       "avg":  336,
+                                                       "var":  48
+                                                   },
+                                    "transitionHours":  {
+                                                            "avg":  24
+                                                        },
+                                    "transitionedStack":  {
+                                                              "type":  "item",
+                                                              "code":  "game:rot"
+                                                          },
+                                    "transitionRatio":  0.25
+                                }
+                            ],
+    "materialDensity":  200,
+    "shape":  {
+                  "base":  "item/food/vegetable/{type}"
+              },
+    "guiTransform":  {
+                         "translation":  {
+                                             "x":  0,
+                                             "y":  0,
+                                             "z":  0
+                                         },
+                         "rotation":  {
+                                          "x":  -35,
+                                          "y":  45,
+                                          "z":  0
+                                      },
+                         "origin":  {
+                                        "x":  0.5,
+                                        "y":  0.5,
+                                        "z":  0.5
+                                    },
+                         "scale":  2.2
+                     },
+    "groundTransform":  {
+                            "translation":  {
+                                                "x":  0,
+                                                "y":  0.04,
+                                                "z":  0
+                                            },
+                            "rotation":  {
+                                             "x":  0,
+                                             "y":  20,
+                                             "z":  0
+                                         },
+                            "origin":  {
+                                           "x":  0.5,
+                                           "y":  0.5,
+                                           "z":  0.5
+                                       },
+                            "scale":  1.25
+                        },
+    "tpHandTransform":  {
+                            "translation":  {
+                                                "x":  -0.35,
+                                                "y":  -0.05,
+                                                "z":  -0.55
+                                            },
+                            "rotation":  {
+                                             "x":  35,
+                                             "y":  20,
+                                             "z":  -20
+                                         },
+                            "origin":  {
+                                           "x":  0.5,
+                                           "y":  0.5,
+                                           "z":  0.5
+                                       },
+                            "scale":  0.65
+                        },
+    "fpHandTransform":  {
+                            "translation":  {
+                                                "x":  0.1,
+                                                "y":  -0.1,
+                                                "z":  -0.25
+                                            },
+                            "rotation":  {
+                                             "x":  45,
+                                             "y":  20,
+                                             "z":  -35
+                                         },
+                            "origin":  {
+                                           "x":  0.5,
+                                           "y":  0.5,
+                                           "z":  0.5
+                                       },
+                            "scale":  0.8
+                        }
+}

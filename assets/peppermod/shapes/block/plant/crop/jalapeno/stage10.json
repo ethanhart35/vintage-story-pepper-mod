@@ -1,0 +1,1978 @@
+﻿{
+    "editor":  {
+                   "allAngles":  true,
+                   "entityTextureMode":  false
+               },
+    "textureWidth":  16,
+    "textureHeight":  16,
+    "textures":  {
+                     "stem":  "block/plant/jalapeno/stem",
+                     "leaf":  "block/plant/jalapeno/leaf",
+                     "flower":  "block/plant/jalapeno/flower",
+                     "pepper":  "block/plant/jalapeno/pepper"
+                 },
+    "elements":  [
+                     {
+                         "name":  "JalapenoRoot",
+                         "from":  [
+                                      8,
+                                      0,
+                                      8
+                                  ],
+                         "to":  [
+                                    8,
+                                    0,
+                                    8
+                                ],
+                         "shade":  false,
+                         "faces":  {
+                                       "up":  {
+                                                  "texture":  "#stem",
+                                                  "uv":  [
+                                                             0,
+                                                             0,
+                                                             1,
+                                                             1
+                                                         ],
+                                                  "enabled":  false,
+                                                  "autoUv":  false,
+                                                  "snapUV":  false,
+                                                  "windMode":  [
+                                                                   0,
+                                                                   0,
+                                                                   0,
+                                                                   0
+                                                               ]
+                                              }
+                                   },
+                         "rotationOrigin":  [
+                                                8,
+                                                0,
+                                                8
+                                            ],
+                         "scaleX":  1,
+                         "scaleY":  1,
+                         "scaleZ":  1,
+                         "renderPass":  -1,
+                         "renderInEditor":  false,
+                         "uv":  [
+                                    0,
+                                    0
+                                ],
+                         "children":  [
+
+                                      ]
+                     },
+                     {
+                         "name":  "main-stem",
+                         "from":  [
+                                      7.1,
+                                      0,
+                                      7.1
+                                  ],
+                         "to":  [
+                                    8.9,
+                                    24,
+                                    8.9
+                                ],
+                         "rotationOrigin":  [
+                                                8,
+                                                0,
+                                                8
+                                            ],
+                         "faces":  {
+                                       "north":  {
+                                                     "texture":  "#stem",
+                                                     "uv":  [
+                                                                0,
+                                                                0,
+                                                                1,
+                                                                12
+                                                            ],
+                                                     "windMode":  [
+                                                                      0,
+                                                                      0,
+                                                                      0,
+                                                                      0
+                                                                  ]
+                                                 },
+                                       "east":  {
+                                                    "texture":  "#stem",
+                                                    "uv":  [
+                                                               0,
+                                                               0,
+                                                               1,
+                                                               12
+                                                           ],
+                                                    "windMode":  [
+                                                                     0,
+                                                                     0,
+                                                                     0,
+                                                                     0
+                                                                 ]
+                                                },
+                                       "south":  {
+                                                     "texture":  "#stem",
+                                                     "uv":  [
+                                                                0,
+                                                                0,
+                                                                1,
+                                                                12
+                                                            ],
+                                                     "windMode":  [
+                                                                      0,
+                                                                      0,
+                                                                      0,
+                                                                      0
+                                                                  ]
+                                                 },
+                                       "west":  {
+                                                    "texture":  "#stem",
+                                                    "uv":  [
+                                                               0,
+                                                               0,
+                                                               1,
+                                                               12
+                                                           ],
+                                                    "windMode":  [
+                                                                     0,
+                                                                     0,
+                                                                     0,
+                                                                     0
+                                                                 ]
+                                                },
+                                       "up":  {
+                                                  "texture":  "#stem",
+                                                  "uv":  [
+                                                             0,
+                                                             0,
+                                                             1,
+                                                             1
+                                                         ],
+                                                  "windMode":  [
+                                                                   0,
+                                                                   0,
+                                                                   0,
+                                                                   0
+                                                               ]
+                                              },
+                                       "down":  {
+                                                    "texture":  "#stem",
+                                                    "uv":  [
+                                                               0,
+                                                               0,
+                                                               1,
+                                                               1
+                                                           ],
+                                                    "windMode":  [
+                                                                     0,
+                                                                     0,
+                                                                     0,
+                                                                     0
+                                                                 ]
+                                                }
+                                   },
+                         "stepParentName":  "JalapenoRoot"
+                     },
+                     {
+                         "name":  "leaf-1a",
+                         "from":  [
+                                      8,
+                                      3,
+                                      7.7
+                                  ],
+                         "to":  [
+                                    17,
+                                    3.24,
+                                    8.5
+                                ],
+                         "rotationOrigin":  [
+                                                8,
+                                                0,
+                                                8
+                                            ],
+                         "faces":  {
+                                       "north":  {
+                                                     "texture":  "#leaf",
+                                                     "uv":  [
+                                                                0,
+                                                                0,
+                                                                4.5,
+                                                                1
+                                                            ],
+                                                     "windMode":  [
+                                                                      0,
+                                                                      7,
+                                                                      7,
+                                                                      0
+                                                                  ]
+                                                 },
+                                       "east":  {
+                                                    "texture":  "#leaf",
+                                                    "uv":  [
+                                                               0,
+                                                               0,
+                                                               4.5,
+                                                               1
+                                                           ],
+                                                    "windMode":  [
+                                                                     0,
+                                                                     0,
+                                                                     7,
+                                                                     7
+                                                                 ]
+                                                },
+                                       "south":  {
+                                                     "texture":  "#leaf",
+                                                     "uv":  [
+                                                                0,
+                                                                0,
+                                                                4.5,
+                                                                1
+                                                            ],
+                                                     "windMode":  [
+                                                                      7,
+                                                                      0,
+                                                                      0,
+                                                                      7
+                                                                  ]
+                                                 },
+                                       "west":  {
+                                                    "texture":  "#leaf",
+                                                    "uv":  [
+                                                               0,
+                                                               0,
+                                                               4.5,
+                                                               1
+                                                           ],
+                                                    "windMode":  [
+                                                                     0,
+                                                                     0,
+                                                                     7,
+                                                                     7
+                                                                 ]
+                                                },
+                                       "up":  {
+                                                  "texture":  "#leaf",
+                                                  "uv":  [
+                                                             0,
+                                                             0,
+                                                             1,
+                                                             1
+                                                         ],
+                                                  "windMode":  [
+                                                                   0,
+                                                                   7,
+                                                                   7,
+                                                                   0
+                                                               ]
+                                              },
+                                       "down":  {
+                                                    "texture":  "#leaf",
+                                                    "uv":  [
+                                                               0,
+                                                               0,
+                                                               1,
+                                                               1
+                                                           ],
+                                                    "windMode":  [
+                                                                     0,
+                                                                     7,
+                                                                     7,
+                                                                     0
+                                                                 ]
+                                                }
+                                   },
+                         "rotationZ":  8,
+                         "stepParentName":  "JalapenoRoot"
+                     },
+                     {
+                         "name":  "leaf-1b",
+                         "from":  [
+                                      -1,
+                                      3.3,
+                                      7.5
+                                  ],
+                         "to":  [
+                                    8,
+                                    3.54,
+                                    8.3
+                                ],
+                         "rotationOrigin":  [
+                                                8,
+                                                0,
+                                                8
+                                            ],
+                         "faces":  {
+                                       "north":  {
+                                                     "texture":  "#leaf",
+                                                     "uv":  [
+                                                                0,
+                                                                0,
+                                                                4.5,
+                                                                1
+                                                            ],
+                                                     "windMode":  [
+                                                                      7,
+                                                                      0,
+                                                                      0,
+                                                                      7
+                                                                  ]
+                                                 },
+                                       "east":  {
+                                                    "texture":  "#leaf",
+                                                    "uv":  [
+                                                               0,
+                                                               0,
+                                                               4.5,
+                                                               1
+                                                           ],
+                                                    "windMode":  [
+                                                                     0,
+                                                                     0,
+                                                                     7,
+                                                                     7
+                                                                 ]
+                                                },
+                                       "south":  {
+                                                     "texture":  "#leaf",
+                                                     "uv":  [
+                                                                0,
+                                                                0,
+                                                                4.5,
+                                                                1
+                                                            ],
+                                                     "windMode":  [
+                                                                      0,
+                                                                      7,
+                                                                      7,
+                                                                      0
+                                                                  ]
+                                                 },
+                                       "west":  {
+                                                    "texture":  "#leaf",
+                                                    "uv":  [
+                                                               0,
+                                                               0,
+                                                               4.5,
+                                                               1
+                                                           ],
+                                                    "windMode":  [
+                                                                     0,
+                                                                     0,
+                                                                     7,
+                                                                     7
+                                                                 ]
+                                                },
+                                       "up":  {
+                                                  "texture":  "#leaf",
+                                                  "uv":  [
+                                                             0,
+                                                             0,
+                                                             1,
+                                                             1
+                                                         ],
+                                                  "windMode":  [
+                                                                   7,
+                                                                   0,
+                                                                   0,
+                                                                   7
+                                                               ]
+                                              },
+                                       "down":  {
+                                                    "texture":  "#leaf",
+                                                    "uv":  [
+                                                               0,
+                                                               0,
+                                                               1,
+                                                               1
+                                                           ],
+                                                    "windMode":  [
+                                                                     7,
+                                                                     0,
+                                                                     0,
+                                                                     7
+                                                                 ]
+                                                }
+                                   },
+                         "rotationY":  40,
+                         "rotationZ":  -8,
+                         "stepParentName":  "JalapenoRoot"
+                     },
+                     {
+                         "name":  "leaf-2a",
+                         "from":  [
+                                      8,
+                                      7,
+                                      7.7
+                                  ],
+                         "to":  [
+                                    17,
+                                    7.24,
+                                    8.5
+                                ],
+                         "rotationOrigin":  [
+                                                8,
+                                                0,
+                                                8
+                                            ],
+                         "faces":  {
+                                       "north":  {
+                                                     "texture":  "#leaf",
+                                                     "uv":  [
+                                                                0,
+                                                                0,
+                                                                4.5,
+                                                                1
+                                                            ],
+                                                     "windMode":  [
+                                                                      0,
+                                                                      7,
+                                                                      7,
+                                                                      0
+                                                                  ]
+                                                 },
+                                       "east":  {
+                                                    "texture":  "#leaf",
+                                                    "uv":  [
+                                                               0,
+                                                               0,
+                                                               4.5,
+                                                               1
+                                                           ],
+                                                    "windMode":  [
+                                                                     0,
+                                                                     0,
+                                                                     7,
+                                                                     7
+                                                                 ]
+                                                },
+                                       "south":  {
+                                                     "texture":  "#leaf",
+                                                     "uv":  [
+                                                                0,
+                                                                0,
+                                                                4.5,
+                                                                1
+                                                            ],
+                                                     "windMode":  [
+                                                                      7,
+                                                                      0,
+                                                                      0,
+                                                                      7
+                                                                  ]
+                                                 },
+                                       "west":  {
+                                                    "texture":  "#leaf",
+                                                    "uv":  [
+                                                               0,
+                                                               0,
+                                                               4.5,
+                                                               1
+                                                           ],
+                                                    "windMode":  [
+                                                                     0,
+                                                                     0,
+                                                                     7,
+                                                                     7
+                                                                 ]
+                                                },
+                                       "up":  {
+                                                  "texture":  "#leaf",
+                                                  "uv":  [
+                                                             0,
+                                                             0,
+                                                             1,
+                                                             1
+                                                         ],
+                                                  "windMode":  [
+                                                                   0,
+                                                                   7,
+                                                                   7,
+                                                                   0
+                                                               ]
+                                              },
+                                       "down":  {
+                                                    "texture":  "#leaf",
+                                                    "uv":  [
+                                                               0,
+                                                               0,
+                                                               1,
+                                                               1
+                                                           ],
+                                                    "windMode":  [
+                                                                     0,
+                                                                     7,
+                                                                     7,
+                                                                     0
+                                                                 ]
+                                                }
+                                   },
+                         "rotationY":  90,
+                         "rotationZ":  11,
+                         "stepParentName":  "JalapenoRoot"
+                     },
+                     {
+                         "name":  "leaf-2b",
+                         "from":  [
+                                      -1,
+                                      7.3,
+                                      7.5
+                                  ],
+                         "to":  [
+                                    8,
+                                    7.54,
+                                    8.3
+                                ],
+                         "rotationOrigin":  [
+                                                8,
+                                                0,
+                                                8
+                                            ],
+                         "faces":  {
+                                       "north":  {
+                                                     "texture":  "#leaf",
+                                                     "uv":  [
+                                                                0,
+                                                                0,
+                                                                4.5,
+                                                                1
+                                                            ],
+                                                     "windMode":  [
+                                                                      7,
+                                                                      0,
+                                                                      0,
+                                                                      7
+                                                                  ]
+                                                 },
+                                       "east":  {
+                                                    "texture":  "#leaf",
+                                                    "uv":  [
+                                                               0,
+                                                               0,
+                                                               4.5,
+                                                               1
+                                                           ],
+                                                    "windMode":  [
+                                                                     0,
+                                                                     0,
+                                                                     7,
+                                                                     7
+                                                                 ]
+                                                },
+                                       "south":  {
+                                                     "texture":  "#leaf",
+                                                     "uv":  [
+                                                                0,
+                                                                0,
+                                                                4.5,
+                                                                1
+                                                            ],
+                                                     "windMode":  [
+                                                                      0,
+                                                                      7,
+                                                                      7,
+                                                                      0
+                                                                  ]
+                                                 },
+                                       "west":  {
+                                                    "texture":  "#leaf",
+                                                    "uv":  [
+                                                               0,
+                                                               0,
+                                                               4.5,
+                                                               1
+                                                           ],
+                                                    "windMode":  [
+                                                                     0,
+                                                                     0,
+                                                                     7,
+                                                                     7
+                                                                 ]
+                                                },
+                                       "up":  {
+                                                  "texture":  "#leaf",
+                                                  "uv":  [
+                                                             0,
+                                                             0,
+                                                             1,
+                                                             1
+                                                         ],
+                                                  "windMode":  [
+                                                                   7,
+                                                                   0,
+                                                                   0,
+                                                                   7
+                                                               ]
+                                              },
+                                       "down":  {
+                                                    "texture":  "#leaf",
+                                                    "uv":  [
+                                                               0,
+                                                               0,
+                                                               1,
+                                                               1
+                                                           ],
+                                                    "windMode":  [
+                                                                     7,
+                                                                     0,
+                                                                     0,
+                                                                     7
+                                                                 ]
+                                                }
+                                   },
+                         "rotationY":  130,
+                         "rotationZ":  -10,
+                         "stepParentName":  "JalapenoRoot"
+                     },
+                     {
+                         "name":  "leaf-3a",
+                         "from":  [
+                                      8,
+                                      11,
+                                      7.7
+                                  ],
+                         "to":  [
+                                    17,
+                                    11.24,
+                                    8.5
+                                ],
+                         "rotationOrigin":  [
+                                                8,
+                                                0,
+                                                8
+                                            ],
+                         "faces":  {
+                                       "north":  {
+                                                     "texture":  "#leaf",
+                                                     "uv":  [
+                                                                0,
+                                                                0,
+                                                                4.5,
+                                                                1
+                                                            ],
+                                                     "windMode":  [
+                                                                      0,
+                                                                      7,
+                                                                      7,
+                                                                      0
+                                                                  ]
+                                                 },
+                                       "east":  {
+                                                    "texture":  "#leaf",
+                                                    "uv":  [
+                                                               0,
+                                                               0,
+                                                               4.5,
+                                                               1
+                                                           ],
+                                                    "windMode":  [
+                                                                     0,
+                                                                     0,
+                                                                     7,
+                                                                     7
+                                                                 ]
+                                                },
+                                       "south":  {
+                                                     "texture":  "#leaf",
+                                                     "uv":  [
+                                                                0,
+                                                                0,
+                                                                4.5,
+                                                                1
+                                                            ],
+                                                     "windMode":  [
+                                                                      7,
+                                                                      0,
+                                                                      0,
+                                                                      7
+                                                                  ]
+                                                 },
+                                       "west":  {
+                                                    "texture":  "#leaf",
+                                                    "uv":  [
+                                                               0,
+                                                               0,
+                                                               4.5,
+                                                               1
+                                                           ],
+                                                    "windMode":  [
+                                                                     0,
+                                                                     0,
+                                                                     7,
+                                                                     7
+                                                                 ]
+                                                },
+                                       "up":  {
+                                                  "texture":  "#leaf",
+                                                  "uv":  [
+                                                             0,
+                                                             0,
+                                                             1,
+                                                             1
+                                                         ],
+                                                  "windMode":  [
+                                                                   0,
+                                                                   7,
+                                                                   7,
+                                                                   0
+                                                               ]
+                                              },
+                                       "down":  {
+                                                    "texture":  "#leaf",
+                                                    "uv":  [
+                                                               0,
+                                                               0,
+                                                               1,
+                                                               1
+                                                           ],
+                                                    "windMode":  [
+                                                                     0,
+                                                                     7,
+                                                                     7,
+                                                                     0
+                                                                 ]
+                                                }
+                                   },
+                         "rotationY":  180,
+                         "rotationZ":  14,
+                         "stepParentName":  "JalapenoRoot"
+                     },
+                     {
+                         "name":  "leaf-3b",
+                         "from":  [
+                                      -1,
+                                      11.3,
+                                      7.5
+                                  ],
+                         "to":  [
+                                    8,
+                                    11.54,
+                                    8.3
+                                ],
+                         "rotationOrigin":  [
+                                                8,
+                                                0,
+                                                8
+                                            ],
+                         "faces":  {
+                                       "north":  {
+                                                     "texture":  "#leaf",
+                                                     "uv":  [
+                                                                0,
+                                                                0,
+                                                                4.5,
+                                                                1
+                                                            ],
+                                                     "windMode":  [
+                                                                      7,
+                                                                      0,
+                                                                      0,
+                                                                      7
+                                                                  ]
+                                                 },
+                                       "east":  {
+                                                    "texture":  "#leaf",
+                                                    "uv":  [
+                                                               0,
+                                                               0,
+                                                               4.5,
+                                                               1
+                                                           ],
+                                                    "windMode":  [
+                                                                     0,
+                                                                     0,
+                                                                     7,
+                                                                     7
+                                                                 ]
+                                                },
+                                       "south":  {
+                                                     "texture":  "#leaf",
+                                                     "uv":  [
+                                                                0,
+                                                                0,
+                                                                4.5,
+                                                                1
+                                                            ],
+                                                     "windMode":  [
+                                                                      0,
+                                                                      7,
+                                                                      7,
+                                                                      0
+                                                                  ]
+                                                 },
+                                       "west":  {
+                                                    "texture":  "#leaf",
+                                                    "uv":  [
+                                                               0,
+                                                               0,
+                                                               4.5,
+                                                               1
+                                                           ],
+                                                    "windMode":  [
+                                                                     0,
+                                                                     0,
+                                                                     7,
+                                                                     7
+                                                                 ]
+                                                },
+                                       "up":  {
+                                                  "texture":  "#leaf",
+                                                  "uv":  [
+                                                             0,
+                                                             0,
+                                                             1,
+                                                             1
+                                                         ],
+                                                  "windMode":  [
+                                                                   7,
+                                                                   0,
+                                                                   0,
+                                                                   7
+                                                               ]
+                                              },
+                                       "down":  {
+                                                    "texture":  "#leaf",
+                                                    "uv":  [
+                                                               0,
+                                                               0,
+                                                               1,
+                                                               1
+                                                           ],
+                                                    "windMode":  [
+                                                                     7,
+                                                                     0,
+                                                                     0,
+                                                                     7
+                                                                 ]
+                                                }
+                                   },
+                         "rotationY":  220,
+                         "rotationZ":  -12,
+                         "stepParentName":  "JalapenoRoot"
+                     },
+                     {
+                         "name":  "leaf-4a",
+                         "from":  [
+                                      8,
+                                      15,
+                                      7.7
+                                  ],
+                         "to":  [
+                                    17,
+                                    15.24,
+                                    8.5
+                                ],
+                         "rotationOrigin":  [
+                                                8,
+                                                0,
+                                                8
+                                            ],
+                         "faces":  {
+                                       "north":  {
+                                                     "texture":  "#leaf",
+                                                     "uv":  [
+                                                                0,
+                                                                0,
+                                                                4.5,
+                                                                1
+                                                            ],
+                                                     "windMode":  [
+                                                                      0,
+                                                                      7,
+                                                                      7,
+                                                                      0
+                                                                  ]
+                                                 },
+                                       "east":  {
+                                                    "texture":  "#leaf",
+                                                    "uv":  [
+                                                               0,
+                                                               0,
+                                                               4.5,
+                                                               1
+                                                           ],
+                                                    "windMode":  [
+                                                                     0,
+                                                                     0,
+                                                                     7,
+                                                                     7
+                                                                 ]
+                                                },
+                                       "south":  {
+                                                     "texture":  "#leaf",
+                                                     "uv":  [
+                                                                0,
+                                                                0,
+                                                                4.5,
+                                                                1
+                                                            ],
+                                                     "windMode":  [
+                                                                      7,
+                                                                      0,
+                                                                      0,
+                                                                      7
+                                                                  ]
+                                                 },
+                                       "west":  {
+                                                    "texture":  "#leaf",
+                                                    "uv":  [
+                                                               0,
+                                                               0,
+                                                               4.5,
+                                                               1
+                                                           ],
+                                                    "windMode":  [
+                                                                     0,
+                                                                     0,
+                                                                     7,
+                                                                     7
+                                                                 ]
+                                                },
+                                       "up":  {
+                                                  "texture":  "#leaf",
+                                                  "uv":  [
+                                                             0,
+                                                             0,
+                                                             1,
+                                                             1
+                                                         ],
+                                                  "windMode":  [
+                                                                   0,
+                                                                   7,
+                                                                   7,
+                                                                   0
+                                                               ]
+                                              },
+                                       "down":  {
+                                                    "texture":  "#leaf",
+                                                    "uv":  [
+                                                               0,
+                                                               0,
+                                                               1,
+                                                               1
+                                                           ],
+                                                    "windMode":  [
+                                                                     0,
+                                                                     7,
+                                                                     7,
+                                                                     0
+                                                                 ]
+                                                }
+                                   },
+                         "rotationY":  270,
+                         "rotationZ":  17,
+                         "stepParentName":  "JalapenoRoot"
+                     },
+                     {
+                         "name":  "leaf-4b",
+                         "from":  [
+                                      -1,
+                                      15.3,
+                                      7.5
+                                  ],
+                         "to":  [
+                                    8,
+                                    15.54,
+                                    8.3
+                                ],
+                         "rotationOrigin":  [
+                                                8,
+                                                0,
+                                                8
+                                            ],
+                         "faces":  {
+                                       "north":  {
+                                                     "texture":  "#leaf",
+                                                     "uv":  [
+                                                                0,
+                                                                0,
+                                                                4.5,
+                                                                1
+                                                            ],
+                                                     "windMode":  [
+                                                                      7,
+                                                                      0,
+                                                                      0,
+                                                                      7
+                                                                  ]
+                                                 },
+                                       "east":  {
+                                                    "texture":  "#leaf",
+                                                    "uv":  [
+                                                               0,
+                                                               0,
+                                                               4.5,
+                                                               1
+                                                           ],
+                                                    "windMode":  [
+                                                                     0,
+                                                                     0,
+                                                                     7,
+                                                                     7
+                                                                 ]
+                                                },
+                                       "south":  {
+                                                     "texture":  "#leaf",
+                                                     "uv":  [
+                                                                0,
+                                                                0,
+                                                                4.5,
+                                                                1
+                                                            ],
+                                                     "windMode":  [
+                                                                      0,
+                                                                      7,
+                                                                      7,
+                                                                      0
+                                                                  ]
+                                                 },
+                                       "west":  {
+                                                    "texture":  "#leaf",
+                                                    "uv":  [
+                                                               0,
+                                                               0,
+                                                               4.5,
+                                                               1
+                                                           ],
+                                                    "windMode":  [
+                                                                     0,
+                                                                     0,
+                                                                     7,
+                                                                     7
+                                                                 ]
+                                                },
+                                       "up":  {
+                                                  "texture":  "#leaf",
+                                                  "uv":  [
+                                                             0,
+                                                             0,
+                                                             1,
+                                                             1
+                                                         ],
+                                                  "windMode":  [
+                                                                   7,
+                                                                   0,
+                                                                   0,
+                                                                   7
+                                                               ]
+                                              },
+                                       "down":  {
+                                                    "texture":  "#leaf",
+                                                    "uv":  [
+                                                               0,
+                                                               0,
+                                                               1,
+                                                               1
+                                                           ],
+                                                    "windMode":  [
+                                                                     7,
+                                                                     0,
+                                                                     0,
+                                                                     7
+                                                                 ]
+                                                }
+                                   },
+                         "rotationY":  310,
+                         "rotationZ":  -14,
+                         "stepParentName":  "JalapenoRoot"
+                     },
+                     {
+                         "name":  "leaf-5a",
+                         "from":  [
+                                      8,
+                                      19,
+                                      7.7
+                                  ],
+                         "to":  [
+                                    17,
+                                    19.24,
+                                    8.5
+                                ],
+                         "rotationOrigin":  [
+                                                8,
+                                                0,
+                                                8
+                                            ],
+                         "faces":  {
+                                       "north":  {
+                                                     "texture":  "#leaf",
+                                                     "uv":  [
+                                                                0,
+                                                                0,
+                                                                4.5,
+                                                                1
+                                                            ],
+                                                     "windMode":  [
+                                                                      0,
+                                                                      7,
+                                                                      7,
+                                                                      0
+                                                                  ]
+                                                 },
+                                       "east":  {
+                                                    "texture":  "#leaf",
+                                                    "uv":  [
+                                                               0,
+                                                               0,
+                                                               4.5,
+                                                               1
+                                                           ],
+                                                    "windMode":  [
+                                                                     0,
+                                                                     0,
+                                                                     7,
+                                                                     7
+                                                                 ]
+                                                },
+                                       "south":  {
+                                                     "texture":  "#leaf",
+                                                     "uv":  [
+                                                                0,
+                                                                0,
+                                                                4.5,
+                                                                1
+                                                            ],
+                                                     "windMode":  [
+                                                                      7,
+                                                                      0,
+                                                                      0,
+                                                                      7
+                                                                  ]
+                                                 },
+                                       "west":  {
+                                                    "texture":  "#leaf",
+                                                    "uv":  [
+                                                               0,
+                                                               0,
+                                                               4.5,
+                                                               1
+                                                           ],
+                                                    "windMode":  [
+                                                                     0,
+                                                                     0,
+                                                                     7,
+                                                                     7
+                                                                 ]
+                                                },
+                                       "up":  {
+                                                  "texture":  "#leaf",
+                                                  "uv":  [
+                                                             0,
+                                                             0,
+                                                             1,
+                                                             1
+                                                         ],
+                                                  "windMode":  [
+                                                                   0,
+                                                                   7,
+                                                                   7,
+                                                                   0
+                                                               ]
+                                              },
+                                       "down":  {
+                                                    "texture":  "#leaf",
+                                                    "uv":  [
+                                                               0,
+                                                               0,
+                                                               1,
+                                                               1
+                                                           ],
+                                                    "windMode":  [
+                                                                     0,
+                                                                     7,
+                                                                     7,
+                                                                     0
+                                                                 ]
+                                                }
+                                   },
+                         "rotationZ":  20,
+                         "stepParentName":  "JalapenoRoot"
+                     },
+                     {
+                         "name":  "leaf-5b",
+                         "from":  [
+                                      -1,
+                                      19.3,
+                                      7.5
+                                  ],
+                         "to":  [
+                                    8,
+                                    19.54,
+                                    8.3
+                                ],
+                         "rotationOrigin":  [
+                                                8,
+                                                0,
+                                                8
+                                            ],
+                         "faces":  {
+                                       "north":  {
+                                                     "texture":  "#leaf",
+                                                     "uv":  [
+                                                                0,
+                                                                0,
+                                                                4.5,
+                                                                1
+                                                            ],
+                                                     "windMode":  [
+                                                                      7,
+                                                                      0,
+                                                                      0,
+                                                                      7
+                                                                  ]
+                                                 },
+                                       "east":  {
+                                                    "texture":  "#leaf",
+                                                    "uv":  [
+                                                               0,
+                                                               0,
+                                                               4.5,
+                                                               1
+                                                           ],
+                                                    "windMode":  [
+                                                                     0,
+                                                                     0,
+                                                                     7,
+                                                                     7
+                                                                 ]
+                                                },
+                                       "south":  {
+                                                     "texture":  "#leaf",
+                                                     "uv":  [
+                                                                0,
+                                                                0,
+                                                                4.5,
+                                                                1
+                                                            ],
+                                                     "windMode":  [
+                                                                      0,
+                                                                      7,
+                                                                      7,
+                                                                      0
+                                                                  ]
+                                                 },
+                                       "west":  {
+                                                    "texture":  "#leaf",
+                                                    "uv":  [
+                                                               0,
+                                                               0,
+                                                               4.5,
+                                                               1
+                                                           ],
+                                                    "windMode":  [
+                                                                     0,
+                                                                     0,
+                                                                     7,
+                                                                     7
+                                                                 ]
+                                                },
+                                       "up":  {
+                                                  "texture":  "#leaf",
+                                                  "uv":  [
+                                                             0,
+                                                             0,
+                                                             1,
+                                                             1
+                                                         ],
+                                                  "windMode":  [
+                                                                   7,
+                                                                   0,
+                                                                   0,
+                                                                   7
+                                                               ]
+                                              },
+                                       "down":  {
+                                                    "texture":  "#leaf",
+                                                    "uv":  [
+                                                               0,
+                                                               0,
+                                                               1,
+                                                               1
+                                                           ],
+                                                    "windMode":  [
+                                                                     7,
+                                                                     0,
+                                                                     0,
+                                                                     7
+                                                                 ]
+                                                }
+                                   },
+                         "rotationY":  40,
+                         "rotationZ":  -16,
+                         "stepParentName":  "JalapenoRoot"
+                     },
+                     {
+                         "name":  "jalapeno-1",
+                         "from":  [
+                                      5.2,
+                                      19.4,
+                                      6.4
+                                  ],
+                         "to":  [
+                                    6.6,
+                                    22.1,
+                                    7.4
+                                ],
+                         "rotationOrigin":  [
+                                                8,
+                                                0,
+                                                8
+                                            ],
+                         "faces":  {
+                                       "north":  {
+                                                     "texture":  "#pepper",
+                                                     "uv":  [
+                                                                0,
+                                                                0,
+                                                                1,
+                                                                1.3499999999999996
+                                                            ],
+                                                     "windMode":  [
+                                                                      0,
+                                                                      0,
+                                                                      0,
+                                                                      0
+                                                                  ]
+                                                 },
+                                       "east":  {
+                                                    "texture":  "#pepper",
+                                                    "uv":  [
+                                                               0,
+                                                               0,
+                                                               1,
+                                                               1.3499999999999996
+                                                           ],
+                                                    "windMode":  [
+                                                                     0,
+                                                                     0,
+                                                                     0,
+                                                                     0
+                                                                 ]
+                                                },
+                                       "south":  {
+                                                     "texture":  "#pepper",
+                                                     "uv":  [
+                                                                0,
+                                                                0,
+                                                                1,
+                                                                1.3499999999999996
+                                                            ],
+                                                     "windMode":  [
+                                                                      0,
+                                                                      0,
+                                                                      0,
+                                                                      0
+                                                                  ]
+                                                 },
+                                       "west":  {
+                                                    "texture":  "#pepper",
+                                                    "uv":  [
+                                                               0,
+                                                               0,
+                                                               1,
+                                                               1.3499999999999996
+                                                           ],
+                                                    "windMode":  [
+                                                                     0,
+                                                                     0,
+                                                                     0,
+                                                                     0
+                                                                 ]
+                                                },
+                                       "up":  {
+                                                  "texture":  "#pepper",
+                                                  "uv":  [
+                                                             0,
+                                                             0,
+                                                             1,
+                                                             1
+                                                         ],
+                                                  "windMode":  [
+                                                                   0,
+                                                                   0,
+                                                                   0,
+                                                                   0
+                                                               ]
+                                              },
+                                       "down":  {
+                                                    "texture":  "#pepper",
+                                                    "uv":  [
+                                                               0,
+                                                               0,
+                                                               1,
+                                                               1
+                                                           ],
+                                                    "windMode":  [
+                                                                     0,
+                                                                     0,
+                                                                     0,
+                                                                     0
+                                                                 ]
+                                                }
+                                   },
+                         "rotationZ":  -12,
+                         "stepParentName":  "JalapenoRoot"
+                     },
+                     {
+                         "name":  "jalapeno-2",
+                         "from":  [
+                                      10,
+                                      18.3,
+                                      7.5
+                                  ],
+                         "to":  [
+                                    11.4,
+                                    21,
+                                    8.5
+                                ],
+                         "rotationOrigin":  [
+                                                8,
+                                                0,
+                                                8
+                                            ],
+                         "faces":  {
+                                       "north":  {
+                                                     "texture":  "#pepper",
+                                                     "uv":  [
+                                                                0,
+                                                                0,
+                                                                1,
+                                                                1.3499999999999996
+                                                            ],
+                                                     "windMode":  [
+                                                                      0,
+                                                                      0,
+                                                                      0,
+                                                                      0
+                                                                  ]
+                                                 },
+                                       "east":  {
+                                                    "texture":  "#pepper",
+                                                    "uv":  [
+                                                               0,
+                                                               0,
+                                                               1,
+                                                               1.3499999999999996
+                                                           ],
+                                                    "windMode":  [
+                                                                     0,
+                                                                     0,
+                                                                     0,
+                                                                     0
+                                                                 ]
+                                                },
+                                       "south":  {
+                                                     "texture":  "#pepper",
+                                                     "uv":  [
+                                                                0,
+                                                                0,
+                                                                1,
+                                                                1.3499999999999996
+                                                            ],
+                                                     "windMode":  [
+                                                                      0,
+                                                                      0,
+                                                                      0,
+                                                                      0
+                                                                  ]
+                                                 },
+                                       "west":  {
+                                                    "texture":  "#pepper",
+                                                    "uv":  [
+                                                               0,
+                                                               0,
+                                                               1,
+                                                               1.3499999999999996
+                                                           ],
+                                                    "windMode":  [
+                                                                     0,
+                                                                     0,
+                                                                     0,
+                                                                     0
+                                                                 ]
+                                                },
+                                       "up":  {
+                                                  "texture":  "#pepper",
+                                                  "uv":  [
+                                                             0,
+                                                             0,
+                                                             1,
+                                                             1
+                                                         ],
+                                                  "windMode":  [
+                                                                   0,
+                                                                   0,
+                                                                   0,
+                                                                   0
+                                                               ]
+                                              },
+                                       "down":  {
+                                                    "texture":  "#pepper",
+                                                    "uv":  [
+                                                               0,
+                                                               0,
+                                                               1,
+                                                               1
+                                                           ],
+                                                    "windMode":  [
+                                                                     0,
+                                                                     0,
+                                                                     0,
+                                                                     0
+                                                                 ]
+                                                }
+                                   },
+                         "rotationZ":  12,
+                         "stepParentName":  "JalapenoRoot"
+                     },
+                     {
+                         "name":  "jalapeno-3",
+                         "from":  [
+                                      4,
+                                      17.2,
+                                      8.6
+                                  ],
+                         "to":  [
+                                    5.4,
+                                    19.9,
+                                    9.6
+                                ],
+                         "rotationOrigin":  [
+                                                8,
+                                                0,
+                                                8
+                                            ],
+                         "faces":  {
+                                       "north":  {
+                                                     "texture":  "#pepper",
+                                                     "uv":  [
+                                                                0,
+                                                                0,
+                                                                1,
+                                                                1.3499999999999996
+                                                            ],
+                                                     "windMode":  [
+                                                                      0,
+                                                                      0,
+                                                                      0,
+                                                                      0
+                                                                  ]
+                                                 },
+                                       "east":  {
+                                                    "texture":  "#pepper",
+                                                    "uv":  [
+                                                               0,
+                                                               0,
+                                                               1,
+                                                               1.3499999999999996
+                                                           ],
+                                                    "windMode":  [
+                                                                     0,
+                                                                     0,
+                                                                     0,
+                                                                     0
+                                                                 ]
+                                                },
+                                       "south":  {
+                                                     "texture":  "#pepper",
+                                                     "uv":  [
+                                                                0,
+                                                                0,
+                                                                1,
+                                                                1.3499999999999996
+                                                            ],
+                                                     "windMode":  [
+                                                                      0,
+                                                                      0,
+                                                                      0,
+                                                                      0
+                                                                  ]
+                                                 },
+                                       "west":  {
+                                                    "texture":  "#pepper",
+                                                    "uv":  [
+                                                               0,
+                                                               0,
+                                                               1,
+                                                               1.3499999999999996
+                                                           ],
+                                                    "windMode":  [
+                                                                     0,
+                                                                     0,
+                                                                     0,
+                                                                     0
+                                                                 ]
+                                                },
+                                       "up":  {
+                                                  "texture":  "#pepper",
+                                                  "uv":  [
+                                                             0,
+                                                             0,
+                                                             1,
+                                                             1
+                                                         ],
+                                                  "windMode":  [
+                                                                   0,
+                                                                   0,
+                                                                   0,
+                                                                   0
+                                                               ]
+                                              },
+                                       "down":  {
+                                                    "texture":  "#pepper",
+                                                    "uv":  [
+                                                               0,
+                                                               0,
+                                                               1,
+                                                               1
+                                                           ],
+                                                    "windMode":  [
+                                                                     0,
+                                                                     0,
+                                                                     0,
+                                                                     0
+                                                                 ]
+                                                }
+                                   },
+                         "rotationZ":  -12,
+                         "stepParentName":  "JalapenoRoot"
+                     },
+                     {
+                         "name":  "jalapeno-4",
+                         "from":  [
+                                      9.4,
+                                      16.1,
+                                      6.4
+                                  ],
+                         "to":  [
+                                    10.8,
+                                    18.8,
+                                    7.4
+                                ],
+                         "rotationOrigin":  [
+                                                8,
+                                                0,
+                                                8
+                                            ],
+                         "faces":  {
+                                       "north":  {
+                                                     "texture":  "#pepper",
+                                                     "uv":  [
+                                                                0,
+                                                                0,
+                                                                1,
+                                                                1.3499999999999996
+                                                            ],
+                                                     "windMode":  [
+                                                                      0,
+                                                                      0,
+                                                                      0,
+                                                                      0
+                                                                  ]
+                                                 },
+                                       "east":  {
+                                                    "texture":  "#pepper",
+                                                    "uv":  [
+                                                               0,
+                                                               0,
+                                                               1,
+                                                               1.3499999999999996
+                                                           ],
+                                                    "windMode":  [
+                                                                     0,
+                                                                     0,
+                                                                     0,
+                                                                     0
+                                                                 ]
+                                                },
+                                       "south":  {
+                                                     "texture":  "#pepper",
+                                                     "uv":  [
+                                                                0,
+                                                                0,
+                                                                1,
+                                                                1.3499999999999996
+                                                            ],
+                                                     "windMode":  [
+                                                                      0,
+                                                                      0,
+                                                                      0,
+                                                                      0
+                                                                  ]
+                                                 },
+                                       "west":  {
+                                                    "texture":  "#pepper",
+                                                    "uv":  [
+                                                               0,
+                                                               0,
+                                                               1,
+                                                               1.3499999999999996
+                                                           ],
+                                                    "windMode":  [
+                                                                     0,
+                                                                     0,
+                                                                     0,
+                                                                     0
+                                                                 ]
+                                                },
+                                       "up":  {
+                                                  "texture":  "#pepper",
+                                                  "uv":  [
+                                                             0,
+                                                             0,
+                                                             1,
+                                                             1
+                                                         ],
+                                                  "windMode":  [
+                                                                   0,
+                                                                   0,
+                                                                   0,
+                                                                   0
+                                                               ]
+                                              },
+                                       "down":  {
+                                                    "texture":  "#pepper",
+                                                    "uv":  [
+                                                               0,
+                                                               0,
+                                                               1,
+                                                               1
+                                                           ],
+                                                    "windMode":  [
+                                                                     0,
+                                                                     0,
+                                                                     0,
+                                                                     0
+                                                                 ]
+                                                }
+                                   },
+                         "rotationZ":  12,
+                         "stepParentName":  "JalapenoRoot"
+                     },
+                     {
+                         "name":  "jalapeno-5",
+                         "from":  [
+                                      4.6,
+                                      15,
+                                      7.5
+                                  ],
+                         "to":  [
+                                    6,
+                                    17.7,
+                                    8.5
+                                ],
+                         "rotationOrigin":  [
+                                                8,
+                                                0,
+                                                8
+                                            ],
+                         "faces":  {
+                                       "north":  {
+                                                     "texture":  "#pepper",
+                                                     "uv":  [
+                                                                0,
+                                                                0,
+                                                                1,
+                                                                1.3500000000000005
+                                                            ],
+                                                     "windMode":  [
+                                                                      0,
+                                                                      0,
+                                                                      0,
+                                                                      0
+                                                                  ]
+                                                 },
+                                       "east":  {
+                                                    "texture":  "#pepper",
+                                                    "uv":  [
+                                                               0,
+                                                               0,
+                                                               1,
+                                                               1.3500000000000005
+                                                           ],
+                                                    "windMode":  [
+                                                                     0,
+                                                                     0,
+                                                                     0,
+                                                                     0
+                                                                 ]
+                                                },
+                                       "south":  {
+                                                     "texture":  "#pepper",
+                                                     "uv":  [
+                                                                0,
+                                                                0,
+                                                                1,
+                                                                1.3500000000000005
+                                                            ],
+                                                     "windMode":  [
+                                                                      0,
+                                                                      0,
+                                                                      0,
+                                                                      0
+                                                                  ]
+                                                 },
+                                       "west":  {
+                                                    "texture":  "#pepper",
+                                                    "uv":  [
+                                                               0,
+                                                               0,
+                                                               1,
+                                                               1.3500000000000005
+                                                           ],
+                                                    "windMode":  [
+                                                                     0,
+                                                                     0,
+                                                                     0,
+                                                                     0
+                                                                 ]
+                                                },
+                                       "up":  {
+                                                  "texture":  "#pepper",
+                                                  "uv":  [
+                                                             0,
+                                                             0,
+                                                             1,
+                                                             1
+                                                         ],
+                                                  "windMode":  [
+                                                                   0,
+                                                                   0,
+                                                                   0,
+                                                                   0
+                                                               ]
+                                              },
+                                       "down":  {
+                                                    "texture":  "#pepper",
+                                                    "uv":  [
+                                                               0,
+                                                               0,
+                                                               1,
+                                                               1
+                                                           ],
+                                                    "windMode":  [
+                                                                     0,
+                                                                     0,
+                                                                     0,
+                                                                     0
+                                                                 ]
+                                                }
+                                   },
+                         "rotationZ":  -12,
+                         "stepParentName":  "JalapenoRoot"
+                     },
+                     {
+                         "name":  "jalapeno-6",
+                         "from":  [
+                                      10.6,
+                                      13.9,
+                                      8.6
+                                  ],
+                         "to":  [
+                                    12,
+                                    16.6,
+                                    9.6
+                                ],
+                         "rotationOrigin":  [
+                                                8,
+                                                0,
+                                                8
+                                            ],
+                         "faces":  {
+                                       "north":  {
+                                                     "texture":  "#pepper",
+                                                     "uv":  [
+                                                                0,
+                                                                0,
+                                                                1,
+                                                                1.3499999999999996
+                                                            ],
+                                                     "windMode":  [
+                                                                      0,
+                                                                      0,
+                                                                      0,
+                                                                      0
+                                                                  ]
+                                                 },
+                                       "east":  {
+                                                    "texture":  "#pepper",
+                                                    "uv":  [
+                                                               0,
+                                                               0,
+                                                               1,
+                                                               1.3499999999999996
+                                                           ],
+                                                    "windMode":  [
+                                                                     0,
+                                                                     0,
+                                                                     0,
+                                                                     0
+                                                                 ]
+                                                },
+                                       "south":  {
+                                                     "texture":  "#pepper",
+                                                     "uv":  [
+                                                                0,
+                                                                0,
+                                                                1,
+                                                                1.3499999999999996
+                                                            ],
+                                                     "windMode":  [
+                                                                      0,
+                                                                      0,
+                                                                      0,
+                                                                      0
+                                                                  ]
+                                                 },
+                                       "west":  {
+                                                    "texture":  "#pepper",
+                                                    "uv":  [
+                                                               0,
+                                                               0,
+                                                               1,
+                                                               1.3499999999999996
+                                                           ],
+                                                    "windMode":  [
+                                                                     0,
+                                                                     0,
+                                                                     0,
+                                                                     0
+                                                                 ]
+                                                },
+                                       "up":  {
+                                                  "texture":  "#pepper",
+                                                  "uv":  [
+                                                             0,
+                                                             0,
+                                                             1,
+                                                             1
+                                                         ],
+                                                  "windMode":  [
+                                                                   0,
+                                                                   0,
+                                                                   0,
+                                                                   0
+                                                               ]
+                                              },
+                                       "down":  {
+                                                    "texture":  "#pepper",
+                                                    "uv":  [
+                                                               0,
+                                                               0,
+                                                               1,
+                                                               1
+                                                           ],
+                                                    "windMode":  [
+                                                                     0,
+                                                                     0,
+                                                                     0,
+                                                                     0
+                                                                 ]
+                                                }
+                                   },
+                         "rotationZ":  12,
+                         "stepParentName":  "JalapenoRoot"
+                     }
+                 ]
+}

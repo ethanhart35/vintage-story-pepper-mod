@@ -1,0 +1,22 @@
+# OS/editor clutter
+Thumbs.db
+Desktop.ini
+.DS_Store
+.vscode/
+.idea/
+
+# Local scratch and generated backups
+tmp/
+backups/
+*.bak
+*.tmp
+*.log
+
+# Packaged builds/archives
+*.zip
+*.7z
+*.rar
+
+# Vintage Story / VSMC local noise
+VSMC2_Backups/
+*.old
