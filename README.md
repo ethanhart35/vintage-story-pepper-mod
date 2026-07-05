@@ -1,6 +1,6 @@
 # Pepper Mod
 
-A small Vintage Story content mod for growable pepper crops.
+A Vintage Story content mod for growable pepper crops.
 
 ## Status
 
