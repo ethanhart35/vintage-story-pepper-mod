@@ -79,7 +79,7 @@ Current growth timing:
 stage 1 -> 8: about 31 in-game hours per stage
 stage 10 -> 11 -> 8 after harvest: about 24 in-game hours per step
 growing temperature range: 8C to 38C
-harvest yield: 2 to 4 peppers, with a small seed chance
+harvest yield: 16 to 24 peppers, with a small seed chance
 ```
 
 ## Wild Spawning
