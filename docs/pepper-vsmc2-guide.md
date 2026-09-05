@@ -45,7 +45,7 @@ banana-pepper
 ghost-pepper
 ```
 
-The jalapeno files contain your current in-progress models. The other pepper folders contain simple placeholder models so the mod has valid files until you replace them in VSMC2.
+The active jalapeno folder contains the approved, complete 11-stage bush models. The other pepper folders contain simple placeholder models so the mod has valid files until you replace them in VSMC2. Earlier handmade jalapeno models are preserved in the local `backups` folder.
 
 ## Suggested Visual Stages
 
@@ -61,7 +61,7 @@ The jalapeno files contain your current in-progress models. The other pepper fol
 10. Mature plant after harvest, same size as stage 8 but with harvested pepper spots
 11. Mature plant with peppers regrowing in the stage 8 pepper positions
 
-Stage 9 currently starts as a copy of stage 4 so the mod has valid files. Stages 10 and 11 currently start as copies of stage 8 so the plant does not shrink after harvest. Replace those later with mature models that keep the same stem and leaf structure as stage 8 while changing only the peppers.
+For jalapeno, stages 6, 7, 8, 10, and 11 share the same mature branches and leaf canopy. Stage 9 keeps the mature branches but removes leaves and fruit. Stage 10 has no peppers, and stage 11 grows small peppers at the stage 8 attachment points. Other varieties still use placeholder geometry.
 
 ## Growth Behavior
 
@@ -69,14 +69,15 @@ The pepper plants now use custom code instead of the vanilla one-shot crop behav
 
 - Seeds place stage 1 plants.
 - Stages 1 through 8 advance only during growing temperatures.
-- Stage 8 is harvested by right-clicking the plant, then it moves to stage 10 and 11 while peppers regrow on the mature plant.
+- Hold right-click on stage 8 for 1.5 seconds to harvest. Releasing early or changing targets cancels the hold. Peppers fall close to the plant, then it moves to stage 10 and 11 while peppers regrow on the mature plant.
 - Outside the growing temperature range, the plant switches to stage 9 dormant.
-- When growing temperatures return, stage 9 wakes back up at its saved young stage, or stage 4 for mature plants.
+- When growing temperatures return, stage 9 wakes back up at its saved young stage, or stage 10 for plants that had reached the full-size canopy at stage 6 or later.
 
 Current growth timing:
 
 ```text
-stage 1 -> 8: about 31 in-game hours per stage
+stage 1 -> 5: about 31 in-game hours per step
+stage 5 -> 8: about 24 in-game hours per step
 stage 10 -> 11 -> 8 after harvest: about 24 in-game hours per step
 growing temperature range: 8C to 38C
 harvest yield: 16 to 24 peppers, with a small seed chance
@@ -91,7 +92,7 @@ Wild pepper plants generate as rare block patches in new warm-climate chunks.
 - Cayenne: hotter and somewhat drier regions
 - Habanero and ghost pepper: very rare hot, wetter regions
 
-Wild patches use stages 4 through 8. Stage 8 plants can be right-click harvested, and breaking any wild plant can return seeds.
+Wild patches use stages 4 through 8. Stage 8 plants use the same hold-to-harvest interaction, and breaking any wild plant can return seeds.
 
 ## Texture Keys
 
@@ -112,15 +113,15 @@ For harvested pepper item models, use this texture key:
 base
 ```
 
-Assign faces to `#base`. The vegetable item JSON maps that key to `textures/item/food/vegetable/{pepper}.png`.
+For the completed jalapeno item, assign skin faces to `#base` and cap/stem faces to `#stem`. These reuse `textures/block/plant/jalapeno/pepper.png` and `stem.png` so the harvested fruit matches the plant. Other pepper items still map `#base` to `textures/item/food/vegetable/{pepper}.png`.
 
 ## Pepper Item Models
 
-The item model placeholders are only there so the peppers render as 3D held/eaten items instead of flat icons. Replace the placeholder body, tip, and stem pieces with your own pepper model in VSMC2.
+The jalapeno item now has a complete tapered 3D fruit model, green calyx, and bent stem. The other item models remain placeholders; replace their body, tip, and stem pieces in VSMC2.
 
 Keep the hidden root element and keep your visible item elements attached with `stepParentName`, just like the crop stage files.
 
-After the model looks right, use the in-game `.tfedit` tool to fine-tune how it appears in the GUI, on the ground, and in first/third person hands. The current transforms are starter values.
+Use the in-game `.tfedit` tool to fine-tune how an item appears in the GUI, on the ground, and in first/third person hands. The vegetable item JSON now uses per-variety transforms: jalapeno has its own settings, while the `*` entries preserve the other items' starter values.
 
 ## VSMC2 Copy Fix
 
@@ -135,11 +136,11 @@ The stage files include per-face `windMode` values so the plants sway in the win
 ```text
 stem -> NoWind
 leaf -> anchored base vertices with ExtraWeakWind tips
-flower -> anchored base vertices with ExtraWeakWind tips
+flower -> NoWind in the approved jalapeno models
 pepper -> NoWind
 ```
 
-Leaf and flower faces use mixed `windMode` arrays such as `0,0,7,7`, where `0` means pinned and `7` means ExtraWeakWind. This keeps the branch/base side steadier while the outer edge moves.
+Leaf faces use mixed `windMode` arrays such as `0,7,7,0` in the approved jalapeno models, where `0` means pinned and `7` means ExtraWeakWind. The vertex order depends on the face orientation. This keeps the branch/base side steadier while the outer edge moves. Other varieties may also use mixed wind flags on their placeholder flowers.
 
 If you add brand-new leaf or flower elements in VSMC2 and they float too much, set the two vertices closest to the stem/branch to `0` and leave only the two outside vertices at `7`.
 

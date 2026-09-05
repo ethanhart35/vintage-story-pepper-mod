@@ -1,5 +1,25 @@
 # Changelog
 
+## Unreleased
+
+- Prevented the Extreme red overlay from writing depth and hiding the spice meter; the meter remains visible until spice reaches zero.
+- Reduced raw jalapeno satiety from 80 to 20; other pepper food values are unchanged.
+- Added a temporary, three-segment spice HUD: Mild, Hot, and Extreme. It appears only while spice remains.
+- Eating spicy peppers builds heat, with different strengths for each variety and no heat from bell peppers.
+- Hot and Extreme gently raise body temperature, capped at 2 degrees above normal; Extreme adds a soft red vignette without applying damage or triggering hurt events.
+- Spice begins cooling five seconds after the last spicy bite, drains through the levels, persists with the player across saves, and clears on death.
+- Corrected the jalapeno's held position, angle, and size using the vanilla food grip; the current first-person renderer shares this third-person hand transform.
+- Harvesting ripe peppers now requires holding right-click for 1.5 seconds; releasing early or changing targets cancels the harvest.
+- Harvested peppers fall close to the plant with no sideways or upward launch, preserving the existing yield and small drop stacks.
+- Replaced the jalapeno food item's placeholder with a textured 3D fruit model, bent stem, and green calyx.
+- Added jalapeno-specific inventory, dropped-item, and first/third-person hand transforms while preserving other pepper items and food behavior.
+- Replaced all 11 active jalapeno plant stages with the approved bush models.
+- Added a complete sprout-to-ripe progression and mature dormant, harvested, and regrowing appearances.
+- Kept the mature branch structure and leaf canopy consistent through harvest and fruit regrowth, with attached peppers and gently anchored leaves.
+- Mature plants now resume at the full-size harvested stage after dormancy instead of shrinking to stage 4.
+- Excluded candidate shapes and model documentation from release packages.
+- Stopped packaging and installation when the C# build fails, preventing stale DLLs from being installed.
+
 ## 0.1.0 - Perennial Pepper System
 
 - Converted the mod from a simple content crop into a code/content mod.

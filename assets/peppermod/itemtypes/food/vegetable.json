@@ -1,5 +1,6 @@
 ﻿{
     "code":  "vegetable",
+    "class": "ItemPepperFood",
     "variantgroups":  [
                           {
                               "code":  "type",
@@ -23,15 +24,30 @@
                                             "*"
                                         ]
                           },
-    "texture":  {
-                    "base":  "item/food/vegetable/{type}"
-                },
+    "texturesByType": {
+        "*-jalapeno": {
+            "base": { "base": "block/plant/jalapeno/pepper" },
+            "stem": { "base": "block/plant/jalapeno/stem" }
+        },
+        "*": {
+            "base": { "base": "item/food/vegetable/{type}" }
+        }
+    },
     "maxstacksize":  64,
-    "nutritionProps":  {
-                           "satiety":  80,
-                           "health":  0,
-                           "foodcategory":  "Vegetable"
-                       },
+    "nutritionPropsByType": {
+        "*-jalapeno": { "satiety": 20, "health": 0, "foodcategory": "Vegetable" },
+        "*": { "satiety": 80, "health": 0, "foodcategory": "Vegetable" }
+    },
+    "attributesByType": {
+        "*-jalapeno": { "peppermodSpice": 25 },
+        "*-habanero": { "peppermodSpice": 75 },
+        "*-serrano": { "peppermodSpice": 40 },
+        "*-cayenne": { "peppermodSpice": 50 },
+        "*-poblano": { "peppermodSpice": 15 },
+        "*-banana-pepper": { "peppermodSpice": 10 },
+        "*-ghost-pepper": { "peppermodSpice": 100 },
+        "*": { "peppermodSpice": 0 }
+    },
     "transitionableProps":  [
                                 {
                                     "type":  "Perish",
@@ -53,7 +69,14 @@
     "shape":  {
                   "base":  "item/food/vegetable/{type}"
               },
-    "guiTransform":  {
+    "guiTransformByType": {
+        "*-jalapeno": {
+            "translation": { "x": 0, "y": 0, "z": 0 },
+            "rotation": { "x": -18, "y": 25, "z": -40 },
+            "origin": { "x": 0.5, "y": 0.5, "z": 0.5 },
+            "scale": 1.85
+        },
+        "*": {
                          "translation":  {
                                              "x":  0,
                                              "y":  0,
@@ -70,8 +93,16 @@
                                         "z":  0.5
                                     },
                          "scale":  2.2
-                     },
-    "groundTransform":  {
+                     }
+    },
+    "groundTransformByType": {
+        "*-jalapeno": {
+            "translation": { "x": 0, "y": 0.04, "z": 0 },
+            "rotation": { "x": 0, "y": 20, "z": 88 },
+            "origin": { "x": 0.5, "y": 0.5, "z": 0.5 },
+            "scale": 1.25
+        },
+        "*": {
                             "translation":  {
                                                 "x":  0,
                                                 "y":  0.04,
@@ -88,8 +119,16 @@
                                            "z":  0.5
                                        },
                             "scale":  1.25
-                        },
-    "tpHandTransform":  {
+                        }
+    },
+    "tpHandTransformByType": {
+        "*-jalapeno": {
+            "translation": { "x": -0.4968, "y": -0.2556, "z": -0.7 },
+            "rotation": { "x": 0, "y": 0, "z": -76 },
+            "origin": { "x": 0.5, "y": 0.1, "z": 0.5 },
+            "scale": 0.69
+        },
+        "*": {
                             "translation":  {
                                                 "x":  -0.35,
                                                 "y":  -0.05,
@@ -106,8 +145,16 @@
                                            "z":  0.5
                                        },
                             "scale":  0.65
-                        },
-    "fpHandTransform":  {
+                        }
+    },
+    "fpHandTransformByType": {
+        "*-jalapeno": {
+            "translation": { "x": 0.1, "y": -0.1, "z": -0.25 },
+            "rotation": { "x": 45, "y": 20, "z": -35 },
+            "origin": { "x": 0.5, "y": 0.5, "z": 0.5 },
+            "scale": 0.55
+        },
+        "*": {
                             "translation":  {
                                                 "x":  0.1,
                                                 "y":  -0.1,
@@ -125,4 +172,5 @@
                                        },
                             "scale":  0.8
                         }
+    }
 }

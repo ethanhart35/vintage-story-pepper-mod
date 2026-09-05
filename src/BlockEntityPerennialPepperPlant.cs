@@ -7,7 +7,7 @@ namespace PepperMod
 {
     public class BlockEntityPerennialPepperPlant : BlockEntity
     {
-        private const int DefaultMatureLeafyStage = 4;
+        private const int DefaultMatureLeafyStage = 6;
         private const int DefaultFloweringStage = 5;
         private const int DefaultPostHarvestStage = 10;
         private const int DefaultMatureRegrowthStage = 11;
@@ -118,7 +118,7 @@ namespace PepperMod
 
             if (stage == dormantStage)
             {
-                SetStage(stageBeforeDormancy <= 0 ? ConfigInt("matureLeafyStage", DefaultMatureLeafyStage) : stageBeforeDormancy);
+                SetStage(stageBeforeDormancy <= 0 ? ConfigInt("postHarvestStage", DefaultPostHarvestStage) : stageBeforeDormancy);
                 lastGrowthHour = now;
                 MarkDirty(true);
                 return;
@@ -257,20 +257,15 @@ namespace PepperMod
                 remaining -= stackSize;
 
                 double angle = Api.World.Rand.NextDouble() * Math.PI * 2;
-                double radius = 0.25 + Api.World.Rand.NextDouble() * 0.35;
-                double outwardSpeed = 0.02 + Api.World.Rand.NextDouble() * 0.035;
+                double radius = 0.1 + Api.World.Rand.NextDouble() * 0.2;
 
                 Vec3d spawnPos = new Vec3d(
                     Pos.X + 0.5 + Math.Cos(angle) * radius,
-                    Pos.Y + 0.95,
+                    Pos.Y + 0.65 + Api.World.Rand.NextDouble() * 0.15,
                     Pos.Z + 0.5 + Math.Sin(angle) * radius
                 );
 
-                Vec3d velocity = new Vec3d(
-                    Math.Cos(angle) * outwardSpeed,
-                    0.07 + Api.World.Rand.NextDouble() * 0.05,
-                    Math.Sin(angle) * outwardSpeed
-                );
+                Vec3d velocity = new Vec3d(0, -0.005, 0);
 
                 Api.World.SpawnItemEntity(new ItemStack(item, stackSize), spawnPos, velocity);
             }
@@ -279,7 +274,10 @@ namespace PepperMod
         private int GetWakeStage(int currentStage)
         {
             int matureLeafyStage = ConfigInt("matureLeafyStage", DefaultMatureLeafyStage);
-            return currentStage >= matureLeafyStage ? matureLeafyStage : Math.Max(1, currentStage);
+            // Mature plants lose their fruit in dormancy, not their established size.
+            return currentStage >= matureLeafyStage
+                ? ConfigInt("postHarvestStage", DefaultPostHarvestStage)
+                : Math.Max(1, currentStage);
         }
 
         private JsonObject Config()

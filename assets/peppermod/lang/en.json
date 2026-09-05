@@ -1,5 +1,8 @@
 ﻿{
     "item-seeds-jalapeno":  "Jalapeno Seeds",
+    "spice-mild": "Mild",
+    "spice-hot": "Hot",
+    "spice-extreme": "Extreme",
     "item-vegetable-jalapeno":  "Jalapeno",
     "itemdesc-vegetable-jalapeno":  "A crisp green pepper with a bright heat.",
     "block-crop-jalapeno-1":  "Jalapeno Plant (Sprout)",

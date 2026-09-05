@@ -49,6 +49,9 @@ if (-not $dotnet) {
 $project = Join-Path $root "src\PepperMod.csproj"
 $env:VINTAGE_STORY = $VintageStory
 & $dotnet build $project -c $Configuration
+if ($LASTEXITCODE -ne 0) {
+    throw "Pepper Mod build failed with exit code $LASTEXITCODE. No package was created or installed."
+}
 
 $dllPath = Join-Path $root "src\bin\$Configuration\net10.0\$($modInfo.modid).dll"
 if (-not (Test-Path $dllPath)) {
@@ -77,6 +80,9 @@ try {
     $assetsRoot = Join-Path $root "assets"
     Get-ChildItem $assetsRoot -Recurse -File | ForEach-Object {
         $relative = $_.FullName.Substring($root.Length + 1).Replace("\", "/")
+        if ($relative -match '/[^/]+-candidate/' -or $_.Extension -eq '.md') {
+            return
+        }
         [System.IO.Compression.ZipFileExtensions]::CreateEntryFromFile($zip, $_.FullName, $relative) | Out-Null
     }
 } finally {

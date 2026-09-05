@@ -108,7 +108,7 @@
                                                     "heatStopTemperature":  38,
                                                     "initialHoursPerStage":  31,
                                                     "fruitingHoursPerStage":  24,
-                                                    "matureLeafyStage":  4,
+                                                    "matureLeafyStage":  6,
                                                     "floweringStage":  5,
                                                     "postHarvestStage":  10,
                                                     "harvestStage":  8,
@@ -117,7 +117,8 @@
                                                     "harvestPepperMax":  24,
                                                     "seedChanceOnHarvest":  0.15,
                                                     "matureRegrowthStage":  11,
-                                                    "harvestDropStackSize":  4
+                                                    "harvestDropStackSize":  4,
+                                                    "harvestHoldSeconds":  1.5
                                                 }
                    },
     "sideopaque":  {

@@ -4,16 +4,18 @@ A small Vintage Story code/content mod for perennial pepper plants.
 
 ## Status
 
-Work in progress. The pepper plant wiring and custom growth behavior are built out, and the remaining main task is replacing placeholder models in VSMC2.
+Work in progress. All 11 jalapeno plant models and the harvested jalapeno item model are complete and connected to the game. Other pepper varieties still need their final artwork; in-game testing is ongoing.
 
 ## Current Content
 
 - Pepper plants with 8 initial growth stages, 2 mature regrowth stages, and 1 dormant winter stage
 - Seeds for each pepper type
 - Fresh vegetable items for each pepper type
-- Right-click harvest on ripe plants without breaking the plant
+- Hold right-click for 1.5 seconds to harvest ripe plants without breaking them; peppers fall to the ground nearby
 - Seasonal dormancy when temperatures are outside the growing range
 - Rare wild pepper plant patches in warm climates
+- Complete jalapeno growth, dormant, harvested, and regrowing models
+- Matching 3D jalapeno fruit for inventory, held, and dropped items
 - Placeholder textures/icons for each pepper type
 
 Current pepper types:
@@ -39,6 +41,27 @@ powershell -ExecutionPolicy Bypass -File .\tools\Build-PepperMod.ps1 -VintageSto
 
 This is a code mod, so the release zip needs the compiled `peppermod.dll` at the root of the package. The build script creates `peppermod-0.1.0.zip` and copies it into your Vintage Story `Mods` folder when `-Install` is used.
 
+## Spice Effects
+
+Raw jalapenos provide 20 satiety instead of 80. Each completed bite adds spice:
+banana pepper 10, poblano 15, jalapeno 25, serrano 40, cayenne 50, habanero 75,
+and ghost pepper 100. Bell peppers add no spice. Other varieties retain 80 satiety.
+
+Spice is capped at 100 and appears in a three-segment HUD near the lower-right:
+
+- Mild: above 0 and below 34, with no gameplay effect.
+- Hot: 34 to below 67, gently warming the player's body.
+- Extreme: 67 to 100, retaining warmth and adding a slowly pulsing red edge tint.
+
+Spice itself never causes damage or fires damage events. Warming adds up to 0.12
+degrees per real-time second, capped at 2 degrees above normal body temperature.
+It stops below Hot; ordinary temperature simulation then controls cooling.
+
+After five seconds without another spicy bite, spice decays by one point per
+real-time second. The HUD disappears at zero. Spice pauses while offline, is
+saved with the player, and clears on death. The effect currently applies to raw
+pepper items; cooked dishes do not yet inherit spice from their ingredients.
+
 ## VSMC2 Workflow
 
 Each plant is wired to load one shape per stage:
@@ -47,10 +70,30 @@ Each plant is wired to load one shape per stage:
 
 Open the stage file you want in VSMC2, replace the placeholder geometry with your own model, and keep the texture keys named `stem`, `leaf`, `flower`, and `pepper` unless you also update the plant block JSON.
 
+The active jalapeno files now contain the approved bush models. The separate
+`jalapeno-candidate` folder and interactive previews are retained for reference
+but excluded from the game package. Previous handmade stages are preserved in
+the local, Git-ignored `backups` folder.
+
 See `docs/pepper-vsmc2-guide.md` for the stage plan and file map.
+
+## Regression Tests
+
+The regression tests use the installed game's assemblies and assets and require no additional test packages:
+
+```powershell
+$env:VINTAGE_STORY = "E:\Vintagestory"
+dotnet run --project .\tests\PepperMod.Tests\PepperMod.Tests.csproj -c Release
+```
+
+They cover hold timing, cancellation, changed targets, concurrent players, claims,
+seasonal restrictions, harvest yield, downward-only item drops, jalapeno hand
+placement, completed bites, spice tiers and cooldowns, body warming, no-damage
+behavior, and per-player state. Native in-game testing is still needed for final
+HUD appearance, animation, and interaction feel.
 
 ## Roadmap
 
-- Replace placeholder pepper growth and dormant stage models
+- Replace the remaining varieties' placeholder growth and dormant stage models
 - Test planting, wild spawning, seasonal growth, right-click harvest, dormancy, and food item behavior in-game
 - Add cooking, drying, and spice recipes

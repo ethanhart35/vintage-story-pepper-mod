@@ -11,6 +11,7 @@ namespace PepperMod
             api.RegisterBlockClass("BlockPerennialPepperPlant", typeof(BlockPerennialPepperPlant));
             api.RegisterBlockEntityClass("PerennialPepperPlant", typeof(BlockEntityPerennialPepperPlant));
             api.RegisterItemClass("ItemPepperSeeds", typeof(ItemPepperSeeds));
+            api.RegisterItemClass("ItemPepperFood", typeof(ItemPepperFood));
         }
     }
 }
