@@ -108,7 +108,7 @@ namespace PepperMod
                 return;
             }
 
-            if (!CanPlantOn(world, pos.DownCopy()))
+            if (!CanPlantOn(world.BlockAccessor, pos.DownCopy()))
             {
                 world.BlockAccessor.BreakBlock(pos, null);
             }
@@ -133,9 +133,18 @@ namespace PepperMod
             return Code != null && Code.Path.EndsWith("-8");
         }
 
-        private static bool CanPlantOn(IWorldAccessor world, BlockPos groundPos)
+        public override bool TryPlaceBlockForWorldGen(IBlockAccessor blockAccessor, BlockPos pos,
+            BlockFacing onBlockFace, IRandom worldGenRand, BlockPatchAttributes attributes = null)
         {
-            Block groundBlock = world.BlockAccessor.GetBlock(groundPos);
+            if (!CanPlantOn(blockAccessor, pos.DownCopy()) ||
+                blockAccessor.GetBlock(pos, BlockLayersAccess.Fluid).IsLiquid()) return false;
+
+            return base.TryPlaceBlockForWorldGen(blockAccessor, pos, onBlockFace, worldGenRand, attributes);
+        }
+
+        private static bool CanPlantOn(IBlockAccessor blockAccessor, BlockPos groundPos)
+        {
+            Block groundBlock = blockAccessor.GetBlock(groundPos);
             string path = groundBlock.Code == null ? "" : groundBlock.Code.Path;
 
             return path.Contains("farmland") ||

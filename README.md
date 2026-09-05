@@ -13,7 +13,7 @@ Work in progress. All 11 jalapeno plant models and the harvested jalapeno item m
 - Fresh vegetable items for each pepper type
 - Hold right-click for 1.5 seconds to harvest ripe plants without breaking them; peppers fall to the ground nearby
 - Seasonal dormancy when temperatures are outside the growing range
-- Rare wild pepper plant patches in warm climates
+- Rare wild jalapeno patches in any biome with suitable soil, including cold and dry climates
 - Complete jalapeno growth, dormant, harvested, and regrowing models
 - Matching 3D jalapeno fruit for inventory, held, and dropped items
 - Placeholder textures/icons for each pepper type
@@ -33,6 +33,11 @@ ghost-pepper
 
 ## Install For Testing
 
+Only jalapenos currently spawn wild, in any biome on suitable soil in newly generated terrain.
+Other varieties' wild spawning is disabled for now; their items and existing plants remain intact.
+Existing terrain is not repopulated. Cold-weather dormancy and growing-season
+temperature requirements still apply.
+
 Build and install the compiled test package with:
 
 ```powershell
@@ -51,9 +56,14 @@ Spice is capped at 100 and appears in a three-segment HUD near the lower-right:
 
 - Mild: above 0 and below 34, with no gameplay effect.
 - Hot: 34 to below 67, gently warming the player's body.
-- Extreme: 67 to 100, retaining warmth and adding a slowly pulsing red edge tint.
+- Extreme: 67 to 100, retaining warmth, adding a slowly pulsing red edge tint,
+  and draining 0.5 satiety per real-time second (1 point every 2 seconds).
 
-Spice itself never causes damage or fires damage events. Warming adds up to 0.12
+The additional hunger drain stops below Extreme, does not change nutrition
+levels, and does not apply in Creative or Spectator mode. Hunger cannot fall
+below zero; ordinary starvation rules still apply when it is empty.
+
+Spice never applies health damage directly or fires damage events. Warming adds up to 0.12
 degrees per real-time second, capped at 2 degrees above normal body temperature.
 It stops below Hot; ordinary temperature simulation then controls cooling.
 

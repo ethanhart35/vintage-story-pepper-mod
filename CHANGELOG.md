@@ -2,6 +2,11 @@
 
 ## Unreleased
 
+- Temporarily limited wild spawning to jalapenos only; other pepper varieties remain available but no longer generate wild.
+
+- Extreme spice now slowly drains hunger at 0.5 satiety per real-time second, stopping immediately below Extreme. Nutrition levels are unchanged, and Creative/Spectator players are exempt.
+- Allowed all wild pepper varieties in any biome by removing climate and altitude restrictions, retaining rarity and soil-only surface placement.
+- Corrected wild patch fertility bounds to the game's normalized 0-1 range. Seasonal growth and dormancy are unchanged; new spawning rules apply to newly generated terrain.
 - Prevented the Extreme red overlay from writing depth and hiding the spice meter; the meter remains visible until spice reaches zero.
 - Reduced raw jalapeno satiety from 80 to 20; other pepper food values are unchanged.
 - Added a temporary, three-segment spice HUD: Mild, Hot, and Extreme. It appears only while spice remains.

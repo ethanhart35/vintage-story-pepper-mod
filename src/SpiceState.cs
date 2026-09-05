@@ -10,6 +10,7 @@ namespace PepperMod
         public const float HotThreshold = 34;
         public const float ExtremeThreshold = 67;
         public const float CoolingDelaySeconds = 5;
+        public const float ExtremeHungerDrainPerSecond = .5f;
         public float Heat { get; }
         public float CoolingDelay { get; }
         public SpiceLevel Level => Heat <= 0 ? SpiceLevel.None : Heat < HotThreshold ? SpiceLevel.Mild
@@ -44,6 +45,14 @@ namespace PepperMod
             float start = index == 0 ? 0 : index == 1 ? HotThreshold : ExtremeThreshold;
             float end = index == 0 ? HotThreshold : index == 1 ? ExtremeThreshold : MaximumHeat;
             return Math.Clamp((Heat - start) / (end - start), 0, 1);
+        }
+
+        public float HungerDrain(float seconds)
+        {
+            if (Level != SpiceLevel.Extreme || !float.IsFinite(seconds) || seconds <= 0) return 0;
+            // A tick that crosses into Hot drains only for its Extreme portion.
+            float extremeSeconds = Math.Clamp(CoolingDelay + Heat - ExtremeThreshold, 0, seconds);
+            return extremeSeconds * ExtremeHungerDrainPerSecond;
         }
 
         public float RedIntensity => Level == SpiceLevel.Extreme ? Math.Clamp((Heat - ExtremeThreshold) / 16, .25f, 1) : 0;

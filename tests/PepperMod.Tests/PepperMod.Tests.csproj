@@ -14,6 +14,7 @@
     <Reference Include="Newtonsoft.Json"><HintPath>$(VintageStoryInstall)/Lib/Newtonsoft.Json.dll</HintPath></Reference>
     <Reference Include="protobuf-net"><HintPath>$(VintageStoryInstall)/Lib/protobuf-net.dll</HintPath></Reference>
     <Reference Include="VSSurvivalMod"><HintPath>$(VintageStoryInstall)/Mods/VSSurvivalMod.dll</HintPath></Reference>
+    <Reference Include="VSEssentials"><HintPath>$(VintageStoryInstall)/Mods/VSEssentials.dll</HintPath></Reference>
     <Reference Include="cairo-sharp"><HintPath>$(VintageStoryInstall)/Lib/cairo-sharp.dll</HintPath></Reference>
   </ItemGroup>
 </Project>

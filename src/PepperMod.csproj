@@ -23,6 +23,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Reference Include="VSEssentials">
+      <HintPath>$(VintageStoryInstall)\Mods\VSEssentials.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
     <Reference Include="VSSurvivalMod">
       <HintPath>$(VintageStoryInstall)\Mods\VSSurvivalMod.dll</HintPath>
       <Private>false</Private>

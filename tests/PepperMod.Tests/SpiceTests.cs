@@ -64,6 +64,52 @@ internal static class SpiceTests
             canceled.Food.OnHeldInteractCancel(2, canceled.Slot, canceled.Player, null, null, (EnumItemUseCancelReason)0);
             Require(PepperSpiceSystem.ReadState(canceled.Player).Heat == 0);
         });
+        check("hunger drain is slow and only counts time at Extreme", () => {
+            Require(new SpiceState(100, 5).HungerDrain(2) == 1);
+            Require(new SpiceState(100, 5).HungerDrain(1000) == 19);
+            Require(new SpiceState(67.5f).HungerDrain(2) == .25f);
+            Require(new SpiceState(67, 5).HungerDrain(2) == 1);
+            Require(new SpiceState(67).HungerDrain(2) == 0);
+            foreach (float heat in new[] { 0f, 25f, 50f, 66.99f }) Require(new SpiceState(heat, 5).HungerDrain(30) == 0);
+            foreach (float time in new[] { 0f, -1f, float.NaN, float.PositiveInfinity }) Require(new SpiceState(100, 5).HungerDrain(time) == 0);
+            var state = new SpiceState(100, 5);
+            float total = 0;
+            for (int i = 0; i < 400; i++) { total += state.HungerDrain(.25f); state = state.Cool(.25f); }
+            Require(total == 19);
+        });
+        check("server drains hunger at Extreme without changing nutrition or health", () => {
+            var f = new FoodFixture(); PepperSpiceSystem.AddSpice(f.Player, 100);
+            PepperSpiceSystem.TickPlayer(f.Player, 2);
+            Require(f.Player.Hunger.Saturation == 99 && f.Player.DamageCalls == 0,
+                $"Satiety={f.Player.Hunger.Saturation}, mode={f.Player.Player.WorldData.CurrentGameMode}, behavior={f.Player.GetBehavior<EntityBehaviorHunger>() != null}");
+            Require(f.Player.WatchedAttributes.GetTreeAttribute("hunger").GetFloat("fruitLevel") == 500);
+            PepperSpiceSystem.TickPlayer(f.Player, 36);
+            Require(f.Player.Hunger.Saturation == 81);
+            PepperSpiceSystem.TickPlayer(f.Player, 1);
+            Require(f.Player.Hunger.Saturation == 81 && PepperSpiceSystem.ReadState(f.Player).Level == SpiceLevel.Hot);
+        });
+        check("hunger drain stops at zero and skips absent hunger behavior", () => {
+            var f = new FoodFixture(); f.Player.Hunger.Saturation = .1f;
+            PepperSpiceSystem.AddSpice(f.Player, 100); PepperSpiceSystem.TickPlayer(f.Player, 2);
+            Require(f.Player.Hunger.Saturation == 0 && f.Player.DamageCalls == 0);
+            f.Player.Hunger = null; PepperSpiceSystem.TickPlayer(f.Player, 2);
+        });
+        check("Mild Hot Creative Spectator dead and client players do not lose extra hunger", () => {
+            foreach (float heat in new[] { 0f, 25f, 50f }) {
+                var f = new FoodFixture(); PepperSpiceSystem.AddSpice(f.Player, heat); PepperSpiceSystem.TickPlayer(f.Player, 2);
+                Require(f.Player.Hunger.Saturation == 100);
+            }
+            foreach (var mode in new[] { EnumGameMode.Creative, EnumGameMode.Spectator }) {
+                var f = new FoodFixture(mode: mode); PepperSpiceSystem.AddSpice(f.Player, 100); PepperSpiceSystem.TickPlayer(f.Player, 2);
+                Require(f.Player.Hunger.Saturation == 100);
+            }
+            var dead = new FoodFixture(); PepperSpiceSystem.AddSpice(dead.Player, 100); dead.Player.Alive = false;
+            PepperSpiceSystem.TickPlayer(dead.Player, 2); Require(dead.Player.Hunger.Saturation == 100);
+            var client = new FoodFixture(server: false);
+            var state = new TreeAttribute(); state.SetFloat("heat", 100); state.SetFloat("coolingDelay", 5);
+            client.Player.WatchedAttributes.SetAttribute(PepperSpiceSystem.AttributeKey, state);
+            PepperSpiceSystem.TickPlayer(client.Player, 2); Require(client.Player.Hunger.Saturation == 100);
+        });
         check("completed vanilla bite grants 20 satiety and spice exactly once", () => {
             var f = new FoodFixture(); f.Food.Eat(1, f.Slot, f.Player);
             Require(f.Player.Saturation == 20 && f.Slot.Itemstack.StackSize == 2);
@@ -183,9 +229,9 @@ internal static class SpiceTests
         });
     }
 
-    private static void Require(bool condition)
+    private static void Require(bool condition, string message = "Spice regression failed.")
     {
-        if (!condition) throw new Exception("Spice regression failed.");
+        if (!condition) throw new Exception(message);
     }
 }
 
@@ -201,10 +247,11 @@ internal class SpicePlayer : EntityPlayer
     public float Saturation;
     public int DamageCalls;
     public EntityBehaviorBodyTemperature Temperature;
+    public EntityBehaviorHunger Hunger;
     public override bool Alive { get; set; } = true;
     public override void ReceiveSaturation(float amount, EnumFoodCategory category, float delay, float nutritionMultiplier) => Saturation += amount;
     public override bool ReceiveDamage(DamageSource source, float damage) { DamageCalls++; return false; }
-    public override T GetBehavior<T>() => Temperature as T;
+    public override T GetBehavior<T>() => Temperature as T ?? Hunger as T;
 }
 
 internal class FoodFixture
@@ -213,9 +260,12 @@ internal class FoodFixture
     public TestPepperFood Food = new() { ItemId = 123, Code = new AssetLocation("peppermod", "vegetable-jalapeno"), NutritionProps = new FoodNutritionProperties { Satiety = 20, FoodCategory = EnumFoodCategory.Vegetable } };
     public DummySlot Slot;
 
-    public FoodFixture(bool server = true, int count = 3, float heat = 25)
+    public FoodFixture(bool server = true, int count = 3, float heat = 25, EnumGameMode mode = EnumGameMode.Survival)
     {
         var player = Fixture.PlayerWithId("spice-test");
+        ((Vintagestory.Server.ServerWorldPlayerData)player.WorldData).GameMode = mode;
+        typeof(Vintagestory.Server.ServerWorldPlayerData).GetField("connected", BindingFlags.Instance | BindingFlags.Public | BindingFlags.NonPublic)
+            .SetValue(player.WorldData, true);
         var inventory = new SpiceInventoryManager(player);
         var field = player.GetType().GetFields(BindingFlags.Instance | BindingFlags.NonPublic | BindingFlags.Public)
             .Single(f => typeof(IPlayerInventoryManager).IsAssignableFrom(f.FieldType));
@@ -231,6 +281,13 @@ internal class FoodFixture
         var bodyTemp = new TreeAttribute(); bodyTemp.SetFloat("bodytemp", 35);
         Player.WatchedAttributes.SetAttribute("bodyTemp", bodyTemp);
         typeof(EntityBehaviorBodyTemperature).GetField("tempTree", BindingFlags.Instance | BindingFlags.NonPublic).SetValue(Player.Temperature, bodyTemp);
+        Player.Hunger = new EntityBehaviorHunger(Player);
+        var hungerTree = new TreeAttribute();
+        hungerTree.SetFloat("currentsaturation", 100);
+        hungerTree.SetFloat("maxsaturation", 1500);
+        hungerTree.SetFloat("fruitLevel", 500);
+        Player.WatchedAttributes.SetAttribute("hunger", hungerTree);
+        typeof(EntityBehaviorHunger).GetField("hungerTree", BindingFlags.Instance | BindingFlags.NonPublic).SetValue(Player.Hunger, hungerTree);
         Food.Attributes = new JsonObject(new JObject { ["peppermodSpice"] = heat });
         Food.SetApi(Proxy.Make<ICoreAPI>((m, _) => m.Name == "get_World" ? world : throw new NotSupportedException(m.Name)));
         Slot = new DummySlot(new ItemStack(Food, count));

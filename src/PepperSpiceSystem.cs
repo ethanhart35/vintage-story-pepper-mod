@@ -79,6 +79,17 @@ namespace PepperMod
                 float warmed = state.WarmBody(current, temperature.NormalBodyTemperature, warmSeconds);
                 if (warmed != current) temperature.CurBodyTemperature = warmed;
             }
+            float hungerDrain = state.HungerDrain(dt);
+            if (hungerDrain > 0)
+            {
+                EnumGameMode mode = player.Player?.WorldData?.CurrentGameMode ?? EnumGameMode.Survival;
+                var hunger = player.GetBehavior<EntityBehaviorHunger>();
+                if (hunger != null && mode != EnumGameMode.Creative && mode != EnumGameMode.Spectator)
+                {
+                    float current = hunger.Saturation;
+                    if (float.IsFinite(current) && current > 0) hunger.Saturation = Math.Max(0, current - hungerDrain);
+                }
+            }
             if (after.Heat != state.Heat || after.CoolingDelay != state.CoolingDelay) WriteState(player, after);
         }
 
