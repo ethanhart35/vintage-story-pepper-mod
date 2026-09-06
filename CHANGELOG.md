@@ -2,6 +2,19 @@
 
 ## Unreleased
 
+### 0.2.0 - Habaneros
+
+- Replaced all 11 habanero plant placeholders with a broad, asymmetric bush, wider leaves, flowers, and attached lobed peppers.
+- Added green unripe fruit, mixed green/orange ripening fruit, orange ripe fruit, and green regrowth at fixed attachment points.
+- Preserved the mature canopy through harvesting and regrowth and its branch skeleton during dormancy.
+- Added a matching 3D habanero item with a green calyx and bent stem, plus inventory, dropped-item, and hand transforms.
+- Enabled very rare wild habanero patches alongside jalapenos in any biome with suitable soil. The other six varieties remain disabled in world generation.
+- Reduced raw habanero satiety to 20 to match jalapenos and set its spice dose to 50; two eaten back-to-back fill the meter from empty.
+- Added offline plant/item previews and regression checks for shape loading, texture mapping, attachments, wind, hand placement, ripening, harvesting, and eating.
+- Retained the existing 1.5-second harvest hold, 16-24 pepper yield, seasonal dormancy, and perennial regrowth behavior.
+
+### Previously Completed
+
 - Temporarily limited wild spawning to jalapenos only; other pepper varieties remain available but no longer generate wild.
 
 - Extreme spice now slowly drains hunger at 0.5 satiety per real-time second, stopping immediately below Extreme. Nutrition levels are unchanged, and Creative/Spectator players are exempt.

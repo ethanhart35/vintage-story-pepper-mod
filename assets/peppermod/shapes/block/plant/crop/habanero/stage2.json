@@ -1,351 +1,1516 @@
-﻿{
-    "editor":  {
-                   "allAngles":  true,
-                   "backdrops":  [
-
-                                 ],
-                   "attachments":  [
-
-                                   ]
-               },
-    "textures":  {
-                     "stem":  "block/plant/habanero/stem",
-                     "leaf":  "block/plant/habanero/leaf",
-                     "flower":  "block/plant/habanero/flower",
-                     "pepper":  "block/plant/habanero/pepper"
-                 },
-    "elements":  [
-                     {
-                         "name":  "HabaneroRoot",
-                         "from":  [
-                                      0,
-                                      0,
-                                      0
-                                  ],
-                         "to":  [
-                                    0,
-                                    0,
-                                    0
-                                ],
-                         "faces":  {
-
-                                   },
-                         "rotationOrigin":  [
-                                                0,
-                                                0,
-                                                0
-                                            ],
-                         "scaleX":  1,
-                         "scaleY":  1,
-                         "scaleZ":  1,
-                         "renderPass":  -1,
-                         "children":  [
-
-                                      ],
-                         "renderInEditor":  true,
-                         "uv":  [
-                                    0,
-                                    0
-                                ]
-                     },
-                     {
-                         "name":  "Placeholder-Stem",
-                         "from":  [
-                                      7.75,
-                                      0,
-                                      7.75
-                                  ],
-                         "to":  [
-                                    8.25,
-                                    3.25,
-                                    8.25
-                                ],
-                         "shade":  true,
-                         "faces":  {
-                                       "north":  {
-                                                     "texture":  "#stem",
-                                                     "uv":  [
-                                                                0,
-                                                                0,
-                                                                4,
-                                                                4
-                                                            ],
-                                                     "enabled":  true,
-                                                     "autoUv":  false,
-                                                     "snapUV":  false,
-                                                     "windMode":  [
-                                                                      0,
-                                                                      0,
-                                                                      0,
-                                                                      0
-                                                                  ]
-                                                 },
-                                       "east":  {
-                                                    "texture":  "#stem",
-                                                    "uv":  [
-                                                               0,
-                                                               0,
-                                                               4,
-                                                               4
-                                                           ],
-                                                    "enabled":  true,
-                                                    "autoUv":  false,
-                                                    "snapUV":  false,
-                                                    "windMode":  [
-                                                                     0,
-                                                                     0,
-                                                                     0,
-                                                                     0
-                                                                 ]
-                                                },
-                                       "south":  {
-                                                     "texture":  "#stem",
-                                                     "uv":  [
-                                                                0,
-                                                                0,
-                                                                4,
-                                                                4
-                                                            ],
-                                                     "enabled":  true,
-                                                     "autoUv":  false,
-                                                     "snapUV":  false,
-                                                     "windMode":  [
-                                                                      0,
-                                                                      0,
-                                                                      0,
-                                                                      0
-                                                                  ]
-                                                 },
-                                       "west":  {
-                                                    "texture":  "#stem",
-                                                    "uv":  [
-                                                               0,
-                                                               0,
-                                                               4,
-                                                               4
-                                                           ],
-                                                    "enabled":  true,
-                                                    "autoUv":  false,
-                                                    "snapUV":  false,
-                                                    "windMode":  [
-                                                                     0,
-                                                                     0,
-                                                                     0,
-                                                                     0
-                                                                 ]
-                                                },
-                                       "up":  {
-                                                  "texture":  "#stem",
-                                                  "uv":  [
-                                                             0,
-                                                             0,
-                                                             4,
-                                                             4
-                                                         ],
-                                                  "enabled":  true,
-                                                  "autoUv":  false,
-                                                  "snapUV":  false,
-                                                  "windMode":  [
-                                                                   0,
-                                                                   0,
-                                                                   0,
-                                                                   0
-                                                               ]
-                                              },
-                                       "down":  {
-                                                    "texture":  "#stem",
-                                                    "uv":  [
-                                                               0,
-                                                               0,
-                                                               4,
-                                                               4
-                                                           ],
-                                                    "enabled":  true,
-                                                    "autoUv":  false,
-                                                    "snapUV":  false,
-                                                    "windMode":  [
-                                                                     0,
-                                                                     0,
-                                                                     0,
-                                                                     0
-                                                                 ]
-                                                }
-                                   },
-                         "rotationOrigin":  [
-                                                8,
-                                                0,
-                                                8
-                                            ],
-                         "scaleX":  1,
-                         "scaleY":  1,
-                         "scaleZ":  1,
-                         "renderPass":  -1,
-                         "stepParentName":  "HabaneroRoot",
-                         "renderInEditor":  true,
-                         "uv":  [
-                                    0,
-                                    0
-                                ]
-                     },
-                     {
-                         "name":  "Placeholder-Leaf-Left",
-                         "from":  [
-                                      8,
-                                      1.4625000000000001,
-                                      8
-                                  ],
-                         "to":  [
-                                    9.9,
-                                    1.4925000000000002,
-                                    9.9
-                                ],
-                         "shade":  true,
-                         "faces":  {
-                                       "up":  {
-                                                  "texture":  "#leaf",
-                                                  "uv":  [
-                                                             1,
-                                                             1,
-                                                             7,
-                                                             10
-                                                         ],
-                                                  "enabled":  true,
-                                                  "autoUv":  false,
-                                                  "snapUV":  false,
-                                                  "windMode":  [
-                                                                   0,
-                                                                   7,
-                                                                   7,
-                                                                   0
-                                                               ]
-                                              },
-                                       "down":  {
-                                                    "texture":  "#leaf",
-                                                    "uv":  [
-                                                               1,
-                                                               1,
-                                                               7,
-                                                               10
-                                                           ],
-                                                    "enabled":  true,
-                                                    "autoUv":  false,
-                                                    "snapUV":  false,
-                                                    "windMode":  [
-                                                                     7,
-                                                                     7,
-                                                                     0,
-                                                                     0
-                                                                 ]
-                                                }
-                                   },
-                         "rotationOrigin":  [
-                                                8,
-                                                1.4625000000000001,
-                                                8
-                                            ],
-                         "scaleX":  1,
-                         "scaleY":  1,
-                         "scaleZ":  1,
-                         "renderPass":  -1,
-                         "stepParentName":  "HabaneroRoot",
-                         "renderInEditor":  true,
-                         "uv":  [
-                                    0,
-                                    0
-                                ],
-                         "rotationX":  15,
-                         "rotationY":  -35,
-                         "rotationZ":  0
-                     },
-                     {
-                         "name":  "Placeholder-Leaf-Right",
-                         "from":  [
-                                      6.1,
-                                      1.5625000000000002,
-                                      6.1
-                                  ],
-                         "to":  [
-                                    8,
-                                    1.5925000000000002,
-                                    8
-                                ],
-                         "shade":  true,
-                         "faces":  {
-                                       "up":  {
-                                                  "texture":  "#leaf",
-                                                  "uv":  [
-                                                             8,
-                                                             1,
-                                                             14,
-                                                             10
-                                                         ],
-                                                  "enabled":  true,
-                                                  "autoUv":  false,
-                                                  "snapUV":  false,
-                                                  "windMode":  [
-                                                                   7,
-                                                                   7,
-                                                                   0,
-                                                                   0
-                                                               ]
-                                              },
-                                       "down":  {
-                                                    "texture":  "#leaf",
-                                                    "uv":  [
-                                                               8,
-                                                               1,
-                                                               14,
-                                                               10
-                                                           ],
-                                                    "enabled":  true,
-                                                    "autoUv":  false,
-                                                    "snapUV":  false,
-                                                    "windMode":  [
-                                                                     7,
-                                                                     0,
-                                                                     0,
-                                                                     7
-                                                                 ]
-                                                }
-                                   },
-                         "rotationOrigin":  [
-                                                8,
-                                                1.4625000000000001,
-                                                8
-                                            ],
-                         "scaleX":  1,
-                         "scaleY":  1,
-                         "scaleZ":  1,
-                         "renderPass":  -1,
-                         "stepParentName":  "HabaneroRoot",
-                         "renderInEditor":  true,
-                         "uv":  [
-                                    0,
-                                    0
-                                ],
-                         "rotationX":  -15,
-                         "rotationY":  35,
-                         "rotationZ":  0
-                     }
-                 ],
-    "textureWidth":  16,
-    "textureHeight":  16,
-    "textureSizes":  {
-                         "stem":  [
-                                      16,
-                                      16
-                                  ],
-                         "leaf":  [
-                                      16,
-                                      16
-                                  ],
-                         "flower":  [
-                                        16,
-                                        16
-                                    ],
-                         "pepper":  [
-                                        16,
-                                        16
-                                    ]
-                     }
+{
+  "editor": {
+    "allAngles": true,
+    "backdrops": [],
+    "attachments": []
+  },
+  "textureWidth": 16,
+  "textureHeight": 16,
+  "textures": {
+    "stem": "block/plant/habanero/stem",
+    "leaf": "block/plant/habanero/leaf",
+    "flower": "block/plant/habanero/flower",
+    "pepper": "block/plant/habanero/pepper",
+    "peppergreen": "block/plant/jalapeno/pepper"
+  },
+  "textureSizes": {
+    "stem": [
+      16,
+      16
+    ],
+    "leaf": [
+      16,
+      16
+    ],
+    "flower": [
+      16,
+      16
+    ],
+    "pepper": [
+      16,
+      16
+    ],
+    "peppergreen": [
+      16,
+      16
+    ]
+  },
+  "elements": [
+    {
+      "name": "HabaneroRoot",
+      "from": [
+        0,
+        0,
+        0
+      ],
+      "to": [
+        0,
+        0,
+        0
+      ],
+      "rotationOrigin": [
+        0,
+        0,
+        0
+      ],
+      "faces": {},
+      "children": [],
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1,
+      "uv": [
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Branch-seedling-lower",
+      "from": [
+        7.91214,
+        -0.01631,
+        7.91186
+      ],
+      "to": [
+        8.08894,
+        1.84757,
+        8.08866
+      ],
+      "rotationOrigin": [
+        8.00054,
+        0.00869,
+        8.00026
+      ],
+      "rotationX": 3.27814,
+      "rotationY": 23.89877,
+      "rotationZ": -3.86957,
+      "shade": true,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1,
+      "faces": {
+        "north": {
+          "texture": "#stem",
+          "uv": [
+            5.12,
+            1.12,
+            7.232,
+            7.232
+          ],
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false
+        },
+        "east": {
+          "texture": "#stem",
+          "uv": [
+            5.12,
+            1.12,
+            7.232,
+            7.232
+          ],
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false
+        },
+        "south": {
+          "texture": "#stem",
+          "uv": [
+            5.12,
+            1.12,
+            7.232,
+            7.232
+          ],
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false
+        },
+        "west": {
+          "texture": "#stem",
+          "uv": [
+            5.12,
+            1.12,
+            7.232,
+            7.232
+          ],
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false
+        },
+        "up": {
+          "texture": "#stem",
+          "uv": [
+            5.12,
+            1.12,
+            7.232,
+            7.232
+          ],
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false
+        },
+        "down": {
+          "texture": "#stem",
+          "uv": [
+            5.12,
+            1.12,
+            7.232,
+            7.232
+          ],
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false
+        }
+      },
+      "children": [],
+      "stepParentName": "HabaneroRoot",
+      "renderPass": -1,
+      "uv": [
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Branch-seedling-upper",
+      "from": [
+        8.04508,
+        1.81069,
+        7.98717
+      ],
+      "to": [
+        8.18028,
+        3.67236,
+        8.12237
+      ],
+      "rotationOrigin": [
+        8.11268,
+        1.83569,
+        8.05477
+      ],
+      "rotationX": 0.76172,
+      "rotationY": 24.01412,
+      "rotationZ": 2.32537,
+      "shade": true,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1,
+      "faces": {
+        "north": {
+          "texture": "#stem",
+          "uv": [
+            5.12,
+            1.12,
+            7.232,
+            7.232
+          ],
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false
+        },
+        "east": {
+          "texture": "#stem",
+          "uv": [
+            5.12,
+            1.12,
+            7.232,
+            7.232
+          ],
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false
+        },
+        "south": {
+          "texture": "#stem",
+          "uv": [
+            5.12,
+            1.12,
+            7.232,
+            7.232
+          ],
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false
+        },
+        "west": {
+          "texture": "#stem",
+          "uv": [
+            5.12,
+            1.12,
+            7.232,
+            7.232
+          ],
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false
+        },
+        "up": {
+          "texture": "#stem",
+          "uv": [
+            5.12,
+            1.12,
+            7.232,
+            7.232
+          ],
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false
+        },
+        "down": {
+          "texture": "#stem",
+          "uv": [
+            5.12,
+            1.12,
+            7.232,
+            7.232
+          ],
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false
+        }
+      },
+      "children": [],
+      "stepParentName": "HabaneroRoot",
+      "renderPass": -1,
+      "uv": [
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Petiole-lower-left",
+      "from": [
+        8.07426,
+        1.80321,
+        8.02134
+      ],
+      "to": [
+        8.13146,
+        2.09764,
+        8.07854
+      ],
+      "rotationOrigin": [
+        8.10286,
+        1.82821,
+        8.04994
+      ],
+      "rotationX": -49.16149,
+      "rotationY": -11.52039,
+      "rotationZ": 67.7088,
+      "shade": true,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1,
+      "faces": {
+        "north": {
+          "texture": "#stem",
+          "uv": [
+            5.12,
+            1.12,
+            7.232,
+            7.232
+          ],
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false
+        },
+        "east": {
+          "texture": "#stem",
+          "uv": [
+            5.12,
+            1.12,
+            7.232,
+            7.232
+          ],
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false
+        },
+        "south": {
+          "texture": "#stem",
+          "uv": [
+            5.12,
+            1.12,
+            7.232,
+            7.232
+          ],
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false
+        },
+        "west": {
+          "texture": "#stem",
+          "uv": [
+            5.12,
+            1.12,
+            7.232,
+            7.232
+          ],
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false
+        },
+        "up": {
+          "texture": "#stem",
+          "uv": [
+            5.12,
+            1.12,
+            7.232,
+            7.232
+          ],
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false
+        },
+        "down": {
+          "texture": "#stem",
+          "uv": [
+            5.12,
+            1.12,
+            7.232,
+            7.232
+          ],
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false
+        }
+      },
+      "children": [],
+      "stepParentName": "HabaneroRoot",
+      "renderPass": -1,
+      "uv": [
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Leaf-lower-left",
+      "from": [
+        7.24176,
+        1.85588,
+        6.1322
+      ],
+      "to": [
+        8.25732,
+        1.85588,
+        7.9457
+      ],
+      "rotationOrigin": [
+        7.87112,
+        1.85588,
+        7.9457
+      ],
+      "rotationX": 18.39443,
+      "rotationY": 63.82977,
+      "rotationZ": -38.61814,
+      "shade": true,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1,
+      "faces": {
+        "up": {
+          "texture": "#leaf",
+          "uv": [
+            1.6,
+            0.864,
+            3.872,
+            6.912
+          ],
+          "windMode": [
+            0,
+            7,
+            7,
+            0
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false
+        }
+      },
+      "children": [],
+      "stepParentName": "HabaneroRoot",
+      "renderPass": -1,
+      "uv": [
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Petiole-lower-right",
+      "from": [
+        8.09433,
+        1.73451,
+        8.03037
+      ],
+      "to": [
+        8.15153,
+        2.02366,
+        8.08757
+      ],
+      "rotationOrigin": [
+        8.12293,
+        1.75951,
+        8.05897
+      ],
+      "rotationX": 47.72348,
+      "rotationY": -8.29999,
+      "rotationZ": -64.81226,
+      "shade": true,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1,
+      "faces": {
+        "north": {
+          "texture": "#stem",
+          "uv": [
+            5.12,
+            1.12,
+            7.232,
+            7.232
+          ],
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false
+        },
+        "east": {
+          "texture": "#stem",
+          "uv": [
+            5.12,
+            1.12,
+            7.232,
+            7.232
+          ],
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false
+        },
+        "south": {
+          "texture": "#stem",
+          "uv": [
+            5.12,
+            1.12,
+            7.232,
+            7.232
+          ],
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false
+        },
+        "west": {
+          "texture": "#stem",
+          "uv": [
+            5.12,
+            1.12,
+            7.232,
+            7.232
+          ],
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false
+        },
+        "up": {
+          "texture": "#stem",
+          "uv": [
+            5.12,
+            1.12,
+            7.232,
+            7.232
+          ],
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false
+        },
+        "down": {
+          "texture": "#stem",
+          "uv": [
+            5.12,
+            1.12,
+            7.232,
+            7.232
+          ],
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false
+        }
+      },
+      "children": [],
+      "stepParentName": "HabaneroRoot",
+      "renderPass": -1,
+      "uv": [
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Leaf-lower-right",
+      "from": [
+        7.82178,
+        1.80696,
+        6.43926
+      ],
+      "to": [
+        8.8082,
+        1.80696,
+        8.15976
+      ],
+      "rotationOrigin": [
+        8.34702,
+        1.80696,
+        8.15976
+      ],
+      "rotationX": 149.46108,
+      "rotationY": -61.56845,
+      "rotationZ": 176.57956,
+      "shade": true,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1,
+      "faces": {
+        "up": {
+          "texture": "#leaf",
+          "uv": [
+            6.688,
+            1.056,
+            9.152,
+            7.008
+          ],
+          "windMode": [
+            0,
+            7,
+            7,
+            0
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false
+        }
+      },
+      "children": [],
+      "stepParentName": "HabaneroRoot",
+      "renderPass": -1,
+      "uv": [
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Petiole-upper-front",
+      "from": [
+        8.04529,
+        3.00558,
+        8.05021
+      ],
+      "to": [
+        8.10249,
+        3.30581,
+        8.10741
+      ],
+      "rotationOrigin": [
+        8.07389,
+        3.03058,
+        8.07881
+      ],
+      "rotationX": -37.7876,
+      "rotationY": 38.28578,
+      "rotationZ": -46.001,
+      "shade": true,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1,
+      "faces": {
+        "north": {
+          "texture": "#stem",
+          "uv": [
+            5.12,
+            1.12,
+            7.232,
+            7.232
+          ],
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false
+        },
+        "east": {
+          "texture": "#stem",
+          "uv": [
+            5.12,
+            1.12,
+            7.232,
+            7.232
+          ],
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false
+        },
+        "south": {
+          "texture": "#stem",
+          "uv": [
+            5.12,
+            1.12,
+            7.232,
+            7.232
+          ],
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false
+        },
+        "west": {
+          "texture": "#stem",
+          "uv": [
+            5.12,
+            1.12,
+            7.232,
+            7.232
+          ],
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false
+        },
+        "up": {
+          "texture": "#stem",
+          "uv": [
+            5.12,
+            1.12,
+            7.232,
+            7.232
+          ],
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false
+        },
+        "down": {
+          "texture": "#stem",
+          "uv": [
+            5.12,
+            1.12,
+            7.232,
+            7.232
+          ],
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false
+        }
+      },
+      "children": [],
+      "stepParentName": "HabaneroRoot",
+      "renderPass": -1,
+      "uv": [
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Leaf-upper-front",
+      "from": [
+        7.40921,
+        3.10259,
+        5.64376
+      ],
+      "to": [
+        8.98649,
+        3.10259,
+        7.87576
+      ],
+      "rotationOrigin": [
+        8.22128,
+        3.10259,
+        7.87576
+      ],
+      "rotationX": 23.9568,
+      "rotationY": -32.61461,
+      "rotationZ": -16.53217,
+      "shade": true,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1,
+      "faces": {
+        "up": {
+          "texture": "#leaf",
+          "uv": [
+            11.424,
+            8.896,
+            14.656,
+            14.912
+          ],
+          "windMode": [
+            0,
+            7,
+            7,
+            0
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false
+        }
+      },
+      "children": [],
+      "stepParentName": "HabaneroRoot",
+      "renderPass": -1,
+      "uv": [
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Petiole-upper-back",
+      "from": [
+        8.03417,
+        3.15445,
+        8.07792
+      ],
+      "to": [
+        8.09137,
+        3.44487,
+        8.13512
+      ],
+      "rotationOrigin": [
+        8.06277,
+        3.17945,
+        8.10652
+      ],
+      "rotationX": 41.41278,
+      "rotationY": 36.27564,
+      "rotationZ": 36.22328,
+      "shade": true,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1,
+      "faces": {
+        "north": {
+          "texture": "#stem",
+          "uv": [
+            5.12,
+            1.12,
+            7.232,
+            7.232
+          ],
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false
+        },
+        "east": {
+          "texture": "#stem",
+          "uv": [
+            5.12,
+            1.12,
+            7.232,
+            7.232
+          ],
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false
+        },
+        "south": {
+          "texture": "#stem",
+          "uv": [
+            5.12,
+            1.12,
+            7.232,
+            7.232
+          ],
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false
+        },
+        "west": {
+          "texture": "#stem",
+          "uv": [
+            5.12,
+            1.12,
+            7.232,
+            7.232
+          ],
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false
+        },
+        "up": {
+          "texture": "#stem",
+          "uv": [
+            5.12,
+            1.12,
+            7.232,
+            7.232
+          ],
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false
+        },
+        "down": {
+          "texture": "#stem",
+          "uv": [
+            5.12,
+            1.12,
+            7.232,
+            7.232
+          ],
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false
+        }
+      },
+      "children": [],
+      "stepParentName": "HabaneroRoot",
+      "renderPass": -1,
+      "uv": [
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Leaf-upper-back",
+      "from": [
+        7.21526,
+        3.27325,
+        6.21377
+      ],
+      "to": [
+        8.58236,
+        3.27325,
+        8.30627
+      ],
+      "rotationOrigin": [
+        7.94321,
+        3.27325,
+        8.30627
+      ],
+      "rotationX": 149.5296,
+      "rotationY": 26.45554,
+      "rotationZ": -143.31252,
+      "shade": true,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1,
+      "faces": {
+        "up": {
+          "texture": "#leaf",
+          "uv": [
+            6.688,
+            1.056,
+            9.152,
+            7.008
+          ],
+          "windMode": [
+            0,
+            7,
+            7,
+            0
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false
+        }
+      },
+      "children": [],
+      "stepParentName": "HabaneroRoot",
+      "renderPass": -1,
+      "uv": [
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Petiole-new-left",
+      "from": [
+        8.01051,
+        3.63613,
+        8.07826
+      ],
+      "to": [
+        8.06771,
+        3.87603,
+        8.13546
+      ],
+      "rotationOrigin": [
+        8.03911,
+        3.66113,
+        8.10686
+      ],
+      "rotationX": -28.33235,
+      "rotationY": 13.83308,
+      "rotationZ": 40.7181,
+      "shade": true,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1,
+      "faces": {
+        "north": {
+          "texture": "#stem",
+          "uv": [
+            5.12,
+            1.12,
+            7.232,
+            7.232
+          ],
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false
+        },
+        "east": {
+          "texture": "#stem",
+          "uv": [
+            5.12,
+            1.12,
+            7.232,
+            7.232
+          ],
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false
+        },
+        "south": {
+          "texture": "#stem",
+          "uv": [
+            5.12,
+            1.12,
+            7.232,
+            7.232
+          ],
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false
+        },
+        "west": {
+          "texture": "#stem",
+          "uv": [
+            5.12,
+            1.12,
+            7.232,
+            7.232
+          ],
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false
+        },
+        "up": {
+          "texture": "#stem",
+          "uv": [
+            5.12,
+            1.12,
+            7.232,
+            7.232
+          ],
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false
+        },
+        "down": {
+          "texture": "#stem",
+          "uv": [
+            5.12,
+            1.12,
+            7.232,
+            7.232
+          ],
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false
+        }
+      },
+      "children": [],
+      "stepParentName": "HabaneroRoot",
+      "renderPass": -1,
+      "uv": [
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Leaf-new-left",
+      "from": [
+        7.48048,
+        3.80901,
+        6.89999
+      ],
+      "to": [
+        8.17798,
+        3.80901,
+        8.06249
+      ],
+      "rotationOrigin": [
+        7.91273,
+        3.80901,
+        8.06249
+      ],
+      "rotationX": 76.53217,
+      "rotationY": 32.61461,
+      "rotationZ": -78.0432,
+      "shade": true,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1,
+      "faces": {
+        "up": {
+          "texture": "#leaf",
+          "uv": [
+            1.6,
+            0.864,
+            3.872,
+            6.912
+          ],
+          "windMode": [
+            0,
+            7,
+            7,
+            0
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false
+        }
+      },
+      "children": [],
+      "stepParentName": "HabaneroRoot",
+      "renderPass": -1,
+      "uv": [
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Petiole-new-right",
+      "from": [
+        8.02279,
+        3.59196,
+        8.08458
+      ],
+      "to": [
+        8.07999,
+        3.8327,
+        8.14178
+      ],
+      "rotationOrigin": [
+        8.05139,
+        3.61696,
+        8.11318
+      ],
+      "rotationX": 40.57052,
+      "rotationY": 9.41845,
+      "rotationZ": -39.44309,
+      "shade": true,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1,
+      "faces": {
+        "north": {
+          "texture": "#stem",
+          "uv": [
+            5.12,
+            1.12,
+            7.232,
+            7.232
+          ],
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false
+        },
+        "east": {
+          "texture": "#stem",
+          "uv": [
+            5.12,
+            1.12,
+            7.232,
+            7.232
+          ],
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false
+        },
+        "south": {
+          "texture": "#stem",
+          "uv": [
+            5.12,
+            1.12,
+            7.232,
+            7.232
+          ],
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false
+        },
+        "west": {
+          "texture": "#stem",
+          "uv": [
+            5.12,
+            1.12,
+            7.232,
+            7.232
+          ],
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false
+        },
+        "up": {
+          "texture": "#stem",
+          "uv": [
+            5.12,
+            1.12,
+            7.232,
+            7.232
+          ],
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false
+        },
+        "down": {
+          "texture": "#stem",
+          "uv": [
+            5.12,
+            1.12,
+            7.232,
+            7.232
+          ],
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false
+        }
+      },
+      "children": [],
+      "stepParentName": "HabaneroRoot",
+      "renderPass": -1,
+      "uv": [
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Leaf-new-right",
+      "from": [
+        7.8503,
+        3.74821,
+        7.1751
+      ],
+      "to": [
+        8.4641,
+        3.74821,
+        8.1981
+      ],
+      "rotationOrigin": [
+        8.17713,
+        3.74821,
+        8.1981
+      ],
+      "rotationX": 117.31412,
+      "rotationY": -33.23811,
+      "rotationZ": 151.29605,
+      "shade": true,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1,
+      "faces": {
+        "up": {
+          "texture": "#leaf",
+          "uv": [
+            6.688,
+            1.056,
+            9.152,
+            7.008
+          ],
+          "windMode": [
+            0,
+            7,
+            7,
+            0
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false
+        }
+      },
+      "children": [],
+      "stepParentName": "HabaneroRoot",
+      "renderPass": -1,
+      "uv": [
+        0,
+        0
+      ]
+    }
+  ],
+  "animations": []
 }

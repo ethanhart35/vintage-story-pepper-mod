@@ -29,12 +29,13 @@ internal static class WildPepperTests
                             throw new Exception($"Patch rejected climate {temp}/{rain}, forest {forest}, elevation {y}/{height}.");
                     }
                 }
-                if (patches.Length != 1) throw new Exception("Expected only the jalapeno patch group.");
-                var expectedCodes = Enumerable.Range(4, 5).Select(stage => $"peppermod:crop-jalapeno-{stage}");
+                if (patches.Length != 2) throw new Exception("Expected only jalapeno and habanero patch groups.");
+                var expectedCodes = new[] { "jalapeno", "habanero" }
+                    .SelectMany(type => Enumerable.Range(4, 5).Select(stage => $"peppermod:crop-{type}-{stage}"));
                 var patchJson = Newtonsoft.Json.Linq.JArray.Parse(File.ReadAllText(Path.Combine(root.FullName,
                     "assets/peppermod/worldgen/blockpatches/wild-pepper-plants.json")));
-                if (!patchJson[0]["blockCodes"].Select(code => code.ToString()).SequenceEqual(expectedCodes))
-                    throw new Exception("Only jalapeno stages 4-8 should spawn wild.");
+                if (!patchJson.SelectMany(patch => patch["blockCodes"]).Select(code => code.ToString()).SequenceEqual(expectedCodes))
+                    throw new Exception("Only jalapeno and habanero stages 4-8 should spawn wild.");
             }
             finally { TerraGenConfig.seaLevel = previousSeaLevel; }
         });

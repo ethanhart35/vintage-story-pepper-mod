@@ -4,7 +4,7 @@ A small Vintage Story code/content mod for perennial pepper plants.
 
 ## Status
 
-Work in progress. All 11 jalapeno plant models and the harvested jalapeno item model are complete and connected to the game. Other pepper varieties still need their final artwork; in-game testing is ongoing.
+Work in progress. Version 0.2.0 adds complete habanero plant and item models alongside the finished jalapenos. Both varieties have 11 plant states, picked fruit models, seeds, perennial growth, and spice effects. The new habanero artwork and gameplay integration have automated checks but still need a native in-game playtest. The other six varieties remain unfinished.
 
 ## Current Content
 
@@ -13,10 +13,11 @@ Work in progress. All 11 jalapeno plant models and the harvested jalapeno item m
 - Fresh vegetable items for each pepper type
 - Hold right-click for 1.5 seconds to harvest ripe plants without breaking them; peppers fall to the ground nearby
 - Seasonal dormancy when temperatures are outside the growing range
-- Rare wild jalapeno patches in any biome with suitable soil, including cold and dry climates
-- Complete jalapeno growth, dormant, harvested, and regrowing models
-- Matching 3D jalapeno fruit for inventory, held, and dropped items
-- Placeholder textures/icons for each pepper type
+- Rare wild jalapeno patches and rarer habanero patches in any biome with suitable soil
+- Complete jalapeno and habanero growth, dormant, harvested, and regrowing models
+- Matching 3D jalapeno and orange habanero fruit for inventory, held, and dropped items
+- Habanero fruit progresses from green to orange on a broad, leafy bush
+- Placeholder models for the six remaining pepper types
 
 Current pepper types:
 
@@ -33,8 +34,8 @@ ghost-pepper
 
 ## Install For Testing
 
-Only jalapenos currently spawn wild, in any biome on suitable soil in newly generated terrain.
-Other varieties' wild spawning is disabled for now; their items and existing plants remain intact.
+Only jalapenos and habaneros currently spawn wild, in any biome on suitable soil in newly generated terrain.
+The remaining six varieties' wild spawning is disabled for now; their items and existing plants remain intact.
 Existing terrain is not repopulated. Cold-weather dormancy and growing-season
 temperature requirements still apply.
 
@@ -44,13 +45,14 @@ Build and install the compiled test package with:
 powershell -ExecutionPolicy Bypass -File .\tools\Build-PepperMod.ps1 -VintageStory "E:\Vintagestory" -Install
 ```
 
-This is a code mod, so the release zip needs the compiled `peppermod.dll` at the root of the package. The build script creates `peppermod-0.1.0.zip` and copies it into your Vintage Story `Mods` folder when `-Install` is used.
+This is a code mod, so the release zip needs the compiled `peppermod.dll` at the root of the package. The build script creates `peppermod-0.2.0.zip` and copies it into your Vintage Story `Mods` folder when `-Install` is used. Keep only one version of Pepper Mod in that folder; move the old version outside it before testing this update.
 
 ## Spice Effects
 
-Raw jalapenos provide 20 satiety instead of 80. Each completed bite adds spice:
-banana pepper 10, poblano 15, jalapeno 25, serrano 40, cayenne 50, habanero 75,
-and ghost pepper 100. Bell peppers add no spice. Other varieties retain 80 satiety.
+Raw jalapenos and habaneros provide 20 satiety instead of 80. Each completed bite adds spice:
+banana pepper 10, poblano 15, jalapeno 25, serrano 40, cayenne 50, habanero 50,
+and ghost pepper 100. Bell peppers add no spice. The remaining varieties retain 80 satiety.
+Two habaneros eaten back-to-back fill the spice meter from empty.
 
 Spice is capped at 100 and appears in a three-segment HUD near the lower-right:
 
@@ -80,7 +82,9 @@ Each plant is wired to load one shape per stage:
 
 Open the stage file you want in VSMC2, replace the placeholder geometry with your own model, and keep the texture keys named `stem`, `leaf`, `flower`, and `pepper` unless you also update the plant block JSON.
 
-The active jalapeno files now contain the approved bush models. The separate
+The active jalapeno and habanero files contain complete bush models. Habanero also
+uses `peppergreen` for unripe fruit, mapped to the existing green pepper skin.
+The separate
 `jalapeno-candidate` folder and interactive previews are retained for reference
 but excluded from the game package. Previous handmade stages are preserved in
 the local, Git-ignored `backups` folder.
@@ -97,9 +101,10 @@ dotnet run --project .\tests\PepperMod.Tests\PepperMod.Tests.csproj -c Release
 ```
 
 They cover hold timing, cancellation, changed targets, concurrent players, claims,
-seasonal restrictions, harvest yield, downward-only item drops, jalapeno hand
+seasonal restrictions, harvest yield, downward-only item drops, both finished varieties' hand
 placement, completed bites, spice tiers and cooldowns, body warming, no-damage
-behavior, and per-player state. Native in-game testing is still needed for final
+behavior, per-player state, habanero model/texture wiring, connected fruit and leaves,
+mature canopy consistency, and ripening colors. Native in-game testing is still needed for final
 HUD appearance, animation, and interaction feel.
 
 ## Roadmap

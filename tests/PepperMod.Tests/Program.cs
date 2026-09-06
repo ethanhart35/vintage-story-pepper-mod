@@ -149,6 +149,7 @@ Check("drop stacks fall vertically within the plant footprint", () => {
 HeldItemTransformTests.Run(Check);
 SpiceTests.Run(Check);
 WildPepperTests.Run(Check);
+HabaneroTests.Run(Check);
 Console.WriteLine($"Passed {passed} regression tests.");
 if (failed > 0) Console.Error.WriteLine($"Failed {failed} regression tests.");
 Environment.ExitCode = failed == 0 ? 0 : 1;

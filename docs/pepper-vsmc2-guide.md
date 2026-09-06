@@ -45,7 +45,7 @@ banana-pepper
 ghost-pepper
 ```
 
-The active jalapeno folder contains the approved, complete 11-stage bush models. The other pepper folders contain simple placeholder models so the mod has valid files until you replace them in VSMC2. Earlier handmade jalapeno models are preserved in the local `backups` folder.
+The active jalapeno and habanero folders contain complete 11-stage bush models. Habanero has a broader canopy, wider leaves, and lobed fruit that ripens from green to orange. The other six folders contain placeholder models. Earlier handmade jalapeno models and replaced habanero placeholders are preserved in the local `backups` folder.
 
 ## Suggested Visual Stages
 
@@ -61,7 +61,7 @@ The active jalapeno folder contains the approved, complete 11-stage bush models.
 10. Mature plant after harvest, same size as stage 8 but with harvested pepper spots
 11. Mature plant with peppers regrowing in the stage 8 pepper positions
 
-For jalapeno, stages 6, 7, 8, 10, and 11 share the same mature branches and leaf canopy. Stage 9 keeps the mature branches but removes leaves and fruit. Stage 10 has no peppers, and stage 11 grows small peppers at the stage 8 attachment points. Other varieties still use placeholder geometry.
+For jalapeno and habanero, stages 6, 7, 8, 10, and 11 share the same mature branches and leaf canopy. Stage 9 keeps the mature branches but removes leaves and fruit. Stage 10 has no peppers, and stage 11 grows small peppers at the stage 8 attachment points. Other varieties still use placeholder geometry.
 
 ## Growth Behavior
 
@@ -85,12 +85,11 @@ harvest yield: 16 to 24 peppers, with a small seed chance
 
 ## Wild Spawning
 
-Wild pepper plants generate as rare block patches in new warm-climate chunks.
+Wild pepper plants generate as rare block patches in newly generated terrain in any biome with suitable soil.
 
-- Jalapeno and serrano: warm fertile regions
-- Bell pepper, banana pepper, and poblano: warm fertile regions
-- Cayenne: hotter and somewhat drier regions
-- Habanero and ghost pepper: very rare hot, wetter regions
+- Jalapeno: rare patches
+- Habanero: very rare patches
+- Other varieties: wild spawning disabled until their artwork is complete
 
 Wild patches use stages 4 through 8. Stage 8 plants use the same hold-to-harvest interaction, and breaking any wild plant can return seeds.
 
@@ -105,7 +104,7 @@ flower
 pepper
 ```
 
-Assign faces to `#stem`, `#leaf`, `#flower`, or `#pepper` in VSMC2. The crop JSON maps those keys to each pepper's texture folder.
+Assign faces to `#stem`, `#leaf`, `#flower`, or `#pepper` in VSMC2. The crop JSON maps those keys to each pepper's texture folder. Habanero additionally uses `#peppergreen`, mapped to the jalapeno skin atlas, for unripe fruit in stages 6, 7, and 11.
 
 For harvested pepper item models, use this texture key:
 
@@ -113,11 +112,11 @@ For harvested pepper item models, use this texture key:
 base
 ```
 
-For the completed jalapeno item, assign skin faces to `#base` and cap/stem faces to `#stem`. These reuse `textures/block/plant/jalapeno/pepper.png` and `stem.png` so the harvested fruit matches the plant. Other pepper items still map `#base` to `textures/item/food/vegetable/{pepper}.png`.
+For the completed jalapeno and habanero items, assign skin faces to `#base` and cap/stem faces to `#stem`. These reuse `textures/block/plant/{pepper}/pepper.png` and `stem.png` so the harvested fruit matches the plant. Other pepper items still map `#base` to `textures/item/food/vegetable/{pepper}.png`.
 
 ## Pepper Item Models
 
-The jalapeno item now has a complete tapered 3D fruit model, green calyx, and bent stem. The other item models remain placeholders; replace their body, tip, and stem pieces in VSMC2.
+The jalapeno item has a complete tapered 3D fruit model. Habanero has a wider, lobed orange fruit. Both have a green calyx and bent stem. The other six item models remain placeholders.
 
 Keep the hidden root element and keep your visible item elements attached with `stepParentName`, just like the crop stage files.
 

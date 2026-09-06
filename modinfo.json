@@ -6,7 +6,7 @@
                     "Ethan"
                 ],
     "description":  "Adds perennial pepper plants, pepper seeds, and pepper foods to Vintage Story.",
-    "version":  "0.1.0",
+    "version":  "0.2.0",
     "dependencies":  {
                          "game":  "",
                          "survival": ""

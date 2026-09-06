@@ -70,6 +70,9 @@
                                 },
                      "pepper":  {
                                     "base":  "block/plant/{type}/pepper"
+                                },
+                     "peppergreen": {
+                                    "base": "block/plant/jalapeno/pepper"
                                 }
                  },
     "blockmaterial":  "Plant",

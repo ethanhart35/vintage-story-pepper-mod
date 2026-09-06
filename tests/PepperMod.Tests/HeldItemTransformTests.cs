@@ -15,51 +15,54 @@ internal static class HeldItemTransformTests
             ?? Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "Vintagestory");
         var item = JObject.Parse(File.ReadAllText(Path.Combine(root.FullName, "assets/peppermod/itemtypes/food/vegetable.json")));
         var vanilla = JObject.Parse(File.ReadAllText(Path.Combine(game, "assets/survival/itemtypes/food/vegetable.json")));
-        var transform = item["tpHandTransformByType"]["*-jalapeno"].ToObject<ModelTransform>().EnsureDefaultValues();
-        var reference = vanilla["tpHandTransformByType"]["*-bellpepper"].ToObject<ModelTransform>().EnsureDefaultValues();
-        var player = LoadShape(Path.Combine(game, "assets/game/shapes/entity/humanoid/seraph.json"));
-        var hands = Elements(player.Elements).SelectMany(e => e.AttachmentPoints ?? [])
-            .Where(a => a.Code == "RightHand" || a.Code == "LeftHand").ToArray();
-        if (hands.Length != 2) throw new Exception("Expected both player hand attachment points.");
-        var pepper = LoadShape(Path.Combine(root.FullName, "assets/peppermod/shapes/item/food/vegetable/jalapeno.json"));
-
-        foreach (var hand in hands)
+        foreach (string variety in new[] { "jalapeno", "habanero" })
         {
-            check($"jalapeno uses the vanilla food grip in {hand.Code}", () => {
-                var actual = HandMatrix(transform, hand).TransformVector(new Vec4f(.5f, .5f, .5f, 1));
-                var expected = HandMatrix(reference, hand).TransformVector(new Vec4f(.5f, 3f / 16, .5f, 1));
-                float error = MathF.Max(MathF.Abs(actual.X - expected.X),
-                    MathF.Max(MathF.Abs(actual.Y - expected.Y), MathF.Abs(actual.Z - expected.Z)));
-                Require(error < .002f, $"Fruit center is displaced from the vanilla grip by {error} blocks.");
-                Require(MathF.Abs(transform.Rotation.Z - reference.Rotation.Z) < 1,
-                    "The fruit must project out of the grip at the vanilla food angle.");
+            var transform = item["tpHandTransformByType"]["*-" + variety].ToObject<ModelTransform>().EnsureDefaultValues();
+            var reference = vanilla["tpHandTransformByType"]["*-bellpepper"].ToObject<ModelTransform>().EnsureDefaultValues();
+            var player = LoadShape(Path.Combine(game, "assets/game/shapes/entity/humanoid/seraph.json"));
+            var hands = Elements(player.Elements).SelectMany(e => e.AttachmentPoints ?? [])
+                .Where(a => a.Code == "RightHand" || a.Code == "LeftHand").ToArray();
+            if (hands.Length != 2) throw new Exception("Expected both player hand attachment points.");
+            var pepper = LoadShape(Path.Combine(root.FullName, $"assets/peppermod/shapes/item/food/vegetable/{variety}.json"));
+
+            foreach (var hand in hands)
+            {
+                check($"{variety} uses the vanilla food grip in {hand.Code}", () => {
+                    var actual = HandMatrix(transform, hand).TransformVector(new Vec4f(.5f, .5f, .5f, 1));
+                    var expected = HandMatrix(reference, hand).TransformVector(new Vec4f(.5f, 3f / 16, .5f, 1));
+                    float error = MathF.Max(MathF.Abs(actual.X - expected.X),
+                        MathF.Max(MathF.Abs(actual.Y - expected.Y), MathF.Abs(actual.Z - expected.Z)));
+                    Require(error < .002f, $"Fruit center is displaced from the vanilla grip by {error} blocks.");
+                    Require(MathF.Abs(transform.Rotation.Z - reference.Rotation.Z) < 1,
+                        "The fruit must project out of the grip at the vanilla food angle.");
+                });
+            }
+
+            check($"held {variety} geometry has a visible food-sized silhouette", () => {
+                var points = new List<Vec4f>();
+                var hand = HandMatrix(transform, hands.Single(a => a.Code == "RightHand"));
+                foreach (var element in pepper.Elements.Where(e => e.FacesResolved?.Any(f => f?.Enabled == true) == true))
+                {
+                    Require(element.Children == null || element.Children.Length == 0,
+                        "Update the bounds test if the item changes from flattened to nested geometry.");
+                    var local = new Matrixf(element.GetLocalTransformMatrix(0));
+                    for (int i = 0; i < 8; i++)
+                    {
+                        var p = new Vec4f(
+                            (float)((element.To[0] - element.From[0]) / 16 * ((i & 1) == 0 ? 0 : 1)),
+                            (float)((element.To[1] - element.From[1]) / 16 * ((i & 2) == 0 ? 0 : 1)),
+                            (float)((element.To[2] - element.From[2]) / 16 * ((i & 4) == 0 ? 0 : 1)), 1);
+                        points.Add(hand.TransformVector(local.TransformVector(p)));
+                    }
+                }
+                Require(points.Count > 0 && points.All(p => float.IsFinite(p.X) && float.IsFinite(p.Y) && float.IsFinite(p.Z)),
+                    "The held model must contain finite visible geometry.");
+                float length = points.Max(p => p.X) - points.Min(p => p.X);
+                float thickness = points.Max(p => p.Z) - points.Min(p => p.Z);
+                Require(length > (variety == "jalapeno" ? .35f : .25f) && length < .6f, $"Unexpected held length: {length} blocks.");
+                Require(thickness > .09f && thickness < (variety == "jalapeno" ? .2f : .28f), $"Unexpected held thickness: {thickness} blocks.");
             });
         }
-
-        check("held jalapeno geometry has a visible food-sized silhouette", () => {
-            var points = new List<Vec4f>();
-            var hand = HandMatrix(transform, hands.Single(a => a.Code == "RightHand"));
-            foreach (var element in pepper.Elements.Where(e => e.FacesResolved?.Any(f => f?.Enabled == true) == true))
-            {
-                Require(element.Children == null || element.Children.Length == 0,
-                    "Update the bounds test if the item changes from flattened to nested geometry.");
-                var local = new Matrixf(element.GetLocalTransformMatrix(0));
-                for (int i = 0; i < 8; i++)
-                {
-                    var p = new Vec4f(
-                        (float)((element.To[0] - element.From[0]) / 16 * ((i & 1) == 0 ? 0 : 1)),
-                        (float)((element.To[1] - element.From[1]) / 16 * ((i & 2) == 0 ? 0 : 1)),
-                        (float)((element.To[2] - element.From[2]) / 16 * ((i & 4) == 0 ? 0 : 1)), 1);
-                    points.Add(hand.TransformVector(local.TransformVector(p)));
-                }
-            }
-            Require(points.Count > 0 && points.All(p => float.IsFinite(p.X) && float.IsFinite(p.Y) && float.IsFinite(p.Z)),
-                "The held model must contain finite visible geometry.");
-            float length = points.Max(p => p.X) - points.Min(p => p.X);
-            float thickness = points.Max(p => p.Z) - points.Min(p => p.Z);
-            Require(length > .35f && length < .6f, $"Unexpected held length: {length} blocks.");
-            Require(thickness > .09f && thickness < .2f, $"Unexpected held thickness: {thickness} blocks.");
-        });
     }
 
     // EntityShapeRenderer.RenderItem scales before translating and combines the
