@@ -1,0 +1,597 @@
+{
+  "code": "pepperbundle",
+  "class": "ItemPepperFood",
+  "variantgroups": [
+    {
+      "code": "state",
+      "states": [
+        "raw",
+        "baked",
+        "dried"
+      ]
+    },
+    {
+      "code": "type",
+      "states": [
+        "jalapeno",
+        "habanero"
+      ]
+    }
+  ],
+  "creativeinventory": {
+    "general": [
+      "*"
+    ],
+    "items": [
+      "*"
+    ]
+  },
+  "maxstacksize": 8,
+  "materialDensity": 200,
+  "shape": {
+    "base": "item/food/bundle/{state}/{type}"
+  },
+  "texturesByType": {
+    "pepperbundle-raw-jalapeno": {
+      "base": {
+        "base": "block/plant/jalapeno/pepper"
+      },
+      "stem": {
+        "base": "block/plant/jalapeno/stem"
+      },
+      "cord": {
+        "base": "game:block/linen"
+      }
+    },
+    "pepperbundle-baked-jalapeno": {
+      "base": {
+        "base": "item/food/prepared/pepper-skins"
+      },
+      "stem": {
+        "base": "block/plant/jalapeno/stem"
+      },
+      "cord": {
+        "base": "game:block/linen"
+      }
+    },
+    "pepperbundle-dried-jalapeno": {
+      "base": {
+        "base": "item/food/prepared/pepper-skins"
+      },
+      "stem": {
+        "base": "block/plant/jalapeno/stem"
+      },
+      "cord": {
+        "base": "game:block/linen"
+      }
+    },
+    "pepperbundle-raw-habanero": {
+      "base": {
+        "base": "block/plant/habanero/pepper"
+      },
+      "stem": {
+        "base": "block/plant/habanero/stem"
+      },
+      "cord": {
+        "base": "game:block/linen"
+      }
+    },
+    "pepperbundle-baked-habanero": {
+      "base": {
+        "base": "item/food/prepared/pepper-skins"
+      },
+      "stem": {
+        "base": "block/plant/habanero/stem"
+      },
+      "cord": {
+        "base": "game:block/linen"
+      }
+    },
+    "pepperbundle-dried-habanero": {
+      "base": {
+        "base": "item/food/prepared/pepper-skins"
+      },
+      "stem": {
+        "base": "block/plant/habanero/stem"
+      },
+      "cord": {
+        "base": "game:block/linen"
+      }
+    }
+  },
+  "attributesByType": {
+    "pepperbundle-raw-jalapeno": {
+      "peppermodBundleCount": 8,
+      "peppermodScoville": 5000,
+      "bakingProperties": {
+        "temp": 160,
+        "levelFrom": 0,
+        "levelTo": 0.4,
+        "startScaleY": 1,
+        "endScaleY": 1,
+        "resultCode": "peppermod:pepperbundle-baked-jalapeno",
+        "largeItem": false
+      },
+      "onDisplayTransform": {
+        "translation": {
+          "x": 0,
+          "y": -0.44145,
+          "z": 0
+        },
+        "rotation": {
+          "x": 90,
+          "y": 0,
+          "z": 0
+        },
+        "origin": {
+          "x": 0.5,
+          "y": 0.5,
+          "z": 0.5
+        },
+        "scale": 0.32
+      }
+    },
+    "pepperbundle-baked-jalapeno": {
+      "peppermodBundleCount": 8,
+      "peppermodScoville": 2500,
+      "bakingProperties": {
+        "temp": 160,
+        "levelFrom": 0.4,
+        "levelTo": 0.8,
+        "startScaleY": 1,
+        "endScaleY": 1,
+        "initialCode": "peppermod:pepperbundle-raw-jalapeno",
+        "resultCode": "peppermod:pepperbundle-dried-jalapeno",
+        "largeItem": false
+      },
+      "onDisplayTransform": {
+        "translation": {
+          "x": 0,
+          "y": -0.44145,
+          "z": 0
+        },
+        "rotation": {
+          "x": 90,
+          "y": 0,
+          "z": 0
+        },
+        "origin": {
+          "x": 0.5,
+          "y": 0.5,
+          "z": 0.5
+        },
+        "scale": 0.32
+      }
+    },
+    "pepperbundle-dried-jalapeno": {
+      "peppermodBundleCount": 8,
+      "peppermodScoville": 1250,
+      "bakingProperties": {
+        "temp": 160,
+        "levelFrom": 0.8,
+        "levelTo": 1,
+        "startScaleY": 1,
+        "endScaleY": 1,
+        "initialCode": "peppermod:pepperbundle-baked-jalapeno",
+        "largeItem": false
+      },
+      "onDisplayTransform": {
+        "translation": {
+          "x": 0,
+          "y": -0.44145,
+          "z": 0
+        },
+        "rotation": {
+          "x": 90,
+          "y": 0,
+          "z": 0
+        },
+        "origin": {
+          "x": 0.5,
+          "y": 0.5,
+          "z": 0.5
+        },
+        "scale": 0.32
+      }
+    },
+    "pepperbundle-raw-habanero": {
+      "peppermodBundleCount": 8,
+      "peppermodScoville": 250000,
+      "bakingProperties": {
+        "temp": 160,
+        "levelFrom": 0,
+        "levelTo": 0.4,
+        "startScaleY": 1,
+        "endScaleY": 1,
+        "resultCode": "peppermod:pepperbundle-baked-habanero",
+        "largeItem": false
+      },
+      "onDisplayTransform": {
+        "translation": {
+          "x": 0,
+          "y": -0.4324,
+          "z": 0
+        },
+        "rotation": {
+          "x": 90,
+          "y": 0,
+          "z": 0
+        },
+        "origin": {
+          "x": 0.5,
+          "y": 0.5,
+          "z": 0.5
+        },
+        "scale": 0.32
+      }
+    },
+    "pepperbundle-baked-habanero": {
+      "peppermodBundleCount": 8,
+      "peppermodScoville": 125000,
+      "bakingProperties": {
+        "temp": 160,
+        "levelFrom": 0.4,
+        "levelTo": 0.8,
+        "startScaleY": 1,
+        "endScaleY": 1,
+        "initialCode": "peppermod:pepperbundle-raw-habanero",
+        "resultCode": "peppermod:pepperbundle-dried-habanero",
+        "largeItem": false
+      },
+      "onDisplayTransform": {
+        "translation": {
+          "x": 0,
+          "y": -0.4324,
+          "z": 0
+        },
+        "rotation": {
+          "x": 90,
+          "y": 0,
+          "z": 0
+        },
+        "origin": {
+          "x": 0.5,
+          "y": 0.5,
+          "z": 0.5
+        },
+        "scale": 0.32
+      }
+    },
+    "pepperbundle-dried-habanero": {
+      "peppermodBundleCount": 8,
+      "peppermodScoville": 62500,
+      "bakingProperties": {
+        "temp": 160,
+        "levelFrom": 0.8,
+        "levelTo": 1,
+        "startScaleY": 1,
+        "endScaleY": 1,
+        "initialCode": "peppermod:pepperbundle-baked-habanero",
+        "largeItem": false
+      },
+      "onDisplayTransform": {
+        "translation": {
+          "x": 0,
+          "y": -0.4324,
+          "z": 0
+        },
+        "rotation": {
+          "x": 90,
+          "y": 0,
+          "z": 0
+        },
+        "origin": {
+          "x": 0.5,
+          "y": 0.5,
+          "z": 0.5
+        },
+        "scale": 0.32
+      }
+    }
+  },
+  "transitionablePropsByType": {
+    "pepperbundle-raw-jalapeno": [
+      {
+        "type": "Perish",
+        "freshHours": {
+          "avg": 168
+        },
+        "transitionHours": {
+          "avg": 24
+        },
+        "transitionedStack": {
+          "type": "item",
+          "code": "game:rot"
+        },
+        "transitionRatio": 2
+      }
+    ],
+    "pepperbundle-baked-jalapeno": [
+      {
+        "type": "Perish",
+        "freshHours": {
+          "avg": 168,
+          "var": 24
+        },
+        "transitionHours": {
+          "avg": 24
+        },
+        "transitionedStack": {
+          "type": "item",
+          "code": "game:rot"
+        },
+        "transitionRatio": 2
+      }
+    ],
+    "pepperbundle-dried-jalapeno": [
+      {
+        "type": "Perish",
+        "freshHours": {
+          "avg": 8640
+        },
+        "transitionHours": {
+          "avg": 168
+        },
+        "transitionedStack": {
+          "type": "item",
+          "code": "game:rot"
+        },
+        "transitionRatio": 2
+      }
+    ],
+    "pepperbundle-raw-habanero": [
+      {
+        "type": "Perish",
+        "freshHours": {
+          "avg": 168
+        },
+        "transitionHours": {
+          "avg": 24
+        },
+        "transitionedStack": {
+          "type": "item",
+          "code": "game:rot"
+        },
+        "transitionRatio": 2
+      }
+    ],
+    "pepperbundle-baked-habanero": [
+      {
+        "type": "Perish",
+        "freshHours": {
+          "avg": 168,
+          "var": 24
+        },
+        "transitionHours": {
+          "avg": 24
+        },
+        "transitionedStack": {
+          "type": "item",
+          "code": "game:rot"
+        },
+        "transitionRatio": 2
+      }
+    ],
+    "pepperbundle-dried-habanero": [
+      {
+        "type": "Perish",
+        "freshHours": {
+          "avg": 8640
+        },
+        "transitionHours": {
+          "avg": 168
+        },
+        "transitionedStack": {
+          "type": "item",
+          "code": "game:rot"
+        },
+        "transitionRatio": 2
+      }
+    ]
+  },
+  "combustiblePropsByType": {
+    "pepperbundle-raw-jalapeno": {
+      "meltingPoint": 200,
+      "meltingDuration": 20,
+      "smeltedRatio": 1,
+      "smeltingType": "bake",
+      "smeltedStack": {
+        "type": "item",
+        "code": "peppermod:pepperbundle-baked-jalapeno"
+      },
+      "requiresContainer": false
+    },
+    "pepperbundle-baked-jalapeno": {
+      "meltingPoint": 200,
+      "meltingDuration": 40,
+      "smeltedRatio": 1,
+      "smeltingType": "bake",
+      "smeltedStack": {
+        "type": "item",
+        "code": "peppermod:pepperbundle-dried-jalapeno"
+      },
+      "requiresContainer": false
+    },
+    "pepperbundle-raw-habanero": {
+      "meltingPoint": 200,
+      "meltingDuration": 20,
+      "smeltedRatio": 1,
+      "smeltingType": "bake",
+      "smeltedStack": {
+        "type": "item",
+        "code": "peppermod:pepperbundle-baked-habanero"
+      },
+      "requiresContainer": false
+    },
+    "pepperbundle-baked-habanero": {
+      "meltingPoint": 200,
+      "meltingDuration": 40,
+      "smeltedRatio": 1,
+      "smeltingType": "bake",
+      "smeltedStack": {
+        "type": "item",
+        "code": "peppermod:pepperbundle-dried-habanero"
+      },
+      "requiresContainer": false
+    }
+  },
+  "groundTransformByType": {
+    "pepperbundle-raw-jalapeno": {
+      "translation": {
+        "x": 0,
+        "y": -0.33828,
+        "z": 0
+      },
+      "rotation": {
+        "x": 90,
+        "y": 0,
+        "z": 0
+      },
+      "origin": {
+        "x": 0.5,
+        "y": 0.5,
+        "z": 0.5
+      },
+      "scale": 1
+    },
+    "pepperbundle-baked-jalapeno": {
+      "translation": {
+        "x": 0,
+        "y": -0.33828,
+        "z": 0
+      },
+      "rotation": {
+        "x": 90,
+        "y": 0,
+        "z": 0
+      },
+      "origin": {
+        "x": 0.5,
+        "y": 0.5,
+        "z": 0.5
+      },
+      "scale": 1
+    },
+    "pepperbundle-dried-jalapeno": {
+      "translation": {
+        "x": 0,
+        "y": -0.33828,
+        "z": 0
+      },
+      "rotation": {
+        "x": 90,
+        "y": 0,
+        "z": 0
+      },
+      "origin": {
+        "x": 0.5,
+        "y": 0.5,
+        "z": 0.5
+      },
+      "scale": 1
+    },
+    "pepperbundle-raw-habanero": {
+      "translation": {
+        "x": 0,
+        "y": -0.309999,
+        "z": 0
+      },
+      "rotation": {
+        "x": 90,
+        "y": 0,
+        "z": 0
+      },
+      "origin": {
+        "x": 0.5,
+        "y": 0.5,
+        "z": 0.5
+      },
+      "scale": 1
+    },
+    "pepperbundle-baked-habanero": {
+      "translation": {
+        "x": 0,
+        "y": -0.309999,
+        "z": 0
+      },
+      "rotation": {
+        "x": 90,
+        "y": 0,
+        "z": 0
+      },
+      "origin": {
+        "x": 0.5,
+        "y": 0.5,
+        "z": 0.5
+      },
+      "scale": 1
+    },
+    "pepperbundle-dried-habanero": {
+      "translation": {
+        "x": 0,
+        "y": -0.309999,
+        "z": 0
+      },
+      "rotation": {
+        "x": 90,
+        "y": 0,
+        "z": 0
+      },
+      "origin": {
+        "x": 0.5,
+        "y": 0.5,
+        "z": 0.5
+      },
+      "scale": 1
+    }
+  },
+  "guiTransform": {
+    "rotation": {
+      "x": -10,
+      "y": 20,
+      "z": -12
+    },
+    "origin": {
+      "x": 0.5,
+      "y": 0.5,
+      "z": 0.5
+    },
+    "scale": 1.35
+  },
+  "tpHandTransform": {
+    "translation": {
+      "x": -0.4968,
+      "y": -0.2556,
+      "z": -0.7
+    },
+    "rotation": {
+      "x": 0,
+      "y": 0,
+      "z": -76
+    },
+    "origin": {
+      "x": 0.5,
+      "y": 0.1,
+      "z": 0.5
+    },
+    "scale": 0.6
+  },
+  "fpHandTransform": {
+    "translation": {
+      "x": 0.1,
+      "y": -0.1,
+      "z": -0.25
+    },
+    "rotation": {
+      "x": 45,
+      "y": 20,
+      "z": -35
+    },
+    "origin": {
+      "x": 0.5,
+      "y": 0.5,
+      "z": 0.5
+    },
+    "scale": 0.6
+  }
+}

@@ -1,0 +1,538 @@
+{
+  "code": "preparedpepper",
+  "class": "ItemPepperFood",
+  "variantgroups": [
+    {
+      "code": "state",
+      "states": [
+        "baked",
+        "dried"
+      ]
+    },
+    {
+      "code": "type",
+      "states": [
+        "jalapeno",
+        "habanero",
+        "serrano",
+        "cayenne",
+        "poblano",
+        "bell-pepper",
+        "banana-pepper",
+        "ghost-pepper"
+      ]
+    }
+  ],
+  "creativeinventory": {
+    "general": [
+      "*"
+    ],
+    "items": [
+      "*"
+    ]
+  },
+  "maxstacksize": 64,
+  "nutritionPropsByType": {
+    "*-habanero": {
+      "satiety": 20,
+      "health": 0,
+      "foodcategory": "Vegetable"
+    },
+    "*-jalapeno": {
+      "satiety": 20,
+      "health": 0,
+      "foodcategory": "Vegetable"
+    },
+    "*": {
+      "satiety": 80,
+      "health": 0,
+      "foodcategory": "Vegetable"
+    }
+  },
+  "attributesByType": {
+    "preparedpepper-baked-jalapeno": {
+      "peppermodSpice": 12.5,
+      "peppermodScoville": 2500,
+      "bakingProperties": {
+        "temp": 160,
+        "levelFrom": 0.4,
+        "levelTo": 0.8,
+        "startScaleY": 1,
+        "endScaleY": 1,
+        "initialCode": "peppermod:vegetable-jalapeno",
+        "resultCode": "peppermod:preparedpepper-dried-jalapeno"
+      }
+    },
+    "preparedpepper-baked-habanero": {
+      "peppermodSpice": 25,
+      "peppermodScoville": 125000,
+      "bakingProperties": {
+        "temp": 160,
+        "levelFrom": 0.4,
+        "levelTo": 0.8,
+        "startScaleY": 1,
+        "endScaleY": 1,
+        "initialCode": "peppermod:vegetable-habanero",
+        "resultCode": "peppermod:preparedpepper-dried-habanero"
+      }
+    },
+    "preparedpepper-baked-serrano": {
+      "peppermodSpice": 20,
+      "peppermodScoville": 7500,
+      "bakingProperties": {
+        "temp": 160,
+        "levelFrom": 0.4,
+        "levelTo": 0.8,
+        "startScaleY": 1,
+        "endScaleY": 1,
+        "initialCode": "peppermod:vegetable-serrano",
+        "resultCode": "peppermod:preparedpepper-dried-serrano"
+      }
+    },
+    "preparedpepper-baked-cayenne": {
+      "peppermodSpice": 25,
+      "peppermodScoville": 20000,
+      "bakingProperties": {
+        "temp": 160,
+        "levelFrom": 0.4,
+        "levelTo": 0.8,
+        "startScaleY": 1,
+        "endScaleY": 1,
+        "initialCode": "peppermod:vegetable-cayenne",
+        "resultCode": "peppermod:preparedpepper-dried-cayenne"
+      }
+    },
+    "preparedpepper-baked-poblano": {
+      "peppermodSpice": 7.5,
+      "peppermodScoville": 750,
+      "bakingProperties": {
+        "temp": 160,
+        "levelFrom": 0.4,
+        "levelTo": 0.8,
+        "startScaleY": 1,
+        "endScaleY": 1,
+        "initialCode": "peppermod:vegetable-poblano",
+        "resultCode": "peppermod:preparedpepper-dried-poblano"
+      }
+    },
+    "preparedpepper-baked-bell-pepper": {
+      "peppermodSpice": 0,
+      "peppermodScoville": 0,
+      "bakingProperties": {
+        "temp": 160,
+        "levelFrom": 0.4,
+        "levelTo": 0.8,
+        "startScaleY": 1,
+        "endScaleY": 1,
+        "initialCode": "peppermod:vegetable-bell-pepper",
+        "resultCode": "peppermod:preparedpepper-dried-bell-pepper"
+      }
+    },
+    "preparedpepper-baked-banana-pepper": {
+      "peppermodSpice": 5,
+      "peppermodScoville": 250,
+      "bakingProperties": {
+        "temp": 160,
+        "levelFrom": 0.4,
+        "levelTo": 0.8,
+        "startScaleY": 1,
+        "endScaleY": 1,
+        "initialCode": "peppermod:vegetable-banana-pepper",
+        "resultCode": "peppermod:preparedpepper-dried-banana-pepper"
+      }
+    },
+    "preparedpepper-baked-ghost-pepper": {
+      "peppermodSpice": 50,
+      "peppermodScoville": 500000,
+      "bakingProperties": {
+        "temp": 160,
+        "levelFrom": 0.4,
+        "levelTo": 0.8,
+        "startScaleY": 1,
+        "endScaleY": 1,
+        "initialCode": "peppermod:vegetable-ghost-pepper",
+        "resultCode": "peppermod:preparedpepper-dried-ghost-pepper"
+      }
+    },
+    "preparedpepper-dried-jalapeno": {
+      "peppermodSpice": 6.25,
+      "peppermodScoville": 1250,
+      "bakingProperties": {
+        "temp": 160,
+        "levelFrom": 0.8,
+        "levelTo": 1,
+        "startScaleY": 1,
+        "endScaleY": 1,
+        "initialCode": "peppermod:preparedpepper-baked-jalapeno"
+      }
+    },
+    "preparedpepper-dried-habanero": {
+      "peppermodSpice": 12.5,
+      "peppermodScoville": 62500,
+      "bakingProperties": {
+        "temp": 160,
+        "levelFrom": 0.8,
+        "levelTo": 1,
+        "startScaleY": 1,
+        "endScaleY": 1,
+        "initialCode": "peppermod:preparedpepper-baked-habanero"
+      }
+    },
+    "preparedpepper-dried-serrano": {
+      "peppermodSpice": 10,
+      "peppermodScoville": 3750,
+      "bakingProperties": {
+        "temp": 160,
+        "levelFrom": 0.8,
+        "levelTo": 1,
+        "startScaleY": 1,
+        "endScaleY": 1,
+        "initialCode": "peppermod:preparedpepper-baked-serrano"
+      }
+    },
+    "preparedpepper-dried-cayenne": {
+      "peppermodSpice": 12.5,
+      "peppermodScoville": 10000,
+      "bakingProperties": {
+        "temp": 160,
+        "levelFrom": 0.8,
+        "levelTo": 1,
+        "startScaleY": 1,
+        "endScaleY": 1,
+        "initialCode": "peppermod:preparedpepper-baked-cayenne"
+      }
+    },
+    "preparedpepper-dried-poblano": {
+      "peppermodSpice": 3.75,
+      "peppermodScoville": 375,
+      "bakingProperties": {
+        "temp": 160,
+        "levelFrom": 0.8,
+        "levelTo": 1,
+        "startScaleY": 1,
+        "endScaleY": 1,
+        "initialCode": "peppermod:preparedpepper-baked-poblano"
+      }
+    },
+    "preparedpepper-dried-bell-pepper": {
+      "peppermodSpice": 0,
+      "peppermodScoville": 0,
+      "bakingProperties": {
+        "temp": 160,
+        "levelFrom": 0.8,
+        "levelTo": 1,
+        "startScaleY": 1,
+        "endScaleY": 1,
+        "initialCode": "peppermod:preparedpepper-baked-bell-pepper"
+      }
+    },
+    "preparedpepper-dried-banana-pepper": {
+      "peppermodSpice": 2.5,
+      "peppermodScoville": 125,
+      "bakingProperties": {
+        "temp": 160,
+        "levelFrom": 0.8,
+        "levelTo": 1,
+        "startScaleY": 1,
+        "endScaleY": 1,
+        "initialCode": "peppermod:preparedpepper-baked-banana-pepper"
+      }
+    },
+    "preparedpepper-dried-ghost-pepper": {
+      "peppermodSpice": 25,
+      "peppermodScoville": 250000,
+      "bakingProperties": {
+        "temp": 160,
+        "levelFrom": 0.8,
+        "levelTo": 1,
+        "startScaleY": 1,
+        "endScaleY": 1,
+        "initialCode": "peppermod:preparedpepper-baked-ghost-pepper"
+      }
+    }
+  },
+  "materialDensity": 200,
+  "shape": {
+    "base": "item/food/prepared/{state}/{type}"
+  },
+  "guiTransformByType": {
+    "*-habanero": {
+      "translation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "rotation": {
+        "x": -18,
+        "y": 25,
+        "z": -30
+      },
+      "origin": {
+        "x": 0.5,
+        "y": 0.5,
+        "z": 0.5
+      },
+      "scale": 2
+    },
+    "*-jalapeno": {
+      "translation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "rotation": {
+        "x": -18,
+        "y": 25,
+        "z": -40
+      },
+      "origin": {
+        "x": 0.5,
+        "y": 0.5,
+        "z": 0.5
+      },
+      "scale": 1.85
+    },
+    "*": {
+      "translation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "rotation": {
+        "x": -35,
+        "y": 45,
+        "z": 0
+      },
+      "origin": {
+        "x": 0.5,
+        "y": 0.5,
+        "z": 0.5
+      },
+      "scale": 2.2
+    }
+  },
+  "groundTransformByType": {
+    "*-habanero": {
+      "translation": {
+        "x": 0,
+        "y": 0.04,
+        "z": 0
+      },
+      "rotation": {
+        "x": 0,
+        "y": 20,
+        "z": 82
+      },
+      "origin": {
+        "x": 0.5,
+        "y": 0.5,
+        "z": 0.5
+      },
+      "scale": 1.25
+    },
+    "*-jalapeno": {
+      "translation": {
+        "x": 0,
+        "y": 0.04,
+        "z": 0
+      },
+      "rotation": {
+        "x": 0,
+        "y": 20,
+        "z": 88
+      },
+      "origin": {
+        "x": 0.5,
+        "y": 0.5,
+        "z": 0.5
+      },
+      "scale": 1.25
+    },
+    "*": {
+      "translation": {
+        "x": 0,
+        "y": 0.04,
+        "z": 0
+      },
+      "rotation": {
+        "x": 0,
+        "y": 20,
+        "z": 0
+      },
+      "origin": {
+        "x": 0.5,
+        "y": 0.5,
+        "z": 0.5
+      },
+      "scale": 1.25
+    }
+  },
+  "tpHandTransformByType": {
+    "*-habanero": {
+      "translation": {
+        "x": -0.4968,
+        "y": -0.2556,
+        "z": -0.7
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": -76
+      },
+      "origin": {
+        "x": 0.5,
+        "y": 0.1,
+        "z": 0.5
+      },
+      "scale": 0.69
+    },
+    "*-jalapeno": {
+      "translation": {
+        "x": -0.4968,
+        "y": -0.2556,
+        "z": -0.7
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": -76
+      },
+      "origin": {
+        "x": 0.5,
+        "y": 0.1,
+        "z": 0.5
+      },
+      "scale": 0.69
+    },
+    "*": {
+      "translation": {
+        "x": -0.35,
+        "y": -0.05,
+        "z": -0.55
+      },
+      "rotation": {
+        "x": 35,
+        "y": 20,
+        "z": -20
+      },
+      "origin": {
+        "x": 0.5,
+        "y": 0.5,
+        "z": 0.5
+      },
+      "scale": 0.65
+    }
+  },
+  "fpHandTransformByType": {
+    "*-habanero": {
+      "translation": {
+        "x": 0.1,
+        "y": -0.1,
+        "z": -0.25
+      },
+      "rotation": {
+        "x": 45,
+        "y": 20,
+        "z": -35
+      },
+      "origin": {
+        "x": 0.5,
+        "y": 0.5,
+        "z": 0.5
+      },
+      "scale": 0.65
+    },
+    "*-jalapeno": {
+      "translation": {
+        "x": 0.1,
+        "y": -0.1,
+        "z": -0.25
+      },
+      "rotation": {
+        "x": 45,
+        "y": 20,
+        "z": -35
+      },
+      "origin": {
+        "x": 0.5,
+        "y": 0.5,
+        "z": 0.5
+      },
+      "scale": 0.55
+    },
+    "*": {
+      "translation": {
+        "x": 0.1,
+        "y": -0.1,
+        "z": -0.25
+      },
+      "rotation": {
+        "x": 45,
+        "y": 20,
+        "z": -35
+      },
+      "origin": {
+        "x": 0.5,
+        "y": 0.5,
+        "z": 0.5
+      },
+      "scale": 0.8
+    }
+  },
+  "textures": {
+    "base": {
+      "base": "item/food/prepared/pepper-skins"
+    },
+    "stem": {
+      "base": "block/plant/{type}/stem"
+    }
+  },
+  "combustiblePropsByType": {
+    "preparedpepper-baked-*": {
+      "meltingPoint": 200,
+      "meltingDuration": 40,
+      "smeltedRatio": 1,
+      "smeltingType": "bake",
+      "smeltedStack": {
+        "type": "item",
+        "code": "peppermod:preparedpepper-dried-{type}"
+      },
+      "requiresContainer": false
+    }
+  },
+  "transitionablePropsByType": {
+    "preparedpepper-baked-*": [
+      {
+        "type": "Perish",
+        "freshHours": {
+          "avg": 168,
+          "var": 24
+        },
+        "transitionHours": {
+          "avg": 24
+        },
+        "transitionedStack": {
+          "type": "item",
+          "code": "game:rot"
+        },
+        "transitionRatio": 0.25
+      }
+    ],
+    "preparedpepper-dried-*": [
+      {
+        "type": "Perish",
+        "freshHours": {
+          "avg": 8640
+        },
+        "transitionHours": {
+          "avg": 168
+        },
+        "transitionedStack": {
+          "type": "item",
+          "code": "game:rot"
+        },
+        "transitionRatio": 0.25
+      }
+    ]
+  }
+}

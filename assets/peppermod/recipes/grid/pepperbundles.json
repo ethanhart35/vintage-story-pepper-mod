@@ -1,0 +1,236 @@
+[
+  {
+    "name": "peppermod:bundle-tie-raw-jalapeno",
+    "ingredientPattern": "PPP\tPFP\tPPP",
+    "width": 3,
+    "height": 3,
+    "ingredients": {
+      "P": {
+        "type": "item",
+        "code": "peppermod:vegetable-jalapeno"
+      },
+      "F": {
+        "type": "item",
+        "code": "game:flaxfibers"
+      }
+    },
+    "output": {
+      "type": "item",
+      "code": "peppermod:pepperbundle-raw-jalapeno",
+      "quantity": 1
+    }
+  },
+  {
+    "name": "peppermod:bundle-untie-raw-jalapeno",
+    "ingredientPattern": "B",
+    "width": 1,
+    "height": 1,
+    "shapeless": true,
+    "ingredients": {
+      "B": {
+        "type": "item",
+        "code": "peppermod:pepperbundle-raw-jalapeno"
+      }
+    },
+    "output": {
+      "type": "item",
+      "code": "peppermod:vegetable-jalapeno",
+      "quantity": 8
+    }
+  },
+  {
+    "name": "peppermod:bundle-tie-baked-jalapeno",
+    "ingredientPattern": "PPP\tPFP\tPPP",
+    "width": 3,
+    "height": 3,
+    "ingredients": {
+      "P": {
+        "type": "item",
+        "code": "peppermod:preparedpepper-baked-jalapeno"
+      },
+      "F": {
+        "type": "item",
+        "code": "game:flaxfibers"
+      }
+    },
+    "output": {
+      "type": "item",
+      "code": "peppermod:pepperbundle-baked-jalapeno",
+      "quantity": 1
+    }
+  },
+  {
+    "name": "peppermod:bundle-untie-baked-jalapeno",
+    "ingredientPattern": "B",
+    "width": 1,
+    "height": 1,
+    "shapeless": true,
+    "ingredients": {
+      "B": {
+        "type": "item",
+        "code": "peppermod:pepperbundle-baked-jalapeno"
+      }
+    },
+    "output": {
+      "type": "item",
+      "code": "peppermod:preparedpepper-baked-jalapeno",
+      "quantity": 8
+    }
+  },
+  {
+    "name": "peppermod:bundle-tie-dried-jalapeno",
+    "ingredientPattern": "PPP\tPFP\tPPP",
+    "width": 3,
+    "height": 3,
+    "ingredients": {
+      "P": {
+        "type": "item",
+        "code": "peppermod:preparedpepper-dried-jalapeno"
+      },
+      "F": {
+        "type": "item",
+        "code": "game:flaxfibers"
+      }
+    },
+    "output": {
+      "type": "item",
+      "code": "peppermod:pepperbundle-dried-jalapeno",
+      "quantity": 1
+    }
+  },
+  {
+    "name": "peppermod:bundle-untie-dried-jalapeno",
+    "ingredientPattern": "B",
+    "width": 1,
+    "height": 1,
+    "shapeless": true,
+    "ingredients": {
+      "B": {
+        "type": "item",
+        "code": "peppermod:pepperbundle-dried-jalapeno"
+      }
+    },
+    "output": {
+      "type": "item",
+      "code": "peppermod:preparedpepper-dried-jalapeno",
+      "quantity": 8
+    }
+  },
+  {
+    "name": "peppermod:bundle-tie-raw-habanero",
+    "ingredientPattern": "PPP\tPFP\tPPP",
+    "width": 3,
+    "height": 3,
+    "ingredients": {
+      "P": {
+        "type": "item",
+        "code": "peppermod:vegetable-habanero"
+      },
+      "F": {
+        "type": "item",
+        "code": "game:flaxfibers"
+      }
+    },
+    "output": {
+      "type": "item",
+      "code": "peppermod:pepperbundle-raw-habanero",
+      "quantity": 1
+    }
+  },
+  {
+    "name": "peppermod:bundle-untie-raw-habanero",
+    "ingredientPattern": "B",
+    "width": 1,
+    "height": 1,
+    "shapeless": true,
+    "ingredients": {
+      "B": {
+        "type": "item",
+        "code": "peppermod:pepperbundle-raw-habanero"
+      }
+    },
+    "output": {
+      "type": "item",
+      "code": "peppermod:vegetable-habanero",
+      "quantity": 8
+    }
+  },
+  {
+    "name": "peppermod:bundle-tie-baked-habanero",
+    "ingredientPattern": "PPP\tPFP\tPPP",
+    "width": 3,
+    "height": 3,
+    "ingredients": {
+      "P": {
+        "type": "item",
+        "code": "peppermod:preparedpepper-baked-habanero"
+      },
+      "F": {
+        "type": "item",
+        "code": "game:flaxfibers"
+      }
+    },
+    "output": {
+      "type": "item",
+      "code": "peppermod:pepperbundle-baked-habanero",
+      "quantity": 1
+    }
+  },
+  {
+    "name": "peppermod:bundle-untie-baked-habanero",
+    "ingredientPattern": "B",
+    "width": 1,
+    "height": 1,
+    "shapeless": true,
+    "ingredients": {
+      "B": {
+        "type": "item",
+        "code": "peppermod:pepperbundle-baked-habanero"
+      }
+    },
+    "output": {
+      "type": "item",
+      "code": "peppermod:preparedpepper-baked-habanero",
+      "quantity": 8
+    }
+  },
+  {
+    "name": "peppermod:bundle-tie-dried-habanero",
+    "ingredientPattern": "PPP\tPFP\tPPP",
+    "width": 3,
+    "height": 3,
+    "ingredients": {
+      "P": {
+        "type": "item",
+        "code": "peppermod:preparedpepper-dried-habanero"
+      },
+      "F": {
+        "type": "item",
+        "code": "game:flaxfibers"
+      }
+    },
+    "output": {
+      "type": "item",
+      "code": "peppermod:pepperbundle-dried-habanero",
+      "quantity": 1
+    }
+  },
+  {
+    "name": "peppermod:bundle-untie-dried-habanero",
+    "ingredientPattern": "B",
+    "width": 1,
+    "height": 1,
+    "shapeless": true,
+    "ingredients": {
+      "B": {
+        "type": "item",
+        "code": "peppermod:pepperbundle-dried-habanero"
+      }
+    },
+    "output": {
+      "type": "item",
+      "code": "peppermod:preparedpepper-dried-habanero",
+      "quantity": 8
+    }
+  }
+]

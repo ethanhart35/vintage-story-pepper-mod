@@ -1,0 +1,353 @@
+{
+  "editor": {
+    "allAngles": true,
+    "backdrops": [],
+    "attachments": []
+  },
+  "textures": {
+    "base": "item/food/prepared/pepper-skins",
+    "stem": "block/plant/cayenne/stem"
+  },
+  "elements": [
+    {
+      "name": "CayenneItemRoot",
+      "from": [
+        0,
+        0,
+        0
+      ],
+      "to": [
+        0,
+        0,
+        0
+      ],
+      "faces": {},
+      "rotationOrigin": [
+        0,
+        0,
+        0
+      ],
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1,
+      "renderPass": -1,
+      "children": [],
+      "uv": [
+        0,
+        0
+      ]
+    },
+    {
+      "name": "PepperBodyPlaceholder",
+      "from": [
+        5.25,
+        6.25,
+        5
+      ],
+      "to": [
+        10.75,
+        9.75,
+        11
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#base",
+          "uv": [
+            8.3,
+            8.3,
+            15.7,
+            15.7
+          ],
+          "enabled": true,
+          "autoUv": false
+        },
+        "east": {
+          "texture": "#base",
+          "uv": [
+            8.3,
+            8.3,
+            15.7,
+            15.7
+          ],
+          "enabled": true,
+          "autoUv": false
+        },
+        "south": {
+          "texture": "#base",
+          "uv": [
+            8.3,
+            8.3,
+            15.7,
+            15.7
+          ],
+          "enabled": true,
+          "autoUv": false
+        },
+        "west": {
+          "texture": "#base",
+          "uv": [
+            8.3,
+            8.3,
+            15.7,
+            15.7
+          ],
+          "enabled": true,
+          "autoUv": false
+        },
+        "up": {
+          "texture": "#base",
+          "uv": [
+            8.3,
+            8.3,
+            15.7,
+            15.7
+          ],
+          "enabled": true,
+          "autoUv": false
+        },
+        "down": {
+          "texture": "#base",
+          "uv": [
+            8.3,
+            8.3,
+            15.7,
+            15.7
+          ],
+          "enabled": true,
+          "autoUv": false
+        }
+      },
+      "rotationOrigin": [
+        8,
+        8,
+        8
+      ],
+      "rotationX": 0,
+      "rotationY": -25,
+      "rotationZ": 0,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1,
+      "renderPass": -1,
+      "stepParentName": "CayenneItemRoot",
+      "renderInEditor": true,
+      "uv": [
+        0,
+        0
+      ]
+    },
+    {
+      "name": "PepperTipPlaceholder",
+      "from": [
+        6.5,
+        5.25,
+        6.25
+      ],
+      "to": [
+        9.5,
+        6.75,
+        9.75
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#base",
+          "uv": [
+            8.3,
+            8.3,
+            15.7,
+            15.7
+          ],
+          "enabled": true,
+          "autoUv": false
+        },
+        "east": {
+          "texture": "#base",
+          "uv": [
+            8.3,
+            8.3,
+            15.7,
+            15.7
+          ],
+          "enabled": true,
+          "autoUv": false
+        },
+        "south": {
+          "texture": "#base",
+          "uv": [
+            8.3,
+            8.3,
+            15.7,
+            15.7
+          ],
+          "enabled": true,
+          "autoUv": false
+        },
+        "west": {
+          "texture": "#base",
+          "uv": [
+            8.3,
+            8.3,
+            15.7,
+            15.7
+          ],
+          "enabled": true,
+          "autoUv": false
+        },
+        "up": {
+          "texture": "#base",
+          "uv": [
+            8.3,
+            8.3,
+            15.7,
+            15.7
+          ],
+          "enabled": true,
+          "autoUv": false
+        },
+        "down": {
+          "texture": "#base",
+          "uv": [
+            8.3,
+            8.3,
+            15.7,
+            15.7
+          ],
+          "enabled": true,
+          "autoUv": false
+        }
+      },
+      "rotationOrigin": [
+        8,
+        8,
+        8
+      ],
+      "rotationX": 0,
+      "rotationY": -25,
+      "rotationZ": 0,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1,
+      "renderPass": -1,
+      "stepParentName": "CayenneItemRoot",
+      "renderInEditor": true,
+      "uv": [
+        0,
+        0
+      ]
+    },
+    {
+      "name": "StemPlaceholder",
+      "from": [
+        7.25,
+        9.75,
+        7.25
+      ],
+      "to": [
+        8.75,
+        11.25,
+        8.75
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#stem",
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "enabled": true,
+          "autoUv": true
+        },
+        "east": {
+          "texture": "#stem",
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "enabled": true,
+          "autoUv": true
+        },
+        "south": {
+          "texture": "#stem",
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "enabled": true,
+          "autoUv": true
+        },
+        "west": {
+          "texture": "#stem",
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "enabled": true,
+          "autoUv": true
+        },
+        "up": {
+          "texture": "#stem",
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "enabled": true,
+          "autoUv": true
+        },
+        "down": {
+          "texture": "#stem",
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "enabled": true,
+          "autoUv": true
+        }
+      },
+      "rotationOrigin": [
+        8,
+        9.75,
+        8
+      ],
+      "rotationX": 0,
+      "rotationY": -25,
+      "rotationZ": 0,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1,
+      "renderPass": -1,
+      "stepParentName": "CayenneItemRoot",
+      "renderInEditor": true,
+      "uv": [
+        0,
+        0
+      ]
+    }
+  ],
+  "textureWidth": 16,
+  "textureHeight": 16,
+  "textureSizes": {
+    "base": [
+      16,
+      16
+    ],
+    "stem": [
+      16,
+      16
+    ]
+  }
+}

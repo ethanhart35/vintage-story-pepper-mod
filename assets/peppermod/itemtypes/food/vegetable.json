@@ -1,4 +1,4 @@
-﻿{
+{
     "code":  "vegetable",
     "class": "ItemPepperFood",
     "variantgroups":  [
@@ -44,32 +44,137 @@
         "*": { "satiety": 80, "health": 0, "foodcategory": "Vegetable" }
     },
     "attributesByType": {
-        "*-jalapeno": { "peppermodSpice": 25 },
-        "*-habanero": { "peppermodSpice": 50 },
-        "*-serrano": { "peppermodSpice": 40 },
-        "*-cayenne": { "peppermodSpice": 50 },
-        "*-poblano": { "peppermodSpice": 15 },
-        "*-banana-pepper": { "peppermodSpice": 10 },
-        "*-ghost-pepper": { "peppermodSpice": 100 },
-        "*": { "peppermodSpice": 0 }
+        "*-jalapeno": {
+            "peppermodSpice": 25,
+            "peppermodScoville": 5000,
+            "bakingProperties": {
+                "temp": 160,
+                "levelFrom": 0,
+                "levelTo": 0.4,
+                "startScaleY": 1,
+                "endScaleY": 1,
+                "resultCode": "peppermod:preparedpepper-baked-{type}"
+            }
+        },
+        "*-habanero": {
+            "peppermodSpice": 50,
+            "peppermodScoville": 250000,
+            "bakingProperties": {
+                "temp": 160,
+                "levelFrom": 0,
+                "levelTo": 0.4,
+                "startScaleY": 1,
+                "endScaleY": 1,
+                "resultCode": "peppermod:preparedpepper-baked-{type}"
+            }
+        },
+        "*-serrano": {
+            "peppermodSpice": 40,
+            "peppermodScoville": 15000,
+            "bakingProperties": {
+                "temp": 160,
+                "levelFrom": 0,
+                "levelTo": 0.4,
+                "startScaleY": 1,
+                "endScaleY": 1,
+                "resultCode": "peppermod:preparedpepper-baked-{type}"
+            }
+        },
+        "*-cayenne": {
+            "peppermodSpice": 50,
+            "peppermodScoville": 40000,
+            "bakingProperties": {
+                "temp": 160,
+                "levelFrom": 0,
+                "levelTo": 0.4,
+                "startScaleY": 1,
+                "endScaleY": 1,
+                "resultCode": "peppermod:preparedpepper-baked-{type}"
+            }
+        },
+        "*-poblano": {
+            "peppermodSpice": 15,
+            "peppermodScoville": 1500,
+            "bakingProperties": {
+                "temp": 160,
+                "levelFrom": 0,
+                "levelTo": 0.4,
+                "startScaleY": 1,
+                "endScaleY": 1,
+                "resultCode": "peppermod:preparedpepper-baked-{type}"
+            }
+        },
+        "*-banana-pepper": {
+            "peppermodSpice": 10,
+            "peppermodScoville": 500,
+            "bakingProperties": {
+                "temp": 160,
+                "levelFrom": 0,
+                "levelTo": 0.4,
+                "startScaleY": 1,
+                "endScaleY": 1,
+                "resultCode": "peppermod:preparedpepper-baked-{type}"
+            }
+        },
+        "*-ghost-pepper": {
+            "peppermodSpice": 100,
+            "peppermodScoville": 1000000,
+            "bakingProperties": {
+                "temp": 160,
+                "levelFrom": 0,
+                "levelTo": 0.4,
+                "startScaleY": 1,
+                "endScaleY": 1,
+                "resultCode": "peppermod:preparedpepper-baked-{type}"
+            }
+        },
+        "*": {
+            "peppermodSpice": 0,
+            "peppermodScoville": 0,
+            "bakingProperties": {
+                "temp": 160,
+                "levelFrom": 0,
+                "levelTo": 0.4,
+                "startScaleY": 1,
+                "endScaleY": 1,
+                "resultCode": "peppermod:preparedpepper-baked-{type}"
+            }
+        }
     },
-    "transitionableProps":  [
-                                {
-                                    "type":  "Perish",
-                                    "freshHours":  {
-                                                       "avg":  336,
-                                                       "var":  48
-                                                   },
-                                    "transitionHours":  {
-                                                            "avg":  24
-                                                        },
-                                    "transitionedStack":  {
-                                                              "type":  "item",
-                                                              "code":  "game:rot"
-                                                          },
-                                    "transitionRatio":  0.25
-                                }
-                            ],
+    "combustibleProps": {
+        "meltingPoint": 200,
+        "meltingDuration": 20,
+        "smeltedRatio": 1,
+        "smeltingType": "bake",
+        "smeltedStack": {
+            "type": "item",
+            "code": "peppermod:preparedpepper-baked-{type}"
+        },
+        "requiresContainer": false
+    },
+    "transitionablePropsByType": {
+        "*-habanero": [{
+            "type": "Perish",
+            "freshHours": { "avg": 168 },
+            "transitionHours": { "avg": 24 },
+            "transitionedStack": { "type": "item", "code": "game:rot" },
+            "transitionRatio": 0.25
+        }],
+        "*-jalapeno": [{
+            "type": "Perish",
+            "freshHours": { "avg": 168 },
+            "transitionHours": { "avg": 24 },
+            "transitionedStack": { "type": "item", "code": "game:rot" },
+            "transitionRatio": 0.25
+        }],
+        "*": [{
+            "type": "Perish",
+            "freshHours": { "avg": 336, "var": 48 },
+            "transitionHours": { "avg": 24 },
+            "transitionedStack": { "type": "item", "code": "game:rot" },
+            "transitionRatio": 0.25
+        }]
+    },
     "materialDensity":  200,
     "shape":  {
                   "base":  "item/food/vegetable/{type}"

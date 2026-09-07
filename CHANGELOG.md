@@ -4,6 +4,18 @@
 
 ### 0.2.0 - Habaneros
 
+- Added raw, baked, and dried jalapeno/habanero bundles with custom eight-pepper ristra models, flax-fiber ties, hanging loops, and flat oven/dropped positioning.
+- Refined all six bundle models with staggered, all-around fruit placement and direct stem-to-cord attachments instead of outward strings and paired rows.
+- Added shaped recipes using one flax fiber surrounded by eight matching peppers, plus shapeless unpacking into eight peppers of the same variety and preparation. Fiber is consumed, not returned.
+- Four bundles use the vanilla oven's four slots to bake or dry 32 peppers at once, without modifying the oven or other foods.
+- Bundles retain the corresponding pepper shelf life and per-pepper Scoville heat. Tying and untying preserve the oldest perish timer without a crafting freshness bonus. Bundles must be unpacked before eating.
+- Added an offline bundle preview and tests for recipe matching/consumption, preservation state, repeated crafting, full oven batches, attachments, and display bounds.
+- Reduced raw jalapeno and habanero base freshness to 7 days (168 hours, no random variance); other varieties and prepared forms are unchanged.
+- Added Scoville heat units to raw, baked, and dried pepper tooltips while preserving normal food and spoilage information.
+- Added clay-oven baking from raw to baked peppers, then a longer second bake to dried peppers. Each stage halves Scoville units and spice-meter gain.
+- Kept raw shelf life unchanged, set baked freshness to 7 days (+/- 1), and dried freshness to 360 days, before storage modifiers. All forms still rot and use vanilla freshness carryover when baked.
+- Added baked and dried skin textures and 3D item variants, preserving existing fruit geometry and held positioning. Raw habaneros still fill the spice meter in two bites.
+- Added a preparation preview and regression tests exercising the installed game's oven, terminal dried state, tooltips, spice reduction, spoilage definitions, and model assets.
 - Replaced all 11 habanero plant placeholders with a broad, asymmetric bush, wider leaves, flowers, and attached lobed peppers.
 - Added green unripe fruit, mixed green/orange ripening fruit, orange ripe fruit, and green regrowth at fixed attachment points.
 - Preserved the mature canopy through harvesting and regrowth and its branch skeleton during dormancy.

@@ -1,0 +1,4698 @@
+{
+  "editor": {
+    "allAngles": true,
+    "backdrops": [],
+    "attachments": []
+  },
+  "textureWidth": 16,
+  "textureHeight": 16,
+  "textures": {
+    "base": "item/food/prepared/pepper-skins",
+    "stem": "block/plant/jalapeno/stem"
+  },
+  "textureSizes": {
+    "base": [
+      16,
+      16
+    ],
+    "stem": [
+      16,
+      16
+    ]
+  },
+  "elements": [
+    {
+      "name": "JalapenoItemRoot",
+      "from": [
+        0,
+        0,
+        0
+      ],
+      "to": [
+        0,
+        0,
+        0
+      ],
+      "rotationOrigin": [
+        0,
+        0,
+        0
+      ],
+      "faces": {},
+      "children": [],
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1,
+      "uv": [
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Fruit-shoulder-top-core",
+      "from": [
+        7.175,
+        10.78,
+        7.55795
+      ],
+      "to": [
+        8.825,
+        11.18,
+        8.43773
+      ],
+      "rotationOrigin": [
+        8,
+        8,
+        8
+      ],
+      "rotationX": 0,
+      "rotationY": 0,
+      "rotationZ": 0,
+      "shade": true,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1,
+      "faces": {
+        "north": {
+          "texture": "#base",
+          "uv": [
+            1.04,
+            8.3,
+            7.6704,
+            8.65835
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "east": {
+          "texture": "#base",
+          "uv": [
+            0.64533,
+            8.3,
+            7.4336,
+            8.65835
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "south": {
+          "texture": "#base",
+          "uv": [
+            1.04,
+            8.3,
+            7.6704,
+            8.65835
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "west": {
+          "texture": "#base",
+          "uv": [
+            0.40853,
+            8.3,
+            6.96,
+            8.65835
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "up": {
+          "texture": "#base",
+          "uv": [
+            3.96053,
+            9.88571,
+            6.09173,
+            11.33929
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "down": {
+          "texture": "#base",
+          "uv": [
+            4.592,
+            13.71786,
+            6.7232,
+            15.2375
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "children": [],
+      "stepParentName": "JalapenoItemRoot",
+      "renderPass": -1,
+      "uv": [
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Fruit-shoulder-top-front",
+      "from": [
+        7.472,
+        10.78,
+        7.28834
+      ],
+      "to": [
+        8.528,
+        11.18,
+        7.55795
+      ],
+      "rotationOrigin": [
+        8,
+        8,
+        8
+      ],
+      "rotationX": 0,
+      "rotationY": 0,
+      "rotationZ": 0,
+      "shade": true,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1,
+      "faces": {
+        "north": {
+          "texture": "#base",
+          "uv": [
+            1.04,
+            8.3,
+            7.6704,
+            8.65835
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "east": {
+          "texture": "#base",
+          "uv": [
+            0.64533,
+            8.3,
+            7.4336,
+            8.65835
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "west": {
+          "texture": "#base",
+          "uv": [
+            0.40853,
+            8.3,
+            6.96,
+            8.65835
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "up": {
+          "texture": "#base",
+          "uv": [
+            3.96053,
+            9.88571,
+            6.09173,
+            11.33929
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "down": {
+          "texture": "#base",
+          "uv": [
+            4.592,
+            13.71786,
+            6.7232,
+            15.2375
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "children": [],
+      "stepParentName": "JalapenoItemRoot",
+      "renderPass": -1,
+      "uv": [
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Fruit-shoulder-top-back",
+      "from": [
+        7.472,
+        10.78,
+        8.43773
+      ],
+      "to": [
+        8.528,
+        11.18,
+        8.70734
+      ],
+      "rotationOrigin": [
+        8,
+        8,
+        8
+      ],
+      "rotationX": 0,
+      "rotationY": 0,
+      "rotationZ": 0,
+      "shade": true,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1,
+      "faces": {
+        "east": {
+          "texture": "#base",
+          "uv": [
+            0.64533,
+            8.3,
+            7.4336,
+            8.65835
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "south": {
+          "texture": "#base",
+          "uv": [
+            1.04,
+            8.3,
+            7.6704,
+            8.65835
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "west": {
+          "texture": "#base",
+          "uv": [
+            0.40853,
+            8.3,
+            6.96,
+            8.65835
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "up": {
+          "texture": "#base",
+          "uv": [
+            3.96053,
+            9.88571,
+            6.09173,
+            11.33929
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "down": {
+          "texture": "#base",
+          "uv": [
+            4.592,
+            13.71786,
+            6.7232,
+            15.2375
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "children": [],
+      "stepParentName": "JalapenoItemRoot",
+      "renderPass": -1,
+      "uv": [
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Fruit-shoulder-core",
+      "from": [
+        6.795,
+        10.2,
+        7.37589
+      ],
+      "to": [
+        9.145,
+        10.8,
+        8.62891
+      ],
+      "rotationOrigin": [
+        8,
+        8,
+        8
+      ],
+      "rotationX": 0,
+      "rotationY": 0,
+      "rotationZ": 0,
+      "shade": true,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1,
+      "faces": {
+        "north": {
+          "texture": "#base",
+          "uv": [
+            1.04,
+            8.64043,
+            7.6704,
+            9.17797
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "east": {
+          "texture": "#base",
+          "uv": [
+            0.64533,
+            8.64043,
+            7.4336,
+            9.17797
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "south": {
+          "texture": "#base",
+          "uv": [
+            1.04,
+            8.64043,
+            7.6704,
+            9.17797
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "west": {
+          "texture": "#base",
+          "uv": [
+            0.40853,
+            8.64043,
+            6.96,
+            9.17797
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "up": {
+          "texture": "#base",
+          "uv": [
+            3.96053,
+            9.88571,
+            6.09173,
+            11.33929
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "down": {
+          "texture": "#base",
+          "uv": [
+            4.592,
+            13.71786,
+            6.7232,
+            15.2375
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "children": [],
+      "stepParentName": "JalapenoItemRoot",
+      "renderPass": -1,
+      "uv": [
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Fruit-shoulder-front",
+      "from": [
+        7.218,
+        10.2,
+        6.9919
+      ],
+      "to": [
+        8.722,
+        10.8,
+        7.37589
+      ],
+      "rotationOrigin": [
+        8,
+        8,
+        8
+      ],
+      "rotationX": 0,
+      "rotationY": 0,
+      "rotationZ": 0,
+      "shade": true,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1,
+      "faces": {
+        "north": {
+          "texture": "#base",
+          "uv": [
+            1.04,
+            8.64043,
+            7.6704,
+            9.17797
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "east": {
+          "texture": "#base",
+          "uv": [
+            0.64533,
+            8.64043,
+            7.4336,
+            9.17797
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "west": {
+          "texture": "#base",
+          "uv": [
+            0.40853,
+            8.64043,
+            6.96,
+            9.17797
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "up": {
+          "texture": "#base",
+          "uv": [
+            3.96053,
+            9.88571,
+            6.09173,
+            11.33929
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "down": {
+          "texture": "#base",
+          "uv": [
+            4.592,
+            13.71786,
+            6.7232,
+            15.2375
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "children": [],
+      "stepParentName": "JalapenoItemRoot",
+      "renderPass": -1,
+      "uv": [
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Fruit-shoulder-back",
+      "from": [
+        7.218,
+        10.2,
+        8.62891
+      ],
+      "to": [
+        8.722,
+        10.8,
+        9.0129
+      ],
+      "rotationOrigin": [
+        8,
+        8,
+        8
+      ],
+      "rotationX": 0,
+      "rotationY": 0,
+      "rotationZ": 0,
+      "shade": true,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1,
+      "faces": {
+        "east": {
+          "texture": "#base",
+          "uv": [
+            0.64533,
+            8.64043,
+            7.4336,
+            9.17797
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "south": {
+          "texture": "#base",
+          "uv": [
+            1.04,
+            8.64043,
+            7.6704,
+            9.17797
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "west": {
+          "texture": "#base",
+          "uv": [
+            0.40853,
+            8.64043,
+            6.96,
+            9.17797
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "up": {
+          "texture": "#base",
+          "uv": [
+            3.96053,
+            9.88571,
+            6.09173,
+            11.33929
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "down": {
+          "texture": "#base",
+          "uv": [
+            4.592,
+            13.71786,
+            6.7232,
+            15.2375
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "children": [],
+      "stepParentName": "JalapenoItemRoot",
+      "renderPass": -1,
+      "uv": [
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Fruit-upper-body-core",
+      "from": [
+        6.56,
+        9.3,
+        7.26821
+      ],
+      "to": [
+        9.34,
+        10.22,
+        8.75051
+      ],
+      "rotationOrigin": [
+        8,
+        8,
+        8
+      ],
+      "rotationX": 0,
+      "rotationY": 0,
+      "rotationZ": 0,
+      "shade": true,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1,
+      "faces": {
+        "north": {
+          "texture": "#base",
+          "uv": [
+            1.04,
+            9.16004,
+            7.6704,
+            9.98426
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "east": {
+          "texture": "#base",
+          "uv": [
+            0.64533,
+            9.16004,
+            7.4336,
+            9.98426
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "south": {
+          "texture": "#base",
+          "uv": [
+            1.04,
+            9.16004,
+            7.6704,
+            9.98426
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "west": {
+          "texture": "#base",
+          "uv": [
+            0.40853,
+            9.16004,
+            6.96,
+            9.98426
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "up": {
+          "texture": "#base",
+          "uv": [
+            3.96053,
+            9.88571,
+            6.09173,
+            11.33929
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "down": {
+          "texture": "#base",
+          "uv": [
+            4.592,
+            13.71786,
+            6.7232,
+            15.2375
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "children": [],
+      "stepParentName": "JalapenoItemRoot",
+      "renderPass": -1,
+      "uv": [
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Fruit-upper-body-front",
+      "from": [
+        7.0604,
+        9.3,
+        6.81396
+      ],
+      "to": [
+        8.8396,
+        10.22,
+        7.26821
+      ],
+      "rotationOrigin": [
+        8,
+        8,
+        8
+      ],
+      "rotationX": 0,
+      "rotationY": 0,
+      "rotationZ": 0,
+      "shade": true,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1,
+      "faces": {
+        "north": {
+          "texture": "#base",
+          "uv": [
+            1.04,
+            9.16004,
+            7.6704,
+            9.98426
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "east": {
+          "texture": "#base",
+          "uv": [
+            0.64533,
+            9.16004,
+            7.4336,
+            9.98426
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "west": {
+          "texture": "#base",
+          "uv": [
+            0.40853,
+            9.16004,
+            6.96,
+            9.98426
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "up": {
+          "texture": "#base",
+          "uv": [
+            3.96053,
+            9.88571,
+            6.09173,
+            11.33929
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "down": {
+          "texture": "#base",
+          "uv": [
+            4.592,
+            13.71786,
+            6.7232,
+            15.2375
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "children": [],
+      "stepParentName": "JalapenoItemRoot",
+      "renderPass": -1,
+      "uv": [
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Fruit-upper-body-back",
+      "from": [
+        7.0604,
+        9.3,
+        8.75051
+      ],
+      "to": [
+        8.8396,
+        10.22,
+        9.20476
+      ],
+      "rotationOrigin": [
+        8,
+        8,
+        8
+      ],
+      "rotationX": 0,
+      "rotationY": 0,
+      "rotationZ": 0,
+      "shade": true,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1,
+      "faces": {
+        "east": {
+          "texture": "#base",
+          "uv": [
+            0.64533,
+            9.16004,
+            7.4336,
+            9.98426
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "south": {
+          "texture": "#base",
+          "uv": [
+            1.04,
+            9.16004,
+            7.6704,
+            9.98426
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "west": {
+          "texture": "#base",
+          "uv": [
+            0.40853,
+            9.16004,
+            6.96,
+            9.98426
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "up": {
+          "texture": "#base",
+          "uv": [
+            3.96053,
+            9.88571,
+            6.09173,
+            11.33929
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "down": {
+          "texture": "#base",
+          "uv": [
+            4.592,
+            13.71786,
+            6.7232,
+            15.2375
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "children": [],
+      "stepParentName": "JalapenoItemRoot",
+      "renderPass": -1,
+      "uv": [
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Fruit-body-core",
+      "from": [
+        6.56,
+        6.75,
+        7.25235
+      ],
+      "to": [
+        9.44,
+        9.32,
+        8.78797
+      ],
+      "rotationOrigin": [
+        8,
+        8,
+        8
+      ],
+      "rotationX": 0,
+      "rotationY": 0,
+      "rotationZ": 0,
+      "shade": true,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1,
+      "faces": {
+        "north": {
+          "texture": "#base",
+          "uv": [
+            1.04,
+            9.96634,
+            7.6704,
+            12.26877
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "east": {
+          "texture": "#base",
+          "uv": [
+            0.64533,
+            9.96634,
+            7.4336,
+            12.26877
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "south": {
+          "texture": "#base",
+          "uv": [
+            1.04,
+            9.96634,
+            7.6704,
+            12.26877
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "west": {
+          "texture": "#base",
+          "uv": [
+            0.40853,
+            9.96634,
+            6.96,
+            12.26877
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "up": {
+          "texture": "#base",
+          "uv": [
+            3.96053,
+            9.88571,
+            6.09173,
+            11.33929
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "down": {
+          "texture": "#base",
+          "uv": [
+            4.592,
+            13.71786,
+            6.7232,
+            15.2375
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "children": [],
+      "stepParentName": "JalapenoItemRoot",
+      "renderPass": -1,
+      "uv": [
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Fruit-body-front",
+      "from": [
+        7.0784,
+        6.75,
+        6.78176
+      ],
+      "to": [
+        8.9216,
+        9.32,
+        7.25235
+      ],
+      "rotationOrigin": [
+        8,
+        8,
+        8
+      ],
+      "rotationX": 0,
+      "rotationY": 0,
+      "rotationZ": 0,
+      "shade": true,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1,
+      "faces": {
+        "north": {
+          "texture": "#base",
+          "uv": [
+            1.04,
+            9.96634,
+            7.6704,
+            12.26877
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "east": {
+          "texture": "#base",
+          "uv": [
+            0.64533,
+            9.96634,
+            7.4336,
+            12.26877
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "west": {
+          "texture": "#base",
+          "uv": [
+            0.40853,
+            9.96634,
+            6.96,
+            12.26877
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "up": {
+          "texture": "#base",
+          "uv": [
+            3.96053,
+            9.88571,
+            6.09173,
+            11.33929
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "down": {
+          "texture": "#base",
+          "uv": [
+            4.592,
+            13.71786,
+            6.7232,
+            15.2375
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "children": [],
+      "stepParentName": "JalapenoItemRoot",
+      "renderPass": -1,
+      "uv": [
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Fruit-body-back",
+      "from": [
+        7.0784,
+        6.75,
+        8.78797
+      ],
+      "to": [
+        8.9216,
+        9.32,
+        9.25856
+      ],
+      "rotationOrigin": [
+        8,
+        8,
+        8
+      ],
+      "rotationX": 0,
+      "rotationY": 0,
+      "rotationZ": 0,
+      "shade": true,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1,
+      "faces": {
+        "east": {
+          "texture": "#base",
+          "uv": [
+            0.64533,
+            9.96634,
+            7.4336,
+            12.26877
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "south": {
+          "texture": "#base",
+          "uv": [
+            1.04,
+            9.96634,
+            7.6704,
+            12.26877
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "west": {
+          "texture": "#base",
+          "uv": [
+            0.40853,
+            9.96634,
+            6.96,
+            12.26877
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "up": {
+          "texture": "#base",
+          "uv": [
+            3.96053,
+            9.88571,
+            6.09173,
+            11.33929
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "down": {
+          "texture": "#base",
+          "uv": [
+            4.592,
+            13.71786,
+            6.7232,
+            15.2375
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "children": [],
+      "stepParentName": "JalapenoItemRoot",
+      "renderPass": -1,
+      "uv": [
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Fruit-lower-body-core",
+      "from": [
+        6.83,
+        5.35,
+        7.36293
+      ],
+      "to": [
+        9.41,
+        6.77,
+        8.73859
+      ],
+      "rotationOrigin": [
+        8,
+        8,
+        8
+      ],
+      "rotationX": 0,
+      "rotationY": 0,
+      "rotationZ": 0,
+      "shade": true,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1,
+      "faces": {
+        "north": {
+          "texture": "#base",
+          "uv": [
+            1.04,
+            12.25084,
+            7.6704,
+            13.52301
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "east": {
+          "texture": "#base",
+          "uv": [
+            0.64533,
+            12.25084,
+            7.4336,
+            13.52301
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "south": {
+          "texture": "#base",
+          "uv": [
+            1.04,
+            12.25084,
+            7.6704,
+            13.52301
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "west": {
+          "texture": "#base",
+          "uv": [
+            0.40853,
+            12.25084,
+            6.96,
+            13.52301
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "up": {
+          "texture": "#base",
+          "uv": [
+            3.96053,
+            9.88571,
+            6.09173,
+            11.33929
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "down": {
+          "texture": "#base",
+          "uv": [
+            4.592,
+            13.71786,
+            6.7232,
+            15.2375
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "children": [],
+      "stepParentName": "JalapenoItemRoot",
+      "renderPass": -1,
+      "uv": [
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Fruit-lower-body-front",
+      "from": [
+        7.2944,
+        5.35,
+        6.94136
+      ],
+      "to": [
+        8.9456,
+        6.77,
+        7.36293
+      ],
+      "rotationOrigin": [
+        8,
+        8,
+        8
+      ],
+      "rotationX": 0,
+      "rotationY": 0,
+      "rotationZ": 0,
+      "shade": true,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1,
+      "faces": {
+        "north": {
+          "texture": "#base",
+          "uv": [
+            1.04,
+            12.25084,
+            7.6704,
+            13.52301
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "east": {
+          "texture": "#base",
+          "uv": [
+            0.64533,
+            12.25084,
+            7.4336,
+            13.52301
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "west": {
+          "texture": "#base",
+          "uv": [
+            0.40853,
+            12.25084,
+            6.96,
+            13.52301
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "up": {
+          "texture": "#base",
+          "uv": [
+            3.96053,
+            9.88571,
+            6.09173,
+            11.33929
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "down": {
+          "texture": "#base",
+          "uv": [
+            4.592,
+            13.71786,
+            6.7232,
+            15.2375
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "children": [],
+      "stepParentName": "JalapenoItemRoot",
+      "renderPass": -1,
+      "uv": [
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Fruit-lower-body-back",
+      "from": [
+        7.2944,
+        5.35,
+        8.73859
+      ],
+      "to": [
+        8.9456,
+        6.77,
+        9.16016
+      ],
+      "rotationOrigin": [
+        8,
+        8,
+        8
+      ],
+      "rotationX": 0,
+      "rotationY": 0,
+      "rotationZ": 0,
+      "shade": true,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1,
+      "faces": {
+        "east": {
+          "texture": "#base",
+          "uv": [
+            0.64533,
+            12.25084,
+            7.4336,
+            13.52301
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "south": {
+          "texture": "#base",
+          "uv": [
+            1.04,
+            12.25084,
+            7.6704,
+            13.52301
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "west": {
+          "texture": "#base",
+          "uv": [
+            0.40853,
+            12.25084,
+            6.96,
+            13.52301
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "up": {
+          "texture": "#base",
+          "uv": [
+            3.96053,
+            9.88571,
+            6.09173,
+            11.33929
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "down": {
+          "texture": "#base",
+          "uv": [
+            4.592,
+            13.71786,
+            6.7232,
+            15.2375
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "children": [],
+      "stepParentName": "JalapenoItemRoot",
+      "renderPass": -1,
+      "uv": [
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Fruit-taper-upper-core",
+      "from": [
+        7.26,
+        4.38,
+        7.50237
+      ],
+      "to": [
+        9.38,
+        5.37,
+        8.63275
+      ],
+      "rotationOrigin": [
+        8,
+        8,
+        8
+      ],
+      "rotationX": 0,
+      "rotationY": 0,
+      "rotationZ": 0,
+      "shade": true,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1,
+      "faces": {
+        "north": {
+          "texture": "#base",
+          "uv": [
+            1.04,
+            13.50509,
+            7.6704,
+            14.39201
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "east": {
+          "texture": "#base",
+          "uv": [
+            0.64533,
+            13.50509,
+            7.4336,
+            14.39201
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "south": {
+          "texture": "#base",
+          "uv": [
+            1.04,
+            13.50509,
+            7.6704,
+            14.39201
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "west": {
+          "texture": "#base",
+          "uv": [
+            0.40853,
+            13.50509,
+            6.96,
+            14.39201
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "up": {
+          "texture": "#base",
+          "uv": [
+            3.96053,
+            9.88571,
+            6.09173,
+            11.33929
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "down": {
+          "texture": "#base",
+          "uv": [
+            4.592,
+            13.71786,
+            6.7232,
+            15.2375
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "children": [],
+      "stepParentName": "JalapenoItemRoot",
+      "renderPass": -1,
+      "uv": [
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Fruit-taper-upper-front",
+      "from": [
+        7.6416,
+        4.38,
+        7.15596
+      ],
+      "to": [
+        8.9984,
+        5.37,
+        7.50237
+      ],
+      "rotationOrigin": [
+        8,
+        8,
+        8
+      ],
+      "rotationX": 0,
+      "rotationY": 0,
+      "rotationZ": 0,
+      "shade": true,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1,
+      "faces": {
+        "north": {
+          "texture": "#base",
+          "uv": [
+            1.04,
+            13.50509,
+            7.6704,
+            14.39201
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "east": {
+          "texture": "#base",
+          "uv": [
+            0.64533,
+            13.50509,
+            7.4336,
+            14.39201
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "west": {
+          "texture": "#base",
+          "uv": [
+            0.40853,
+            13.50509,
+            6.96,
+            14.39201
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "up": {
+          "texture": "#base",
+          "uv": [
+            3.96053,
+            9.88571,
+            6.09173,
+            11.33929
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "down": {
+          "texture": "#base",
+          "uv": [
+            4.592,
+            13.71786,
+            6.7232,
+            15.2375
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "children": [],
+      "stepParentName": "JalapenoItemRoot",
+      "renderPass": -1,
+      "uv": [
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Fruit-taper-upper-back",
+      "from": [
+        7.6416,
+        4.38,
+        8.63275
+      ],
+      "to": [
+        8.9984,
+        5.37,
+        8.97916
+      ],
+      "rotationOrigin": [
+        8,
+        8,
+        8
+      ],
+      "rotationX": 0,
+      "rotationY": 0,
+      "rotationZ": 0,
+      "shade": true,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1,
+      "faces": {
+        "east": {
+          "texture": "#base",
+          "uv": [
+            0.64533,
+            13.50509,
+            7.4336,
+            14.39201
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "south": {
+          "texture": "#base",
+          "uv": [
+            1.04,
+            13.50509,
+            7.6704,
+            14.39201
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "west": {
+          "texture": "#base",
+          "uv": [
+            0.40853,
+            13.50509,
+            6.96,
+            14.39201
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "up": {
+          "texture": "#base",
+          "uv": [
+            3.96053,
+            9.88571,
+            6.09173,
+            11.33929
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "down": {
+          "texture": "#base",
+          "uv": [
+            4.592,
+            13.71786,
+            6.7232,
+            15.2375
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "children": [],
+      "stepParentName": "JalapenoItemRoot",
+      "renderPass": -1,
+      "uv": [
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Fruit-taper-lower-core",
+      "from": [
+        7.785,
+        3.68,
+        7.66597
+      ],
+      "to": [
+        9.335,
+        4.4,
+        8.49243
+      ],
+      "rotationOrigin": [
+        8,
+        8,
+        8
+      ],
+      "rotationX": 0,
+      "rotationY": 0,
+      "rotationZ": 0,
+      "shade": true,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1,
+      "faces": {
+        "north": {
+          "texture": "#base",
+          "uv": [
+            1.04,
+            14.37409,
+            7.6704,
+            15.01913
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "east": {
+          "texture": "#base",
+          "uv": [
+            0.64533,
+            14.37409,
+            7.4336,
+            15.01913
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "south": {
+          "texture": "#base",
+          "uv": [
+            1.04,
+            14.37409,
+            7.6704,
+            15.01913
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "west": {
+          "texture": "#base",
+          "uv": [
+            0.40853,
+            14.37409,
+            6.96,
+            15.01913
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "up": {
+          "texture": "#base",
+          "uv": [
+            3.96053,
+            9.88571,
+            6.09173,
+            11.33929
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "down": {
+          "texture": "#base",
+          "uv": [
+            4.592,
+            13.71786,
+            6.7232,
+            15.2375
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "children": [],
+      "stepParentName": "JalapenoItemRoot",
+      "renderPass": -1,
+      "uv": [
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Fruit-taper-lower-front",
+      "from": [
+        8.064,
+        3.68,
+        7.4127
+      ],
+      "to": [
+        9.056,
+        4.4,
+        7.66597
+      ],
+      "rotationOrigin": [
+        8,
+        8,
+        8
+      ],
+      "rotationX": 0,
+      "rotationY": 0,
+      "rotationZ": 0,
+      "shade": true,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1,
+      "faces": {
+        "north": {
+          "texture": "#base",
+          "uv": [
+            1.04,
+            14.37409,
+            7.6704,
+            15.01913
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "east": {
+          "texture": "#base",
+          "uv": [
+            0.64533,
+            14.37409,
+            7.4336,
+            15.01913
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "west": {
+          "texture": "#base",
+          "uv": [
+            0.40853,
+            14.37409,
+            6.96,
+            15.01913
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "up": {
+          "texture": "#base",
+          "uv": [
+            3.96053,
+            9.88571,
+            6.09173,
+            11.33929
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "down": {
+          "texture": "#base",
+          "uv": [
+            4.592,
+            13.71786,
+            6.7232,
+            15.2375
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "children": [],
+      "stepParentName": "JalapenoItemRoot",
+      "renderPass": -1,
+      "uv": [
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Fruit-taper-lower-back",
+      "from": [
+        8.064,
+        3.68,
+        8.49243
+      ],
+      "to": [
+        9.056,
+        4.4,
+        8.7457
+      ],
+      "rotationOrigin": [
+        8,
+        8,
+        8
+      ],
+      "rotationX": 0,
+      "rotationY": 0,
+      "rotationZ": 0,
+      "shade": true,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1,
+      "faces": {
+        "east": {
+          "texture": "#base",
+          "uv": [
+            0.64533,
+            14.37409,
+            7.4336,
+            15.01913
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "south": {
+          "texture": "#base",
+          "uv": [
+            1.04,
+            14.37409,
+            7.6704,
+            15.01913
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "west": {
+          "texture": "#base",
+          "uv": [
+            0.40853,
+            14.37409,
+            6.96,
+            15.01913
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "up": {
+          "texture": "#base",
+          "uv": [
+            3.96053,
+            9.88571,
+            6.09173,
+            11.33929
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "down": {
+          "texture": "#base",
+          "uv": [
+            4.592,
+            13.71786,
+            6.7232,
+            15.2375
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "children": [],
+      "stepParentName": "JalapenoItemRoot",
+      "renderPass": -1,
+      "uv": [
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Fruit-tip-core",
+      "from": [
+        8.31,
+        3.18,
+        7.83166
+      ],
+      "to": [
+        9.27,
+        3.7,
+        8.34354
+      ],
+      "rotationOrigin": [
+        8,
+        8,
+        8
+      ],
+      "rotationX": 0,
+      "rotationY": 0,
+      "rotationZ": 0,
+      "shade": true,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1,
+      "faces": {
+        "north": {
+          "texture": "#base",
+          "uv": [
+            1.04,
+            15.00121,
+            7.6704,
+            15.46708
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "east": {
+          "texture": "#base",
+          "uv": [
+            0.64533,
+            15.00121,
+            7.4336,
+            15.46708
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "south": {
+          "texture": "#base",
+          "uv": [
+            1.04,
+            15.00121,
+            7.6704,
+            15.46708
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "west": {
+          "texture": "#base",
+          "uv": [
+            0.40853,
+            15.00121,
+            6.96,
+            15.46708
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "up": {
+          "texture": "#base",
+          "uv": [
+            3.96053,
+            9.88571,
+            6.09173,
+            11.33929
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "down": {
+          "texture": "#base",
+          "uv": [
+            4.592,
+            13.71786,
+            6.7232,
+            15.2375
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "children": [],
+      "stepParentName": "JalapenoItemRoot",
+      "renderPass": -1,
+      "uv": [
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Fruit-tip-front",
+      "from": [
+        8.4828,
+        3.18,
+        7.6748
+      ],
+      "to": [
+        9.0972,
+        3.7,
+        7.83166
+      ],
+      "rotationOrigin": [
+        8,
+        8,
+        8
+      ],
+      "rotationX": 0,
+      "rotationY": 0,
+      "rotationZ": 0,
+      "shade": true,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1,
+      "faces": {
+        "north": {
+          "texture": "#base",
+          "uv": [
+            1.04,
+            15.00121,
+            7.6704,
+            15.46708
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "east": {
+          "texture": "#base",
+          "uv": [
+            0.64533,
+            15.00121,
+            7.4336,
+            15.46708
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "west": {
+          "texture": "#base",
+          "uv": [
+            0.40853,
+            15.00121,
+            6.96,
+            15.46708
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "up": {
+          "texture": "#base",
+          "uv": [
+            3.96053,
+            9.88571,
+            6.09173,
+            11.33929
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "down": {
+          "texture": "#base",
+          "uv": [
+            4.592,
+            13.71786,
+            6.7232,
+            15.2375
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "children": [],
+      "stepParentName": "JalapenoItemRoot",
+      "renderPass": -1,
+      "uv": [
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Fruit-tip-back",
+      "from": [
+        8.4828,
+        3.18,
+        8.34354
+      ],
+      "to": [
+        9.0972,
+        3.7,
+        8.5004
+      ],
+      "rotationOrigin": [
+        8,
+        8,
+        8
+      ],
+      "rotationX": 0,
+      "rotationY": 0,
+      "rotationZ": 0,
+      "shade": true,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1,
+      "faces": {
+        "east": {
+          "texture": "#base",
+          "uv": [
+            0.64533,
+            15.00121,
+            7.4336,
+            15.46708
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "south": {
+          "texture": "#base",
+          "uv": [
+            1.04,
+            15.00121,
+            7.6704,
+            15.46708
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "west": {
+          "texture": "#base",
+          "uv": [
+            0.40853,
+            15.00121,
+            6.96,
+            15.46708
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "up": {
+          "texture": "#base",
+          "uv": [
+            3.96053,
+            9.88571,
+            6.09173,
+            11.33929
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "down": {
+          "texture": "#base",
+          "uv": [
+            4.592,
+            13.71786,
+            6.7232,
+            15.2375
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "children": [],
+      "stepParentName": "JalapenoItemRoot",
+      "renderPass": -1,
+      "uv": [
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Fruit-tip-end-core",
+      "from": [
+        8.695,
+        2.92,
+        7.9683
+      ],
+      "to": [
+        9.165,
+        3.2,
+        8.2189
+      ],
+      "rotationOrigin": [
+        8,
+        8,
+        8
+      ],
+      "rotationX": 0,
+      "rotationY": 0,
+      "rotationZ": 0,
+      "shade": true,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1,
+      "faces": {
+        "north": {
+          "texture": "#base",
+          "uv": [
+            1.04,
+            15.44916,
+            7.6704,
+            15.7
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "east": {
+          "texture": "#base",
+          "uv": [
+            0.64533,
+            15.44916,
+            7.4336,
+            15.7
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "south": {
+          "texture": "#base",
+          "uv": [
+            1.04,
+            15.44916,
+            7.6704,
+            15.7
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "west": {
+          "texture": "#base",
+          "uv": [
+            0.40853,
+            15.44916,
+            6.96,
+            15.7
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "up": {
+          "texture": "#base",
+          "uv": [
+            3.96053,
+            9.88571,
+            6.09173,
+            11.33929
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "down": {
+          "texture": "#base",
+          "uv": [
+            4.592,
+            13.71786,
+            6.7232,
+            15.2375
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "children": [],
+      "stepParentName": "JalapenoItemRoot",
+      "renderPass": -1,
+      "uv": [
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Fruit-tip-end-front",
+      "from": [
+        8.7796,
+        2.92,
+        7.8915
+      ],
+      "to": [
+        9.0804,
+        3.2,
+        7.9683
+      ],
+      "rotationOrigin": [
+        8,
+        8,
+        8
+      ],
+      "rotationX": 0,
+      "rotationY": 0,
+      "rotationZ": 0,
+      "shade": true,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1,
+      "faces": {
+        "north": {
+          "texture": "#base",
+          "uv": [
+            1.04,
+            15.44916,
+            7.6704,
+            15.7
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "east": {
+          "texture": "#base",
+          "uv": [
+            0.64533,
+            15.44916,
+            7.4336,
+            15.7
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "west": {
+          "texture": "#base",
+          "uv": [
+            0.40853,
+            15.44916,
+            6.96,
+            15.7
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "up": {
+          "texture": "#base",
+          "uv": [
+            3.96053,
+            9.88571,
+            6.09173,
+            11.33929
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "down": {
+          "texture": "#base",
+          "uv": [
+            4.592,
+            13.71786,
+            6.7232,
+            15.2375
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "children": [],
+      "stepParentName": "JalapenoItemRoot",
+      "renderPass": -1,
+      "uv": [
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Fruit-tip-end-back",
+      "from": [
+        8.7796,
+        2.92,
+        8.2189
+      ],
+      "to": [
+        9.0804,
+        3.2,
+        8.2957
+      ],
+      "rotationOrigin": [
+        8,
+        8,
+        8
+      ],
+      "rotationX": 0,
+      "rotationY": 0,
+      "rotationZ": 0,
+      "shade": true,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1,
+      "faces": {
+        "east": {
+          "texture": "#base",
+          "uv": [
+            0.64533,
+            15.44916,
+            7.4336,
+            15.7
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "south": {
+          "texture": "#base",
+          "uv": [
+            1.04,
+            15.44916,
+            7.6704,
+            15.7
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "west": {
+          "texture": "#base",
+          "uv": [
+            0.40853,
+            15.44916,
+            6.96,
+            15.7
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "up": {
+          "texture": "#base",
+          "uv": [
+            3.96053,
+            9.88571,
+            6.09173,
+            11.33929
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "down": {
+          "texture": "#base",
+          "uv": [
+            4.592,
+            13.71786,
+            6.7232,
+            15.2375
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "children": [],
+      "stepParentName": "JalapenoItemRoot",
+      "renderPass": -1,
+      "uv": [
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Calyx-collar",
+      "from": [
+        7.37,
+        11.03,
+        7.4
+      ],
+      "to": [
+        8.63,
+        11.35,
+        8.6
+      ],
+      "rotationOrigin": [
+        8,
+        8,
+        8
+      ],
+      "rotationX": 0,
+      "rotationY": 0,
+      "rotationZ": 0,
+      "shade": true,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1,
+      "faces": {
+        "north": {
+          "texture": "#stem",
+          "uv": [
+            5.504,
+            2.816,
+            6.688,
+            3.84
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "east": {
+          "texture": "#stem",
+          "uv": [
+            5.504,
+            2.816,
+            6.688,
+            3.84
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "south": {
+          "texture": "#stem",
+          "uv": [
+            5.504,
+            2.816,
+            6.688,
+            3.84
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "west": {
+          "texture": "#stem",
+          "uv": [
+            5.504,
+            2.816,
+            6.688,
+            3.84
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "up": {
+          "texture": "#stem",
+          "uv": [
+            5.504,
+            2.816,
+            6.688,
+            3.84
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "down": {
+          "texture": "#stem",
+          "uv": [
+            5.504,
+            2.816,
+            6.688,
+            3.84
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "children": [],
+      "stepParentName": "JalapenoItemRoot",
+      "renderPass": -1,
+      "uv": [
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Calyx-sepal-1",
+      "from": [
+        7.78,
+        10.96,
+        7.18
+      ],
+      "to": [
+        8.22,
+        11.2,
+        8.25
+      ],
+      "rotationOrigin": [
+        8,
+        11.12,
+        8
+      ],
+      "rotationX": 0,
+      "rotationY": 12,
+      "rotationZ": -13,
+      "shade": true,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1,
+      "faces": {
+        "north": {
+          "texture": "#stem",
+          "uv": [
+            5.6,
+            2.816,
+            6.656,
+            3.776
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "east": {
+          "texture": "#stem",
+          "uv": [
+            5.6,
+            2.816,
+            6.656,
+            3.776
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "south": {
+          "texture": "#stem",
+          "uv": [
+            5.6,
+            2.816,
+            6.656,
+            3.776
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "west": {
+          "texture": "#stem",
+          "uv": [
+            5.6,
+            2.816,
+            6.656,
+            3.776
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "up": {
+          "texture": "#stem",
+          "uv": [
+            5.6,
+            2.816,
+            6.656,
+            3.776
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "down": {
+          "texture": "#stem",
+          "uv": [
+            5.6,
+            2.816,
+            6.656,
+            3.776
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "children": [],
+      "stepParentName": "JalapenoItemRoot",
+      "renderPass": -1,
+      "uv": [
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Calyx-sepal-2",
+      "from": [
+        7.78,
+        10.96,
+        7.18
+      ],
+      "to": [
+        8.22,
+        11.2,
+        8.25
+      ],
+      "rotationOrigin": [
+        8,
+        11.12,
+        8
+      ],
+      "rotationX": 12,
+      "rotationY": 0,
+      "rotationZ": 0,
+      "shade": true,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1,
+      "faces": {
+        "north": {
+          "texture": "#stem",
+          "uv": [
+            5.6,
+            2.816,
+            6.656,
+            3.776
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "east": {
+          "texture": "#stem",
+          "uv": [
+            5.6,
+            2.816,
+            6.656,
+            3.776
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "south": {
+          "texture": "#stem",
+          "uv": [
+            5.6,
+            2.816,
+            6.656,
+            3.776
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "west": {
+          "texture": "#stem",
+          "uv": [
+            5.6,
+            2.816,
+            6.656,
+            3.776
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "up": {
+          "texture": "#stem",
+          "uv": [
+            5.6,
+            2.816,
+            6.656,
+            3.776
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "down": {
+          "texture": "#stem",
+          "uv": [
+            5.6,
+            2.816,
+            6.656,
+            3.776
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "children": [],
+      "stepParentName": "JalapenoItemRoot",
+      "renderPass": -1,
+      "uv": [
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Calyx-sepal-3",
+      "from": [
+        7.78,
+        10.96,
+        7.18
+      ],
+      "to": [
+        8.22,
+        11.2,
+        8.25
+      ],
+      "rotationOrigin": [
+        8,
+        11.12,
+        8
+      ],
+      "rotationX": 0,
+      "rotationY": 102,
+      "rotationZ": 11,
+      "shade": true,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1,
+      "faces": {
+        "north": {
+          "texture": "#stem",
+          "uv": [
+            5.6,
+            2.816,
+            6.656,
+            3.776
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "east": {
+          "texture": "#stem",
+          "uv": [
+            5.6,
+            2.816,
+            6.656,
+            3.776
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "south": {
+          "texture": "#stem",
+          "uv": [
+            5.6,
+            2.816,
+            6.656,
+            3.776
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "west": {
+          "texture": "#stem",
+          "uv": [
+            5.6,
+            2.816,
+            6.656,
+            3.776
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "up": {
+          "texture": "#stem",
+          "uv": [
+            5.6,
+            2.816,
+            6.656,
+            3.776
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "down": {
+          "texture": "#stem",
+          "uv": [
+            5.6,
+            2.816,
+            6.656,
+            3.776
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "children": [],
+      "stepParentName": "JalapenoItemRoot",
+      "renderPass": -1,
+      "uv": [
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Calyx-sepal-4",
+      "from": [
+        7.78,
+        10.96,
+        7.18
+      ],
+      "to": [
+        8.22,
+        11.2,
+        8.25
+      ],
+      "rotationOrigin": [
+        8,
+        11.12,
+        8
+      ],
+      "rotationX": -13,
+      "rotationY": 180,
+      "rotationZ": 0,
+      "shade": true,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1,
+      "faces": {
+        "north": {
+          "texture": "#stem",
+          "uv": [
+            5.6,
+            2.816,
+            6.656,
+            3.776
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "east": {
+          "texture": "#stem",
+          "uv": [
+            5.6,
+            2.816,
+            6.656,
+            3.776
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "south": {
+          "texture": "#stem",
+          "uv": [
+            5.6,
+            2.816,
+            6.656,
+            3.776
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "west": {
+          "texture": "#stem",
+          "uv": [
+            5.6,
+            2.816,
+            6.656,
+            3.776
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "up": {
+          "texture": "#stem",
+          "uv": [
+            5.6,
+            2.816,
+            6.656,
+            3.776
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "down": {
+          "texture": "#stem",
+          "uv": [
+            5.6,
+            2.816,
+            6.656,
+            3.776
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "children": [],
+      "stepParentName": "JalapenoItemRoot",
+      "renderPass": -1,
+      "uv": [
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Stem-base",
+      "from": [
+        7.825,
+        11.195,
+        7.825
+      ],
+      "to": [
+        8.175,
+        12.20776,
+        8.175
+      ],
+      "rotationOrigin": [
+        8,
+        11.22,
+        8
+      ],
+      "rotationX": 1.19033,
+      "rotationY": 0.04333,
+      "rotationZ": 4.16954,
+      "shade": true,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1,
+      "faces": {
+        "north": {
+          "texture": "#stem",
+          "uv": [
+            5.12,
+            1.12,
+            7.232,
+            7.232
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "east": {
+          "texture": "#stem",
+          "uv": [
+            5.12,
+            1.12,
+            7.232,
+            7.232
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "south": {
+          "texture": "#stem",
+          "uv": [
+            5.12,
+            1.12,
+            7.232,
+            7.232
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "west": {
+          "texture": "#stem",
+          "uv": [
+            5.12,
+            1.12,
+            7.232,
+            7.232
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "up": {
+          "texture": "#stem",
+          "uv": [
+            5.632,
+            3.392,
+            5.952,
+            3.712
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "down": {
+          "texture": "#stem",
+          "uv": [
+            5.632,
+            3.392,
+            5.952,
+            3.712
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "children": [],
+      "stepParentName": "JalapenoItemRoot",
+      "renderPass": -1,
+      "uv": [
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Stem-bend",
+      "from": [
+        7.78,
+        12.155,
+        7.87
+      ],
+      "to": [
+        8.08,
+        13.12782,
+        8.17
+      ],
+      "rotationOrigin": [
+        7.93,
+        12.18,
+        8.02
+      ],
+      "rotationX": 4.97632,
+      "rotationY": 2.00878,
+      "rotationZ": 43.94372,
+      "shade": true,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1,
+      "faces": {
+        "north": {
+          "texture": "#stem",
+          "uv": [
+            5.12,
+            1.12,
+            7.232,
+            7.232
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "east": {
+          "texture": "#stem",
+          "uv": [
+            5.12,
+            1.12,
+            7.232,
+            7.232
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "south": {
+          "texture": "#stem",
+          "uv": [
+            5.12,
+            1.12,
+            7.232,
+            7.232
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "west": {
+          "texture": "#stem",
+          "uv": [
+            5.12,
+            1.12,
+            7.232,
+            7.232
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "up": {
+          "texture": "#stem",
+          "uv": [
+            5.632,
+            3.392,
+            5.952,
+            3.712
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "down": {
+          "texture": "#stem",
+          "uv": [
+            5.632,
+            3.392,
+            5.952,
+            3.712
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "children": [],
+      "stepParentName": "JalapenoItemRoot",
+      "renderPass": -1,
+      "uv": [
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Stem-cut-end",
+      "from": [
+        7.16,
+        12.815,
+        7.97
+      ],
+      "to": [
+        7.42,
+        13.43122,
+        8.23
+      ],
+      "rotationOrigin": [
+        7.29,
+        12.84,
+        8.1
+      ],
+      "rotationX": 6.09978,
+      "rotationY": 4.25915,
+      "rotationZ": 69.823,
+      "shade": true,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1,
+      "faces": {
+        "north": {
+          "texture": "#stem",
+          "uv": [
+            5.12,
+            1.12,
+            7.232,
+            7.232
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "east": {
+          "texture": "#stem",
+          "uv": [
+            5.12,
+            1.12,
+            7.232,
+            7.232
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "south": {
+          "texture": "#stem",
+          "uv": [
+            5.12,
+            1.12,
+            7.232,
+            7.232
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "west": {
+          "texture": "#stem",
+          "uv": [
+            5.12,
+            1.12,
+            7.232,
+            7.232
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "up": {
+          "texture": "#stem",
+          "uv": [
+            5.632,
+            3.392,
+            5.952,
+            3.712
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "down": {
+          "texture": "#stem",
+          "uv": [
+            5.632,
+            3.392,
+            5.952,
+            3.712
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "children": [],
+      "stepParentName": "JalapenoItemRoot",
+      "renderPass": -1,
+      "uv": [
+        0,
+        0
+      ]
+    }
+  ]
+}
