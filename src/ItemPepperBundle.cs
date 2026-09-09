@@ -8,7 +8,7 @@ namespace PepperMod
     public class ItemPepperBundle : ItemPepperFood
     {
         public const string ProgressKey = "peppermodAirDryHours";
-        public double DryingHours => Attributes?["airDryHours"].AsDouble(72) ?? 72;
+        public double DryingHours => Attributes?["airDryHours"].AsDouble(168) ?? 168;
 
         public override void OnHeldInteractStart(ItemSlot slot, EntityAgent byEntity, BlockSelection blockSel,
             EntitySelection entitySel, bool firstEvent, ref EnumHandHandling handling)
@@ -48,7 +48,7 @@ namespace PepperMod
             if (slot.Itemstack?.Item != item) return slot.Itemstack;
 
             double required = item.DryingHours;
-            if (!double.IsFinite(required) || required <= 0) required = 72;
+            if (!double.IsFinite(required) || required <= 0) required = 168;
             double progress = stack.Attributes.GetDouble(ProgressKey);
             if (!double.IsFinite(progress)) progress = 0;
             progress = Math.Clamp(progress, 0, required);
@@ -91,6 +91,8 @@ namespace PepperMod
             var state = item.UpdateAndGetTransitionState(api.World, slot, EnumTransitionType.Perish);
             if (slot.Itemstack?.Item != item || state == null || hours <= 0) return state;
             float rate = item.GetTransitionRateMul(api.World, slot, EnumTransitionType.Perish);
+            // Undried hanging bundles age more slowly; dried food uses normal rates.
+            if (item.Variant["state"] != "dried") rate *= .5f;
             item.SetTransitionState(slot.Itemstack, EnumTransitionType.Perish, state.TransitionedHours + (float)(hours * Math.Max(0, rate)));
             return item.UpdateAndGetTransitionState(api.World, slot, EnumTransitionType.Perish);
         }

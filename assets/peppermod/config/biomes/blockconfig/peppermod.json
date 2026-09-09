@@ -1,0 +1,18 @@
+{
+  "BlockPatches": {
+    "crop-jalapeno-*": {
+      "biorealm": [
+        "pacific nearctic",
+        "pacific neotropic",
+        "atlantic neotropic"
+      ],
+      "bioriver": "both"
+    },
+    "crop-habanero-*": {
+      "biorealm": [
+        "atlantic neotropic"
+      ],
+      "bioriver": "both"
+    }
+  }
+}

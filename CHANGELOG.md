@@ -2,12 +2,21 @@
 
 ## Unreleased
 
-### 0.2.0 - Habaneros
+### 0.3.1 - Biomes Compatibility
+
+- Added optional support for Biomes 2.2.0 using its existing regional pepper rules, with no required dependency or separate compatibility download.
+- Wild jalapenos can spawn in Pacific Nearctic, Pacific Neotropic, and Atlantic Neotropic. Wild habaneros can spawn in Atlantic Neotropic. Both are eligible near and away from rivers.
+- Fixed missing habanero world-generation support caused by Biomes' existing rules targeting a different plant ID.
+- Kept normal Pepper Mod spawning unchanged without Biomes, including rarity, suitable-soil requirements, and the disabled unfinished varieties. Player planting and seasonal growth are unchanged.
+- Added tests against Biomes' released configuration loader and plant filter across all realms and river states, including asset loading order and unchanged unrelated crops.
+
+### 0.3.0 - Habaneros, Baking & Pepper Bundles
 
 - Added a small iron ceiling hook for hanging bundles and lowered the string loop onto its curved seat. Portable and oven models, recipes, and drying behavior are unchanged.
 - Fixed individual raw, baked, and dried pepper positioning in clay ovens with flat, centered, slot-sized display transforms. Hand and inventory positioning is unchanged.
 - Added ceiling placement for all six jalapeno/habanero bundle variants. Right-click an underside to hang one, then right-click the bundle to take it down. No special hook or ceiling material is required.
-- Fresh and baked bundles air-dry into dried bundles after 72 in-game hours hanging, preserving variety, pepper count, and carried-over freshness. Progress survives save/reload and pauses while carried.
+- Fresh and baked bundles air-dry into dried bundles after 168 in-game hours (7 days) hanging, preserving variety, pepper count, and carried-over freshness. Progress survives save/reload and pauses while carried.
+- Raw and baked bundles spoil at half speed while hanging so fresh bundles can finish the seven-day drying process. Carried bundles and dried bundles retain normal spoilage rates.
 - Hanging bundles continue to spoil; spoiling food cannot be rescued by drying. Missing supports and flooding drop the bundle, full inventories drop picked-up bundles, and fully rotten bundles drop two rot.
 - Added regression checks for loose-pepper oven alignment and the full hanging, pickup, drying, spoilage, and persistence lifecycle.
 - Fixed see-through baked/dried pepper skins on loose items and bundles by exporting the shared texture at atlas-safe dimensions. Added a pixel-for-pixel regression check using the game's texture atlas loader.
@@ -20,7 +29,7 @@
 - Reduced raw jalapeno and habanero base freshness to 7 days (168 hours, no random variance); other varieties and prepared forms are unchanged.
 - Added Scoville heat units to raw, baked, and dried pepper tooltips while preserving normal food and spoilage information.
 - Added clay-oven baking from raw to baked peppers, then a longer second bake to dried peppers. Each stage halves Scoville units and spice-meter gain.
-- Kept raw shelf life unchanged, set baked freshness to 7 days (+/- 1), and dried freshness to 360 days, before storage modifiers. All forms still rot and use vanilla freshness carryover when baked.
+- Set baked freshness to 7 days (+/- 1) and dried freshness to 120 days, before storage modifiers. All forms still rot and use vanilla freshness carryover when baked.
 - Added baked and dried skin textures and 3D item variants, preserving existing fruit geometry and held positioning. Raw habaneros still fill the spice meter in two bites.
 - Added a preparation preview and regression tests exercising the installed game's oven, terminal dried state, tooltips, spice reduction, spoilage definitions, and model assets.
 - Replaced all 11 habanero plant placeholders with a broad, asymmetric bush, wider leaves, flowers, and attached lobed peppers.

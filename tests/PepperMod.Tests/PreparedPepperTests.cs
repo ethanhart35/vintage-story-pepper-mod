@@ -88,7 +88,7 @@ internal static class PreparedPepperTests
                 Require(props.Type == EnumTransitionType.Perish && props.TransitionedStack.Code.ToString() == "game:rot");
                 Require(props.TransitionRatio == .25f && props.TransitionHours.avg > 0);
                 bool rawFinishedPepper = state == "raw" && (type == "jalapeno" || type == "habanero");
-                Require(props.FreshHours.avg == (rawFinishedPepper ? 168 : state == "raw" ? 336 : state == "baked" ? 168 : 8640));
+                Require(props.FreshHours.avg == (rawFinishedPepper ? 168 : state == "raw" ? 336 : state == "baked" ? 168 : 2880));
                 Require(props.FreshHours.var == (rawFinishedPepper ? 0 : state == "raw" ? 48 : state == "baked" ? 24 : 0));
             }
         });
@@ -170,7 +170,7 @@ internal static class PreparedPepperTests
                 f.Oven.Advance(1000, 200);
                 tree = (TreeAttribute)f.Oven.Inventory[0].Itemstack.Attributes.GetTreeAttribute("transitionstate");
                 Require(f.Oven.Inventory[0].Itemstack.Item == f.Items[2]);
-                Require(((FloatArrayAttribute)tree["freshHours"]).value[0] == 8640 && ((FloatArrayAttribute)tree["transitionedHours"]).value[0] > 0);
+                Require(((FloatArrayAttribute)tree["freshHours"]).value[0] == 2880 && ((FloatArrayAttribute)tree["transitionedHours"]).value[0] > 0);
             }
         });
         check("prepared items preserve fruit geometry hand placement and valid texture UVs", () => {

@@ -83,10 +83,10 @@ internal static class HangingBundleTests
                 Require(f.Entity == null && input.StackSize == 2, reason);
             }
         });
-        check("raw and baked bundles air dry in 72 hours without changing variety or pepper count", () => {
+        check("raw and baked bundles air dry in 168 hours without changing variety or pepper count", () => {
             foreach (string type in PepperBundleTests.Types) foreach (string state in new[] { "raw", "baked" }) {
                 var f = new HangingFixture(); f.Place(f.Input(type, state));
-                f.Now += 71; var before = f.Entity.GetContents(); Require(before.Item == f.Item(type, state));
+                f.Now += 167; var before = f.Entity.GetContents(); Require(before.Item == f.Item(type, state));
                 f.Now += 1; var dried = f.Entity.GetContents();
                 Require(dried.Item == f.Item(type, "dried") && dried.StackSize == 1);
                 Require(dried.Collectible.Attributes["peppermodBundleCount"].AsInt() == 8);
@@ -97,10 +97,10 @@ internal static class HangingBundleTests
         });
         check("hanging save reload and large time jumps match incremental drying", () => {
             var incremental = new HangingFixture(); incremental.Place(incremental.Input("habanero", "raw"));
-            for (int i = 0; i < 100; i++) { incremental.Now += 1; incremental.Entity.GetContents(); }
+            for (int i = 0; i < 240; i++) { incremental.Now += 1; incremental.Entity.GetContents(); }
             var f = new HangingFixture(); f.Place(f.Input("habanero", "raw"));
             f.Now += 24; f.Entity.GetContents(); var saved = new TreeAttribute(); f.Entity.ToTreeAttributes(saved);
-            f.Now += 76; f.Restore(saved); var result = f.Entity.GetContents();
+            f.Now += 216; f.Restore(saved); var result = f.Entity.GetContents();
             Require(result.Item == f.Item("habanero", "dried"));
             Require(Math.Abs(f.Age(result) - incremental.Age(incremental.Entity.GetContents())) < .01);
         });
@@ -113,7 +113,26 @@ internal static class HangingBundleTests
             f.Now += 24;
             var slot = new DummySlot(taken); f.Place(slot);
             Require(f.Entity.GetContents().Attributes.GetDouble(ItemPepperBundle.ProgressKey) == 24);
-            f.Now += 47; Require(f.Entity.GetContents().Item == f.Item("jalapeno", "raw"));
+            f.Now += 143; Require(f.Entity.GetContents().Item == f.Item("jalapeno", "raw"));
+            f.Now += 1; Require(f.Entity.GetContents().Item == f.Item("jalapeno", "dried"));
+        });
+        check("only undried hanging bundles age at half speed and dried bundles have 120 base days", () => {
+            foreach (string type in PepperBundleTests.Types) foreach (string state in PepperBundleTests.States) {
+                var f = new HangingFixture(); f.Place(f.Input(type, state));
+                f.Now += 24; var contents = f.Entity.GetContents();
+                Require(Math.Abs(f.Age(contents) - (state == "dried" ? 24 : 12)) < .01);
+                if (state == "dried") Require(((FloatArrayAttribute)contents.Attributes.GetTreeAttribute("transitionstate")["freshHours"]).value[0] == 2880);
+                f.Entity.TryTake(f.Player); var carried = new DummySlot(f.Inventory.Received.Single());
+                float before = f.Age(carried.Itemstack); f.Now += 24;
+                carried.Itemstack.Collectible.UpdateAndGetTransitionState(f.World, carried, EnumTransitionType.Perish);
+                Require(Math.Abs(f.Age(carried.Itemstack) - before - 24) < .01, "Carried bundles must return to normal spoilage");
+            }
+        });
+        check("existing drying progress is kept but uses the new seven day threshold", () => {
+            var f = new HangingFixture(); var input = f.Input("jalapeno", "raw");
+            input.Itemstack.Attributes.SetDouble(ItemPepperBundle.ProgressKey, 72);
+            f.Place(input); Require(f.Entity.GetContents().Item == f.Item("jalapeno", "raw"));
+            f.Now += 95; Require(f.Entity.GetContents().Item == f.Item("jalapeno", "raw"));
             f.Now += 1; Require(f.Entity.GetContents().Item == f.Item("jalapeno", "dried"));
         });
         check("breaking the support drops one bundle with its drying progress", () => {

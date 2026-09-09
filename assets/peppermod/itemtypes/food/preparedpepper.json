@@ -810,7 +810,7 @@
       {
         "type": "Perish",
         "freshHours": {
-          "avg": 8640
+          "avg": 2880
         },
         "transitionHours": {
           "avg": 168

@@ -4,7 +4,9 @@ A small Vintage Story code/content mod for perennial pepper plants.
 
 ## Status
 
-Work in progress. Version 0.2.0 adds complete habanero plant and item models alongside the finished jalapenos. Both varieties have 11 plant states, picked fruit models, seeds, perennial growth, and spice effects. The new habanero artwork and gameplay integration have automated checks but still need a native in-game playtest. The other six varieties remain unfinished.
+Version 0.3.1 adds optional Biomes regional spawning support for jalapenos and habaneros.
+
+Work in progress. Version 0.3.0 adds complete habanero plant and item models alongside the finished jalapenos. Both varieties have 11 plant states, picked fruit models, seeds, perennial growth, and spice effects. The new habanero artwork and gameplay integration have automated checks but still need a native in-game playtest. The other six varieties remain unfinished.
 
 ## Current Content
 
@@ -13,7 +15,7 @@ Work in progress. Version 0.2.0 adds complete habanero plant and item models alo
 - Fresh vegetable items for each pepper type
 - Scoville tooltips and two oven preparations: baked peppers, then long-lasting dried peppers
 - Eight-pepper jalapeno and habanero bundles for baking 32 peppers in one full clay oven
-- Ceiling-hung bundles that air-dry over three in-game days
+- Ceiling-hung bundles that air-dry over seven in-game days
 - Hold right-click for 1.5 seconds to harvest ripe plants without breaking them; peppers fall to the ground nearby
 - Seasonal dormancy when temperatures are outside the growing range
 - Rare wild jalapeno patches and rarer habanero patches in any biome with suitable soil
@@ -48,7 +50,32 @@ Build and install the compiled test package with:
 powershell -ExecutionPolicy Bypass -File .\tools\Build-PepperMod.ps1 -VintageStory "E:\Vintagestory" -Install
 ```
 
-This is a code mod, so the release zip needs the compiled `peppermod.dll` at the root of the package. The build script creates `peppermod-0.2.0.zip` and copies it into your Vintage Story `Mods` folder when `-Install` is used. Keep only one version of Pepper Mod in that folder; move the old version outside it before testing this update.
+This is a code mod, so the release zip needs the compiled `peppermod.dll` at the root of the package. The build script creates `peppermod-0.3.1.zip` and copies it into your Vintage Story `Mods` folder when `-Install` is used. Keep only one version of Pepper Mod in that folder; move the old version outside it before testing this update.
+
+## Biomes Compatibility
+
+Optional support is included for [Biomes](https://mods.vintagestory.at/biomes),
+tested against its 2.2.0 release on Vintage Story 1.22.3. No separate compatibility
+download or required dependency is needed.
+
+When Biomes is enabled, wild peppers follow its existing regional pepper rules:
+
+- Jalapenos: Pacific Nearctic, Pacific Neotropic, and Atlantic Neotropic.
+- Habaneros: Atlantic Neotropic.
+
+Both can spawn near or away from rivers. Normal spawn rarity, suitable-soil checks,
+and seasonal growing requirements are unchanged. Player-planted peppers are not
+restricted by these world-generation rules. Without Biomes, wild peppers retain
+their existing any-climate spawning rules.
+
+In an existing Biomes world, explore newly generated terrain to find new patches;
+existing terrain is not repopulated. When adding Biomes itself, follow its author's
+recommendation to start a new world. This integration only adds our plant IDs to
+Biomes' regional configuration; it does not alter terrain generation or other crops.
+
+The optional asset is `assets/peppermod/config/biomes/blockconfig/peppermod.json`.
+The released Biomes loader and plant filter are exercised in automated tests;
+a combined in-game world-generation playtest is still recommended before release.
 
 ## Spice Effects
 
@@ -105,7 +132,7 @@ Loose raw, baked, and dried peppers use dedicated oven transforms to lie flat an
 centered in their slots. Inventory, held, and dropped-item transforms are unchanged.
 
 Base freshness is 7 days for raw jalapenos and habaneros, 14 days (+/- 2) for other raw peppers,
-7 days (+/- 1) for baked peppers, and 360 days for dried peppers, before temperature
+7 days (+/- 1) for baked peppers, and 120 days for dried peppers, before temperature
 and storage modifiers. After
 freshness runs out, raw/baked peppers rot over 1 day and dried peppers over 7 days.
 All three use normal food spoilage. The oven applies vanilla freshness carryover,
@@ -160,13 +187,15 @@ supporting underside and an empty, dry space below it. Right-click a hung bundle
 to take it down. If your inventory is full, it drops below the hanging point.
 Removing its support or flooding its space also drops the bundle.
 
-Raw and baked bundles air-dry directly into dried bundles after **72 in-game hours
-(3 days)** hanging. The variety and eight-pepper count stay the same. Progress is
+Raw and baked bundles air-dry directly into dried bundles after **168 in-game hours
+(7 days)** hanging. The variety and eight-pepper count stay the same. Progress is
 saved and catches up when a chunk reloads. Taking a bundle down pauses drying;
 rehanging resumes its saved progress. Only elapsed game time counts, not time
 while the world is stopped.
 
-Normal spoilage continues while hanging. Drying carries over freshness using the
+Raw and baked bundles spoil at half the normal rate while hanging, allowing fresh
+bundles to finish drying. Carried bundles and hung dried bundles use normal rates.
+Drying carries over freshness using the
 game's food conversion rules, so it does not reset old food to brand-new condition.
 A bundle that starts spoiling before drying finishes will not become dried food;
 when fully spoiled it drops two rot. Dried bundles can stay hanging as decoration
@@ -210,6 +239,13 @@ tests cover placement, claims, inventory consumption, pickup, support loss,
 flooding, air-drying, spoilage, save/reload, and large elapsed-time catch-up.
 Native in-game testing is still needed for final
 HUD appearance, animation, and interaction feel.
+
+To additionally run the native Biomes compatibility test, set `BIOMES_TEST_ZIP`
+to a locally downloaded `biomes_2.2.0.zip` before running the same test command.
+This loads its configuration parser and plant filter without installing Biomes,
+modifying a world, or adding its DLL to Pepper Mod's package. The test checks all
+12 realms, both river states, asset loading order, and unchanged unrelated crops.
+Without this variable, the ordinary tests still run and the native test is skipped.
 
 ## Roadmap
 

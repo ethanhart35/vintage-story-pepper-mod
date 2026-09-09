@@ -149,6 +149,7 @@ Check("drop stacks fall vertically within the plant footprint", () => {
 HeldItemTransformTests.Run(Check);
 SpiceTests.Run(Check);
 WildPepperTests.Run(Check);
+BiomesCompatibilityTests.Run(Check);
 HabaneroTests.Run(Check);
 PreparedPepperTests.Run(Check);
 PepperBundleTests.Run(Check);
