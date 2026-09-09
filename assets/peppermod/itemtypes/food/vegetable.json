@@ -54,6 +54,24 @@
                 "startScaleY": 1,
                 "endScaleY": 1,
                 "resultCode": "peppermod:preparedpepper-baked-{type}"
+            },
+            "onDisplayTransform": {
+                "translation": {
+                    "x": 0,
+                    "y": -0.4554793121425114,
+                    "z": -0.0012871104150440312
+                },
+                "rotation": {
+                    "x": 90,
+                    "y": 0,
+                    "z": 0
+                },
+                "origin": {
+                    "x": 0.5,
+                    "y": 0.5,
+                    "z": 0.5
+                },
+                "scale": 0.43885949475576674
             }
         },
         "*-habanero": {
@@ -66,6 +84,24 @@
                 "startScaleY": 1,
                 "endScaleY": 1,
                 "resultCode": "peppermod:preparedpepper-baked-{type}"
+            },
+            "onDisplayTransform": {
+                "translation": {
+                    "x": -0.0059731250000000236,
+                    "y": -0.4262125,
+                    "z": -0.023755252001361082
+                },
+                "rotation": {
+                    "x": 90,
+                    "y": 0,
+                    "z": 0
+                },
+                "origin": {
+                    "x": 0.5,
+                    "y": 0.5,
+                    "z": 0.5
+                },
+                "scale": 0.5
             }
         },
         "*-serrano": {
@@ -78,6 +114,24 @@
                 "startScaleY": 1,
                 "endScaleY": 1,
                 "resultCode": "peppermod:preparedpepper-baked-{type}"
+            },
+            "onDisplayTransform": {
+                "translation": {
+                    "x": 0,
+                    "y": -0.40249999999999997,
+                    "z": -0.005636254436130322
+                },
+                "rotation": {
+                    "x": 90,
+                    "y": 0,
+                    "z": 0
+                },
+                "origin": {
+                    "x": 0.5,
+                    "y": 0.5,
+                    "z": 0.5
+                },
+                "scale": 0.3607202839123406
             }
         },
         "*-cayenne": {
@@ -90,6 +144,24 @@
                 "startScaleY": 1,
                 "endScaleY": 1,
                 "resultCode": "peppermod:preparedpepper-baked-{type}"
+            },
+            "onDisplayTransform": {
+                "translation": {
+                    "x": 0,
+                    "y": -0.40249999999999997,
+                    "z": -0.005636254436130322
+                },
+                "rotation": {
+                    "x": 90,
+                    "y": 0,
+                    "z": 0
+                },
+                "origin": {
+                    "x": 0.5,
+                    "y": 0.5,
+                    "z": 0.5
+                },
+                "scale": 0.3607202839123406
             }
         },
         "*-poblano": {
@@ -102,6 +174,24 @@
                 "startScaleY": 1,
                 "endScaleY": 1,
                 "resultCode": "peppermod:preparedpepper-baked-{type}"
+            },
+            "onDisplayTransform": {
+                "translation": {
+                    "x": 0,
+                    "y": -0.40249999999999997,
+                    "z": -0.005636254436130322
+                },
+                "rotation": {
+                    "x": 90,
+                    "y": 0,
+                    "z": 0
+                },
+                "origin": {
+                    "x": 0.5,
+                    "y": 0.5,
+                    "z": 0.5
+                },
+                "scale": 0.3607202839123406
             }
         },
         "*-banana-pepper": {
@@ -114,6 +204,24 @@
                 "startScaleY": 1,
                 "endScaleY": 1,
                 "resultCode": "peppermod:preparedpepper-baked-{type}"
+            },
+            "onDisplayTransform": {
+                "translation": {
+                    "x": 0,
+                    "y": -0.40249999999999997,
+                    "z": -0.005636254436130322
+                },
+                "rotation": {
+                    "x": 90,
+                    "y": 0,
+                    "z": 0
+                },
+                "origin": {
+                    "x": 0.5,
+                    "y": 0.5,
+                    "z": 0.5
+                },
+                "scale": 0.3607202839123406
             }
         },
         "*-ghost-pepper": {
@@ -126,6 +234,24 @@
                 "startScaleY": 1,
                 "endScaleY": 1,
                 "resultCode": "peppermod:preparedpepper-baked-{type}"
+            },
+            "onDisplayTransform": {
+                "translation": {
+                    "x": 0,
+                    "y": -0.40249999999999997,
+                    "z": -0.005636254436130322
+                },
+                "rotation": {
+                    "x": 90,
+                    "y": 0,
+                    "z": 0
+                },
+                "origin": {
+                    "x": 0.5,
+                    "y": 0.5,
+                    "z": 0.5
+                },
+                "scale": 0.3607202839123406
             }
         },
         "*": {
@@ -138,6 +264,24 @@
                 "startScaleY": 1,
                 "endScaleY": 1,
                 "resultCode": "peppermod:preparedpepper-baked-{type}"
+            },
+            "onDisplayTransform": {
+                "translation": {
+                    "x": 0,
+                    "y": -0.40249999999999997,
+                    "z": -0.005636254436130322
+                },
+                "rotation": {
+                    "x": 90,
+                    "y": 0,
+                    "z": 0
+                },
+                "origin": {
+                    "x": 0.5,
+                    "y": 0.5,
+                    "z": 0.5
+                },
+                "scale": 0.3607202839123406
             }
         }
     },

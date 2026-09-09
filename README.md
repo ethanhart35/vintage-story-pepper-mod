@@ -13,6 +13,7 @@ Work in progress. Version 0.2.0 adds complete habanero plant and item models alo
 - Fresh vegetable items for each pepper type
 - Scoville tooltips and two oven preparations: baked peppers, then long-lasting dried peppers
 - Eight-pepper jalapeno and habanero bundles for baking 32 peppers in one full clay oven
+- Ceiling-hung bundles that air-dry over three in-game days
 - Hold right-click for 1.5 seconds to harvest ripe plants without breaking them; peppers fall to the ground nearby
 - Seasonal dormancy when temperatures are outside the growing range
 - Rare wild jalapeno patches and rarer habanero patches in any biome with suitable soil
@@ -100,6 +101,9 @@ batch, or leave them in the oven longer, to dry them. Drying takes longer than
 the first bake at the same temperature. Dried is the final stage; further baking
 does not reduce heat again. There is no firepit or cooking-pot recipe.
 
+Loose raw, baked, and dried peppers use dedicated oven transforms to lie flat and
+centered in their slots. Inventory, held, and dropped-item transforms are unchanged.
+
 Base freshness is 7 days for raw jalapenos and habaneros, 14 days (+/- 2) for other raw peppers,
 7 days (+/- 1) for baked peppers, and 360 days for dried peppers, before temperature
 and storage modifiers. After
@@ -144,10 +148,29 @@ two rot, equivalent to the normal rot ratio for eight peppers.
 
 The six ristra-style item models have eight peppers arranged around a central cord
 at varied heights and angles, with each stem directly touching the cord and no
-outward string arms. They lie flat in the oven and when dropped. The hanging loop is part of the item
-model; placing a bundle on a ceiling is not implemented. The models reference
+outward string arms. They lie flat in the oven and when dropped. The models reference
 the game's linen texture for their cord and reuse the existing pepper skins.
 An interactive preview is available at `art/previews/pepper-bundles.html`.
+
+Right-click the underside of a ceiling while holding a bundle to hang one from its
+loop. A small iron hook appears between the ceiling and the string, with the loop
+resting in its curved end. This is part of the placed model only, not an additional
+crafting ingredient or item. No special ceiling material is required; the block must have a
+supporting underside and an empty, dry space below it. Right-click a hung bundle
+to take it down. If your inventory is full, it drops below the hanging point.
+Removing its support or flooding its space also drops the bundle.
+
+Raw and baked bundles air-dry directly into dried bundles after **72 in-game hours
+(3 days)** hanging. The variety and eight-pepper count stay the same. Progress is
+saved and catches up when a chunk reloads. Taking a bundle down pauses drying;
+rehanging resumes its saved progress. Only elapsed game time counts, not time
+while the world is stopped.
+
+Normal spoilage continues while hanging. Drying carries over freshness using the
+game's food conversion rules, so it does not reset old food to brand-new condition.
+A bundle that starts spoiling before drying finishes will not become dried food;
+when fully spoiled it drops two rot. Dried bundles can stay hanging as decoration
+but still have the long, finite dried-pepper shelf life.
 
 ## VSMC2 Workflow
 
@@ -182,7 +205,9 @@ behavior, per-player state, habanero model/texture wiring, connected fruit and l
 mature canopy consistency, ripening colors, Scoville tooltips, reduced prepared-food spice,
 vanilla oven conversions, terminal drying, freshness carryover, prepared model UVs,
 bundle recipes and exact counts, inedible bundles, repeated tie/untie freshness,
-32-pepper oven batches, cord attachments, and oven/ground model bounds.
+32-pepper oven batches, cord attachments, and oven/ground model bounds. Hanging
+tests cover placement, claims, inventory consumption, pickup, support loss,
+flooding, air-drying, spoilage, save/reload, and large elapsed-time catch-up.
 Native in-game testing is still needed for final
 HUD appearance, animation, and interaction feel.
 

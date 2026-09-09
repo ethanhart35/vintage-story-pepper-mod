@@ -61,6 +61,24 @@
         "endScaleY": 1,
         "initialCode": "peppermod:vegetable-jalapeno",
         "resultCode": "peppermod:preparedpepper-dried-jalapeno"
+      },
+      "onDisplayTransform": {
+        "translation": {
+          "x": 0,
+          "y": -0.4554793121425114,
+          "z": -0.0012871104150440312
+        },
+        "rotation": {
+          "x": 90,
+          "y": 0,
+          "z": 0
+        },
+        "origin": {
+          "x": 0.5,
+          "y": 0.5,
+          "z": 0.5
+        },
+        "scale": 0.43885949475576674
       }
     },
     "preparedpepper-baked-habanero": {
@@ -74,6 +92,24 @@
         "endScaleY": 1,
         "initialCode": "peppermod:vegetable-habanero",
         "resultCode": "peppermod:preparedpepper-dried-habanero"
+      },
+      "onDisplayTransform": {
+        "translation": {
+          "x": -0.0059731250000000236,
+          "y": -0.4262125,
+          "z": -0.023755252001361082
+        },
+        "rotation": {
+          "x": 90,
+          "y": 0,
+          "z": 0
+        },
+        "origin": {
+          "x": 0.5,
+          "y": 0.5,
+          "z": 0.5
+        },
+        "scale": 0.5
       }
     },
     "preparedpepper-baked-serrano": {
@@ -87,6 +123,24 @@
         "endScaleY": 1,
         "initialCode": "peppermod:vegetable-serrano",
         "resultCode": "peppermod:preparedpepper-dried-serrano"
+      },
+      "onDisplayTransform": {
+        "translation": {
+          "x": 0,
+          "y": -0.40249999999999997,
+          "z": -0.005636254436130322
+        },
+        "rotation": {
+          "x": 90,
+          "y": 0,
+          "z": 0
+        },
+        "origin": {
+          "x": 0.5,
+          "y": 0.5,
+          "z": 0.5
+        },
+        "scale": 0.3607202839123406
       }
     },
     "preparedpepper-baked-cayenne": {
@@ -100,6 +154,24 @@
         "endScaleY": 1,
         "initialCode": "peppermod:vegetable-cayenne",
         "resultCode": "peppermod:preparedpepper-dried-cayenne"
+      },
+      "onDisplayTransform": {
+        "translation": {
+          "x": 0,
+          "y": -0.40249999999999997,
+          "z": -0.005636254436130322
+        },
+        "rotation": {
+          "x": 90,
+          "y": 0,
+          "z": 0
+        },
+        "origin": {
+          "x": 0.5,
+          "y": 0.5,
+          "z": 0.5
+        },
+        "scale": 0.3607202839123406
       }
     },
     "preparedpepper-baked-poblano": {
@@ -113,6 +185,24 @@
         "endScaleY": 1,
         "initialCode": "peppermod:vegetable-poblano",
         "resultCode": "peppermod:preparedpepper-dried-poblano"
+      },
+      "onDisplayTransform": {
+        "translation": {
+          "x": 0,
+          "y": -0.40249999999999997,
+          "z": -0.005636254436130322
+        },
+        "rotation": {
+          "x": 90,
+          "y": 0,
+          "z": 0
+        },
+        "origin": {
+          "x": 0.5,
+          "y": 0.5,
+          "z": 0.5
+        },
+        "scale": 0.3607202839123406
       }
     },
     "preparedpepper-baked-bell-pepper": {
@@ -126,6 +216,24 @@
         "endScaleY": 1,
         "initialCode": "peppermod:vegetable-bell-pepper",
         "resultCode": "peppermod:preparedpepper-dried-bell-pepper"
+      },
+      "onDisplayTransform": {
+        "translation": {
+          "x": 0,
+          "y": -0.40249999999999997,
+          "z": -0.005636254436130322
+        },
+        "rotation": {
+          "x": 90,
+          "y": 0,
+          "z": 0
+        },
+        "origin": {
+          "x": 0.5,
+          "y": 0.5,
+          "z": 0.5
+        },
+        "scale": 0.3607202839123406
       }
     },
     "preparedpepper-baked-banana-pepper": {
@@ -139,6 +247,24 @@
         "endScaleY": 1,
         "initialCode": "peppermod:vegetable-banana-pepper",
         "resultCode": "peppermod:preparedpepper-dried-banana-pepper"
+      },
+      "onDisplayTransform": {
+        "translation": {
+          "x": 0,
+          "y": -0.40249999999999997,
+          "z": -0.005636254436130322
+        },
+        "rotation": {
+          "x": 90,
+          "y": 0,
+          "z": 0
+        },
+        "origin": {
+          "x": 0.5,
+          "y": 0.5,
+          "z": 0.5
+        },
+        "scale": 0.3607202839123406
       }
     },
     "preparedpepper-baked-ghost-pepper": {
@@ -152,6 +278,24 @@
         "endScaleY": 1,
         "initialCode": "peppermod:vegetable-ghost-pepper",
         "resultCode": "peppermod:preparedpepper-dried-ghost-pepper"
+      },
+      "onDisplayTransform": {
+        "translation": {
+          "x": 0,
+          "y": -0.40249999999999997,
+          "z": -0.005636254436130322
+        },
+        "rotation": {
+          "x": 90,
+          "y": 0,
+          "z": 0
+        },
+        "origin": {
+          "x": 0.5,
+          "y": 0.5,
+          "z": 0.5
+        },
+        "scale": 0.3607202839123406
       }
     },
     "preparedpepper-dried-jalapeno": {
@@ -164,6 +308,24 @@
         "startScaleY": 1,
         "endScaleY": 1,
         "initialCode": "peppermod:preparedpepper-baked-jalapeno"
+      },
+      "onDisplayTransform": {
+        "translation": {
+          "x": 0,
+          "y": -0.4554793121425114,
+          "z": -0.0012871104150440312
+        },
+        "rotation": {
+          "x": 90,
+          "y": 0,
+          "z": 0
+        },
+        "origin": {
+          "x": 0.5,
+          "y": 0.5,
+          "z": 0.5
+        },
+        "scale": 0.43885949475576674
       }
     },
     "preparedpepper-dried-habanero": {
@@ -176,6 +338,24 @@
         "startScaleY": 1,
         "endScaleY": 1,
         "initialCode": "peppermod:preparedpepper-baked-habanero"
+      },
+      "onDisplayTransform": {
+        "translation": {
+          "x": -0.0059731250000000236,
+          "y": -0.4262125,
+          "z": -0.023755252001361082
+        },
+        "rotation": {
+          "x": 90,
+          "y": 0,
+          "z": 0
+        },
+        "origin": {
+          "x": 0.5,
+          "y": 0.5,
+          "z": 0.5
+        },
+        "scale": 0.5
       }
     },
     "preparedpepper-dried-serrano": {
@@ -188,6 +368,24 @@
         "startScaleY": 1,
         "endScaleY": 1,
         "initialCode": "peppermod:preparedpepper-baked-serrano"
+      },
+      "onDisplayTransform": {
+        "translation": {
+          "x": 0,
+          "y": -0.40249999999999997,
+          "z": -0.005636254436130322
+        },
+        "rotation": {
+          "x": 90,
+          "y": 0,
+          "z": 0
+        },
+        "origin": {
+          "x": 0.5,
+          "y": 0.5,
+          "z": 0.5
+        },
+        "scale": 0.3607202839123406
       }
     },
     "preparedpepper-dried-cayenne": {
@@ -200,6 +398,24 @@
         "startScaleY": 1,
         "endScaleY": 1,
         "initialCode": "peppermod:preparedpepper-baked-cayenne"
+      },
+      "onDisplayTransform": {
+        "translation": {
+          "x": 0,
+          "y": -0.40249999999999997,
+          "z": -0.005636254436130322
+        },
+        "rotation": {
+          "x": 90,
+          "y": 0,
+          "z": 0
+        },
+        "origin": {
+          "x": 0.5,
+          "y": 0.5,
+          "z": 0.5
+        },
+        "scale": 0.3607202839123406
       }
     },
     "preparedpepper-dried-poblano": {
@@ -212,6 +428,24 @@
         "startScaleY": 1,
         "endScaleY": 1,
         "initialCode": "peppermod:preparedpepper-baked-poblano"
+      },
+      "onDisplayTransform": {
+        "translation": {
+          "x": 0,
+          "y": -0.40249999999999997,
+          "z": -0.005636254436130322
+        },
+        "rotation": {
+          "x": 90,
+          "y": 0,
+          "z": 0
+        },
+        "origin": {
+          "x": 0.5,
+          "y": 0.5,
+          "z": 0.5
+        },
+        "scale": 0.3607202839123406
       }
     },
     "preparedpepper-dried-bell-pepper": {
@@ -224,6 +458,24 @@
         "startScaleY": 1,
         "endScaleY": 1,
         "initialCode": "peppermod:preparedpepper-baked-bell-pepper"
+      },
+      "onDisplayTransform": {
+        "translation": {
+          "x": 0,
+          "y": -0.40249999999999997,
+          "z": -0.005636254436130322
+        },
+        "rotation": {
+          "x": 90,
+          "y": 0,
+          "z": 0
+        },
+        "origin": {
+          "x": 0.5,
+          "y": 0.5,
+          "z": 0.5
+        },
+        "scale": 0.3607202839123406
       }
     },
     "preparedpepper-dried-banana-pepper": {
@@ -236,6 +488,24 @@
         "startScaleY": 1,
         "endScaleY": 1,
         "initialCode": "peppermod:preparedpepper-baked-banana-pepper"
+      },
+      "onDisplayTransform": {
+        "translation": {
+          "x": 0,
+          "y": -0.40249999999999997,
+          "z": -0.005636254436130322
+        },
+        "rotation": {
+          "x": 90,
+          "y": 0,
+          "z": 0
+        },
+        "origin": {
+          "x": 0.5,
+          "y": 0.5,
+          "z": 0.5
+        },
+        "scale": 0.3607202839123406
       }
     },
     "preparedpepper-dried-ghost-pepper": {
@@ -248,6 +518,24 @@
         "startScaleY": 1,
         "endScaleY": 1,
         "initialCode": "peppermod:preparedpepper-baked-ghost-pepper"
+      },
+      "onDisplayTransform": {
+        "translation": {
+          "x": 0,
+          "y": -0.40249999999999997,
+          "z": -0.005636254436130322
+        },
+        "rotation": {
+          "x": 90,
+          "y": 0,
+          "z": 0
+        },
+        "origin": {
+          "x": 0.5,
+          "y": 0.5,
+          "z": 0.5
+        },
+        "scale": 0.3607202839123406
       }
     }
   },

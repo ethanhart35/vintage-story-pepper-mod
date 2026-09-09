@@ -8,6 +8,7 @@ using Vintagestory.API.Config;
 using Vintagestory.API.Datastructures;
 using Vintagestory.API.Util;
 using Vintagestory.GameContent;
+using Vintagestory.Client.NoObf;
 
 internal static class PreparedPepperTests
 {
@@ -44,6 +45,23 @@ internal static class PreparedPepperTests
     }
     public static void Run(Action<string, Action> check) {
         var types = Read("itemtypes/food/vegetable.json")["variantgroups"][0]["states"].Values<string>().ToArray();
+        check("prepared pepper skin stays opaque and uncorrupted in the actual game texture atlas", () => {
+            string path = Path.Combine(Root, "assets/peppermod/textures/item/food/prepared/pepper-skins.png");
+            using var bitmap = new BitmapExternal(path, null);
+            var pixels = bitmap.Pixels;
+            Require(pixels.All(p => ((uint)p >> 24) == 255), "Pepper skin must be fully opaque");
+            var atlas = new TextureAtlas(4096, 2048, 0, 0);
+            Require(atlas.InsertTexture(0, bitmap, true));
+            var positions = new Vintagestory.API.Client.TextureAtlasPosition[1];
+            atlas.PopulateAtlasPositions(positions, 0);
+            int mismatches = 0, transparent = 0;
+            for (int y = 0; y < bitmap.Height; y++) for (int x = 0; x < bitmap.Width; x++) {
+                int packed = atlas.GetPixel(positions[0].x1 + (x + .5f) / 4096, positions[0].y1 + (y + .5f) / 2048);
+                if (packed != pixels[y * bitmap.Width + x]) mismatches++;
+                if (((uint)packed >> 24) != 255) transparent++;
+            }
+            Require(mismatches == 0, $"Game atlas corrupts {mismatches} skin pixels, including {transparent} transparent pixels, at {bitmap.Width}x{bitmap.Height}");
+        });
         check("all pepper baking chains resolve and halve Scoville and spice at each step", () => {
             foreach (string type in types) {
                 var items = new[] { Load(type, "raw"), Load(type, "baked"), Load(type, "dried") };

@@ -4,6 +4,13 @@
 
 ### 0.2.0 - Habaneros
 
+- Added a small iron ceiling hook for hanging bundles and lowered the string loop onto its curved seat. Portable and oven models, recipes, and drying behavior are unchanged.
+- Fixed individual raw, baked, and dried pepper positioning in clay ovens with flat, centered, slot-sized display transforms. Hand and inventory positioning is unchanged.
+- Added ceiling placement for all six jalapeno/habanero bundle variants. Right-click an underside to hang one, then right-click the bundle to take it down. No special hook or ceiling material is required.
+- Fresh and baked bundles air-dry into dried bundles after 72 in-game hours hanging, preserving variety, pepper count, and carried-over freshness. Progress survives save/reload and pauses while carried.
+- Hanging bundles continue to spoil; spoiling food cannot be rescued by drying. Missing supports and flooding drop the bundle, full inventories drop picked-up bundles, and fully rotten bundles drop two rot.
+- Added regression checks for loose-pepper oven alignment and the full hanging, pickup, drying, spoilage, and persistence lifecycle.
+- Fixed see-through baked/dried pepper skins on loose items and bundles by exporting the shared texture at atlas-safe dimensions. Added a pixel-for-pixel regression check using the game's texture atlas loader.
 - Added raw, baked, and dried jalapeno/habanero bundles with custom eight-pepper ristra models, flax-fiber ties, hanging loops, and flat oven/dropped positioning.
 - Refined all six bundle models with staggered, all-around fruit placement and direct stem-to-cord attachments instead of outward strings and paired rows.
 - Added shaped recipes using one flax fiber surrounded by eight matching peppers, plus shapeless unpacking into eight peppers of the same variety and preparation. Fiber is consumed, not returned.

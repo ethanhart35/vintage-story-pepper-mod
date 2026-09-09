@@ -12,6 +12,11 @@ skin with browned blisters. Lower-left: dark olive and rust dried skin with fine
 leathery vertical wrinkles. Lower-right: russet red-orange dried skin with leathery
 wrinkles. Exact equal quadrants, edge-to-edge opaque material, subtle color variation.
 
-The generated atlas was visually reviewed and retained at its original resolution.
+The generated atlas was visually reviewed and exported at 1024x1024 for runtime use.
+Its original 1254-pixel width triggered a row-copy bug in Vintage Story 1.22.3's
+texture atlas loader, corrupting pixels and leaving transparent gaps. The runtime
+export preserves the artwork and quadrant layout while using a width divisible by
+four. A regression test loads the actual PNG through the game's bitmap decoder
+and checks every pixel after insertion into the game's texture atlas.
 Prepared shapes reference it directly with padded quadrant UVs. No existing raw
 texture or handmade model was changed.

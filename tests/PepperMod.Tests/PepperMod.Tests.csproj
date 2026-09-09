@@ -16,5 +16,7 @@
     <Reference Include="VSSurvivalMod"><HintPath>$(VintageStoryInstall)/Mods/VSSurvivalMod.dll</HintPath></Reference>
     <Reference Include="VSEssentials"><HintPath>$(VintageStoryInstall)/Mods/VSEssentials.dll</HintPath></Reference>
     <Reference Include="cairo-sharp"><HintPath>$(VintageStoryInstall)/Lib/cairo-sharp.dll</HintPath></Reference>
+    <Reference Include="SkiaSharp"><HintPath>$(VintageStoryInstall)/Lib/SkiaSharp.dll</HintPath></Reference>
+    <None Include="$(VintageStoryInstall)/Lib/libSkiaSharp.dll" Link="libSkiaSharp.dll" CopyToOutputDirectory="PreserveNewest" Condition="Exists('$(VintageStoryInstall)/Lib/libSkiaSharp.dll')" />
   </ItemGroup>
 </Project>

@@ -1,6 +1,6 @@
 {
   "code": "pepperbundle",
-  "class": "ItemPepperFood",
+  "class": "ItemPepperBundle",
   "variantgroups": [
     {
       "code": "state",
@@ -129,7 +129,8 @@
           "z": 0.5
         },
         "scale": 0.32
-      }
+      },
+      "airDryHours": 72
     },
     "pepperbundle-baked-jalapeno": {
       "peppermodBundleCount": 8,
@@ -161,7 +162,8 @@
           "z": 0.5
         },
         "scale": 0.32
-      }
+      },
+      "airDryHours": 72
     },
     "pepperbundle-dried-jalapeno": {
       "peppermodBundleCount": 8,
@@ -192,7 +194,8 @@
           "z": 0.5
         },
         "scale": 0.32
-      }
+      },
+      "airDryHours": 72
     },
     "pepperbundle-raw-habanero": {
       "peppermodBundleCount": 8,
@@ -223,7 +226,8 @@
           "z": 0.5
         },
         "scale": 0.32
-      }
+      },
+      "airDryHours": 72
     },
     "pepperbundle-baked-habanero": {
       "peppermodBundleCount": 8,
@@ -255,7 +259,8 @@
           "z": 0.5
         },
         "scale": 0.32
-      }
+      },
+      "airDryHours": 72
     },
     "pepperbundle-dried-habanero": {
       "peppermodBundleCount": 8,
@@ -286,7 +291,8 @@
           "z": 0.5
         },
         "scale": 0.32
-      }
+      },
+      "airDryHours": 72
     }
   },
   "transitionablePropsByType": {

@@ -1,0 +1,249 @@
+{
+  "code": "hangingpepperbundle",
+  "class": "BlockHangingPepperBundle",
+  "entityClass": "HangingPepperBundle",
+  "variantgroups": [
+    {
+      "code": "state",
+      "states": [
+        "raw",
+        "baked",
+        "dried"
+      ]
+    },
+    {
+      "code": "type",
+      "states": [
+        "jalapeno",
+        "habanero"
+      ]
+    }
+  ],
+  "attributes": {
+    "handbook": {
+      "exclude": true
+    }
+  },
+  "drawtype": "json",
+  "blockmaterial": "Plant",
+  "lightAbsorption": 0,
+  "sidesolid": {
+    "all": false
+  },
+  "sideopaque": {
+    "all": false
+  },
+  "replaceable": 0,
+  "resistance": 0.25,
+  "collisionBoxes": [],
+  "selectionBoxesByType": {
+    "hangingpepperbundle-raw-jalapeno": [
+      {
+        "x1": 0.33556616201374434,
+        "y1": 0.015540571849789714,
+        "z1": 0.30969375455473014,
+        "x2": 0.6761013830327421,
+        "y2": 1,
+        "z2": 0.651720220629644
+      }
+    ],
+    "hangingpepperbundle-baked-jalapeno": [
+      {
+        "x1": 0.33556616201374434,
+        "y1": 0.015540571849789714,
+        "z1": 0.30969375455473014,
+        "x2": 0.6761013830327421,
+        "y2": 1,
+        "z2": 0.651720220629644
+      }
+    ],
+    "hangingpepperbundle-dried-jalapeno": [
+      {
+        "x1": 0.33556616201374434,
+        "y1": 0.015540571849789714,
+        "z1": 0.30969375455473014,
+        "x2": 0.6761013830327421,
+        "y2": 1,
+        "z2": 0.651720220629644
+      }
+    ],
+    "hangingpepperbundle-raw-habanero": [
+      {
+        "x1": 0.32888121402904025,
+        "y1": 0.055592409761406794,
+        "z1": 0.3132965821922866,
+        "x2": 0.6882995885357008,
+        "y2": 1,
+        "z2": 0.6800006286849536
+      }
+    ],
+    "hangingpepperbundle-baked-habanero": [
+      {
+        "x1": 0.32888121402904025,
+        "y1": 0.055592409761406794,
+        "z1": 0.3132965821922866,
+        "x2": 0.6882995885357008,
+        "y2": 1,
+        "z2": 0.6800006286849536
+      }
+    ],
+    "hangingpepperbundle-dried-habanero": [
+      {
+        "x1": 0.32888121402904025,
+        "y1": 0.055592409761406794,
+        "z1": 0.3132965821922866,
+        "x2": 0.6882995885357008,
+        "y2": 1,
+        "z2": 0.6800006286849536
+      }
+    ]
+  },
+  "shapeByType": {
+    "hangingpepperbundle-raw-jalapeno": {
+      "base": "item/food/bundle/raw/jalapeno",
+      "offsetY": -0.053299809338597695,
+      "overlays": [
+        {
+          "base": "block/food/bundle-hook"
+        }
+      ]
+    },
+    "hangingpepperbundle-baked-jalapeno": {
+      "base": "item/food/bundle/baked/jalapeno",
+      "offsetY": -0.053299809338597695,
+      "overlays": [
+        {
+          "base": "block/food/bundle-hook"
+        }
+      ]
+    },
+    "hangingpepperbundle-dried-jalapeno": {
+      "base": "item/food/bundle/dried/jalapeno",
+      "offsetY": -0.053299809338597695,
+      "overlays": [
+        {
+          "base": "block/food/bundle-hook"
+        }
+      ]
+    },
+    "hangingpepperbundle-raw-habanero": {
+      "base": "item/food/bundle/raw/habanero",
+      "offsetY": -0.053299809338597695,
+      "overlays": [
+        {
+          "base": "block/food/bundle-hook"
+        }
+      ]
+    },
+    "hangingpepperbundle-baked-habanero": {
+      "base": "item/food/bundle/baked/habanero",
+      "offsetY": -0.053299809338597695,
+      "overlays": [
+        {
+          "base": "block/food/bundle-hook"
+        }
+      ]
+    },
+    "hangingpepperbundle-dried-habanero": {
+      "base": "item/food/bundle/dried/habanero",
+      "offsetY": -0.053299809338597695,
+      "overlays": [
+        {
+          "base": "block/food/bundle-hook"
+        }
+      ]
+    }
+  },
+  "texturesByType": {
+    "hangingpepperbundle-raw-jalapeno": {
+      "base": {
+        "base": "block/plant/jalapeno/pepper"
+      },
+      "stem": {
+        "base": "block/plant/jalapeno/stem"
+      },
+      "cord": {
+        "base": "game:block/linen"
+      },
+      "hook": {
+        "base": "game:block/metal/ingot/iron"
+      }
+    },
+    "hangingpepperbundle-baked-jalapeno": {
+      "base": {
+        "base": "item/food/prepared/pepper-skins"
+      },
+      "stem": {
+        "base": "block/plant/jalapeno/stem"
+      },
+      "cord": {
+        "base": "game:block/linen"
+      },
+      "hook": {
+        "base": "game:block/metal/ingot/iron"
+      }
+    },
+    "hangingpepperbundle-dried-jalapeno": {
+      "base": {
+        "base": "item/food/prepared/pepper-skins"
+      },
+      "stem": {
+        "base": "block/plant/jalapeno/stem"
+      },
+      "cord": {
+        "base": "game:block/linen"
+      },
+      "hook": {
+        "base": "game:block/metal/ingot/iron"
+      }
+    },
+    "hangingpepperbundle-raw-habanero": {
+      "base": {
+        "base": "block/plant/habanero/pepper"
+      },
+      "stem": {
+        "base": "block/plant/habanero/stem"
+      },
+      "cord": {
+        "base": "game:block/linen"
+      },
+      "hook": {
+        "base": "game:block/metal/ingot/iron"
+      }
+    },
+    "hangingpepperbundle-baked-habanero": {
+      "base": {
+        "base": "item/food/prepared/pepper-skins"
+      },
+      "stem": {
+        "base": "block/plant/habanero/stem"
+      },
+      "cord": {
+        "base": "game:block/linen"
+      },
+      "hook": {
+        "base": "game:block/metal/ingot/iron"
+      }
+    },
+    "hangingpepperbundle-dried-habanero": {
+      "base": {
+        "base": "item/food/prepared/pepper-skins"
+      },
+      "stem": {
+        "base": "block/plant/habanero/stem"
+      },
+      "cord": {
+        "base": "game:block/linen"
+      },
+      "hook": {
+        "base": "game:block/metal/ingot/iron"
+      }
+    }
+  },
+  "drops": [],
+  "sounds": {
+    "place": "game:block/cloth",
+    "hit": "game:block/cloth",
+    "break": "game:block/cloth"
+  }
+}

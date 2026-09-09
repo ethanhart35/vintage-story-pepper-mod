@@ -152,6 +152,7 @@ WildPepperTests.Run(Check);
 HabaneroTests.Run(Check);
 PreparedPepperTests.Run(Check);
 PepperBundleTests.Run(Check);
+HangingBundleTests.Run(Check);
 Console.WriteLine($"Passed {passed} regression tests.");
 if (failed > 0) Console.Error.WriteLine($"Failed {failed} regression tests.");
 Environment.ExitCode = failed == 0 ? 0 : 1;
