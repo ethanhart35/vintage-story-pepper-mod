@@ -4,9 +4,9 @@ A small Vintage Story code/content mod for perennial pepper plants.
 
 ## Status
 
-Version 0.3.1 adds optional Biomes regional spawning support for jalapenos and habaneros.
+Version 0.4.0 completes serranos alongside jalapenos and habaneros, including baking, bundles, ceiling hanging, air drying, and optional Biomes regional spawning.
 
-Work in progress. Version 0.3.0 adds complete habanero plant and item models alongside the finished jalapenos. Both varieties have 11 plant states, picked fruit models, seeds, perennial growth, and spice effects. The new habanero artwork and gameplay integration have automated checks but still need a native in-game playtest. The other six varieties remain unfinished.
+Work in progress. All three finished varieties have 11 plant states, picked fruit models, seeds, perennial growth, and spice effects. Serrano assets and gameplay integration pass automated checks but still need a native in-game playtest. The other five varieties remain unfinished.
 
 ## Current Content
 
@@ -14,15 +14,16 @@ Work in progress. Version 0.3.0 adds complete habanero plant and item models alo
 - Seeds for each pepper type
 - Fresh vegetable items for each pepper type
 - Scoville tooltips and two oven preparations: baked peppers, then long-lasting dried peppers
-- Eight-pepper jalapeno and habanero bundles for baking 32 peppers in one full clay oven
+- Eight-pepper jalapeno, habanero, and serrano bundles for baking 32 peppers in one full clay oven
 - Ceiling-hung bundles that air-dry over seven in-game days
 - Hold right-click for 1.5 seconds to harvest ripe plants without breaking them; peppers fall to the ground nearby
 - Seasonal dormancy when temperatures are outside the growing range
-- Rare wild jalapeno patches and rarer habanero patches in any biome with suitable soil
-- Complete jalapeno and habanero growth, dormant, harvested, and regrowing models
-- Matching 3D jalapeno and orange habanero fruit for inventory, held, and dropped items
+- Rare wild jalapeno and serrano patches and rarer habanero patches in any biome with suitable soil
+- Complete jalapeno, habanero, and serrano growth, dormant, harvested, and regrowing models
+- Matching 3D fruit for inventory, held, and dropped items
 - Habanero fruit progresses from green to orange on a broad, leafy bush
-- Placeholder models for the six remaining pepper types
+- Serrano's taller, narrower bush bears slender green harvest-ready fruit
+- Placeholder models for the five remaining pepper types
 
 Current pepper types:
 
@@ -39,8 +40,8 @@ ghost-pepper
 
 ## Install For Testing
 
-Only jalapenos and habaneros currently spawn wild, in any biome on suitable soil in newly generated terrain.
-The remaining six varieties' wild spawning is disabled for now; their items and existing plants remain intact.
+Only jalapenos, habaneros, and serranos currently spawn wild, in any biome on suitable soil in newly generated terrain.
+The remaining five varieties' wild spawning is disabled for now; their items and existing plants remain intact.
 Existing terrain is not repopulated. Cold-weather dormancy and growing-season
 temperature requirements still apply.
 
@@ -50,7 +51,7 @@ Build and install the compiled test package with:
 powershell -ExecutionPolicy Bypass -File .\tools\Build-PepperMod.ps1 -VintageStory "E:\Vintagestory" -Install
 ```
 
-This is a code mod, so the release zip needs the compiled `peppermod.dll` at the root of the package. The build script creates `peppermod-0.3.1.zip` and copies it into your Vintage Story `Mods` folder when `-Install` is used. Keep only one version of Pepper Mod in that folder; move the old version outside it before testing this update.
+This is a code mod, so the release zip needs the compiled `peppermod.dll` at the root of the package. The build script creates `peppermod-0.4.0.zip` and copies it into your Vintage Story `Mods` folder when `-Install` is used. Keep only one version of Pepper Mod in that folder; move the old version outside it before testing this update.
 
 ## Biomes Compatibility
 
@@ -58,12 +59,13 @@ Optional support is included for [Biomes](https://mods.vintagestory.at/biomes),
 tested against its 2.2.0 release on Vintage Story 1.22.3. No separate compatibility
 download or required dependency is needed.
 
-When Biomes is enabled, wild peppers follow its existing regional pepper rules:
+When Biomes is enabled, wild peppers follow regional spawning rules:
 
 - Jalapenos: Pacific Nearctic, Pacific Neotropic, and Atlantic Neotropic.
 - Habaneros: Atlantic Neotropic.
+- Serranos: Pacific Nearctic, Pacific Neotropic, and Atlantic Neotropic, matching jalapenos.
 
-Both can spawn near or away from rivers. Normal spawn rarity, suitable-soil checks,
+All three can spawn near or away from rivers. Normal spawn rarity, suitable-soil checks,
 and seasonal growing requirements are unchanged. Player-planted peppers are not
 restricted by these world-generation rules. Without Biomes, wild peppers retain
 their existing any-climate spawning rules.
@@ -79,10 +81,11 @@ a combined in-game world-generation playtest is still recommended before release
 
 ## Spice Effects
 
-Raw jalapenos and habaneros provide 20 satiety instead of 80. Each completed bite adds spice:
+Raw jalapenos, habaneros, and serranos provide 20 satiety instead of 80. Each completed bite adds spice:
 banana pepper 10, poblano 15, jalapeno 25, serrano 40, cayenne 50, habanero 50,
 and ghost pepper 100. Bell peppers add no spice. The remaining varieties retain 80 satiety.
 Two habaneros eaten back-to-back fill the spice meter from empty.
+Serranos add 40 spice each: two reach Extreme at 80 and three fill the meter.
 
 Spice is capped at 100 and appears in a three-segment HUD near the lower-right:
 
@@ -131,7 +134,7 @@ does not reduce heat again. There is no firepit or cooking-pot recipe.
 Loose raw, baked, and dried peppers use dedicated oven transforms to lie flat and
 centered in their slots. Inventory, held, and dropped-item transforms are unchanged.
 
-Base freshness is 7 days for raw jalapenos and habaneros, 14 days (+/- 2) for other raw peppers,
+Base freshness is 7 days for raw jalapenos, habaneros, and serranos, 14 days (+/- 2) for other raw peppers,
 7 days (+/- 1) for baked peppers, and 120 days for dried peppers, before temperature
 and storage modifiers. After
 freshness runs out, raw/baked peppers rot over 1 day and dried peppers over 7 days.
@@ -139,8 +142,9 @@ All three use normal food spoilage. The oven applies vanilla freshness carryover
 so an already-aged input does not produce a brand-new shelf-life timer.
 
 Jalapeno spice doses are 25 / 12.5 / 6.25; habanero doses are 50 / 25 / 12.5.
+Serrano doses are 40 / 20 / 10.
 Two raw habaneros still fill the meter from empty. Satiety is unchanged by baking.
-Prepared forms also exist for the six unfinished varieties, without enabling
+Prepared forms also exist for the five unfinished varieties, without enabling
 their wild spawning or replacing their placeholder geometry.
 
 The implementation uses the game's [BakingProperties](https://apidocs.vintagestory.at/api/Vintagestory.API.Common.BakingProperties.html)
@@ -149,7 +153,7 @@ and the installed Vintage Story 1.22.3 oven behavior. See
 
 ## Pepper Bundles
 
-Tie eight matching jalapenos or habaneros with one **flax fiber** in the crafting grid:
+Tie eight matching jalapenos, habaneros, or serranos with one **flax fiber** in the crafting grid:
 
 ```text
 Pepper  Pepper  Pepper
@@ -173,7 +177,7 @@ timer; untying preserves it, preventing a freshness reset from repeated crafting
 Baking continues to use vanilla freshness carryover. A fully rotten bundle yields
 two rot, equivalent to the normal rot ratio for eight peppers.
 
-The six ristra-style item models have eight peppers arranged around a central cord
+The nine ristra-style item models have eight peppers arranged around a central cord
 at varied heights and angles, with each stem directly touching the cord and no
 outward string arms. They lie flat in the oven and when dropped. The models reference
 the game's linen texture for their cord and reuse the existing pepper skins.
@@ -209,7 +213,7 @@ Each plant is wired to load one shape per stage:
 
 Open the stage file you want in VSMC2, replace the placeholder geometry with your own model, and keep the texture keys named `stem`, `leaf`, `flower`, and `pepper` unless you also update the plant block JSON.
 
-The active jalapeno and habanero files contain complete bush models. Habanero also
+The active jalapeno, habanero, and serrano files contain complete bush models. Habanero also
 uses `peppergreen` for unripe fruit, mapped to the existing green pepper skin.
 The separate
 `jalapeno-candidate` folder and interactive previews are retained for reference
@@ -228,9 +232,9 @@ dotnet run --project .\tests\PepperMod.Tests\PepperMod.Tests.csproj -c Release
 ```
 
 They cover hold timing, cancellation, changed targets, concurrent players, claims,
-seasonal restrictions, harvest yield, downward-only item drops, both finished varieties' hand
+seasonal restrictions, harvest yield, downward-only item drops, all finished varieties' hand
 placement, completed bites, spice tiers and cooldowns, body warming, no-damage
-behavior, per-player state, habanero model/texture wiring, connected fruit and leaves,
+behavior, per-player state, habanero/serrano model and texture wiring, connected fruit and leaves,
 mature canopy consistency, ripening colors, Scoville tooltips, reduced prepared-food spice,
 vanilla oven conversions, terminal drying, freshness carryover, prepared model UVs,
 bundle recipes and exact counts, inedible bundles, repeated tie/untie freshness,

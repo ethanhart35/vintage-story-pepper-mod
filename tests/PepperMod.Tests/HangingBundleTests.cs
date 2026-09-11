@@ -26,7 +26,7 @@ internal static class HangingBundleTests
                 Require(Math.Abs((points.Max(p => p.Z) + points.Min(p => p.Z)) / 2 - .5) < .001);
             }
         });
-        check("hanging variants reuse all six bundle models and suspend their loops from a ceiling hook", () => {
+        check("hanging variants reuse every bundle model and suspend their loops from a ceiling hook", () => {
             var definition = PepperBundleTests.Read("blocktypes/food/hangingpepperbundle.json");
             Require((string)definition["entityClass"] == "HangingPepperBundle" && !definition["collisionBoxes"].Any());
             Require((string)PepperBundleTests.Read("itemtypes/food/pepperbundle.json")["class"] == "ItemPepperBundle");

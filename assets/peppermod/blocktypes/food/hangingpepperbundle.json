@@ -15,7 +15,8 @@
       "code": "type",
       "states": [
         "jalapeno",
-        "habanero"
+        "habanero",
+        "serrano"
       ]
     }
   ],
@@ -96,6 +97,36 @@
         "y2": 1,
         "z2": 0.6800006286849536
       }
+    ],
+    "hangingpepperbundle-raw-serrano": [
+      {
+        "x1": 0.36289256542366205,
+        "y1": 0.03521680137251566,
+        "z1": 0.3393820169654317,
+        "x2": 0.6469358439433753,
+        "y2": 1,
+        "z2": 0.6251798990883739
+      }
+    ],
+    "hangingpepperbundle-baked-serrano": [
+      {
+        "x1": 0.36289256542366205,
+        "y1": 0.03521680137251566,
+        "z1": 0.3393820169654317,
+        "x2": 0.6469358439433753,
+        "y2": 1,
+        "z2": 0.6251798990883739
+      }
+    ],
+    "hangingpepperbundle-dried-serrano": [
+      {
+        "x1": 0.36289256542366205,
+        "y1": 0.03521680137251566,
+        "z1": 0.3393820169654317,
+        "x2": 0.6469358439433753,
+        "y2": 1,
+        "z2": 0.6251798990883739
+      }
     ]
   },
   "shapeByType": {
@@ -146,6 +177,33 @@
     },
     "hangingpepperbundle-dried-habanero": {
       "base": "item/food/bundle/dried/habanero",
+      "offsetY": -0.053299809338597695,
+      "overlays": [
+        {
+          "base": "block/food/bundle-hook"
+        }
+      ]
+    },
+    "hangingpepperbundle-raw-serrano": {
+      "base": "item/food/bundle/raw/serrano",
+      "offsetY": -0.053299809338597695,
+      "overlays": [
+        {
+          "base": "block/food/bundle-hook"
+        }
+      ]
+    },
+    "hangingpepperbundle-baked-serrano": {
+      "base": "item/food/bundle/baked/serrano",
+      "offsetY": -0.053299809338597695,
+      "overlays": [
+        {
+          "base": "block/food/bundle-hook"
+        }
+      ]
+    },
+    "hangingpepperbundle-dried-serrano": {
+      "base": "item/food/bundle/dried/serrano",
       "offsetY": -0.053299809338597695,
       "overlays": [
         {
@@ -231,6 +289,48 @@
       },
       "stem": {
         "base": "block/plant/habanero/stem"
+      },
+      "cord": {
+        "base": "game:block/linen"
+      },
+      "hook": {
+        "base": "game:block/metal/ingot/iron"
+      }
+    },
+    "hangingpepperbundle-raw-serrano": {
+      "base": {
+        "base": "block/plant/serrano/pepper"
+      },
+      "stem": {
+        "base": "block/plant/serrano/stem"
+      },
+      "cord": {
+        "base": "game:block/linen"
+      },
+      "hook": {
+        "base": "game:block/metal/ingot/iron"
+      }
+    },
+    "hangingpepperbundle-baked-serrano": {
+      "base": {
+        "base": "item/food/prepared/pepper-skins"
+      },
+      "stem": {
+        "base": "block/plant/serrano/stem"
+      },
+      "cord": {
+        "base": "game:block/linen"
+      },
+      "hook": {
+        "base": "game:block/metal/ingot/iron"
+      }
+    },
+    "hangingpepperbundle-dried-serrano": {
+      "base": {
+        "base": "item/food/prepared/pepper-skins"
+      },
+      "stem": {
+        "base": "block/plant/serrano/stem"
       },
       "cord": {
         "base": "game:block/linen"

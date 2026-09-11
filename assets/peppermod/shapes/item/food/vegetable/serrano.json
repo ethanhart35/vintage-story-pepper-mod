@@ -1,356 +1,3886 @@
-﻿{
-    "editor":  {
-                   "allAngles":  true,
-                   "backdrops":  [
-
-                                 ],
-                   "attachments":  [
-
-                                   ]
-               },
-    "textures":  {
-                     "base":  "item/food/vegetable/serrano"
-                 },
-    "elements":  [
-                     {
-                         "name":  "SerranoItemRoot",
-                         "from":  [
-                                      0,
-                                      0,
-                                      0
-                                  ],
-                         "to":  [
-                                    0,
-                                    0,
-                                    0
-                                ],
-                         "faces":  {
-
-                                   },
-                         "rotationOrigin":  [
-                                                0,
-                                                0,
-                                                0
-                                            ],
-                         "scaleX":  1,
-                         "scaleY":  1,
-                         "scaleZ":  1,
-                         "renderPass":  -1,
-                         "children":  [
-
-                                      ],
-                         "uv":  [
-                                    0,
-                                    0
-                                ]
-                     },
-                     {
-                         "name":  "PepperBodyPlaceholder",
-                         "from":  [
-                                      5.25,
-                                      6.25,
-                                      5
-                                  ],
-                         "to":  [
-                                    10.75,
-                                    9.75,
-                                    11
-                                ],
-                         "shade":  true,
-                         "faces":  {
-                                       "north":  {
-                                                     "texture":  "#base",
-                                                     "uv":  [
-                                                                0,
-                                                                0,
-                                                                16,
-                                                                16
-                                                            ],
-                                                     "enabled":  true,
-                                                     "autoUv":  true
-                                                 },
-                                       "east":  {
-                                                    "texture":  "#base",
-                                                    "uv":  [
-                                                               0,
-                                                               0,
-                                                               16,
-                                                               16
-                                                           ],
-                                                    "enabled":  true,
-                                                    "autoUv":  true
-                                                },
-                                       "south":  {
-                                                     "texture":  "#base",
-                                                     "uv":  [
-                                                                0,
-                                                                0,
-                                                                16,
-                                                                16
-                                                            ],
-                                                     "enabled":  true,
-                                                     "autoUv":  true
-                                                 },
-                                       "west":  {
-                                                    "texture":  "#base",
-                                                    "uv":  [
-                                                               0,
-                                                               0,
-                                                               16,
-                                                               16
-                                                           ],
-                                                    "enabled":  true,
-                                                    "autoUv":  true
-                                                },
-                                       "up":  {
-                                                  "texture":  "#base",
-                                                  "uv":  [
-                                                             0,
-                                                             0,
-                                                             16,
-                                                             16
-                                                         ],
-                                                  "enabled":  true,
-                                                  "autoUv":  true
-                                              },
-                                       "down":  {
-                                                    "texture":  "#base",
-                                                    "uv":  [
-                                                               0,
-                                                               0,
-                                                               16,
-                                                               16
-                                                           ],
-                                                    "enabled":  true,
-                                                    "autoUv":  true
-                                                }
-                                   },
-                         "rotationOrigin":  [
-                                                8,
-                                                8,
-                                                8
-                                            ],
-                         "rotationX":  0,
-                         "rotationY":  -25,
-                         "rotationZ":  0,
-                         "scaleX":  1,
-                         "scaleY":  1,
-                         "scaleZ":  1,
-                         "renderPass":  -1,
-                         "stepParentName":  "SerranoItemRoot",
-                         "renderInEditor":  true,
-                         "uv":  [
-                                    0,
-                                    0
-                                ]
-                     },
-                     {
-                         "name":  "PepperTipPlaceholder",
-                         "from":  [
-                                      6.5,
-                                      5.25,
-                                      6.25
-                                  ],
-                         "to":  [
-                                    9.5,
-                                    6.75,
-                                    9.75
-                                ],
-                         "shade":  true,
-                         "faces":  {
-                                       "north":  {
-                                                     "texture":  "#base",
-                                                     "uv":  [
-                                                                0,
-                                                                0,
-                                                                16,
-                                                                16
-                                                            ],
-                                                     "enabled":  true,
-                                                     "autoUv":  true
-                                                 },
-                                       "east":  {
-                                                    "texture":  "#base",
-                                                    "uv":  [
-                                                               0,
-                                                               0,
-                                                               16,
-                                                               16
-                                                           ],
-                                                    "enabled":  true,
-                                                    "autoUv":  true
-                                                },
-                                       "south":  {
-                                                     "texture":  "#base",
-                                                     "uv":  [
-                                                                0,
-                                                                0,
-                                                                16,
-                                                                16
-                                                            ],
-                                                     "enabled":  true,
-                                                     "autoUv":  true
-                                                 },
-                                       "west":  {
-                                                    "texture":  "#base",
-                                                    "uv":  [
-                                                               0,
-                                                               0,
-                                                               16,
-                                                               16
-                                                           ],
-                                                    "enabled":  true,
-                                                    "autoUv":  true
-                                                },
-                                       "up":  {
-                                                  "texture":  "#base",
-                                                  "uv":  [
-                                                             0,
-                                                             0,
-                                                             16,
-                                                             16
-                                                         ],
-                                                  "enabled":  true,
-                                                  "autoUv":  true
-                                              },
-                                       "down":  {
-                                                    "texture":  "#base",
-                                                    "uv":  [
-                                                               0,
-                                                               0,
-                                                               16,
-                                                               16
-                                                           ],
-                                                    "enabled":  true,
-                                                    "autoUv":  true
-                                                }
-                                   },
-                         "rotationOrigin":  [
-                                                8,
-                                                8,
-                                                8
-                                            ],
-                         "rotationX":  0,
-                         "rotationY":  -25,
-                         "rotationZ":  0,
-                         "scaleX":  1,
-                         "scaleY":  1,
-                         "scaleZ":  1,
-                         "renderPass":  -1,
-                         "stepParentName":  "SerranoItemRoot",
-                         "renderInEditor":  true,
-                         "uv":  [
-                                    0,
-                                    0
-                                ]
-                     },
-                     {
-                         "name":  "StemPlaceholder",
-                         "from":  [
-                                      7.25,
-                                      9.75,
-                                      7.25
-                                  ],
-                         "to":  [
-                                    8.75,
-                                    11.25,
-                                    8.75
-                                ],
-                         "shade":  true,
-                         "faces":  {
-                                       "north":  {
-                                                     "texture":  "#base",
-                                                     "uv":  [
-                                                                0,
-                                                                0,
-                                                                16,
-                                                                16
-                                                            ],
-                                                     "enabled":  true,
-                                                     "autoUv":  true
-                                                 },
-                                       "east":  {
-                                                    "texture":  "#base",
-                                                    "uv":  [
-                                                               0,
-                                                               0,
-                                                               16,
-                                                               16
-                                                           ],
-                                                    "enabled":  true,
-                                                    "autoUv":  true
-                                                },
-                                       "south":  {
-                                                     "texture":  "#base",
-                                                     "uv":  [
-                                                                0,
-                                                                0,
-                                                                16,
-                                                                16
-                                                            ],
-                                                     "enabled":  true,
-                                                     "autoUv":  true
-                                                 },
-                                       "west":  {
-                                                    "texture":  "#base",
-                                                    "uv":  [
-                                                               0,
-                                                               0,
-                                                               16,
-                                                               16
-                                                           ],
-                                                    "enabled":  true,
-                                                    "autoUv":  true
-                                                },
-                                       "up":  {
-                                                  "texture":  "#base",
-                                                  "uv":  [
-                                                             0,
-                                                             0,
-                                                             16,
-                                                             16
-                                                         ],
-                                                  "enabled":  true,
-                                                  "autoUv":  true
-                                              },
-                                       "down":  {
-                                                    "texture":  "#base",
-                                                    "uv":  [
-                                                               0,
-                                                               0,
-                                                               16,
-                                                               16
-                                                           ],
-                                                    "enabled":  true,
-                                                    "autoUv":  true
-                                                }
-                                   },
-                         "rotationOrigin":  [
-                                                8,
-                                                9.75,
-                                                8
-                                            ],
-                         "rotationX":  0,
-                         "rotationY":  -25,
-                         "rotationZ":  0,
-                         "scaleX":  1,
-                         "scaleY":  1,
-                         "scaleZ":  1,
-                         "renderPass":  -1,
-                         "stepParentName":  "SerranoItemRoot",
-                         "renderInEditor":  true,
-                         "uv":  [
-                                    0,
-                                    0
-                                ]
-                     }
-                 ],
-    "textureWidth":  16,
-    "textureHeight":  16,
-    "textureSizes":  {
-                         "base":  [
-                                      16,
-                                      16
-                                  ]
-                     }
+{
+  "editor": {
+    "allAngles": true,
+    "backdrops": [],
+    "attachments": []
+  },
+  "textureWidth": 16,
+  "textureHeight": 16,
+  "textures": {
+    "base": "block/plant/serrano/pepper",
+    "stem": "block/plant/serrano/stem"
+  },
+  "textureSizes": {
+    "base": [
+      16,
+      16
+    ],
+    "stem": [
+      16,
+      16
+    ]
+  },
+  "elements": [
+    {
+      "name": "SerranoItemRoot",
+      "from": [
+        0,
+        0,
+        0
+      ],
+      "to": [
+        0,
+        0,
+        0
+      ],
+      "rotationOrigin": [
+        0,
+        0,
+        0
+      ],
+      "faces": {},
+      "children": [],
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1,
+      "uv": [
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Pepper-fruit-1-core",
+      "from": [
+        7.30736,
+        10.6705,
+        7.30574
+      ],
+      "to": [
+        8.39264,
+        11.35,
+        8.69426
+      ],
+      "rotationOrigin": [
+        7.85,
+        11.35,
+        8
+      ],
+      "rotationX": 0,
+      "rotationY": 0,
+      "rotationZ": 0,
+      "shade": true,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1,
+      "faces": {
+        "north": {
+          "texture": "#base",
+          "uv": [
+            0.8,
+            3.552,
+            3.488,
+            3.8544
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "east": {
+          "texture": "#base",
+          "uv": [
+            0.8,
+            3.552,
+            3.488,
+            3.8544
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "south": {
+          "texture": "#base",
+          "uv": [
+            0.8,
+            3.552,
+            3.488,
+            3.8544
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "west": {
+          "texture": "#base",
+          "uv": [
+            0.8,
+            3.552,
+            3.488,
+            3.8544
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "up": {
+          "texture": "#base",
+          "uv": [
+            1.6,
+            4.32,
+            2.912,
+            5.184
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "down": {
+          "texture": "#base",
+          "uv": [
+            1.536,
+            5.792,
+            2.944,
+            6.752
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "children": [],
+      "stepParentName": "SerranoItemRoot",
+      "renderPass": -1,
+      "uv": [
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Pepper-fruit-1-left",
+      "from": [
+        7.052,
+        10.6705,
+        7.5279
+      ],
+      "to": [
+        7.32332,
+        11.35,
+        8.4721
+      ],
+      "rotationOrigin": [
+        7.85,
+        11.35,
+        8
+      ],
+      "rotationX": 0,
+      "rotationY": 0,
+      "rotationZ": 0,
+      "shade": true,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1,
+      "faces": {
+        "north": {
+          "texture": "#base",
+          "uv": [
+            0.8,
+            3.552,
+            3.488,
+            3.8544
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "east": {
+          "texture": "#base",
+          "uv": [
+            0.8,
+            3.552,
+            3.488,
+            3.8544
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "south": {
+          "texture": "#base",
+          "uv": [
+            0.8,
+            3.552,
+            3.488,
+            3.8544
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "west": {
+          "texture": "#base",
+          "uv": [
+            0.8,
+            3.552,
+            3.488,
+            3.8544
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "up": {
+          "texture": "#base",
+          "uv": [
+            1.6,
+            4.32,
+            2.912,
+            5.184
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "down": {
+          "texture": "#base",
+          "uv": [
+            1.536,
+            5.792,
+            2.944,
+            6.752
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "children": [],
+      "stepParentName": "SerranoItemRoot",
+      "renderPass": -1,
+      "uv": [
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Pepper-fruit-1-right",
+      "from": [
+        8.37668,
+        10.6705,
+        7.5279
+      ],
+      "to": [
+        8.648,
+        11.35,
+        8.4721
+      ],
+      "rotationOrigin": [
+        7.85,
+        11.35,
+        8
+      ],
+      "rotationX": 0,
+      "rotationY": 0,
+      "rotationZ": 0,
+      "shade": true,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1,
+      "faces": {
+        "north": {
+          "texture": "#base",
+          "uv": [
+            0.8,
+            3.552,
+            3.488,
+            3.8544
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "east": {
+          "texture": "#base",
+          "uv": [
+            0.8,
+            3.552,
+            3.488,
+            3.8544
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "south": {
+          "texture": "#base",
+          "uv": [
+            0.8,
+            3.552,
+            3.488,
+            3.8544
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "west": {
+          "texture": "#base",
+          "uv": [
+            0.8,
+            3.552,
+            3.488,
+            3.8544
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "up": {
+          "texture": "#base",
+          "uv": [
+            1.6,
+            4.32,
+            2.912,
+            5.184
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "down": {
+          "texture": "#base",
+          "uv": [
+            1.536,
+            5.792,
+            2.944,
+            6.752
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "children": [],
+      "stepParentName": "SerranoItemRoot",
+      "renderPass": -1,
+      "uv": [
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Pepper-fruit-2-core",
+      "from": [
+        7.1535,
+        9.6135,
+        7.09058
+      ],
+      "to": [
+        8.5815,
+        10.78375,
+        8.91758
+      ],
+      "rotationOrigin": [
+        7.85,
+        11.35,
+        8
+      ],
+      "rotationX": 0,
+      "rotationY": 0,
+      "rotationZ": 0,
+      "shade": true,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1,
+      "faces": {
+        "north": {
+          "texture": "#base",
+          "uv": [
+            0.8,
+            3.804,
+            3.488,
+            4.3248
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "east": {
+          "texture": "#base",
+          "uv": [
+            0.8,
+            3.804,
+            3.488,
+            4.3248
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "south": {
+          "texture": "#base",
+          "uv": [
+            0.8,
+            3.804,
+            3.488,
+            4.3248
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "west": {
+          "texture": "#base",
+          "uv": [
+            0.8,
+            3.804,
+            3.488,
+            4.3248
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "up": {
+          "texture": "#base",
+          "uv": [
+            1.6,
+            4.32,
+            2.912,
+            5.184
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "down": {
+          "texture": "#base",
+          "uv": [
+            1.536,
+            5.792,
+            2.944,
+            6.752
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "children": [],
+      "stepParentName": "SerranoItemRoot",
+      "renderPass": -1,
+      "uv": [
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Pepper-fruit-2-left",
+      "from": [
+        6.8175,
+        9.6135,
+        7.3829
+      ],
+      "to": [
+        7.1745,
+        10.78375,
+        8.62526
+      ],
+      "rotationOrigin": [
+        7.85,
+        11.35,
+        8
+      ],
+      "rotationX": 0,
+      "rotationY": 0,
+      "rotationZ": 0,
+      "shade": true,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1,
+      "faces": {
+        "north": {
+          "texture": "#base",
+          "uv": [
+            0.8,
+            3.804,
+            3.488,
+            4.3248
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "east": {
+          "texture": "#base",
+          "uv": [
+            0.8,
+            3.804,
+            3.488,
+            4.3248
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "south": {
+          "texture": "#base",
+          "uv": [
+            0.8,
+            3.804,
+            3.488,
+            4.3248
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "west": {
+          "texture": "#base",
+          "uv": [
+            0.8,
+            3.804,
+            3.488,
+            4.3248
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "up": {
+          "texture": "#base",
+          "uv": [
+            1.6,
+            4.32,
+            2.912,
+            5.184
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "down": {
+          "texture": "#base",
+          "uv": [
+            1.536,
+            5.792,
+            2.944,
+            6.752
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "children": [],
+      "stepParentName": "SerranoItemRoot",
+      "renderPass": -1,
+      "uv": [
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Pepper-fruit-2-right",
+      "from": [
+        8.5605,
+        9.6135,
+        7.3829
+      ],
+      "to": [
+        8.9175,
+        10.78375,
+        8.62526
+      ],
+      "rotationOrigin": [
+        7.85,
+        11.35,
+        8
+      ],
+      "rotationX": 0,
+      "rotationY": 0,
+      "rotationZ": 0,
+      "shade": true,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1,
+      "faces": {
+        "north": {
+          "texture": "#base",
+          "uv": [
+            0.8,
+            3.804,
+            3.488,
+            4.3248
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "east": {
+          "texture": "#base",
+          "uv": [
+            0.8,
+            3.804,
+            3.488,
+            4.3248
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "south": {
+          "texture": "#base",
+          "uv": [
+            0.8,
+            3.804,
+            3.488,
+            4.3248
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "west": {
+          "texture": "#base",
+          "uv": [
+            0.8,
+            3.804,
+            3.488,
+            4.3248
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "up": {
+          "texture": "#base",
+          "uv": [
+            1.6,
+            4.32,
+            2.912,
+            5.184
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "down": {
+          "texture": "#base",
+          "uv": [
+            1.536,
+            5.792,
+            2.944,
+            6.752
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "children": [],
+      "stepParentName": "SerranoItemRoot",
+      "renderPass": -1,
+      "uv": [
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Pepper-fruit-3-core",
+      "from": [
+        7.22028,
+        8.1035,
+        7.1211
+      ],
+      "to": [
+        8.61972,
+        9.72675,
+        8.91156
+      ],
+      "rotationOrigin": [
+        7.85,
+        11.35,
+        8
+      ],
+      "rotationX": 0,
+      "rotationY": 0,
+      "rotationZ": 0,
+      "shade": true,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1,
+      "faces": {
+        "north": {
+          "texture": "#base",
+          "uv": [
+            0.8,
+            4.2744,
+            3.488,
+            4.9968
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "east": {
+          "texture": "#base",
+          "uv": [
+            0.8,
+            4.2744,
+            3.488,
+            4.9968
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "south": {
+          "texture": "#base",
+          "uv": [
+            0.8,
+            4.2744,
+            3.488,
+            4.9968
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "west": {
+          "texture": "#base",
+          "uv": [
+            0.8,
+            4.2744,
+            3.488,
+            4.9968
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "up": {
+          "texture": "#base",
+          "uv": [
+            1.6,
+            4.32,
+            2.912,
+            5.184
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "down": {
+          "texture": "#base",
+          "uv": [
+            1.536,
+            5.792,
+            2.944,
+            6.752
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "children": [],
+      "stepParentName": "SerranoItemRoot",
+      "renderPass": -1,
+      "uv": [
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Pepper-fruit-3-left",
+      "from": [
+        6.891,
+        8.1035,
+        7.40758
+      ],
+      "to": [
+        7.24086,
+        9.72675,
+        8.62509
+      ],
+      "rotationOrigin": [
+        7.85,
+        11.35,
+        8
+      ],
+      "rotationX": 0,
+      "rotationY": 0,
+      "rotationZ": 0,
+      "shade": true,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1,
+      "faces": {
+        "north": {
+          "texture": "#base",
+          "uv": [
+            0.8,
+            4.2744,
+            3.488,
+            4.9968
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "east": {
+          "texture": "#base",
+          "uv": [
+            0.8,
+            4.2744,
+            3.488,
+            4.9968
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "south": {
+          "texture": "#base",
+          "uv": [
+            0.8,
+            4.2744,
+            3.488,
+            4.9968
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "west": {
+          "texture": "#base",
+          "uv": [
+            0.8,
+            4.2744,
+            3.488,
+            4.9968
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "up": {
+          "texture": "#base",
+          "uv": [
+            1.6,
+            4.32,
+            2.912,
+            5.184
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "down": {
+          "texture": "#base",
+          "uv": [
+            1.536,
+            5.792,
+            2.944,
+            6.752
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "children": [],
+      "stepParentName": "SerranoItemRoot",
+      "renderPass": -1,
+      "uv": [
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Pepper-fruit-3-right",
+      "from": [
+        8.59914,
+        8.1035,
+        7.40758
+      ],
+      "to": [
+        8.949,
+        9.72675,
+        8.62509
+      ],
+      "rotationOrigin": [
+        7.85,
+        11.35,
+        8
+      ],
+      "rotationX": 0,
+      "rotationY": 0,
+      "rotationZ": 0,
+      "shade": true,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1,
+      "faces": {
+        "north": {
+          "texture": "#base",
+          "uv": [
+            0.8,
+            4.2744,
+            3.488,
+            4.9968
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "east": {
+          "texture": "#base",
+          "uv": [
+            0.8,
+            4.2744,
+            3.488,
+            4.9968
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "south": {
+          "texture": "#base",
+          "uv": [
+            0.8,
+            4.2744,
+            3.488,
+            4.9968
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "west": {
+          "texture": "#base",
+          "uv": [
+            0.8,
+            4.2744,
+            3.488,
+            4.9968
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "up": {
+          "texture": "#base",
+          "uv": [
+            1.6,
+            4.32,
+            2.912,
+            5.184
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "down": {
+          "texture": "#base",
+          "uv": [
+            1.536,
+            5.792,
+            2.944,
+            6.752
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "children": [],
+      "stepParentName": "SerranoItemRoot",
+      "renderPass": -1,
+      "uv": [
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Pepper-fruit-4-core",
+      "from": [
+        7.37204,
+        6.5935,
+        7.22373
+      ],
+      "to": [
+        8.64296,
+        8.21675,
+        8.84976
+      ],
+      "rotationOrigin": [
+        7.85,
+        11.35,
+        8
+      ],
+      "rotationX": 0,
+      "rotationY": 0,
+      "rotationZ": 0,
+      "shade": true,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1,
+      "faces": {
+        "north": {
+          "texture": "#base",
+          "uv": [
+            0.8,
+            4.9464,
+            3.488,
+            5.6688
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "east": {
+          "texture": "#base",
+          "uv": [
+            0.8,
+            4.9464,
+            3.488,
+            5.6688
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "south": {
+          "texture": "#base",
+          "uv": [
+            0.8,
+            4.9464,
+            3.488,
+            5.6688
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "west": {
+          "texture": "#base",
+          "uv": [
+            0.8,
+            4.9464,
+            3.488,
+            5.6688
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "up": {
+          "texture": "#base",
+          "uv": [
+            1.6,
+            4.32,
+            2.912,
+            5.184
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "down": {
+          "texture": "#base",
+          "uv": [
+            1.536,
+            5.792,
+            2.944,
+            6.752
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "children": [],
+      "stepParentName": "SerranoItemRoot",
+      "renderPass": -1,
+      "uv": [
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Pepper-fruit-4-left",
+      "from": [
+        7.073,
+        6.5935,
+        7.4839
+      ],
+      "to": [
+        7.39073,
+        8.21675,
+        8.5896
+      ],
+      "rotationOrigin": [
+        7.85,
+        11.35,
+        8
+      ],
+      "rotationX": 0,
+      "rotationY": 0,
+      "rotationZ": 0,
+      "shade": true,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1,
+      "faces": {
+        "north": {
+          "texture": "#base",
+          "uv": [
+            0.8,
+            4.9464,
+            3.488,
+            5.6688
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "east": {
+          "texture": "#base",
+          "uv": [
+            0.8,
+            4.9464,
+            3.488,
+            5.6688
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "south": {
+          "texture": "#base",
+          "uv": [
+            0.8,
+            4.9464,
+            3.488,
+            5.6688
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "west": {
+          "texture": "#base",
+          "uv": [
+            0.8,
+            4.9464,
+            3.488,
+            5.6688
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "up": {
+          "texture": "#base",
+          "uv": [
+            1.6,
+            4.32,
+            2.912,
+            5.184
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "down": {
+          "texture": "#base",
+          "uv": [
+            1.536,
+            5.792,
+            2.944,
+            6.752
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "children": [],
+      "stepParentName": "SerranoItemRoot",
+      "renderPass": -1,
+      "uv": [
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Pepper-fruit-4-right",
+      "from": [
+        8.62427,
+        6.5935,
+        7.4839
+      ],
+      "to": [
+        8.942,
+        8.21675,
+        8.5896
+      ],
+      "rotationOrigin": [
+        7.85,
+        11.35,
+        8
+      ],
+      "rotationX": 0,
+      "rotationY": 0,
+      "rotationZ": 0,
+      "shade": true,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1,
+      "faces": {
+        "north": {
+          "texture": "#base",
+          "uv": [
+            0.8,
+            4.9464,
+            3.488,
+            5.6688
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "east": {
+          "texture": "#base",
+          "uv": [
+            0.8,
+            4.9464,
+            3.488,
+            5.6688
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "south": {
+          "texture": "#base",
+          "uv": [
+            0.8,
+            4.9464,
+            3.488,
+            5.6688
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "west": {
+          "texture": "#base",
+          "uv": [
+            0.8,
+            4.9464,
+            3.488,
+            5.6688
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "up": {
+          "texture": "#base",
+          "uv": [
+            1.6,
+            4.32,
+            2.912,
+            5.184
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "down": {
+          "texture": "#base",
+          "uv": [
+            1.536,
+            5.792,
+            2.944,
+            6.752
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "children": [],
+      "stepParentName": "SerranoItemRoot",
+      "renderPass": -1,
+      "uv": [
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Pepper-fruit-5-core",
+      "from": [
+        7.60878,
+        5.31,
+        7.39848
+      ],
+      "to": [
+        8.65122,
+        6.70675,
+        8.73219
+      ],
+      "rotationOrigin": [
+        7.85,
+        11.35,
+        8
+      ],
+      "rotationX": 0,
+      "rotationY": 0,
+      "rotationZ": 0,
+      "shade": true,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1,
+      "faces": {
+        "north": {
+          "texture": "#base",
+          "uv": [
+            0.8,
+            5.6184,
+            3.488,
+            6.24
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "east": {
+          "texture": "#base",
+          "uv": [
+            0.8,
+            5.6184,
+            3.488,
+            6.24
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "south": {
+          "texture": "#base",
+          "uv": [
+            0.8,
+            5.6184,
+            3.488,
+            6.24
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "west": {
+          "texture": "#base",
+          "uv": [
+            0.8,
+            5.6184,
+            3.488,
+            6.24
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "up": {
+          "texture": "#base",
+          "uv": [
+            1.6,
+            4.32,
+            2.912,
+            5.184
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "down": {
+          "texture": "#base",
+          "uv": [
+            1.536,
+            5.792,
+            2.944,
+            6.752
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "children": [],
+      "stepParentName": "SerranoItemRoot",
+      "renderPass": -1,
+      "uv": [
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Pepper-fruit-5-left",
+      "from": [
+        7.3635,
+        5.31,
+        7.61187
+      ],
+      "to": [
+        7.62411,
+        6.70675,
+        8.51879
+      ],
+      "rotationOrigin": [
+        7.85,
+        11.35,
+        8
+      ],
+      "rotationX": 0,
+      "rotationY": 0,
+      "rotationZ": 0,
+      "shade": true,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1,
+      "faces": {
+        "north": {
+          "texture": "#base",
+          "uv": [
+            0.8,
+            5.6184,
+            3.488,
+            6.24
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "east": {
+          "texture": "#base",
+          "uv": [
+            0.8,
+            5.6184,
+            3.488,
+            6.24
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "south": {
+          "texture": "#base",
+          "uv": [
+            0.8,
+            5.6184,
+            3.488,
+            6.24
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "west": {
+          "texture": "#base",
+          "uv": [
+            0.8,
+            5.6184,
+            3.488,
+            6.24
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "up": {
+          "texture": "#base",
+          "uv": [
+            1.6,
+            4.32,
+            2.912,
+            5.184
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "down": {
+          "texture": "#base",
+          "uv": [
+            1.536,
+            5.792,
+            2.944,
+            6.752
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "children": [],
+      "stepParentName": "SerranoItemRoot",
+      "renderPass": -1,
+      "uv": [
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Pepper-fruit-5-right",
+      "from": [
+        8.63589,
+        5.31,
+        7.61187
+      ],
+      "to": [
+        8.8965,
+        6.70675,
+        8.51879
+      ],
+      "rotationOrigin": [
+        7.85,
+        11.35,
+        8
+      ],
+      "rotationX": 0,
+      "rotationY": 0,
+      "rotationZ": 0,
+      "shade": true,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1,
+      "faces": {
+        "north": {
+          "texture": "#base",
+          "uv": [
+            0.8,
+            5.6184,
+            3.488,
+            6.24
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "east": {
+          "texture": "#base",
+          "uv": [
+            0.8,
+            5.6184,
+            3.488,
+            6.24
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "south": {
+          "texture": "#base",
+          "uv": [
+            0.8,
+            5.6184,
+            3.488,
+            6.24
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "west": {
+          "texture": "#base",
+          "uv": [
+            0.8,
+            5.6184,
+            3.488,
+            6.24
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "up": {
+          "texture": "#base",
+          "uv": [
+            1.6,
+            4.32,
+            2.912,
+            5.184
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "down": {
+          "texture": "#base",
+          "uv": [
+            1.536,
+            5.792,
+            2.944,
+            6.752
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "children": [],
+      "stepParentName": "SerranoItemRoot",
+      "renderPass": -1,
+      "uv": [
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Pepper-fruit-6-core",
+      "from": [
+        7.94478,
+        4.3285,
+        7.6636
+      ],
+      "to": [
+        8.63022,
+        5.42325,
+        8.54056
+      ],
+      "rotationOrigin": [
+        7.85,
+        11.35,
+        8
+      ],
+      "rotationX": 0,
+      "rotationY": 0,
+      "rotationZ": 0,
+      "shade": true,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1,
+      "faces": {
+        "north": {
+          "texture": "#base",
+          "uv": [
+            0.8,
+            6.1896,
+            3.488,
+            6.6768
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "east": {
+          "texture": "#base",
+          "uv": [
+            0.8,
+            6.1896,
+            3.488,
+            6.6768
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "south": {
+          "texture": "#base",
+          "uv": [
+            0.8,
+            6.1896,
+            3.488,
+            6.6768
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "west": {
+          "texture": "#base",
+          "uv": [
+            0.8,
+            6.1896,
+            3.488,
+            6.6768
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "up": {
+          "texture": "#base",
+          "uv": [
+            1.6,
+            4.32,
+            2.912,
+            5.184
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "down": {
+          "texture": "#base",
+          "uv": [
+            1.536,
+            5.792,
+            2.944,
+            6.752
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "children": [],
+      "stepParentName": "SerranoItemRoot",
+      "renderPass": -1,
+      "uv": [
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Pepper-fruit-6-left",
+      "from": [
+        7.7835,
+        4.3285,
+        7.80392
+      ],
+      "to": [
+        7.95486,
+        5.42325,
+        8.40025
+      ],
+      "rotationOrigin": [
+        7.85,
+        11.35,
+        8
+      ],
+      "rotationX": 0,
+      "rotationY": 0,
+      "rotationZ": 0,
+      "shade": true,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1,
+      "faces": {
+        "north": {
+          "texture": "#base",
+          "uv": [
+            0.8,
+            6.1896,
+            3.488,
+            6.6768
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "east": {
+          "texture": "#base",
+          "uv": [
+            0.8,
+            6.1896,
+            3.488,
+            6.6768
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "south": {
+          "texture": "#base",
+          "uv": [
+            0.8,
+            6.1896,
+            3.488,
+            6.6768
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "west": {
+          "texture": "#base",
+          "uv": [
+            0.8,
+            6.1896,
+            3.488,
+            6.6768
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "up": {
+          "texture": "#base",
+          "uv": [
+            1.6,
+            4.32,
+            2.912,
+            5.184
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "down": {
+          "texture": "#base",
+          "uv": [
+            1.536,
+            5.792,
+            2.944,
+            6.752
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "children": [],
+      "stepParentName": "SerranoItemRoot",
+      "renderPass": -1,
+      "uv": [
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Pepper-fruit-6-right",
+      "from": [
+        8.62014,
+        4.3285,
+        7.80392
+      ],
+      "to": [
+        8.7915,
+        5.42325,
+        8.40025
+      ],
+      "rotationOrigin": [
+        7.85,
+        11.35,
+        8
+      ],
+      "rotationX": 0,
+      "rotationY": 0,
+      "rotationZ": 0,
+      "shade": true,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1,
+      "faces": {
+        "north": {
+          "texture": "#base",
+          "uv": [
+            0.8,
+            6.1896,
+            3.488,
+            6.6768
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "east": {
+          "texture": "#base",
+          "uv": [
+            0.8,
+            6.1896,
+            3.488,
+            6.6768
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "south": {
+          "texture": "#base",
+          "uv": [
+            0.8,
+            6.1896,
+            3.488,
+            6.6768
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "west": {
+          "texture": "#base",
+          "uv": [
+            0.8,
+            6.1896,
+            3.488,
+            6.6768
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "up": {
+          "texture": "#base",
+          "uv": [
+            1.6,
+            4.32,
+            2.912,
+            5.184
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "down": {
+          "texture": "#base",
+          "uv": [
+            1.536,
+            5.792,
+            2.944,
+            6.752
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "children": [],
+      "stepParentName": "SerranoItemRoot",
+      "renderPass": -1,
+      "uv": [
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Pepper-fruit-7-core",
+      "from": [
+        8.32292,
+        3.8,
+        7.94603
+      ],
+      "to": [
+        8.63708,
+        4.44175,
+        8.34797
+      ],
+      "rotationOrigin": [
+        7.85,
+        11.35,
+        8
+      ],
+      "rotationX": 0,
+      "rotationY": 0,
+      "rotationZ": 0,
+      "shade": true,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1,
+      "faces": {
+        "north": {
+          "texture": "#base",
+          "uv": [
+            0.8,
+            6.6264,
+            3.488,
+            6.912
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "east": {
+          "texture": "#base",
+          "uv": [
+            0.8,
+            6.6264,
+            3.488,
+            6.912
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "south": {
+          "texture": "#base",
+          "uv": [
+            0.8,
+            6.6264,
+            3.488,
+            6.912
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "west": {
+          "texture": "#base",
+          "uv": [
+            0.8,
+            6.6264,
+            3.488,
+            6.912
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "up": {
+          "texture": "#base",
+          "uv": [
+            1.6,
+            4.32,
+            2.912,
+            5.184
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "down": {
+          "texture": "#base",
+          "uv": [
+            1.536,
+            5.792,
+            2.944,
+            6.752
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "children": [],
+      "stepParentName": "SerranoItemRoot",
+      "renderPass": -1,
+      "uv": [
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Pepper-fruit-7-left",
+      "from": [
+        8.249,
+        3.8,
+        8.01034
+      ],
+      "to": [
+        8.32754,
+        4.44175,
+        8.28366
+      ],
+      "rotationOrigin": [
+        7.85,
+        11.35,
+        8
+      ],
+      "rotationX": 0,
+      "rotationY": 0,
+      "rotationZ": 0,
+      "shade": true,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1,
+      "faces": {
+        "north": {
+          "texture": "#base",
+          "uv": [
+            0.8,
+            6.6264,
+            3.488,
+            6.912
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "east": {
+          "texture": "#base",
+          "uv": [
+            0.8,
+            6.6264,
+            3.488,
+            6.912
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "south": {
+          "texture": "#base",
+          "uv": [
+            0.8,
+            6.6264,
+            3.488,
+            6.912
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "west": {
+          "texture": "#base",
+          "uv": [
+            0.8,
+            6.6264,
+            3.488,
+            6.912
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "up": {
+          "texture": "#base",
+          "uv": [
+            1.6,
+            4.32,
+            2.912,
+            5.184
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "down": {
+          "texture": "#base",
+          "uv": [
+            1.536,
+            5.792,
+            2.944,
+            6.752
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "children": [],
+      "stepParentName": "SerranoItemRoot",
+      "renderPass": -1,
+      "uv": [
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Pepper-fruit-7-right",
+      "from": [
+        8.63246,
+        3.8,
+        8.01034
+      ],
+      "to": [
+        8.711,
+        4.44175,
+        8.28366
+      ],
+      "rotationOrigin": [
+        7.85,
+        11.35,
+        8
+      ],
+      "rotationX": 0,
+      "rotationY": 0,
+      "rotationZ": 0,
+      "shade": true,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1,
+      "faces": {
+        "north": {
+          "texture": "#base",
+          "uv": [
+            0.8,
+            6.6264,
+            3.488,
+            6.912
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "east": {
+          "texture": "#base",
+          "uv": [
+            0.8,
+            6.6264,
+            3.488,
+            6.912
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "south": {
+          "texture": "#base",
+          "uv": [
+            0.8,
+            6.6264,
+            3.488,
+            6.912
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "west": {
+          "texture": "#base",
+          "uv": [
+            0.8,
+            6.6264,
+            3.488,
+            6.912
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "up": {
+          "texture": "#base",
+          "uv": [
+            1.6,
+            4.32,
+            2.912,
+            5.184
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "down": {
+          "texture": "#base",
+          "uv": [
+            1.536,
+            5.792,
+            2.944,
+            6.752
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "children": [],
+      "stepParentName": "SerranoItemRoot",
+      "renderPass": -1,
+      "uv": [
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Pepper-calyx-collar",
+      "from": [
+        7.367,
+        11.29,
+        7.58
+      ],
+      "to": [
+        8.333,
+        11.45,
+        8.42
+      ],
+      "rotationOrigin": [
+        7.85,
+        11.35,
+        8
+      ],
+      "rotationX": 0,
+      "rotationY": 0,
+      "rotationZ": 0,
+      "shade": true,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1,
+      "faces": {
+        "north": {
+          "texture": "#stem",
+          "uv": [
+            5.504,
+            2.816,
+            6.688,
+            3.84
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "east": {
+          "texture": "#stem",
+          "uv": [
+            5.504,
+            2.816,
+            6.688,
+            3.84
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "south": {
+          "texture": "#stem",
+          "uv": [
+            5.504,
+            2.816,
+            6.688,
+            3.84
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "west": {
+          "texture": "#stem",
+          "uv": [
+            5.504,
+            2.816,
+            6.688,
+            3.84
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "up": {
+          "texture": "#stem",
+          "uv": [
+            5.504,
+            2.816,
+            6.688,
+            3.84
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "down": {
+          "texture": "#stem",
+          "uv": [
+            5.504,
+            2.816,
+            6.688,
+            3.84
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "children": [],
+      "stepParentName": "SerranoItemRoot",
+      "renderPass": -1,
+      "uv": [
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Pepper-calyx-cross-A",
+      "from": [
+        7.241,
+        11.27,
+        7.8005
+      ],
+      "to": [
+        8.459,
+        11.39,
+        8.1995
+      ],
+      "rotationOrigin": [
+        7.85,
+        11.35,
+        8
+      ],
+      "rotationX": 0,
+      "rotationY": 0,
+      "rotationZ": 0,
+      "shade": true,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1,
+      "faces": {
+        "north": {
+          "texture": "#stem",
+          "uv": [
+            5.504,
+            2.816,
+            6.688,
+            3.84
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "east": {
+          "texture": "#stem",
+          "uv": [
+            5.504,
+            2.816,
+            6.688,
+            3.84
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "south": {
+          "texture": "#stem",
+          "uv": [
+            5.504,
+            2.816,
+            6.688,
+            3.84
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "west": {
+          "texture": "#stem",
+          "uv": [
+            5.504,
+            2.816,
+            6.688,
+            3.84
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "up": {
+          "texture": "#stem",
+          "uv": [
+            5.504,
+            2.816,
+            6.688,
+            3.84
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "down": {
+          "texture": "#stem",
+          "uv": [
+            5.504,
+            2.816,
+            6.688,
+            3.84
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "children": [],
+      "stepParentName": "SerranoItemRoot",
+      "renderPass": -1,
+      "uv": [
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Pepper-calyx-cross-B",
+      "from": [
+        7.6505,
+        11.27,
+        7.433
+      ],
+      "to": [
+        8.0495,
+        11.39,
+        8.567
+      ],
+      "rotationOrigin": [
+        7.85,
+        11.35,
+        8
+      ],
+      "rotationX": 0,
+      "rotationY": 0,
+      "rotationZ": 0,
+      "shade": true,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1,
+      "faces": {
+        "north": {
+          "texture": "#stem",
+          "uv": [
+            5.504,
+            2.816,
+            6.688,
+            3.84
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "east": {
+          "texture": "#stem",
+          "uv": [
+            5.504,
+            2.816,
+            6.688,
+            3.84
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "south": {
+          "texture": "#stem",
+          "uv": [
+            5.504,
+            2.816,
+            6.688,
+            3.84
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "west": {
+          "texture": "#stem",
+          "uv": [
+            5.504,
+            2.816,
+            6.688,
+            3.84
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "up": {
+          "texture": "#stem",
+          "uv": [
+            5.504,
+            2.816,
+            6.688,
+            3.84
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "down": {
+          "texture": "#stem",
+          "uv": [
+            5.504,
+            2.816,
+            6.688,
+            3.84
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "children": [],
+      "stepParentName": "SerranoItemRoot",
+      "renderPass": -1,
+      "uv": [
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Stem-base",
+      "from": [
+        7.73,
+        11.325,
+        7.88
+      ],
+      "to": [
+        7.97,
+        12.12846,
+        8.12
+      ],
+      "rotationOrigin": [
+        7.85,
+        11.35,
+        8
+      ],
+      "rotationX": 3.04319,
+      "rotationY": 0.12139,
+      "rotationZ": 4.56747,
+      "shade": true,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1,
+      "faces": {
+        "north": {
+          "texture": "#stem",
+          "uv": [
+            5.12,
+            1.12,
+            7.232,
+            7.232
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "east": {
+          "texture": "#stem",
+          "uv": [
+            5.12,
+            1.12,
+            7.232,
+            7.232
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "south": {
+          "texture": "#stem",
+          "uv": [
+            5.12,
+            1.12,
+            7.232,
+            7.232
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "west": {
+          "texture": "#stem",
+          "uv": [
+            5.12,
+            1.12,
+            7.232,
+            7.232
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "up": {
+          "texture": "#stem",
+          "uv": [
+            5.12,
+            1.12,
+            7.232,
+            7.232
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "down": {
+          "texture": "#stem",
+          "uv": [
+            5.12,
+            1.12,
+            7.232,
+            7.232
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "children": [],
+      "stepParentName": "SerranoItemRoot",
+      "renderPass": -1,
+      "uv": [
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Stem-bend",
+      "from": [
+        7.685,
+        12.075,
+        7.935
+      ],
+      "to": [
+        7.895,
+        12.78288,
+        8.145
+      ],
+      "rotationOrigin": [
+        7.79,
+        12.1,
+        8.04
+      ],
+      "rotationX": 5.2345,
+      "rotationY": 1.45899,
+      "rotationZ": 31.13008,
+      "shade": true,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1,
+      "faces": {
+        "north": {
+          "texture": "#stem",
+          "uv": [
+            5.12,
+            1.12,
+            7.232,
+            7.232
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "east": {
+          "texture": "#stem",
+          "uv": [
+            5.12,
+            1.12,
+            7.232,
+            7.232
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "south": {
+          "texture": "#stem",
+          "uv": [
+            5.12,
+            1.12,
+            7.232,
+            7.232
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "west": {
+          "texture": "#stem",
+          "uv": [
+            5.12,
+            1.12,
+            7.232,
+            7.232
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "up": {
+          "texture": "#stem",
+          "uv": [
+            5.12,
+            1.12,
+            7.232,
+            7.232
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "down": {
+          "texture": "#stem",
+          "uv": [
+            5.12,
+            1.12,
+            7.232,
+            7.232
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "children": [],
+      "stepParentName": "SerranoItemRoot",
+      "renderPass": -1,
+      "uv": [
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Stem-tip",
+      "from": [
+        7.36,
+        12.635,
+        8.01
+      ],
+      "to": [
+        7.54,
+        13.20269,
+        8.19
+      ],
+      "rotationOrigin": [
+        7.45,
+        12.66,
+        8.1
+      ],
+      "rotationX": 6.68332,
+      "rotationY": 5.21397,
+      "rotationZ": 75.89417,
+      "shade": true,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1,
+      "faces": {
+        "north": {
+          "texture": "#stem",
+          "uv": [
+            5.12,
+            1.12,
+            7.232,
+            7.232
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "east": {
+          "texture": "#stem",
+          "uv": [
+            5.12,
+            1.12,
+            7.232,
+            7.232
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "south": {
+          "texture": "#stem",
+          "uv": [
+            5.12,
+            1.12,
+            7.232,
+            7.232
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "west": {
+          "texture": "#stem",
+          "uv": [
+            5.12,
+            1.12,
+            7.232,
+            7.232
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "up": {
+          "texture": "#stem",
+          "uv": [
+            5.12,
+            1.12,
+            7.232,
+            7.232
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "down": {
+          "texture": "#stem",
+          "uv": [
+            5.12,
+            1.12,
+            7.232,
+            7.232
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "children": [],
+      "stepParentName": "SerranoItemRoot",
+      "renderPass": -1,
+      "uv": [
+        0,
+        0
+      ]
+    }
+  ]
 }

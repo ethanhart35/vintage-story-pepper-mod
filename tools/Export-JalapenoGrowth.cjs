@@ -6,7 +6,7 @@ const sharp = require('sharp');
 
 async function main() {
   const variety = process.argv[2] || 'jalapeno';
-  if (!['jalapeno', 'habanero'].includes(variety)) throw new Error('Expected jalapeno or habanero');
+  if (!['jalapeno', 'habanero', 'serrano'].includes(variety)) throw new Error('Expected jalapeno, habanero, or serrano');
   const root = path.resolve(__dirname, '..');
   const output = path.join(root, 'art', 'previews', `${variety}-growing.gif`);
   const review = path.join(root, 'tmp', `${variety}-growth-gif`);

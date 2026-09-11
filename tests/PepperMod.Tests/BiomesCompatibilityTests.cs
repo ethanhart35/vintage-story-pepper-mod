@@ -13,7 +13,8 @@ internal static class BiomesCompatibilityTests
     private static readonly BindingFlags Instance = BindingFlags.Instance | BindingFlags.Public | BindingFlags.NonPublic;
     private static readonly Dictionary<string, string[]> Regions = new() {
         ["jalapeno"] = new[] { "pacific nearctic", "pacific neotropic", "atlantic neotropic" },
-        ["habanero"] = new[] { "atlantic neotropic" }
+        ["habanero"] = new[] { "atlantic neotropic" },
+        ["serrano"] = new[] { "pacific nearctic", "pacific neotropic", "atlantic neotropic" }
     };
     private static void Require(bool condition, string message) {
         if (!condition) throw new Exception(message);
@@ -26,7 +27,7 @@ internal static class BiomesCompatibilityTests
             var rules = JObject.Parse(ReadLocal(AssetPath));
             Require(rules.Properties().Select(p => p.Name).SequenceEqual(new[] { "BlockPatches" }), "Compatibility must only affect wild plant patches");
             var patches = (JObject)rules["BlockPatches"];
-            Require(patches.Count == 2, "Only jalapenos and habaneros have compatibility entries");
+            Require(patches.Count == Regions.Count, "Only finished peppers have compatibility entries");
             foreach (var (type, regions) in Regions) {
                 var rule = patches[$"crop-{type}-*"];
                 Require(rule != null && rule["biorealm"].Values<string>().SequenceEqual(regions), "Unexpected regions for " + type);
@@ -34,7 +35,7 @@ internal static class BiomesCompatibilityTests
                 for (int stage = 1; stage <= 11; stage++)
                     Require(WildcardUtil.Match($"crop-{type}-*", $"crop-{type}-{stage}"), "Missing plant stage");
             }
-            foreach (string unrelated in new[] { "crop-serrano-8", "crop-bell-pepper-8", "crop-flax-4", "shrubberrybush-habanero-ripe" })
+            foreach (string unrelated in new[] { "crop-cayenne-8", "crop-bell-pepper-8", "crop-flax-4", "shrubberrybush-habanero-ripe" })
                 Require(!patches.Properties().Any(p => WildcardUtil.Match(p.Name, unrelated)), "Compatibility changes another crop: " + unrelated);
             var modInfo = JObject.Parse(File.ReadAllText(Path.Combine(PepperBundleTests.Root, "modinfo.json")));
             Require(modInfo["dependencies"]["biomes"] == null, "Biomes must remain optional");
@@ -45,7 +46,7 @@ internal static class BiomesCompatibilityTests
             Console.WriteLine("SKIP native Biomes integration (set BIOMES_TEST_ZIP to a downloaded Biomes 2.2.0 ZIP)");
             return;
         }
-        check("Biomes 2.2.0 loads our config and filters both peppers correctly in all realms and river states", () => CheckNative(package));
+        check("Biomes 2.2.0 loads our config and filters all finished peppers in all realms and river states", () => CheckNative(package));
     }
 
     // Use the released mod's loader and filter without installing it or running worldgen.
@@ -114,7 +115,7 @@ internal static class BiomesCompatibilityTests
                     Require(first.Contains(code.ToString()) == original.Contains(code.ToString()), "Changed unrelated crop " + code);
                     continue;
                 }
-                string type = code.Path.StartsWith("crop-jalapeno-") ? "jalapeno" : "habanero";
+                string type = Regions.Keys.Single(type => code.Path.StartsWith($"crop-{type}-"));
                 bool expected = Regions[type].Contains(realms[index]);
                 Require(first.Contains(code.ToString()) == expected, $"{code}: incorrect spawn eligibility in {realms[index]}, river={river}");
                 if (type == "habanero") Require(!original.Contains(code.ToString()), "Baseline no longer reproduces the missing habanero support");

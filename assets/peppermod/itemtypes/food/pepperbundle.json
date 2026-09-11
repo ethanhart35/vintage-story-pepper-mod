@@ -14,7 +14,8 @@
       "code": "type",
       "states": [
         "jalapeno",
-        "habanero"
+        "habanero",
+        "serrano"
       ]
     }
   ],
@@ -93,6 +94,39 @@
       },
       "stem": {
         "base": "block/plant/habanero/stem"
+      },
+      "cord": {
+        "base": "game:block/linen"
+      }
+    },
+    "pepperbundle-raw-serrano": {
+      "base": {
+        "base": "block/plant/serrano/pepper"
+      },
+      "stem": {
+        "base": "block/plant/serrano/stem"
+      },
+      "cord": {
+        "base": "game:block/linen"
+      }
+    },
+    "pepperbundle-baked-serrano": {
+      "base": {
+        "base": "item/food/prepared/pepper-skins"
+      },
+      "stem": {
+        "base": "block/plant/serrano/stem"
+      },
+      "cord": {
+        "base": "game:block/linen"
+      }
+    },
+    "pepperbundle-dried-serrano": {
+      "base": {
+        "base": "item/food/prepared/pepper-skins"
+      },
+      "stem": {
+        "base": "block/plant/serrano/stem"
       },
       "cord": {
         "base": "game:block/linen"
@@ -293,6 +327,103 @@
         "scale": 0.32
       },
       "airDryHours": 168
+    },
+    "pepperbundle-raw-serrano": {
+      "peppermodBundleCount": 8,
+      "airDryHours": 168,
+      "peppermodScoville": 15000,
+      "bakingProperties": {
+        "temp": 160,
+        "levelFrom": 0,
+        "levelTo": 0.4,
+        "startScaleY": 1,
+        "endScaleY": 1,
+        "resultCode": "peppermod:pepperbundle-baked-serrano",
+        "largeItem": false
+      },
+      "onDisplayTransform": {
+        "translation": {
+          "x": 0,
+          "y": -0.449942,
+          "z": 0
+        },
+        "rotation": {
+          "x": 90,
+          "y": 0,
+          "z": 0
+        },
+        "origin": {
+          "x": 0.5,
+          "y": 0.5,
+          "z": 0.5
+        },
+        "scale": 0.32
+      }
+    },
+    "pepperbundle-baked-serrano": {
+      "peppermodBundleCount": 8,
+      "airDryHours": 168,
+      "peppermodScoville": 7500,
+      "bakingProperties": {
+        "temp": 160,
+        "levelFrom": 0.4,
+        "levelTo": 0.8,
+        "startScaleY": 1,
+        "endScaleY": 1,
+        "initialCode": "peppermod:pepperbundle-raw-serrano",
+        "resultCode": "peppermod:pepperbundle-dried-serrano",
+        "largeItem": false
+      },
+      "onDisplayTransform": {
+        "translation": {
+          "x": 0,
+          "y": -0.449942,
+          "z": 0
+        },
+        "rotation": {
+          "x": 90,
+          "y": 0,
+          "z": 0
+        },
+        "origin": {
+          "x": 0.5,
+          "y": 0.5,
+          "z": 0.5
+        },
+        "scale": 0.32
+      }
+    },
+    "pepperbundle-dried-serrano": {
+      "peppermodBundleCount": 8,
+      "airDryHours": 168,
+      "peppermodScoville": 3750,
+      "bakingProperties": {
+        "temp": 160,
+        "levelFrom": 0.8,
+        "levelTo": 1,
+        "startScaleY": 1,
+        "endScaleY": 1,
+        "initialCode": "peppermod:pepperbundle-baked-serrano",
+        "largeItem": false
+      },
+      "onDisplayTransform": {
+        "translation": {
+          "x": 0,
+          "y": -0.449942,
+          "z": 0
+        },
+        "rotation": {
+          "x": 90,
+          "y": 0,
+          "z": 0
+        },
+        "origin": {
+          "x": 0.5,
+          "y": 0.5,
+          "z": 0.5
+        },
+        "scale": 0.32
+      }
     }
   },
   "transitionablePropsByType": {
@@ -393,6 +524,55 @@
         },
         "transitionRatio": 2
       }
+    ],
+    "pepperbundle-raw-serrano": [
+      {
+        "type": "Perish",
+        "freshHours": {
+          "avg": 168
+        },
+        "transitionHours": {
+          "avg": 24
+        },
+        "transitionedStack": {
+          "type": "item",
+          "code": "game:rot"
+        },
+        "transitionRatio": 2
+      }
+    ],
+    "pepperbundle-baked-serrano": [
+      {
+        "type": "Perish",
+        "freshHours": {
+          "avg": 168,
+          "var": 24
+        },
+        "transitionHours": {
+          "avg": 24
+        },
+        "transitionedStack": {
+          "type": "item",
+          "code": "game:rot"
+        },
+        "transitionRatio": 2
+      }
+    ],
+    "pepperbundle-dried-serrano": [
+      {
+        "type": "Perish",
+        "freshHours": {
+          "avg": 2880
+        },
+        "transitionHours": {
+          "avg": 168
+        },
+        "transitionedStack": {
+          "type": "item",
+          "code": "game:rot"
+        },
+        "transitionRatio": 2
+      }
     ]
   },
   "combustiblePropsByType": {
@@ -437,6 +617,28 @@
       "smeltedStack": {
         "type": "item",
         "code": "peppermod:pepperbundle-dried-habanero"
+      },
+      "requiresContainer": false
+    },
+    "pepperbundle-raw-serrano": {
+      "meltingPoint": 200,
+      "meltingDuration": 20,
+      "smeltedRatio": 1,
+      "smeltingType": "bake",
+      "smeltedStack": {
+        "type": "item",
+        "code": "peppermod:pepperbundle-baked-serrano"
+      },
+      "requiresContainer": false
+    },
+    "pepperbundle-baked-serrano": {
+      "meltingPoint": 200,
+      "meltingDuration": 40,
+      "smeltedRatio": 1,
+      "smeltingType": "bake",
+      "smeltedStack": {
+        "type": "item",
+        "code": "peppermod:pepperbundle-dried-serrano"
       },
       "requiresContainer": false
     }
@@ -536,6 +738,60 @@
       "translation": {
         "x": 0,
         "y": -0.309999,
+        "z": 0
+      },
+      "rotation": {
+        "x": 90,
+        "y": 0,
+        "z": 0
+      },
+      "origin": {
+        "x": 0.5,
+        "y": 0.5,
+        "z": 0.5
+      },
+      "scale": 1
+    },
+    "pepperbundle-raw-serrano": {
+      "translation": {
+        "x": 0,
+        "y": -0.36482,
+        "z": 0
+      },
+      "rotation": {
+        "x": 90,
+        "y": 0,
+        "z": 0
+      },
+      "origin": {
+        "x": 0.5,
+        "y": 0.5,
+        "z": 0.5
+      },
+      "scale": 1
+    },
+    "pepperbundle-baked-serrano": {
+      "translation": {
+        "x": 0,
+        "y": -0.36482,
+        "z": 0
+      },
+      "rotation": {
+        "x": 90,
+        "y": 0,
+        "z": 0
+      },
+      "origin": {
+        "x": 0.5,
+        "y": 0.5,
+        "z": 0.5
+      },
+      "scale": 1
+    },
+    "pepperbundle-dried-serrano": {
+      "translation": {
+        "x": 0,
+        "y": -0.36482,
         "z": 0
       },
       "rotation": {

@@ -13,6 +13,14 @@
         "atlantic neotropic"
       ],
       "bioriver": "both"
+    },
+    "crop-serrano-*": {
+      "biorealm": [
+        "pacific nearctic",
+        "pacific neotropic",
+        "atlantic neotropic"
+      ],
+      "bioriver": "both"
     }
   }
 }

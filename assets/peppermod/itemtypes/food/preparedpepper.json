@@ -43,6 +43,11 @@
       "health": 0,
       "foodcategory": "Vegetable"
     },
+    "*-serrano": {
+      "satiety": 20,
+      "health": 0,
+      "foodcategory": "Vegetable"
+    },
     "*": {
       "satiety": 80,
       "health": 0,
@@ -126,9 +131,9 @@
       },
       "onDisplayTransform": {
         "translation": {
-          "x": 0,
-          "y": -0.40249999999999997,
-          "z": -0.005636254436130322
+          "x": 0.003356557900000019,
+          "y": -0.463619575,
+          "z": -0.009820310424608753
         },
         "rotation": {
           "x": 90,
@@ -140,7 +145,7 @@
           "y": 0.5,
           "z": 0.5
         },
-        "scale": 0.3607202839123406
+        "scale": 0.46
       }
     },
     "preparedpepper-baked-cayenne": {
@@ -371,9 +376,9 @@
       },
       "onDisplayTransform": {
         "translation": {
-          "x": 0,
-          "y": -0.40249999999999997,
-          "z": -0.005636254436130322
+          "x": 0.003356557900000019,
+          "y": -0.463619575,
+          "z": -0.009820310424608753
         },
         "rotation": {
           "x": 90,
@@ -385,7 +390,7 @@
           "y": 0.5,
           "z": 0.5
         },
-        "scale": 0.3607202839123406
+        "scale": 0.46
       }
     },
     "preparedpepper-dried-cayenne": {
@@ -580,6 +585,24 @@
       },
       "scale": 1.85
     },
+    "*-serrano": {
+      "translation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "rotation": {
+        "x": -18,
+        "y": 25,
+        "z": -35
+      },
+      "origin": {
+        "x": 0.5,
+        "y": 0.5,
+        "z": 0.5
+      },
+      "scale": 1.85
+    },
     "*": {
       "translation": {
         "x": 0,
@@ -619,6 +642,24 @@
       "scale": 1.25
     },
     "*-jalapeno": {
+      "translation": {
+        "x": 0,
+        "y": 0.04,
+        "z": 0
+      },
+      "rotation": {
+        "x": 0,
+        "y": 20,
+        "z": 88
+      },
+      "origin": {
+        "x": 0.5,
+        "y": 0.5,
+        "z": 0.5
+      },
+      "scale": 1.25
+    },
+    "*-serrano": {
       "translation": {
         "x": 0,
         "y": 0.04,
@@ -692,6 +733,24 @@
       },
       "scale": 0.69
     },
+    "*-serrano": {
+      "translation": {
+        "x": -0.4968,
+        "y": -0.2556,
+        "z": -0.7
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": -76
+      },
+      "origin": {
+        "x": 0.5,
+        "y": 0.1,
+        "z": 0.5
+      },
+      "scale": 0.69
+    },
     "*": {
       "translation": {
         "x": -0.35,
@@ -747,6 +806,24 @@
         "z": 0.5
       },
       "scale": 0.55
+    },
+    "*-serrano": {
+      "translation": {
+        "x": 0.1,
+        "y": -0.1,
+        "z": -0.25
+      },
+      "rotation": {
+        "x": 45,
+        "y": 20,
+        "z": -35
+      },
+      "origin": {
+        "x": 0.5,
+        "y": 0.5,
+        "z": 0.5
+      },
+      "scale": 0.65
     },
     "*": {
       "translation": {

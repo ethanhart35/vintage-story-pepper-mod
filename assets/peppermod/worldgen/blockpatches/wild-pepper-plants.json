@@ -32,8 +32,35 @@
       "peppermod:crop-habanero-7",
       "peppermod:crop-habanero-8"
     ],
-    "quantity": { "avg": 1.5, "var": 1 },
+    "quantity": {
+      "avg": 1.5,
+      "var": 1
+    },
     "chance": 0.008,
+    "placement": "OnSurface",
+    "minTemp": -100,
+    "maxTemp": 100,
+    "minRain": 0,
+    "maxRain": 1,
+    "minFertility": 0,
+    "maxFertility": 1,
+    "minY": -1,
+    "maxY": 1
+  },
+  {
+    "comment": "Rare wild serrano plants in any climate on suitable soil",
+    "blockCodes": [
+      "peppermod:crop-serrano-4",
+      "peppermod:crop-serrano-5",
+      "peppermod:crop-serrano-6",
+      "peppermod:crop-serrano-7",
+      "peppermod:crop-serrano-8"
+    ],
+    "quantity": {
+      "avg": 2,
+      "var": 1
+    },
+    "chance": 0.015,
     "placement": "OnSurface",
     "minTemp": -100,
     "maxTemp": 100,

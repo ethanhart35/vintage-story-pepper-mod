@@ -15,7 +15,7 @@ internal static class HeldItemTransformTests
             ?? Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "Vintagestory");
         var item = JObject.Parse(File.ReadAllText(Path.Combine(root.FullName, "assets/peppermod/itemtypes/food/vegetable.json")));
         var vanilla = JObject.Parse(File.ReadAllText(Path.Combine(game, "assets/survival/itemtypes/food/vegetable.json")));
-        foreach (string variety in new[] { "jalapeno", "habanero" })
+        foreach (string variety in PepperBundleTests.Types)
         {
             var transform = item["tpHandTransformByType"]["*-" + variety].ToObject<ModelTransform>().EnsureDefaultValues();
             var reference = vanilla["tpHandTransformByType"]["*-bellpepper"].ToObject<ModelTransform>().EnsureDefaultValues();
@@ -60,7 +60,7 @@ internal static class HeldItemTransformTests
                 float length = points.Max(p => p.X) - points.Min(p => p.X);
                 float thickness = points.Max(p => p.Z) - points.Min(p => p.Z);
                 Require(length > (variety == "jalapeno" ? .35f : .25f) && length < .6f, $"Unexpected held length: {length} blocks.");
-                Require(thickness > .09f && thickness < (variety == "jalapeno" ? .2f : .28f), $"Unexpected held thickness: {thickness} blocks.");
+                Require(thickness > (variety == "serrano" ? .06f : .09f) && thickness < (variety == "habanero" ? .28f : .2f), $"Unexpected held thickness: {thickness} blocks.");
             });
         }
     }

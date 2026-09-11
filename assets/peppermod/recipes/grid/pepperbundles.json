@@ -232,5 +232,122 @@
       "code": "peppermod:preparedpepper-dried-habanero",
       "quantity": 8
     }
+  },
+  {
+    "name": "peppermod:bundle-tie-raw-serrano",
+    "ingredientPattern": "PPP\tPFP\tPPP",
+    "width": 3,
+    "height": 3,
+    "ingredients": {
+      "P": {
+        "type": "item",
+        "code": "peppermod:vegetable-serrano"
+      },
+      "F": {
+        "type": "item",
+        "code": "game:flaxfibers"
+      }
+    },
+    "output": {
+      "type": "item",
+      "code": "peppermod:pepperbundle-raw-serrano",
+      "quantity": 1
+    }
+  },
+  {
+    "name": "peppermod:bundle-untie-raw-serrano",
+    "ingredientPattern": "B",
+    "width": 1,
+    "height": 1,
+    "shapeless": true,
+    "ingredients": {
+      "B": {
+        "type": "item",
+        "code": "peppermod:pepperbundle-raw-serrano"
+      }
+    },
+    "output": {
+      "type": "item",
+      "code": "peppermod:vegetable-serrano",
+      "quantity": 8
+    }
+  },
+  {
+    "name": "peppermod:bundle-tie-baked-serrano",
+    "ingredientPattern": "PPP\tPFP\tPPP",
+    "width": 3,
+    "height": 3,
+    "ingredients": {
+      "P": {
+        "type": "item",
+        "code": "peppermod:preparedpepper-baked-serrano"
+      },
+      "F": {
+        "type": "item",
+        "code": "game:flaxfibers"
+      }
+    },
+    "output": {
+      "type": "item",
+      "code": "peppermod:pepperbundle-baked-serrano",
+      "quantity": 1
+    }
+  },
+  {
+    "name": "peppermod:bundle-untie-baked-serrano",
+    "ingredientPattern": "B",
+    "width": 1,
+    "height": 1,
+    "shapeless": true,
+    "ingredients": {
+      "B": {
+        "type": "item",
+        "code": "peppermod:pepperbundle-baked-serrano"
+      }
+    },
+    "output": {
+      "type": "item",
+      "code": "peppermod:preparedpepper-baked-serrano",
+      "quantity": 8
+    }
+  },
+  {
+    "name": "peppermod:bundle-tie-dried-serrano",
+    "ingredientPattern": "PPP\tPFP\tPPP",
+    "width": 3,
+    "height": 3,
+    "ingredients": {
+      "P": {
+        "type": "item",
+        "code": "peppermod:preparedpepper-dried-serrano"
+      },
+      "F": {
+        "type": "item",
+        "code": "game:flaxfibers"
+      }
+    },
+    "output": {
+      "type": "item",
+      "code": "peppermod:pepperbundle-dried-serrano",
+      "quantity": 1
+    }
+  },
+  {
+    "name": "peppermod:bundle-untie-dried-serrano",
+    "ingredientPattern": "B",
+    "width": 1,
+    "height": 1,
+    "shapeless": true,
+    "ingredients": {
+      "B": {
+        "type": "item",
+        "code": "peppermod:pepperbundle-dried-serrano"
+      }
+    },
+    "output": {
+      "type": "item",
+      "code": "peppermod:preparedpepper-dried-serrano",
+      "quantity": 8
+    }
   }
 ]

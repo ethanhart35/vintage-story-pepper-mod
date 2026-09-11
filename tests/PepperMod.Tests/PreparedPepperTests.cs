@@ -82,12 +82,12 @@ internal static class PreparedPepperTests
                 }
             }
         });
-        check("raw jalapenos and habaneros keep seven days and other shelf lives stay unchanged", () => {
+        check("finished raw peppers keep seven days and unfinished shelf lives stay unchanged", () => {
             foreach (string type in types) foreach (string state in new[] { "raw", "baked", "dried" }) {
                 var props = Load(type, state).TransitionableProps.Single();
                 Require(props.Type == EnumTransitionType.Perish && props.TransitionedStack.Code.ToString() == "game:rot");
                 Require(props.TransitionRatio == .25f && props.TransitionHours.avg > 0);
-                bool rawFinishedPepper = state == "raw" && (type == "jalapeno" || type == "habanero");
+                bool rawFinishedPepper = state == "raw" && PepperBundleTests.Types.Contains(type);
                 Require(props.FreshHours.avg == (rawFinishedPepper ? 168 : state == "raw" ? 336 : state == "baked" ? 168 : 2880));
                 Require(props.FreshHours.var == (rawFinishedPepper ? 0 : state == "raw" ? 48 : state == "baked" ? 24 : 0));
             }

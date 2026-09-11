@@ -2,6 +2,19 @@
 
 ## Unreleased
 
+### 0.4.0 - Serranos
+
+- Completed serranos with all 11 plant states, a taller asymmetric bush, narrow leaves, and slender green fruit attached to their stems.
+- Kept the mature canopy unchanged through harvesting and regrowth, with a matching bare winter skeleton and gently anchored leaf sway.
+- Added a matching 3D picked serrano with inventory, hand, dropped, and centered oven placement; replaced its tiny seed placeholder with the existing finished pepper-seed artwork.
+- Added baked and dried serrano models. Raw/baked/dried heat is 15,000 / 7,500 / 3,750 SHU, with spice doses of 40 / 20 / 10 and 20 satiety per pepper.
+- Set raw serrano freshness to 7 days. Baked serranos retain 7 days (+/- 1), and dried serranos retain 120 days before storage modifiers.
+- Added raw, baked, and dried eight-serrano bundles, six tie/unpack recipes, stem-to-cord attachments, and ceiling-hung variants with the existing iron hook.
+- Serrano bundles support full 32-pepper oven batches and 7-day air drying, including half-speed spoilage while drying, freshness carryover, and saved drying progress.
+- Enabled rare wild serrano patches in newly generated terrain on suitable soil. With Biomes, serranos use Pacific Nearctic, Pacific Neotropic, and Atlantic Neotropic regions; other unfinished varieties remain disabled in world generation.
+- Preserved the existing 1.5-second harvest hold, 16-24 pepper yield, downward drops, seasonal dormancy, and mature regrowth.
+- Added serrano plant/item previews and a growth GIF; expanded preparation/bundle galleries and regression coverage. Existing jalapeno and habanero models and gameplay balance are unchanged.
+
 ### 0.3.1 - Biomes Compatibility
 
 - Added optional support for Biomes 2.2.0 using its existing regional pepper rules, with no required dependency or separate compatibility download.

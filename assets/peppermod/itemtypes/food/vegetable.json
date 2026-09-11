@@ -1,454 +1,701 @@
 {
-    "code":  "vegetable",
-    "class": "ItemPepperFood",
-    "variantgroups":  [
-                          {
-                              "code":  "type",
-                              "states":  [
-                                             "jalapeno",
-                                             "habanero",
-                                             "serrano",
-                                             "cayenne",
-                                             "poblano",
-                                             "bell-pepper",
-                                             "banana-pepper",
-                                             "ghost-pepper"
-                                         ]
-                          }
-                      ],
-    "creativeinventory":  {
-                              "general":  [
-                                              "*"
-                                          ],
-                              "items":  [
-                                            "*"
-                                        ]
-                          },
-    "texturesByType": {
-        "*-habanero": {
-            "base": { "base": "block/plant/habanero/pepper" },
-            "stem": { "base": "block/plant/habanero/stem" }
-        },
-        "*-jalapeno": {
-            "base": { "base": "block/plant/jalapeno/pepper" },
-            "stem": { "base": "block/plant/jalapeno/stem" }
-        },
-        "*": {
-            "base": { "base": "item/food/vegetable/{type}" }
-        }
-    },
-    "maxstacksize":  64,
-    "nutritionPropsByType": {
-        "*-habanero": { "satiety": 20, "health": 0, "foodcategory": "Vegetable" },
-        "*-jalapeno": { "satiety": 20, "health": 0, "foodcategory": "Vegetable" },
-        "*": { "satiety": 80, "health": 0, "foodcategory": "Vegetable" }
-    },
-    "attributesByType": {
-        "*-jalapeno": {
-            "peppermodSpice": 25,
-            "peppermodScoville": 5000,
-            "bakingProperties": {
-                "temp": 160,
-                "levelFrom": 0,
-                "levelTo": 0.4,
-                "startScaleY": 1,
-                "endScaleY": 1,
-                "resultCode": "peppermod:preparedpepper-baked-{type}"
-            },
-            "onDisplayTransform": {
-                "translation": {
-                    "x": 0,
-                    "y": -0.4554793121425114,
-                    "z": -0.0012871104150440312
-                },
-                "rotation": {
-                    "x": 90,
-                    "y": 0,
-                    "z": 0
-                },
-                "origin": {
-                    "x": 0.5,
-                    "y": 0.5,
-                    "z": 0.5
-                },
-                "scale": 0.43885949475576674
-            }
-        },
-        "*-habanero": {
-            "peppermodSpice": 50,
-            "peppermodScoville": 250000,
-            "bakingProperties": {
-                "temp": 160,
-                "levelFrom": 0,
-                "levelTo": 0.4,
-                "startScaleY": 1,
-                "endScaleY": 1,
-                "resultCode": "peppermod:preparedpepper-baked-{type}"
-            },
-            "onDisplayTransform": {
-                "translation": {
-                    "x": -0.0059731250000000236,
-                    "y": -0.4262125,
-                    "z": -0.023755252001361082
-                },
-                "rotation": {
-                    "x": 90,
-                    "y": 0,
-                    "z": 0
-                },
-                "origin": {
-                    "x": 0.5,
-                    "y": 0.5,
-                    "z": 0.5
-                },
-                "scale": 0.5
-            }
-        },
-        "*-serrano": {
-            "peppermodSpice": 40,
-            "peppermodScoville": 15000,
-            "bakingProperties": {
-                "temp": 160,
-                "levelFrom": 0,
-                "levelTo": 0.4,
-                "startScaleY": 1,
-                "endScaleY": 1,
-                "resultCode": "peppermod:preparedpepper-baked-{type}"
-            },
-            "onDisplayTransform": {
-                "translation": {
-                    "x": 0,
-                    "y": -0.40249999999999997,
-                    "z": -0.005636254436130322
-                },
-                "rotation": {
-                    "x": 90,
-                    "y": 0,
-                    "z": 0
-                },
-                "origin": {
-                    "x": 0.5,
-                    "y": 0.5,
-                    "z": 0.5
-                },
-                "scale": 0.3607202839123406
-            }
-        },
-        "*-cayenne": {
-            "peppermodSpice": 50,
-            "peppermodScoville": 40000,
-            "bakingProperties": {
-                "temp": 160,
-                "levelFrom": 0,
-                "levelTo": 0.4,
-                "startScaleY": 1,
-                "endScaleY": 1,
-                "resultCode": "peppermod:preparedpepper-baked-{type}"
-            },
-            "onDisplayTransform": {
-                "translation": {
-                    "x": 0,
-                    "y": -0.40249999999999997,
-                    "z": -0.005636254436130322
-                },
-                "rotation": {
-                    "x": 90,
-                    "y": 0,
-                    "z": 0
-                },
-                "origin": {
-                    "x": 0.5,
-                    "y": 0.5,
-                    "z": 0.5
-                },
-                "scale": 0.3607202839123406
-            }
-        },
-        "*-poblano": {
-            "peppermodSpice": 15,
-            "peppermodScoville": 1500,
-            "bakingProperties": {
-                "temp": 160,
-                "levelFrom": 0,
-                "levelTo": 0.4,
-                "startScaleY": 1,
-                "endScaleY": 1,
-                "resultCode": "peppermod:preparedpepper-baked-{type}"
-            },
-            "onDisplayTransform": {
-                "translation": {
-                    "x": 0,
-                    "y": -0.40249999999999997,
-                    "z": -0.005636254436130322
-                },
-                "rotation": {
-                    "x": 90,
-                    "y": 0,
-                    "z": 0
-                },
-                "origin": {
-                    "x": 0.5,
-                    "y": 0.5,
-                    "z": 0.5
-                },
-                "scale": 0.3607202839123406
-            }
-        },
-        "*-banana-pepper": {
-            "peppermodSpice": 10,
-            "peppermodScoville": 500,
-            "bakingProperties": {
-                "temp": 160,
-                "levelFrom": 0,
-                "levelTo": 0.4,
-                "startScaleY": 1,
-                "endScaleY": 1,
-                "resultCode": "peppermod:preparedpepper-baked-{type}"
-            },
-            "onDisplayTransform": {
-                "translation": {
-                    "x": 0,
-                    "y": -0.40249999999999997,
-                    "z": -0.005636254436130322
-                },
-                "rotation": {
-                    "x": 90,
-                    "y": 0,
-                    "z": 0
-                },
-                "origin": {
-                    "x": 0.5,
-                    "y": 0.5,
-                    "z": 0.5
-                },
-                "scale": 0.3607202839123406
-            }
-        },
-        "*-ghost-pepper": {
-            "peppermodSpice": 100,
-            "peppermodScoville": 1000000,
-            "bakingProperties": {
-                "temp": 160,
-                "levelFrom": 0,
-                "levelTo": 0.4,
-                "startScaleY": 1,
-                "endScaleY": 1,
-                "resultCode": "peppermod:preparedpepper-baked-{type}"
-            },
-            "onDisplayTransform": {
-                "translation": {
-                    "x": 0,
-                    "y": -0.40249999999999997,
-                    "z": -0.005636254436130322
-                },
-                "rotation": {
-                    "x": 90,
-                    "y": 0,
-                    "z": 0
-                },
-                "origin": {
-                    "x": 0.5,
-                    "y": 0.5,
-                    "z": 0.5
-                },
-                "scale": 0.3607202839123406
-            }
-        },
-        "*": {
-            "peppermodSpice": 0,
-            "peppermodScoville": 0,
-            "bakingProperties": {
-                "temp": 160,
-                "levelFrom": 0,
-                "levelTo": 0.4,
-                "startScaleY": 1,
-                "endScaleY": 1,
-                "resultCode": "peppermod:preparedpepper-baked-{type}"
-            },
-            "onDisplayTransform": {
-                "translation": {
-                    "x": 0,
-                    "y": -0.40249999999999997,
-                    "z": -0.005636254436130322
-                },
-                "rotation": {
-                    "x": 90,
-                    "y": 0,
-                    "z": 0
-                },
-                "origin": {
-                    "x": 0.5,
-                    "y": 0.5,
-                    "z": 0.5
-                },
-                "scale": 0.3607202839123406
-            }
-        }
-    },
-    "combustibleProps": {
-        "meltingPoint": 200,
-        "meltingDuration": 20,
-        "smeltedRatio": 1,
-        "smeltingType": "bake",
-        "smeltedStack": {
-            "type": "item",
-            "code": "peppermod:preparedpepper-baked-{type}"
-        },
-        "requiresContainer": false
-    },
-    "transitionablePropsByType": {
-        "*-habanero": [{
-            "type": "Perish",
-            "freshHours": { "avg": 168 },
-            "transitionHours": { "avg": 24 },
-            "transitionedStack": { "type": "item", "code": "game:rot" },
-            "transitionRatio": 0.25
-        }],
-        "*-jalapeno": [{
-            "type": "Perish",
-            "freshHours": { "avg": 168 },
-            "transitionHours": { "avg": 24 },
-            "transitionedStack": { "type": "item", "code": "game:rot" },
-            "transitionRatio": 0.25
-        }],
-        "*": [{
-            "type": "Perish",
-            "freshHours": { "avg": 336, "var": 48 },
-            "transitionHours": { "avg": 24 },
-            "transitionedStack": { "type": "item", "code": "game:rot" },
-            "transitionRatio": 0.25
-        }]
-    },
-    "materialDensity":  200,
-    "shape":  {
-                  "base":  "item/food/vegetable/{type}"
-              },
-    "guiTransformByType": {
-        "*-habanero": {
-            "translation": { "x": 0, "y": 0, "z": 0 },
-            "rotation": { "x": -18, "y": 25, "z": -30 },
-            "origin": { "x": 0.5, "y": 0.5, "z": 0.5 },
-            "scale": 2
-        },
-        "*-jalapeno": {
-            "translation": { "x": 0, "y": 0, "z": 0 },
-            "rotation": { "x": -18, "y": 25, "z": -40 },
-            "origin": { "x": 0.5, "y": 0.5, "z": 0.5 },
-            "scale": 1.85
-        },
-        "*": {
-                         "translation":  {
-                                             "x":  0,
-                                             "y":  0,
-                                             "z":  0
-                                         },
-                         "rotation":  {
-                                          "x":  -35,
-                                          "y":  45,
-                                          "z":  0
-                                      },
-                         "origin":  {
-                                        "x":  0.5,
-                                        "y":  0.5,
-                                        "z":  0.5
-                                    },
-                         "scale":  2.2
-                     }
-    },
-    "groundTransformByType": {
-        "*-habanero": {
-            "translation": { "x": 0, "y": 0.04, "z": 0 },
-            "rotation": { "x": 0, "y": 20, "z": 82 },
-            "origin": { "x": 0.5, "y": 0.5, "z": 0.5 },
-            "scale": 1.25
-        },
-        "*-jalapeno": {
-            "translation": { "x": 0, "y": 0.04, "z": 0 },
-            "rotation": { "x": 0, "y": 20, "z": 88 },
-            "origin": { "x": 0.5, "y": 0.5, "z": 0.5 },
-            "scale": 1.25
-        },
-        "*": {
-                            "translation":  {
-                                                "x":  0,
-                                                "y":  0.04,
-                                                "z":  0
-                                            },
-                            "rotation":  {
-                                             "x":  0,
-                                             "y":  20,
-                                             "z":  0
-                                         },
-                            "origin":  {
-                                           "x":  0.5,
-                                           "y":  0.5,
-                                           "z":  0.5
-                                       },
-                            "scale":  1.25
-                        }
-    },
-    "tpHandTransformByType": {
-        "*-habanero": {
-            "translation": { "x": -0.4968, "y": -0.2556, "z": -0.7 },
-            "rotation": { "x": 0, "y": 0, "z": -76 },
-            "origin": { "x": 0.5, "y": 0.1, "z": 0.5 },
-            "scale": 0.69
-        },
-        "*-jalapeno": {
-            "translation": { "x": -0.4968, "y": -0.2556, "z": -0.7 },
-            "rotation": { "x": 0, "y": 0, "z": -76 },
-            "origin": { "x": 0.5, "y": 0.1, "z": 0.5 },
-            "scale": 0.69
-        },
-        "*": {
-                            "translation":  {
-                                                "x":  -0.35,
-                                                "y":  -0.05,
-                                                "z":  -0.55
-                                            },
-                            "rotation":  {
-                                             "x":  35,
-                                             "y":  20,
-                                             "z":  -20
-                                         },
-                            "origin":  {
-                                           "x":  0.5,
-                                           "y":  0.5,
-                                           "z":  0.5
-                                       },
-                            "scale":  0.65
-                        }
-    },
-    "fpHandTransformByType": {
-        "*-habanero": {
-            "translation": { "x": 0.1, "y": -0.1, "z": -0.25 },
-            "rotation": { "x": 45, "y": 20, "z": -35 },
-            "origin": { "x": 0.5, "y": 0.5, "z": 0.5 },
-            "scale": 0.65
-        },
-        "*-jalapeno": {
-            "translation": { "x": 0.1, "y": -0.1, "z": -0.25 },
-            "rotation": { "x": 45, "y": 20, "z": -35 },
-            "origin": { "x": 0.5, "y": 0.5, "z": 0.5 },
-            "scale": 0.55
-        },
-        "*": {
-                            "translation":  {
-                                                "x":  0.1,
-                                                "y":  -0.1,
-                                                "z":  -0.25
-                                            },
-                            "rotation":  {
-                                             "x":  45,
-                                             "y":  20,
-                                             "z":  -35
-                                         },
-                            "origin":  {
-                                           "x":  0.5,
-                                           "y":  0.5,
-                                           "z":  0.5
-                                       },
-                            "scale":  0.8
-                        }
+  "code": "vegetable",
+  "class": "ItemPepperFood",
+  "variantgroups": [
+    {
+      "code": "type",
+      "states": [
+        "jalapeno",
+        "habanero",
+        "serrano",
+        "cayenne",
+        "poblano",
+        "bell-pepper",
+        "banana-pepper",
+        "ghost-pepper"
+      ]
     }
+  ],
+  "creativeinventory": {
+    "general": [
+      "*"
+    ],
+    "items": [
+      "*"
+    ]
+  },
+  "texturesByType": {
+    "*-habanero": {
+      "base": {
+        "base": "block/plant/habanero/pepper"
+      },
+      "stem": {
+        "base": "block/plant/habanero/stem"
+      }
+    },
+    "*-jalapeno": {
+      "base": {
+        "base": "block/plant/jalapeno/pepper"
+      },
+      "stem": {
+        "base": "block/plant/jalapeno/stem"
+      }
+    },
+    "*-serrano": {
+      "base": {
+        "base": "block/plant/serrano/pepper"
+      },
+      "stem": {
+        "base": "block/plant/serrano/stem"
+      }
+    },
+    "*": {
+      "base": {
+        "base": "item/food/vegetable/{type}"
+      }
+    }
+  },
+  "maxstacksize": 64,
+  "nutritionPropsByType": {
+    "*-habanero": {
+      "satiety": 20,
+      "health": 0,
+      "foodcategory": "Vegetable"
+    },
+    "*-jalapeno": {
+      "satiety": 20,
+      "health": 0,
+      "foodcategory": "Vegetable"
+    },
+    "*-serrano": {
+      "satiety": 20,
+      "health": 0,
+      "foodcategory": "Vegetable"
+    },
+    "*": {
+      "satiety": 80,
+      "health": 0,
+      "foodcategory": "Vegetable"
+    }
+  },
+  "attributesByType": {
+    "*-jalapeno": {
+      "peppermodSpice": 25,
+      "peppermodScoville": 5000,
+      "bakingProperties": {
+        "temp": 160,
+        "levelFrom": 0,
+        "levelTo": 0.4,
+        "startScaleY": 1,
+        "endScaleY": 1,
+        "resultCode": "peppermod:preparedpepper-baked-{type}"
+      },
+      "onDisplayTransform": {
+        "translation": {
+          "x": 0,
+          "y": -0.4554793121425114,
+          "z": -0.0012871104150440312
+        },
+        "rotation": {
+          "x": 90,
+          "y": 0,
+          "z": 0
+        },
+        "origin": {
+          "x": 0.5,
+          "y": 0.5,
+          "z": 0.5
+        },
+        "scale": 0.43885949475576674
+      }
+    },
+    "*-habanero": {
+      "peppermodSpice": 50,
+      "peppermodScoville": 250000,
+      "bakingProperties": {
+        "temp": 160,
+        "levelFrom": 0,
+        "levelTo": 0.4,
+        "startScaleY": 1,
+        "endScaleY": 1,
+        "resultCode": "peppermod:preparedpepper-baked-{type}"
+      },
+      "onDisplayTransform": {
+        "translation": {
+          "x": -0.0059731250000000236,
+          "y": -0.4262125,
+          "z": -0.023755252001361082
+        },
+        "rotation": {
+          "x": 90,
+          "y": 0,
+          "z": 0
+        },
+        "origin": {
+          "x": 0.5,
+          "y": 0.5,
+          "z": 0.5
+        },
+        "scale": 0.5
+      }
+    },
+    "*-serrano": {
+      "peppermodSpice": 40,
+      "peppermodScoville": 15000,
+      "bakingProperties": {
+        "temp": 160,
+        "levelFrom": 0,
+        "levelTo": 0.4,
+        "startScaleY": 1,
+        "endScaleY": 1,
+        "resultCode": "peppermod:preparedpepper-baked-{type}"
+      },
+      "onDisplayTransform": {
+        "translation": {
+          "x": 0.003356557900000019,
+          "y": -0.463619575,
+          "z": -0.009820310424608753
+        },
+        "rotation": {
+          "x": 90,
+          "y": 0,
+          "z": 0
+        },
+        "origin": {
+          "x": 0.5,
+          "y": 0.5,
+          "z": 0.5
+        },
+        "scale": 0.46
+      }
+    },
+    "*-cayenne": {
+      "peppermodSpice": 50,
+      "peppermodScoville": 40000,
+      "bakingProperties": {
+        "temp": 160,
+        "levelFrom": 0,
+        "levelTo": 0.4,
+        "startScaleY": 1,
+        "endScaleY": 1,
+        "resultCode": "peppermod:preparedpepper-baked-{type}"
+      },
+      "onDisplayTransform": {
+        "translation": {
+          "x": 0,
+          "y": -0.40249999999999997,
+          "z": -0.005636254436130322
+        },
+        "rotation": {
+          "x": 90,
+          "y": 0,
+          "z": 0
+        },
+        "origin": {
+          "x": 0.5,
+          "y": 0.5,
+          "z": 0.5
+        },
+        "scale": 0.3607202839123406
+      }
+    },
+    "*-poblano": {
+      "peppermodSpice": 15,
+      "peppermodScoville": 1500,
+      "bakingProperties": {
+        "temp": 160,
+        "levelFrom": 0,
+        "levelTo": 0.4,
+        "startScaleY": 1,
+        "endScaleY": 1,
+        "resultCode": "peppermod:preparedpepper-baked-{type}"
+      },
+      "onDisplayTransform": {
+        "translation": {
+          "x": 0,
+          "y": -0.40249999999999997,
+          "z": -0.005636254436130322
+        },
+        "rotation": {
+          "x": 90,
+          "y": 0,
+          "z": 0
+        },
+        "origin": {
+          "x": 0.5,
+          "y": 0.5,
+          "z": 0.5
+        },
+        "scale": 0.3607202839123406
+      }
+    },
+    "*-banana-pepper": {
+      "peppermodSpice": 10,
+      "peppermodScoville": 500,
+      "bakingProperties": {
+        "temp": 160,
+        "levelFrom": 0,
+        "levelTo": 0.4,
+        "startScaleY": 1,
+        "endScaleY": 1,
+        "resultCode": "peppermod:preparedpepper-baked-{type}"
+      },
+      "onDisplayTransform": {
+        "translation": {
+          "x": 0,
+          "y": -0.40249999999999997,
+          "z": -0.005636254436130322
+        },
+        "rotation": {
+          "x": 90,
+          "y": 0,
+          "z": 0
+        },
+        "origin": {
+          "x": 0.5,
+          "y": 0.5,
+          "z": 0.5
+        },
+        "scale": 0.3607202839123406
+      }
+    },
+    "*-ghost-pepper": {
+      "peppermodSpice": 100,
+      "peppermodScoville": 1000000,
+      "bakingProperties": {
+        "temp": 160,
+        "levelFrom": 0,
+        "levelTo": 0.4,
+        "startScaleY": 1,
+        "endScaleY": 1,
+        "resultCode": "peppermod:preparedpepper-baked-{type}"
+      },
+      "onDisplayTransform": {
+        "translation": {
+          "x": 0,
+          "y": -0.40249999999999997,
+          "z": -0.005636254436130322
+        },
+        "rotation": {
+          "x": 90,
+          "y": 0,
+          "z": 0
+        },
+        "origin": {
+          "x": 0.5,
+          "y": 0.5,
+          "z": 0.5
+        },
+        "scale": 0.3607202839123406
+      }
+    },
+    "*": {
+      "peppermodSpice": 0,
+      "peppermodScoville": 0,
+      "bakingProperties": {
+        "temp": 160,
+        "levelFrom": 0,
+        "levelTo": 0.4,
+        "startScaleY": 1,
+        "endScaleY": 1,
+        "resultCode": "peppermod:preparedpepper-baked-{type}"
+      },
+      "onDisplayTransform": {
+        "translation": {
+          "x": 0,
+          "y": -0.40249999999999997,
+          "z": -0.005636254436130322
+        },
+        "rotation": {
+          "x": 90,
+          "y": 0,
+          "z": 0
+        },
+        "origin": {
+          "x": 0.5,
+          "y": 0.5,
+          "z": 0.5
+        },
+        "scale": 0.3607202839123406
+      }
+    }
+  },
+  "combustibleProps": {
+    "meltingPoint": 200,
+    "meltingDuration": 20,
+    "smeltedRatio": 1,
+    "smeltingType": "bake",
+    "smeltedStack": {
+      "type": "item",
+      "code": "peppermod:preparedpepper-baked-{type}"
+    },
+    "requiresContainer": false
+  },
+  "transitionablePropsByType": {
+    "*-habanero": [
+      {
+        "type": "Perish",
+        "freshHours": {
+          "avg": 168
+        },
+        "transitionHours": {
+          "avg": 24
+        },
+        "transitionedStack": {
+          "type": "item",
+          "code": "game:rot"
+        },
+        "transitionRatio": 0.25
+      }
+    ],
+    "*-jalapeno": [
+      {
+        "type": "Perish",
+        "freshHours": {
+          "avg": 168
+        },
+        "transitionHours": {
+          "avg": 24
+        },
+        "transitionedStack": {
+          "type": "item",
+          "code": "game:rot"
+        },
+        "transitionRatio": 0.25
+      }
+    ],
+    "*-serrano": [
+      {
+        "type": "Perish",
+        "freshHours": {
+          "avg": 168
+        },
+        "transitionHours": {
+          "avg": 24
+        },
+        "transitionedStack": {
+          "type": "item",
+          "code": "game:rot"
+        },
+        "transitionRatio": 0.25
+      }
+    ],
+    "*": [
+      {
+        "type": "Perish",
+        "freshHours": {
+          "avg": 336,
+          "var": 48
+        },
+        "transitionHours": {
+          "avg": 24
+        },
+        "transitionedStack": {
+          "type": "item",
+          "code": "game:rot"
+        },
+        "transitionRatio": 0.25
+      }
+    ]
+  },
+  "materialDensity": 200,
+  "shape": {
+    "base": "item/food/vegetable/{type}"
+  },
+  "guiTransformByType": {
+    "*-habanero": {
+      "translation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "rotation": {
+        "x": -18,
+        "y": 25,
+        "z": -30
+      },
+      "origin": {
+        "x": 0.5,
+        "y": 0.5,
+        "z": 0.5
+      },
+      "scale": 2
+    },
+    "*-jalapeno": {
+      "translation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "rotation": {
+        "x": -18,
+        "y": 25,
+        "z": -40
+      },
+      "origin": {
+        "x": 0.5,
+        "y": 0.5,
+        "z": 0.5
+      },
+      "scale": 1.85
+    },
+    "*-serrano": {
+      "translation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "rotation": {
+        "x": -18,
+        "y": 25,
+        "z": -35
+      },
+      "origin": {
+        "x": 0.5,
+        "y": 0.5,
+        "z": 0.5
+      },
+      "scale": 1.85
+    },
+    "*": {
+      "translation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "rotation": {
+        "x": -35,
+        "y": 45,
+        "z": 0
+      },
+      "origin": {
+        "x": 0.5,
+        "y": 0.5,
+        "z": 0.5
+      },
+      "scale": 2.2
+    }
+  },
+  "groundTransformByType": {
+    "*-habanero": {
+      "translation": {
+        "x": 0,
+        "y": 0.04,
+        "z": 0
+      },
+      "rotation": {
+        "x": 0,
+        "y": 20,
+        "z": 82
+      },
+      "origin": {
+        "x": 0.5,
+        "y": 0.5,
+        "z": 0.5
+      },
+      "scale": 1.25
+    },
+    "*-jalapeno": {
+      "translation": {
+        "x": 0,
+        "y": 0.04,
+        "z": 0
+      },
+      "rotation": {
+        "x": 0,
+        "y": 20,
+        "z": 88
+      },
+      "origin": {
+        "x": 0.5,
+        "y": 0.5,
+        "z": 0.5
+      },
+      "scale": 1.25
+    },
+    "*-serrano": {
+      "translation": {
+        "x": 0,
+        "y": 0.04,
+        "z": 0
+      },
+      "rotation": {
+        "x": 0,
+        "y": 20,
+        "z": 88
+      },
+      "origin": {
+        "x": 0.5,
+        "y": 0.5,
+        "z": 0.5
+      },
+      "scale": 1.25
+    },
+    "*": {
+      "translation": {
+        "x": 0,
+        "y": 0.04,
+        "z": 0
+      },
+      "rotation": {
+        "x": 0,
+        "y": 20,
+        "z": 0
+      },
+      "origin": {
+        "x": 0.5,
+        "y": 0.5,
+        "z": 0.5
+      },
+      "scale": 1.25
+    }
+  },
+  "tpHandTransformByType": {
+    "*-habanero": {
+      "translation": {
+        "x": -0.4968,
+        "y": -0.2556,
+        "z": -0.7
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": -76
+      },
+      "origin": {
+        "x": 0.5,
+        "y": 0.1,
+        "z": 0.5
+      },
+      "scale": 0.69
+    },
+    "*-jalapeno": {
+      "translation": {
+        "x": -0.4968,
+        "y": -0.2556,
+        "z": -0.7
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": -76
+      },
+      "origin": {
+        "x": 0.5,
+        "y": 0.1,
+        "z": 0.5
+      },
+      "scale": 0.69
+    },
+    "*-serrano": {
+      "translation": {
+        "x": -0.4968,
+        "y": -0.2556,
+        "z": -0.7
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": -76
+      },
+      "origin": {
+        "x": 0.5,
+        "y": 0.1,
+        "z": 0.5
+      },
+      "scale": 0.69
+    },
+    "*": {
+      "translation": {
+        "x": -0.35,
+        "y": -0.05,
+        "z": -0.55
+      },
+      "rotation": {
+        "x": 35,
+        "y": 20,
+        "z": -20
+      },
+      "origin": {
+        "x": 0.5,
+        "y": 0.5,
+        "z": 0.5
+      },
+      "scale": 0.65
+    }
+  },
+  "fpHandTransformByType": {
+    "*-habanero": {
+      "translation": {
+        "x": 0.1,
+        "y": -0.1,
+        "z": -0.25
+      },
+      "rotation": {
+        "x": 45,
+        "y": 20,
+        "z": -35
+      },
+      "origin": {
+        "x": 0.5,
+        "y": 0.5,
+        "z": 0.5
+      },
+      "scale": 0.65
+    },
+    "*-jalapeno": {
+      "translation": {
+        "x": 0.1,
+        "y": -0.1,
+        "z": -0.25
+      },
+      "rotation": {
+        "x": 45,
+        "y": 20,
+        "z": -35
+      },
+      "origin": {
+        "x": 0.5,
+        "y": 0.5,
+        "z": 0.5
+      },
+      "scale": 0.55
+    },
+    "*-serrano": {
+      "translation": {
+        "x": 0.1,
+        "y": -0.1,
+        "z": -0.25
+      },
+      "rotation": {
+        "x": 45,
+        "y": 20,
+        "z": -35
+      },
+      "origin": {
+        "x": 0.5,
+        "y": 0.5,
+        "z": 0.5
+      },
+      "scale": 0.65
+    },
+    "*": {
+      "translation": {
+        "x": 0.1,
+        "y": -0.1,
+        "z": -0.25
+      },
+      "rotation": {
+        "x": 45,
+        "y": 20,
+        "z": -35
+      },
+      "origin": {
+        "x": 0.5,
+        "y": 0.5,
+        "z": 0.5
+      },
+      "scale": 0.8
+    }
+  }
 }

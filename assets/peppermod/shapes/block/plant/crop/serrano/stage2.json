@@ -1,351 +1,1516 @@
-﻿{
-    "editor":  {
-                   "allAngles":  true,
-                   "backdrops":  [
-
-                                 ],
-                   "attachments":  [
-
-                                   ]
-               },
-    "textures":  {
-                     "stem":  "block/plant/serrano/stem",
-                     "leaf":  "block/plant/serrano/leaf",
-                     "flower":  "block/plant/serrano/flower",
-                     "pepper":  "block/plant/serrano/pepper"
-                 },
-    "elements":  [
-                     {
-                         "name":  "SerranoRoot",
-                         "from":  [
-                                      0,
-                                      0,
-                                      0
-                                  ],
-                         "to":  [
-                                    0,
-                                    0,
-                                    0
-                                ],
-                         "faces":  {
-
-                                   },
-                         "rotationOrigin":  [
-                                                0,
-                                                0,
-                                                0
-                                            ],
-                         "scaleX":  1,
-                         "scaleY":  1,
-                         "scaleZ":  1,
-                         "renderPass":  -1,
-                         "children":  [
-
-                                      ],
-                         "renderInEditor":  true,
-                         "uv":  [
-                                    0,
-                                    0
-                                ]
-                     },
-                     {
-                         "name":  "Placeholder-Stem",
-                         "from":  [
-                                      7.75,
-                                      0,
-                                      7.75
-                                  ],
-                         "to":  [
-                                    8.25,
-                                    3.25,
-                                    8.25
-                                ],
-                         "shade":  true,
-                         "faces":  {
-                                       "north":  {
-                                                     "texture":  "#stem",
-                                                     "uv":  [
-                                                                0,
-                                                                0,
-                                                                4,
-                                                                4
-                                                            ],
-                                                     "enabled":  true,
-                                                     "autoUv":  false,
-                                                     "snapUV":  false,
-                                                     "windMode":  [
-                                                                      0,
-                                                                      0,
-                                                                      0,
-                                                                      0
-                                                                  ]
-                                                 },
-                                       "east":  {
-                                                    "texture":  "#stem",
-                                                    "uv":  [
-                                                               0,
-                                                               0,
-                                                               4,
-                                                               4
-                                                           ],
-                                                    "enabled":  true,
-                                                    "autoUv":  false,
-                                                    "snapUV":  false,
-                                                    "windMode":  [
-                                                                     0,
-                                                                     0,
-                                                                     0,
-                                                                     0
-                                                                 ]
-                                                },
-                                       "south":  {
-                                                     "texture":  "#stem",
-                                                     "uv":  [
-                                                                0,
-                                                                0,
-                                                                4,
-                                                                4
-                                                            ],
-                                                     "enabled":  true,
-                                                     "autoUv":  false,
-                                                     "snapUV":  false,
-                                                     "windMode":  [
-                                                                      0,
-                                                                      0,
-                                                                      0,
-                                                                      0
-                                                                  ]
-                                                 },
-                                       "west":  {
-                                                    "texture":  "#stem",
-                                                    "uv":  [
-                                                               0,
-                                                               0,
-                                                               4,
-                                                               4
-                                                           ],
-                                                    "enabled":  true,
-                                                    "autoUv":  false,
-                                                    "snapUV":  false,
-                                                    "windMode":  [
-                                                                     0,
-                                                                     0,
-                                                                     0,
-                                                                     0
-                                                                 ]
-                                                },
-                                       "up":  {
-                                                  "texture":  "#stem",
-                                                  "uv":  [
-                                                             0,
-                                                             0,
-                                                             4,
-                                                             4
-                                                         ],
-                                                  "enabled":  true,
-                                                  "autoUv":  false,
-                                                  "snapUV":  false,
-                                                  "windMode":  [
-                                                                   0,
-                                                                   0,
-                                                                   0,
-                                                                   0
-                                                               ]
-                                              },
-                                       "down":  {
-                                                    "texture":  "#stem",
-                                                    "uv":  [
-                                                               0,
-                                                               0,
-                                                               4,
-                                                               4
-                                                           ],
-                                                    "enabled":  true,
-                                                    "autoUv":  false,
-                                                    "snapUV":  false,
-                                                    "windMode":  [
-                                                                     0,
-                                                                     0,
-                                                                     0,
-                                                                     0
-                                                                 ]
-                                                }
-                                   },
-                         "rotationOrigin":  [
-                                                8,
-                                                0,
-                                                8
-                                            ],
-                         "scaleX":  1,
-                         "scaleY":  1,
-                         "scaleZ":  1,
-                         "renderPass":  -1,
-                         "stepParentName":  "SerranoRoot",
-                         "renderInEditor":  true,
-                         "uv":  [
-                                    0,
-                                    0
-                                ]
-                     },
-                     {
-                         "name":  "Placeholder-Leaf-Left",
-                         "from":  [
-                                      8,
-                                      1.4625000000000001,
-                                      8
-                                  ],
-                         "to":  [
-                                    9.9,
-                                    1.4925000000000002,
-                                    9.9
-                                ],
-                         "shade":  true,
-                         "faces":  {
-                                       "up":  {
-                                                  "texture":  "#leaf",
-                                                  "uv":  [
-                                                             1,
-                                                             1,
-                                                             7,
-                                                             10
-                                                         ],
-                                                  "enabled":  true,
-                                                  "autoUv":  false,
-                                                  "snapUV":  false,
-                                                  "windMode":  [
-                                                                   0,
-                                                                   7,
-                                                                   7,
-                                                                   0
-                                                               ]
-                                              },
-                                       "down":  {
-                                                    "texture":  "#leaf",
-                                                    "uv":  [
-                                                               1,
-                                                               1,
-                                                               7,
-                                                               10
-                                                           ],
-                                                    "enabled":  true,
-                                                    "autoUv":  false,
-                                                    "snapUV":  false,
-                                                    "windMode":  [
-                                                                     7,
-                                                                     7,
-                                                                     0,
-                                                                     0
-                                                                 ]
-                                                }
-                                   },
-                         "rotationOrigin":  [
-                                                8,
-                                                1.4625000000000001,
-                                                8
-                                            ],
-                         "scaleX":  1,
-                         "scaleY":  1,
-                         "scaleZ":  1,
-                         "renderPass":  -1,
-                         "stepParentName":  "SerranoRoot",
-                         "renderInEditor":  true,
-                         "uv":  [
-                                    0,
-                                    0
-                                ],
-                         "rotationX":  15,
-                         "rotationY":  -35,
-                         "rotationZ":  0
-                     },
-                     {
-                         "name":  "Placeholder-Leaf-Right",
-                         "from":  [
-                                      6.1,
-                                      1.5625000000000002,
-                                      6.1
-                                  ],
-                         "to":  [
-                                    8,
-                                    1.5925000000000002,
-                                    8
-                                ],
-                         "shade":  true,
-                         "faces":  {
-                                       "up":  {
-                                                  "texture":  "#leaf",
-                                                  "uv":  [
-                                                             8,
-                                                             1,
-                                                             14,
-                                                             10
-                                                         ],
-                                                  "enabled":  true,
-                                                  "autoUv":  false,
-                                                  "snapUV":  false,
-                                                  "windMode":  [
-                                                                   7,
-                                                                   7,
-                                                                   0,
-                                                                   0
-                                                               ]
-                                              },
-                                       "down":  {
-                                                    "texture":  "#leaf",
-                                                    "uv":  [
-                                                               8,
-                                                               1,
-                                                               14,
-                                                               10
-                                                           ],
-                                                    "enabled":  true,
-                                                    "autoUv":  false,
-                                                    "snapUV":  false,
-                                                    "windMode":  [
-                                                                     7,
-                                                                     0,
-                                                                     0,
-                                                                     7
-                                                                 ]
-                                                }
-                                   },
-                         "rotationOrigin":  [
-                                                8,
-                                                1.4625000000000001,
-                                                8
-                                            ],
-                         "scaleX":  1,
-                         "scaleY":  1,
-                         "scaleZ":  1,
-                         "renderPass":  -1,
-                         "stepParentName":  "SerranoRoot",
-                         "renderInEditor":  true,
-                         "uv":  [
-                                    0,
-                                    0
-                                ],
-                         "rotationX":  -15,
-                         "rotationY":  35,
-                         "rotationZ":  0
-                     }
-                 ],
-    "textureWidth":  16,
-    "textureHeight":  16,
-    "textureSizes":  {
-                         "stem":  [
-                                      16,
-                                      16
-                                  ],
-                         "leaf":  [
-                                      16,
-                                      16
-                                  ],
-                         "flower":  [
-                                        16,
-                                        16
-                                    ],
-                         "pepper":  [
-                                        16,
-                                        16
-                                    ]
-                     }
+{
+  "editor": {
+    "allAngles": true,
+    "backdrops": [],
+    "attachments": []
+  },
+  "textureWidth": 16,
+  "textureHeight": 16,
+  "textures": {
+    "stem": "block/plant/serrano/stem",
+    "leaf": "block/plant/serrano/leaf",
+    "flower": "block/plant/serrano/flower",
+    "pepper": "block/plant/serrano/pepper",
+    "peppergreen": "block/plant/jalapeno/pepper"
+  },
+  "textureSizes": {
+    "stem": [
+      16,
+      16
+    ],
+    "leaf": [
+      16,
+      16
+    ],
+    "flower": [
+      16,
+      16
+    ],
+    "pepper": [
+      16,
+      16
+    ],
+    "peppergreen": [
+      16,
+      16
+    ]
+  },
+  "elements": [
+    {
+      "name": "SerranoRoot",
+      "from": [
+        0,
+        0,
+        0
+      ],
+      "to": [
+        0,
+        0,
+        0
+      ],
+      "rotationOrigin": [
+        0,
+        0,
+        0
+      ],
+      "faces": {},
+      "children": [],
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1,
+      "uv": [
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Branch-seedling-lower",
+      "from": [
+        7.92054,
+        -0.01401,
+        7.92033
+      ],
+      "to": [
+        8.08034,
+        2.32627,
+        8.08013
+      ],
+      "rotationOrigin": [
+        8.00044,
+        0.01099,
+        8.00023
+      ],
+      "rotationX": 0.40057,
+      "rotationY": -19.00789,
+      "rotationZ": -2.38541,
+      "shade": true,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1,
+      "faces": {
+        "north": {
+          "texture": "#stem",
+          "uv": [
+            5.12,
+            1.12,
+            7.232,
+            7.232
+          ],
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false
+        },
+        "east": {
+          "texture": "#stem",
+          "uv": [
+            5.12,
+            1.12,
+            7.232,
+            7.232
+          ],
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false
+        },
+        "south": {
+          "texture": "#stem",
+          "uv": [
+            5.12,
+            1.12,
+            7.232,
+            7.232
+          ],
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false
+        },
+        "west": {
+          "texture": "#stem",
+          "uv": [
+            5.12,
+            1.12,
+            7.232,
+            7.232
+          ],
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false
+        },
+        "up": {
+          "texture": "#stem",
+          "uv": [
+            5.12,
+            1.12,
+            7.232,
+            7.232
+          ],
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false
+        },
+        "down": {
+          "texture": "#stem",
+          "uv": [
+            5.12,
+            1.12,
+            7.232,
+            7.232
+          ],
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false
+        }
+      },
+      "children": [],
+      "stepParentName": "SerranoRoot",
+      "renderPass": -1,
+      "uv": [
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Branch-seedling-upper",
+      "from": [
+        8.02963,
+        2.29599,
+        7.98663
+      ],
+      "to": [
+        8.15183,
+        4.63513,
+        8.10883
+      ],
+      "rotationOrigin": [
+        8.09073,
+        2.32099,
+        8.04773
+      ],
+      "rotationX": 1.64352,
+      "rotationY": -18.98058,
+      "rotationZ": 1.43135,
+      "shade": true,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1,
+      "faces": {
+        "north": {
+          "texture": "#stem",
+          "uv": [
+            5.12,
+            1.12,
+            7.232,
+            7.232
+          ],
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false
+        },
+        "east": {
+          "texture": "#stem",
+          "uv": [
+            5.12,
+            1.12,
+            7.232,
+            7.232
+          ],
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false
+        },
+        "south": {
+          "texture": "#stem",
+          "uv": [
+            5.12,
+            1.12,
+            7.232,
+            7.232
+          ],
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false
+        },
+        "west": {
+          "texture": "#stem",
+          "uv": [
+            5.12,
+            1.12,
+            7.232,
+            7.232
+          ],
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false
+        },
+        "up": {
+          "texture": "#stem",
+          "uv": [
+            5.12,
+            1.12,
+            7.232,
+            7.232
+          ],
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false
+        },
+        "down": {
+          "texture": "#stem",
+          "uv": [
+            5.12,
+            1.12,
+            7.232,
+            7.232
+          ],
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false
+        }
+      },
+      "children": [],
+      "stepParentName": "SerranoRoot",
+      "renderPass": -1,
+      "uv": [
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Petiole-lower-left",
+      "from": [
+        8.05699,
+        2.28653,
+        8.01768
+      ],
+      "to": [
+        8.10869,
+        2.53781,
+        8.06938
+      ],
+      "rotationOrigin": [
+        8.08284,
+        2.31153,
+        8.04353
+      ],
+      "rotationX": -7.54944,
+      "rotationY": -24.60642,
+      "rotationZ": 77.20546,
+      "shade": true,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1,
+      "faces": {
+        "north": {
+          "texture": "#stem",
+          "uv": [
+            5.12,
+            1.12,
+            7.232,
+            7.232
+          ],
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false
+        },
+        "east": {
+          "texture": "#stem",
+          "uv": [
+            5.12,
+            1.12,
+            7.232,
+            7.232
+          ],
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false
+        },
+        "south": {
+          "texture": "#stem",
+          "uv": [
+            5.12,
+            1.12,
+            7.232,
+            7.232
+          ],
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false
+        },
+        "west": {
+          "texture": "#stem",
+          "uv": [
+            5.12,
+            1.12,
+            7.232,
+            7.232
+          ],
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false
+        },
+        "up": {
+          "texture": "#stem",
+          "uv": [
+            5.12,
+            1.12,
+            7.232,
+            7.232
+          ],
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false
+        },
+        "down": {
+          "texture": "#stem",
+          "uv": [
+            5.12,
+            1.12,
+            7.232,
+            7.232
+          ],
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false
+        }
+      },
+      "children": [],
+      "stepParentName": "SerranoRoot",
+      "renderPass": -1,
+      "uv": [
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Leaf-lower-left",
+      "from": [
+        7.47495,
+        2.34651,
+        5.92468
+      ],
+      "to": [
+        8.15472,
+        2.34651,
+        7.95268
+      ],
+      "rotationOrigin": [
+        7.89621,
+        2.34651,
+        7.95268
+      ],
+      "rotationX": 18.39444,
+      "rotationY": 63.82977,
+      "rotationZ": -38.61814,
+      "shade": true,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1,
+      "faces": {
+        "up": {
+          "texture": "#leaf",
+          "uv": [
+            1.6,
+            0.864,
+            3.872,
+            6.912
+          ],
+          "windMode": [
+            0,
+            7,
+            7,
+            0
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false
+        }
+      },
+      "children": [],
+      "stepParentName": "SerranoRoot",
+      "renderPass": -1,
+      "uv": [
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Petiole-lower-right",
+      "from": [
+        8.07315,
+        2.19966,
+        8.02554
+      ],
+      "to": [
+        8.12485,
+        2.44985,
+        8.07724
+      ],
+      "rotationOrigin": [
+        8.099,
+        2.22466,
+        8.05139
+      ],
+      "rotationX": 7.28585,
+      "rotationY": -23.78334,
+      "rotationZ": -70.28686,
+      "shade": true,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1,
+      "faces": {
+        "north": {
+          "texture": "#stem",
+          "uv": [
+            5.12,
+            1.12,
+            7.232,
+            7.232
+          ],
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false
+        },
+        "east": {
+          "texture": "#stem",
+          "uv": [
+            5.12,
+            1.12,
+            7.232,
+            7.232
+          ],
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false
+        },
+        "south": {
+          "texture": "#stem",
+          "uv": [
+            5.12,
+            1.12,
+            7.232,
+            7.232
+          ],
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false
+        },
+        "west": {
+          "texture": "#stem",
+          "uv": [
+            5.12,
+            1.12,
+            7.232,
+            7.232
+          ],
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false
+        },
+        "up": {
+          "texture": "#stem",
+          "uv": [
+            5.12,
+            1.12,
+            7.232,
+            7.232
+          ],
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false
+        },
+        "down": {
+          "texture": "#stem",
+          "uv": [
+            5.12,
+            1.12,
+            7.232,
+            7.232
+          ],
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false
+        }
+      },
+      "children": [],
+      "stepParentName": "SerranoRoot",
+      "renderPass": -1,
+      "uv": [
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Leaf-lower-right",
+      "from": [
+        7.92789,
+        2.28467,
+        6.21524
+      ],
+      "to": [
+        8.58815,
+        2.28467,
+        8.13924
+      ],
+      "rotationOrigin": [
+        8.27946,
+        2.28467,
+        8.13924
+      ],
+      "rotationX": 149.46108,
+      "rotationY": -61.56845,
+      "rotationZ": 176.57957,
+      "shade": true,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1,
+      "faces": {
+        "up": {
+          "texture": "#leaf",
+          "uv": [
+            6.688,
+            1.056,
+            9.152,
+            7.008
+          ],
+          "windMode": [
+            0,
+            7,
+            7,
+            0
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false
+        }
+      },
+      "children": [],
+      "stepParentName": "SerranoRoot",
+      "renderPass": -1,
+      "uv": [
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Petiole-upper-front",
+      "from": [
+        8.03365,
+        3.80676,
+        8.04283
+      ],
+      "to": [
+        8.08535,
+        4.0789,
+        8.09453
+      ],
+      "rotationOrigin": [
+        8.0595,
+        3.83176,
+        8.06868
+      ],
+      "rotationX": -62.73012,
+      "rotationY": 0.07407,
+      "rotationZ": -30.81195,
+      "shade": true,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1,
+      "faces": {
+        "north": {
+          "texture": "#stem",
+          "uv": [
+            5.12,
+            1.12,
+            7.232,
+            7.232
+          ],
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false
+        },
+        "east": {
+          "texture": "#stem",
+          "uv": [
+            5.12,
+            1.12,
+            7.232,
+            7.232
+          ],
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false
+        },
+        "south": {
+          "texture": "#stem",
+          "uv": [
+            5.12,
+            1.12,
+            7.232,
+            7.232
+          ],
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false
+        },
+        "west": {
+          "texture": "#stem",
+          "uv": [
+            5.12,
+            1.12,
+            7.232,
+            7.232
+          ],
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false
+        },
+        "up": {
+          "texture": "#stem",
+          "uv": [
+            5.12,
+            1.12,
+            7.232,
+            7.232
+          ],
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false
+        },
+        "down": {
+          "texture": "#stem",
+          "uv": [
+            5.12,
+            1.12,
+            7.232,
+            7.232
+          ],
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false
+        }
+      },
+      "children": [],
+      "stepParentName": "SerranoRoot",
+      "renderPass": -1,
+      "uv": [
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Leaf-upper-front",
+      "from": [
+        7.63464,
+        3.92281,
+        5.39571
+      ],
+      "to": [
+        8.6904,
+        3.92281,
+        7.89171
+      ],
+      "rotationOrigin": [
+        8.17819,
+        3.92281,
+        7.89171
+      ],
+      "rotationX": 23.9568,
+      "rotationY": -32.61461,
+      "rotationZ": -16.53217,
+      "shade": true,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1,
+      "faces": {
+        "up": {
+          "texture": "#leaf",
+          "uv": [
+            11.424,
+            8.896,
+            14.656,
+            14.912
+          ],
+          "windMode": [
+            0,
+            7,
+            7,
+            0
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false
+        }
+      },
+      "children": [],
+      "stepParentName": "SerranoRoot",
+      "renderPass": -1,
+      "uv": [
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Petiole-upper-back",
+      "from": [
+        8.0247,
+        3.99499,
+        8.06699
+      ],
+      "to": [
+        8.0764,
+        4.26686,
+        8.11869
+      ],
+      "rotationOrigin": [
+        8.05055,
+        4.01999,
+        8.09284
+      ],
+      "rotationX": 58.18098,
+      "rotationY": -5.33346,
+      "rotationZ": 24.67961,
+      "shade": true,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1,
+      "faces": {
+        "north": {
+          "texture": "#stem",
+          "uv": [
+            5.12,
+            1.12,
+            7.232,
+            7.232
+          ],
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false
+        },
+        "east": {
+          "texture": "#stem",
+          "uv": [
+            5.12,
+            1.12,
+            7.232,
+            7.232
+          ],
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false
+        },
+        "south": {
+          "texture": "#stem",
+          "uv": [
+            5.12,
+            1.12,
+            7.232,
+            7.232
+          ],
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false
+        },
+        "west": {
+          "texture": "#stem",
+          "uv": [
+            5.12,
+            1.12,
+            7.232,
+            7.232
+          ],
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false
+        },
+        "up": {
+          "texture": "#stem",
+          "uv": [
+            5.12,
+            1.12,
+            7.232,
+            7.232
+          ],
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false
+        },
+        "down": {
+          "texture": "#stem",
+          "uv": [
+            5.12,
+            1.12,
+            7.232,
+            7.232
+          ],
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false
+        }
+      },
+      "children": [],
+      "stepParentName": "SerranoRoot",
+      "renderPass": -1,
+      "uv": [
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Leaf-upper-back",
+      "from": [
+        7.46701,
+        4.1386,
+        5.92693
+      ],
+      "to": [
+        8.38208,
+        4.1386,
+        8.26693
+      ],
+      "rotationOrigin": [
+        7.95426,
+        4.1386,
+        8.26693
+      ],
+      "rotationX": 149.5296,
+      "rotationY": 26.45554,
+      "rotationZ": -143.31251,
+      "shade": true,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1,
+      "faces": {
+        "up": {
+          "texture": "#leaf",
+          "uv": [
+            6.688,
+            1.056,
+            9.152,
+            7.008
+          ],
+          "windMode": [
+            0,
+            7,
+            7,
+            0
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false
+        }
+      },
+      "children": [],
+      "stepParentName": "SerranoRoot",
+      "renderPass": -1,
+      "uv": [
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Petiole-new-left",
+      "from": [
+        8.00564,
+        4.60401,
+        8.06729
+      ],
+      "to": [
+        8.05734,
+        4.85994,
+        8.11899
+      ],
+      "rotationOrigin": [
+        8.03149,
+        4.62901,
+        8.09314
+      ],
+      "rotationX": -0.96348,
+      "rotationY": -19.24293,
+      "rotationZ": 29.88312,
+      "shade": true,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1,
+      "faces": {
+        "north": {
+          "texture": "#stem",
+          "uv": [
+            5.12,
+            1.12,
+            7.232,
+            7.232
+          ],
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false
+        },
+        "east": {
+          "texture": "#stem",
+          "uv": [
+            5.12,
+            1.12,
+            7.232,
+            7.232
+          ],
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false
+        },
+        "south": {
+          "texture": "#stem",
+          "uv": [
+            5.12,
+            1.12,
+            7.232,
+            7.232
+          ],
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false
+        },
+        "west": {
+          "texture": "#stem",
+          "uv": [
+            5.12,
+            1.12,
+            7.232,
+            7.232
+          ],
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false
+        },
+        "up": {
+          "texture": "#stem",
+          "uv": [
+            5.12,
+            1.12,
+            7.232,
+            7.232
+          ],
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false
+        },
+        "down": {
+          "texture": "#stem",
+          "uv": [
+            5.12,
+            1.12,
+            7.232,
+            7.232
+          ],
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false
+        }
+      },
+      "children": [],
+      "stepParentName": "SerranoRoot",
+      "renderPass": -1,
+      "uv": [
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Leaf-new-left",
+      "from": [
+        7.64039,
+        4.81599,
+        6.75447
+      ],
+      "to": [
+        8.10727,
+        4.81599,
+        8.05447
+      ],
+      "rotationOrigin": [
+        7.92972,
+        4.81599,
+        8.05447
+      ],
+      "rotationX": 76.53217,
+      "rotationY": 32.61461,
+      "rotationZ": -78.0432,
+      "shade": true,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1,
+      "faces": {
+        "up": {
+          "texture": "#leaf",
+          "uv": [
+            1.6,
+            0.864,
+            3.872,
+            6.912
+          ],
+          "windMode": [
+            0,
+            7,
+            7,
+            0
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false
+        }
+      },
+      "children": [],
+      "stepParentName": "SerranoRoot",
+      "renderPass": -1,
+      "uv": [
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Petiole-new-right",
+      "from": [
+        8.01554,
+        4.54817,
+        8.0728
+      ],
+      "to": [
+        8.06724,
+        4.79594,
+        8.1245
+      ],
+      "rotationOrigin": [
+        8.04139,
+        4.57317,
+        8.09865
+      ],
+      "rotationX": 11.06043,
+      "rotationY": -21.94702,
+      "rotationZ": -31.65578,
+      "shade": true,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1,
+      "faces": {
+        "north": {
+          "texture": "#stem",
+          "uv": [
+            5.12,
+            1.12,
+            7.232,
+            7.232
+          ],
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false
+        },
+        "east": {
+          "texture": "#stem",
+          "uv": [
+            5.12,
+            1.12,
+            7.232,
+            7.232
+          ],
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false
+        },
+        "south": {
+          "texture": "#stem",
+          "uv": [
+            5.12,
+            1.12,
+            7.232,
+            7.232
+          ],
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false
+        },
+        "west": {
+          "texture": "#stem",
+          "uv": [
+            5.12,
+            1.12,
+            7.232,
+            7.232
+          ],
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false
+        },
+        "up": {
+          "texture": "#stem",
+          "uv": [
+            5.12,
+            1.12,
+            7.232,
+            7.232
+          ],
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false
+        },
+        "down": {
+          "texture": "#stem",
+          "uv": [
+            5.12,
+            1.12,
+            7.232,
+            7.232
+          ],
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false
+        }
+      },
+      "children": [],
+      "stepParentName": "SerranoRoot",
+      "renderPass": -1,
+      "uv": [
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Leaf-new-right",
+      "from": [
+        7.92388,
+        4.73912,
+        7.02867
+      ],
+      "to": [
+        8.33473,
+        4.73912,
+        8.17267
+      ],
+      "rotationOrigin": [
+        8.14264,
+        4.73912,
+        8.17267
+      ],
+      "rotationX": 117.31412,
+      "rotationY": -33.23811,
+      "rotationZ": 151.29605,
+      "shade": true,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1,
+      "faces": {
+        "up": {
+          "texture": "#leaf",
+          "uv": [
+            6.688,
+            1.056,
+            9.152,
+            7.008
+          ],
+          "windMode": [
+            0,
+            7,
+            7,
+            0
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false
+        }
+      },
+      "children": [],
+      "stepParentName": "SerranoRoot",
+      "renderPass": -1,
+      "uv": [
+        0,
+        0
+      ]
+    }
+  ],
+  "animations": []
 }

@@ -17,14 +17,14 @@ internal static class PepperBundleTests
         }
     }
     internal static JObject Read(string path) => JObject.Parse(File.ReadAllText(Path.Combine(Root, "assets/peppermod", path)));
-    internal static readonly string[] Types = { "jalapeno", "habanero" };
+    internal static readonly string[] Types = { "jalapeno", "habanero", "serrano" };
     internal static readonly string[] States = { "raw", "baked", "dried" };
     internal static string SingleCode(string type, string state) => state == "raw" ? $"vegetable-{type}" : $"preparedpepper-{state}-{type}";
     internal static void Require(bool value, string message = "Bundle regression failed") { if (!value) throw new Exception(message); }
     public static void Run(Action<string, Action> check) {
         check("bundle recipes use eight matching peppers around one flax fiber", () => {
             var f = new BundleFixture();
-            Require(f.Recipes.Count == 12);
+            Require(f.Recipes.Count == Types.Length * States.Length * 2);
             foreach (string type in Types) foreach (string state in States) {
                 var recipe = f.Recipe("tie", type, state);
                 Require(recipe.Width == 3 && recipe.Height == 3 && !recipe.Shapeless);
