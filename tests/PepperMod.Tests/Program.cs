@@ -152,6 +152,7 @@ WildPepperTests.Run(Check);
 BiomesCompatibilityTests.Run(Check);
 HabaneroTests.Run(Check);
 SerranoTests.Run(Check);
+SeedTextureTests.Run(Check);
 PreparedPepperTests.Run(Check);
 PepperBundleTests.Run(Check);
 HangingBundleTests.Run(Check);

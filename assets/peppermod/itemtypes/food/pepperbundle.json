@@ -79,7 +79,7 @@
     },
     "pepperbundle-baked-habanero": {
       "base": {
-        "base": "item/food/prepared/pepper-skins"
+        "base": "block/plant/habanero/pepper"
       },
       "stem": {
         "base": "block/plant/habanero/stem"
@@ -90,7 +90,7 @@
     },
     "pepperbundle-dried-habanero": {
       "base": {
-        "base": "item/food/prepared/pepper-skins"
+        "base": "block/plant/habanero/pepper"
       },
       "stem": {
         "base": "block/plant/habanero/stem"
@@ -246,7 +246,7 @@
       "onDisplayTransform": {
         "translation": {
           "x": 0,
-          "y": -0.4324,
+          "y": -0.44026997827215875,
           "z": 0
         },
         "rotation": {
@@ -279,7 +279,7 @@
       "onDisplayTransform": {
         "translation": {
           "x": 0,
-          "y": -0.4324,
+          "y": -0.44026997827215875,
           "z": 0
         },
         "rotation": {
@@ -311,7 +311,7 @@
       "onDisplayTransform": {
         "translation": {
           "x": 0,
-          "y": -0.4324,
+          "y": -0.44026997827215875,
           "z": 0
         },
         "rotation": {
@@ -701,7 +701,7 @@
     "pepperbundle-raw-habanero": {
       "translation": {
         "x": 0,
-        "y": -0.309999,
+        "y": -0.3345936821004961,
         "z": 0
       },
       "rotation": {
@@ -719,7 +719,7 @@
     "pepperbundle-baked-habanero": {
       "translation": {
         "x": 0,
-        "y": -0.309999,
+        "y": -0.3345936821004961,
         "z": 0
       },
       "rotation": {
@@ -737,7 +737,7 @@
     "pepperbundle-dried-habanero": {
       "translation": {
         "x": 0,
-        "y": -0.309999,
+        "y": -0.3345936821004961,
         "z": 0
       },
       "rotation": {

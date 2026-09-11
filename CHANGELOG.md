@@ -4,16 +4,21 @@
 
 ### 0.4.0 - Serranos
 
+- Reworked Habanero fruit into shorter, full-bodied lantern shapes with a broad, uneven lower end instead of a pointed tip, across fruit-bearing plant stages, loose peppers, and all bundle states. The existing bush, leaves, flowers, stalk attachments, and wind settings are unchanged.
+- Added a Habanero-only skin atlas with green unripe fruit, bright orange ripe fruit, flat pixel-painted charred skins, and rusty red-orange dried skins. The charred revision matches the other cooked peppers' texture style and preserves the other three texture quarters pixel-for-pixel. Updated oven positioning and hanging selection bounds without changing recipes, spice, spoilage, or drying times.
+- Renamed only cooked Habaneros to Charred Habanero, including portable and hanging bundles. Internal baked IDs remain unchanged for saved-world compatibility; other varieties retain their Baked names and textures.
+- Added native texture-atlas and model regressions for the Habanero rework and refreshed its plant, item, preparation, and bundle previews.
 - Completed serranos with all 11 plant states, a taller asymmetric bush, narrow leaves, and slender green fruit attached to their stems.
 - Kept the mature canopy unchanged through harvesting and regrowth, with a matching bare winter skeleton and gently anchored leaf sway.
-- Added a matching 3D picked serrano with inventory, hand, dropped, and centered oven placement; replaced its tiny seed placeholder with the existing finished pepper-seed artwork.
+- Added a matching 3D picked serrano with inventory, hand, dropped, and centered oven placement.
+- Added distinct seed artwork for Serrano, Cayenne, Poblano, Bell Pepper, Banana Pepper, and Ghost Pepper, matching the existing seed-icon style. All six use transparent 256x256 textures; Jalapeno and Habanero icons are unchanged. This does not enable unfinished varieties in world generation.
 - Added baked and dried serrano models. Raw/baked/dried heat is 15,000 / 7,500 / 3,750 SHU, with spice doses of 40 / 20 / 10 and 20 satiety per pepper.
 - Set raw serrano freshness to 7 days. Baked serranos retain 7 days (+/- 1), and dried serranos retain 120 days before storage modifiers.
 - Added raw, baked, and dried eight-serrano bundles, six tie/unpack recipes, stem-to-cord attachments, and ceiling-hung variants with the existing iron hook.
 - Serrano bundles support full 32-pepper oven batches and 7-day air drying, including half-speed spoilage while drying, freshness carryover, and saved drying progress.
 - Enabled rare wild serrano patches in newly generated terrain on suitable soil. With Biomes, serranos use Pacific Nearctic, Pacific Neotropic, and Atlantic Neotropic regions; other unfinished varieties remain disabled in world generation.
 - Preserved the existing 1.5-second harvest hold, 16-24 pepper yield, downward drops, seasonal dormancy, and mature regrowth.
-- Added serrano plant/item previews and a growth GIF; expanded preparation/bundle galleries and regression coverage. Existing jalapeno and habanero models and gameplay balance are unchanged.
+- Added serrano plant/item previews and a growth GIF; expanded preparation/bundle galleries and regression coverage. Jalapeno models and existing gameplay balance are unchanged.
 
 ### 0.3.1 - Biomes Compatibility
 

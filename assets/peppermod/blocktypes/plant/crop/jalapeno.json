@@ -75,6 +75,22 @@
                                     "base": "block/plant/jalapeno/pepper"
                                 }
                  },
+    "texturesByType": {
+        "crop-habanero-*": {
+            "stem": { "base": "block/plant/habanero/stem" },
+            "leaf": { "base": "block/plant/habanero/leaf" },
+            "flower": { "base": "block/plant/habanero/flower" },
+            "pepper": { "base": "block/plant/habanero/pepper" },
+            "peppergreen": { "base": "block/plant/habanero/pepper" }
+        },
+        "*": {
+            "stem": { "base": "block/plant/{type}/stem" },
+            "leaf": { "base": "block/plant/{type}/leaf" },
+            "flower": { "base": "block/plant/{type}/flower" },
+            "pepper": { "base": "block/plant/{type}/pepper" },
+            "peppergreen": { "base": "block/plant/jalapeno/pepper" }
+        }
+    },
     "blockmaterial":  "Plant",
     "faceCullMode":  "NeverCull",
     "attributes":  {

@@ -10,7 +10,7 @@ the eight bundle fruits is attached by its actual stem endpoint to the shared
 cord. Bundles reuse the existing ceiling hook and preparation textures.
 
 Plant and raw fruit textures reuse the existing Serrano artwork. The seed icon
-reuses the finished jalapeno seed artwork; no new raster artwork was generated.
+has its own generated artwork; see `art/source/pepper-seed-textures.md`.
 Baked and dried skins use the green quadrants of the shared prepared-pepper atlas.
 
 All runtime models are ordinary editable Vintage Story shape JSON files. There

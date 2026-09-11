@@ -70,32 +70,32 @@
     ],
     "hangingpepperbundle-raw-habanero": [
       {
-        "x1": 0.32888121402904025,
-        "y1": 0.055592409761406794,
-        "z1": 0.3132965821922866,
-        "x2": 0.6882995885357008,
+        "x1": 0.3374015622105181,
+        "y1": 0.07191212794204287,
+        "z1": 0.3210687395763346,
+        "x2": 0.6760042375603169,
         "y2": 1,
-        "z2": 0.6800006286849536
+        "z2": 0.6554063178995039
       }
     ],
     "hangingpepperbundle-baked-habanero": [
       {
-        "x1": 0.32888121402904025,
-        "y1": 0.055592409761406794,
-        "z1": 0.3132965821922866,
-        "x2": 0.6882995885357008,
+        "x1": 0.3374015622105181,
+        "y1": 0.07191212794204287,
+        "z1": 0.3210687395763346,
+        "x2": 0.6760042375603169,
         "y2": 1,
-        "z2": 0.6800006286849536
+        "z2": 0.6554063178995039
       }
     ],
     "hangingpepperbundle-dried-habanero": [
       {
-        "x1": 0.32888121402904025,
-        "y1": 0.055592409761406794,
-        "z1": 0.3132965821922866,
-        "x2": 0.6882995885357008,
+        "x1": 0.3374015622105181,
+        "y1": 0.07191212794204287,
+        "z1": 0.3210687395763346,
+        "x2": 0.6760042375603169,
         "y2": 1,
-        "z2": 0.6800006286849536
+        "z2": 0.6554063178995039
       }
     ],
     "hangingpepperbundle-raw-serrano": [
@@ -271,7 +271,7 @@
     },
     "hangingpepperbundle-baked-habanero": {
       "base": {
-        "base": "item/food/prepared/pepper-skins"
+        "base": "block/plant/habanero/pepper"
       },
       "stem": {
         "base": "block/plant/habanero/stem"
@@ -285,7 +285,7 @@
     },
     "hangingpepperbundle-dried-habanero": {
       "base": {
-        "base": "item/food/prepared/pepper-skins"
+        "base": "block/plant/habanero/pepper"
       },
       "stem": {
         "base": "block/plant/habanero/stem"

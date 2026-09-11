@@ -4,6 +4,7 @@ using PepperMod;
 using Vintagestory.API.Client;
 using Vintagestory.API.Common;
 using Vintagestory.API.MathTools;
+using Vintagestory.Client.NoObf;
 using Vector3 = System.Numerics.Vector3;
 
 internal static class HabaneroTests
@@ -40,7 +41,8 @@ internal static class HabaneroTests
                     {
                         string key = ((string)face["texture"])[1..];
                         string modelPath = (string)json["textures"][key];
-                        var textureMap = ReferenceEquals(json, item) ? food["texturesByType"]["*-habanero"] : plantDefinition["textures"];
+                        var textureMap = ReferenceEquals(json, item) ? food["texturesByType"]["*-habanero"]
+                            : plantDefinition["texturesByType"]?["crop-habanero-*"] ?? plantDefinition["textures"];
                         string runtimePath = ((string)textureMap[key]?["base"])?.Replace("{type}", "habanero");
                         Require(modelPath != null && runtimePath == modelPath, "Model/runtime texture mismatch: " + key);
                         Require(File.Exists(Path.Combine(assets, "textures", modelPath + ".png")), "Missing texture " + modelPath);
@@ -48,6 +50,88 @@ internal static class HabaneroTests
                     }
                 }
             }
+        });
+        check("habanero skin remains opaque and pixel-perfect inside the game atlas", () => {
+            using var bitmap = new BitmapExternal(Path.Combine(assets, "textures/block/plant/habanero/pepper.png"), null);
+            Require(bitmap.Width == 1024 && bitmap.Height == 1024, "Expected a game-safe 1024-square atlas");
+            var pixels = bitmap.Pixels;
+            Require(pixels.All(p => ((uint)p >> 24) == 255), "Habanero skin contains transparent pixels");
+            var atlas = new TextureAtlas(2048, 2048, 0, 0);
+            Require(atlas.InsertTexture(0, bitmap, true), "Could not insert Habanero skin");
+            var positions = new TextureAtlasPosition[1];
+            atlas.PopulateAtlasPositions(positions, 0);
+            for (int y = 0; y < bitmap.Height; y++) for (int x = 0; x < bitmap.Width; x++)
+                Require(atlas.GetPixel(positions[0].x1 + (x + .5f) / 2048, positions[0].y1 + (y + .5f) / 2048)
+                    == pixels[y * bitmap.Width + x], $"Skin corruption at {x}, {y}");
+        });
+        check("habanero fruit has a full lower body and blunt uneven end", () => {
+            var fruit = item.ToObject<Shape>().Elements.Where(e => e.Name.Contains("-fruit-")).ToArray();
+            var points = fruit.SelectMany(Corners).ToArray();
+            float minY = points.Min(p => p.Y), maxY = points.Max(p => p.Y), height = maxY - minY;
+            float width = points.Max(p => p.X) - points.Min(p => p.X);
+            Require(height / width > 1.15 && height / width < 1.45, "Fruit is too elongated or too round");
+            var low = points.Where(p => p.Y < minY + height * .10).ToArray();
+            var high = points.Where(p => p.Y > minY + height * .65).ToArray();
+            float lowerWidth = low.Max(p => p.X) - low.Min(p => p.X);
+            Require(lowerWidth > width * .48 && lowerWidth < width * .80, "Bottom must be broad and blunt, not pointed or cylindrical");
+            Require(high.Max(p => p.X) - high.Min(p => p.X) > width * .85, "Broad shoulders are missing");
+            Require(fruit.Where(e => e.Name.Contains("-fold-")).Any(e => Math.Abs(e.RotationX) > 2 || Math.Abs(e.RotationZ) > 2), "Longitudinal folds are missing");
+        });
+        check("charred habanero skin has substantial dark blistering while raw skin stays bright", () => {
+            using var bitmap = new BitmapExternal(Path.Combine(assets, "textures/block/plant/habanero/pepper.png"), null);
+            var pixels = bitmap.Pixels;
+            double DarkFraction(int left, int top) {
+                int dark = 0;
+                for (int y = top; y < top + 512; y++) for (int x = left; x < left + 512; x++) {
+                    uint pixel = (uint)pixels[y * bitmap.Width + x];
+                    double brightness = ((pixel >> 16 & 255) + (pixel >> 8 & 255) + (pixel & 255)) / 3.0;
+                    if (brightness < 80) dark++;
+                }
+                return dark / (512.0 * 512);
+            }
+            double charred = DarkFraction(0, 512);
+            Require(charred > .20 && charred < .70, "Charred skin needs dark blisters plus exposed orange skin");
+            Require(DarkFraction(512, 0) < .02, "Fresh fruit acquired charred marks");
+        });
+        check("only cooked habaneros are named charred without changing saved item IDs", () => {
+            var lang = JObject.Parse(File.ReadAllText(Path.Combine(assets, "lang/en.json")));
+            Require((string)lang["item-preparedpepper-baked-habanero"] == "Charred Habanero", "Loose charred name missing");
+            Require((string)lang["item-pepperbundle-baked-habanero"] == "Charred Habanero Bundle", "Bundle charred name missing");
+            Require((string)lang["block-hangingpepperbundle-baked-habanero"] == "Charred Habanero Bundle", "Hanging charred name missing");
+            foreach (string type in new[] { "jalapeno", "serrano", "cayenne", "poblano", "bell-pepper", "banana-pepper", "ghost-pepper" })
+                Require(((string)lang[$"item-preparedpepper-baked-{type}"]).StartsWith("Baked "), "Another variety was renamed");
+            var raw = PreparedPepperTests.Load("habanero", "raw");
+            var charred = PreparedPepperTests.Load("habanero", "baked");
+            var dried = PreparedPepperTests.Load("habanero", "dried");
+            Require(raw.Attributes["bakingProperties"]["resultCode"].AsString() == charred.Code.ToString(), "Raw-to-charred identity changed");
+            Require(charred.Code.Path == "preparedpepper-baked-habanero", "Saved cooked items would stop resolving");
+            Require(charred.Attributes["bakingProperties"]["resultCode"].AsString() == dried.Code.ToString(), "Charred-to-dried chain changed");
+        });
+        check("habanero plant item and bundle skins resolve to the correct atlas quarter", () => {
+            void CheckSkin(JObject shape, string state, JToken runtime) {
+                foreach (var element in shape["elements"].Where(e => ((string)e["name"]).Contains("-fruit-")))
+                foreach (var face in ((JObject)element["faces"]).Properties().Select(p => p.Value)) {
+                    string key = ((string)face["texture"])[1..];
+                    Require((string)runtime[key]["base"] == (string)shape["textures"][key], "Runtime skin differs from preview");
+                    string color = key == "peppergreen" ? "green" : state;
+                    double u = color is "raw" or "dried" ? 8 : 0, v = color is "baked" or "dried" ? 8 : 0;
+                    var uv = face["uv"].Values<double>().ToArray();
+                    Require(uv[0] >= u + .25 && uv[2] <= u + 7.75 && uv[1] >= v + .25 && uv[3] <= v + 7.75, "UV crosses a skin boundary");
+                }
+            }
+            foreach (int id in new[] { 6, 7, 8, 11 }) CheckSkin(stages[id], "raw", plantDefinition["texturesByType"]["crop-habanero-*"]);
+            var prepared = JObject.Parse(File.ReadAllText(Path.Combine(assets, "itemtypes/food/preparedpepper.json")));
+            var bundles = JObject.Parse(File.ReadAllText(Path.Combine(assets, "itemtypes/food/pepperbundle.json")));
+            var hanging = JObject.Parse(File.ReadAllText(Path.Combine(assets, "blocktypes/food/hangingpepperbundle.json")));
+            foreach (string state in new[] { "raw", "baked", "dried" }) {
+                var loose = state == "raw" ? item : JObject.Parse(File.ReadAllText(Path.Combine(assets, $"shapes/item/food/prepared/{state}/habanero.json")));
+                CheckSkin(loose, state, (state == "raw" ? food : prepared)["texturesByType"]["*-habanero"]);
+                var bundle = JObject.Parse(File.ReadAllText(Path.Combine(assets, $"shapes/item/food/bundle/{state}/habanero.json")));
+                CheckSkin(bundle, state, bundles["texturesByType"][$"pepperbundle-{state}-habanero"]);
+                CheckSkin(bundle, state, hanging["texturesByType"][$"hangingpepperbundle-{state}-habanero"]);
+            }
+            Require(JToken.DeepEquals(plantDefinition["textures"], plantDefinition["texturesByType"]["*"]), "Other crops' textures changed");
+            Require(JToken.DeepEquals(prepared["textures"], prepared["texturesByType"]["*"]), "Other prepared peppers' textures changed");
         });
         check("habanero maturity harvest regrowth and dormancy preserve the bush skeleton", () => {
             foreach (int stage in new[] { 6, 7, 10, 11 })
@@ -142,6 +226,15 @@ internal static class HabaneroTests
         return new Vector3(p.X * 16, p.Y * 16, p.Z * 16);
     }
     private static Vector3 Start(ShapeElement e) => Point(e, .025);
+    private static IEnumerable<Vector3> Corners(ShapeElement e) {
+        var matrix = new Matrixf(e.GetLocalTransformMatrix(0));
+        for (int i = 0; i < 8; i++) {
+            var p = matrix.TransformVector(new Vec4f((float)(e.To[0] - e.From[0]) / 16 * (i & 1),
+                (float)(e.To[1] - e.From[1]) / 16 * ((i >> 1) & 1),
+                (float)(e.To[2] - e.From[2]) / 16 * ((i >> 2) & 1), 1));
+            yield return new Vector3(p.X, p.Y, p.Z);
+        }
+    }
     private static Vector3 End(ShapeElement e) => Point(e, e.To[1] - e.From[1] - .025);
     private static float DistanceToSegment(Vector3 p, Vector3 a, Vector3 b) {
         var d = b - a;

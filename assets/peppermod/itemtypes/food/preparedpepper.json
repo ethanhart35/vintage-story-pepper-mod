@@ -100,9 +100,9 @@
       },
       "onDisplayTransform": {
         "translation": {
-          "x": -0.0059731250000000236,
-          "y": -0.4262125,
-          "z": -0.023755252001361082
+          "x": -0.0007252831531872667,
+          "y": -0.4148591243390282,
+          "z": -0.03640913338581455
         },
         "rotation": {
           "x": 90,
@@ -114,7 +114,7 @@
           "y": 0.5,
           "z": 0.5
         },
-        "scale": 0.5
+        "scale": 0.6385365393908365
       }
     },
     "preparedpepper-baked-serrano": {
@@ -346,9 +346,9 @@
       },
       "onDisplayTransform": {
         "translation": {
-          "x": -0.0059731250000000236,
-          "y": -0.4262125,
-          "z": -0.023755252001361082
+          "x": -0.0007252831531872667,
+          "y": -0.4148591243390282,
+          "z": -0.03640913338581455
         },
         "rotation": {
           "x": 90,
@@ -360,7 +360,7 @@
           "y": 0.5,
           "z": 0.5
         },
-        "scale": 0.5
+        "scale": 0.6385365393908365
       }
     },
     "preparedpepper-dried-serrano": {
@@ -899,5 +899,23 @@
         "transitionRatio": 0.25
       }
     ]
+  },
+  "texturesByType": {
+    "*-habanero": {
+      "base": {
+        "base": "block/plant/habanero/pepper"
+      },
+      "stem": {
+        "base": "block/plant/habanero/stem"
+      }
+    },
+    "*": {
+      "base": {
+        "base": "item/food/prepared/pepper-skins"
+      },
+      "stem": {
+        "base": "block/plant/{type}/stem"
+      }
+    }
   }
 }

@@ -7,7 +7,7 @@
   "textureWidth": 16,
   "textureHeight": 16,
   "textures": {
-    "base": "item/food/prepared/pepper-skins",
+    "base": "block/plant/habanero/pepper",
     "stem": "block/plant/habanero/stem"
   },
   "textureSizes": {
@@ -51,14 +51,14 @@
     {
       "name": "Pepper-fruit-1-core",
       "from": [
-        7.16525,
-        9.896,
-        7.23227
+        7.12392,
+        9.962,
+        7.22767
       ],
       "to": [
-        8.83475,
+        8.97352,
         10.55,
-        8.76773
+        8.80527
       ],
       "rotationOrigin": [
         8,
@@ -76,10 +76,10 @@
         "north": {
           "texture": "#base",
           "uv": [
-            9.04,
-            8.63036,
-            15.6704,
-            9.46286
+            8.65,
+            8.65,
+            10.4996,
+            9.238
           ],
           "enabled": true,
           "autoUv": false,
@@ -94,10 +94,10 @@
         "east": {
           "texture": "#base",
           "uv": [
-            9.04,
-            8.63036,
-            15.6704,
-            9.46286
+            8.65,
+            8.65,
+            10.2276,
+            9.238
           ],
           "enabled": true,
           "autoUv": false,
@@ -112,10 +112,10 @@
         "south": {
           "texture": "#base",
           "uv": [
-            9.04,
-            8.63036,
-            15.6704,
-            9.46286
+            8.65,
+            8.65,
+            10.4996,
+            9.238
           ],
           "enabled": true,
           "autoUv": false,
@@ -130,10 +130,10 @@
         "west": {
           "texture": "#base",
           "uv": [
-            9.04,
-            8.63036,
-            15.6704,
-            9.46286
+            8.65,
+            8.65,
+            10.2276,
+            9.238
           ],
           "enabled": true,
           "autoUv": false,
@@ -148,10 +148,10 @@
         "up": {
           "texture": "#base",
           "uv": [
-            11.01333,
-            10.21607,
-            14.2496,
-            12
+            8.65,
+            8.65,
+            10.4996,
+            10.2276
           ],
           "enabled": true,
           "autoUv": false,
@@ -166,578 +166,10 @@
         "down": {
           "texture": "#base",
           "uv": [
-            10.85547,
-            13.25536,
-            14.32853,
-            15.2375
-          ],
-          "enabled": true,
-          "autoUv": false,
-          "snapUV": false,
-          "windMode": [
-            0,
-            0,
-            0,
-            0
-          ]
-        }
-      },
-      "children": [],
-      "stepParentName": "HabaneroItemRoot",
-      "renderPass": -1,
-      "uv": [
-        0,
-        0
-      ]
-    },
-    {
-      "name": "Pepper-fruit-1-left",
-      "from": [
-        6.8075,
-        9.896,
-        7.35677
-      ],
-      "to": [
-        7.1891,
-        10.55,
-        8.60174
-      ],
-      "rotationOrigin": [
-        8,
-        10.55,
-        8
-      ],
-      "rotationX": 0,
-      "rotationY": 0,
-      "rotationZ": 0,
-      "shade": true,
-      "scaleX": 1,
-      "scaleY": 1,
-      "scaleZ": 1,
-      "faces": {
-        "north": {
-          "texture": "#base",
-          "uv": [
-            9.04,
-            8.63036,
-            15.6704,
-            9.46286
-          ],
-          "enabled": true,
-          "autoUv": false,
-          "snapUV": false,
-          "windMode": [
-            0,
-            0,
-            0,
-            0
-          ]
-        },
-        "east": {
-          "texture": "#base",
-          "uv": [
-            9.04,
-            8.63036,
-            15.6704,
-            9.46286
-          ],
-          "enabled": true,
-          "autoUv": false,
-          "snapUV": false,
-          "windMode": [
-            0,
-            0,
-            0,
-            0
-          ]
-        },
-        "south": {
-          "texture": "#base",
-          "uv": [
-            9.04,
-            8.63036,
-            15.6704,
-            9.46286
-          ],
-          "enabled": true,
-          "autoUv": false,
-          "snapUV": false,
-          "windMode": [
-            0,
-            0,
-            0,
-            0
-          ]
-        },
-        "west": {
-          "texture": "#base",
-          "uv": [
-            9.04,
-            8.63036,
-            15.6704,
-            9.46286
-          ],
-          "enabled": true,
-          "autoUv": false,
-          "snapUV": false,
-          "windMode": [
-            0,
-            0,
-            0,
-            0
-          ]
-        },
-        "up": {
-          "texture": "#base",
-          "uv": [
-            11.01333,
-            10.21607,
-            14.2496,
-            12
-          ],
-          "enabled": true,
-          "autoUv": false,
-          "snapUV": false,
-          "windMode": [
-            0,
-            0,
-            0,
-            0
-          ]
-        },
-        "down": {
-          "texture": "#base",
-          "uv": [
-            10.85547,
-            13.25536,
-            14.32853,
-            15.2375
-          ],
-          "enabled": true,
-          "autoUv": false,
-          "snapUV": false,
-          "windMode": [
-            0,
-            0,
-            0,
-            0
-          ]
-        }
-      },
-      "children": [],
-      "stepParentName": "HabaneroItemRoot",
-      "renderPass": -1,
-      "uv": [
-        0,
-        0
-      ]
-    },
-    {
-      "name": "Pepper-fruit-1-right",
-      "from": [
-        8.8109,
-        9.896,
-        7.41901
-      ],
-      "to": [
-        9.16865,
-        10.55,
-        8.66398
-      ],
-      "rotationOrigin": [
-        8,
-        10.55,
-        8
-      ],
-      "rotationX": 0,
-      "rotationY": 0,
-      "rotationZ": 0,
-      "shade": true,
-      "scaleX": 1,
-      "scaleY": 1,
-      "scaleZ": 1,
-      "faces": {
-        "north": {
-          "texture": "#base",
-          "uv": [
-            9.04,
-            8.63036,
-            15.6704,
-            9.46286
-          ],
-          "enabled": true,
-          "autoUv": false,
-          "snapUV": false,
-          "windMode": [
-            0,
-            0,
-            0,
-            0
-          ]
-        },
-        "east": {
-          "texture": "#base",
-          "uv": [
-            9.04,
-            8.63036,
-            15.6704,
-            9.46286
-          ],
-          "enabled": true,
-          "autoUv": false,
-          "snapUV": false,
-          "windMode": [
-            0,
-            0,
-            0,
-            0
-          ]
-        },
-        "south": {
-          "texture": "#base",
-          "uv": [
-            9.04,
-            8.63036,
-            15.6704,
-            9.46286
-          ],
-          "enabled": true,
-          "autoUv": false,
-          "snapUV": false,
-          "windMode": [
-            0,
-            0,
-            0,
-            0
-          ]
-        },
-        "west": {
-          "texture": "#base",
-          "uv": [
-            9.04,
-            8.63036,
-            15.6704,
-            9.46286
-          ],
-          "enabled": true,
-          "autoUv": false,
-          "snapUV": false,
-          "windMode": [
-            0,
-            0,
-            0,
-            0
-          ]
-        },
-        "up": {
-          "texture": "#base",
-          "uv": [
-            11.01333,
-            10.21607,
-            14.2496,
-            12
-          ],
-          "enabled": true,
-          "autoUv": false,
-          "snapUV": false,
-          "windMode": [
-            0,
-            0,
-            0,
-            0
-          ]
-        },
-        "down": {
-          "texture": "#base",
-          "uv": [
-            10.85547,
-            13.25536,
-            14.32853,
-            15.2375
-          ],
-          "enabled": true,
-          "autoUv": false,
-          "snapUV": false,
-          "windMode": [
-            0,
-            0,
-            0,
-            0
-          ]
-        }
-      },
-      "children": [],
-      "stepParentName": "HabaneroItemRoot",
-      "renderPass": -1,
-      "uv": [
-        0,
-        0
-      ]
-    },
-    {
-      "name": "Pepper-fruit-1-front",
-      "from": [
-        7.2368,
-        9.896,
-        6.98327
-      ],
-      "to": [
-        8.78705,
-        10.55,
-        7.25302
-      ],
-      "rotationOrigin": [
-        8,
-        10.55,
-        8
-      ],
-      "rotationX": 0,
-      "rotationY": 0,
-      "rotationZ": 0,
-      "shade": true,
-      "scaleX": 1,
-      "scaleY": 1,
-      "scaleZ": 1,
-      "faces": {
-        "north": {
-          "texture": "#base",
-          "uv": [
-            9.04,
-            8.63036,
-            15.6704,
-            9.46286
-          ],
-          "enabled": true,
-          "autoUv": false,
-          "snapUV": false,
-          "windMode": [
-            0,
-            0,
-            0,
-            0
-          ]
-        },
-        "east": {
-          "texture": "#base",
-          "uv": [
-            9.04,
-            8.63036,
-            15.6704,
-            9.46286
-          ],
-          "enabled": true,
-          "autoUv": false,
-          "snapUV": false,
-          "windMode": [
-            0,
-            0,
-            0,
-            0
-          ]
-        },
-        "south": {
-          "texture": "#base",
-          "uv": [
-            9.04,
-            8.63036,
-            15.6704,
-            9.46286
-          ],
-          "enabled": true,
-          "autoUv": false,
-          "snapUV": false,
-          "windMode": [
-            0,
-            0,
-            0,
-            0
-          ]
-        },
-        "west": {
-          "texture": "#base",
-          "uv": [
-            9.04,
-            8.63036,
-            15.6704,
-            9.46286
-          ],
-          "enabled": true,
-          "autoUv": false,
-          "snapUV": false,
-          "windMode": [
-            0,
-            0,
-            0,
-            0
-          ]
-        },
-        "up": {
-          "texture": "#base",
-          "uv": [
-            11.01333,
-            10.21607,
-            14.2496,
-            12
-          ],
-          "enabled": true,
-          "autoUv": false,
-          "snapUV": false,
-          "windMode": [
-            0,
-            0,
-            0,
-            0
-          ]
-        },
-        "down": {
-          "texture": "#base",
-          "uv": [
-            10.85547,
-            13.25536,
-            14.32853,
-            15.2375
-          ],
-          "enabled": true,
-          "autoUv": false,
-          "snapUV": false,
-          "windMode": [
-            0,
-            0,
-            0,
-            0
-          ]
-        }
-      },
-      "children": [],
-      "stepParentName": "HabaneroItemRoot",
-      "renderPass": -1,
-      "uv": [
-        0,
-        0
-      ]
-    },
-    {
-      "name": "Pepper-fruit-1-back",
-      "from": [
-        7.30835,
-        9.896,
-        8.74698
-      ],
-      "to": [
-        8.73935,
-        10.55,
-        8.99598
-      ],
-      "rotationOrigin": [
-        8,
-        10.55,
-        8
-      ],
-      "rotationX": 0,
-      "rotationY": 0,
-      "rotationZ": 0,
-      "shade": true,
-      "scaleX": 1,
-      "scaleY": 1,
-      "scaleZ": 1,
-      "faces": {
-        "north": {
-          "texture": "#base",
-          "uv": [
-            9.04,
-            8.63036,
-            15.6704,
-            9.46286
-          ],
-          "enabled": true,
-          "autoUv": false,
-          "snapUV": false,
-          "windMode": [
-            0,
-            0,
-            0,
-            0
-          ]
-        },
-        "east": {
-          "texture": "#base",
-          "uv": [
-            9.04,
-            8.63036,
-            15.6704,
-            9.46286
-          ],
-          "enabled": true,
-          "autoUv": false,
-          "snapUV": false,
-          "windMode": [
-            0,
-            0,
-            0,
-            0
-          ]
-        },
-        "south": {
-          "texture": "#base",
-          "uv": [
-            9.04,
-            8.63036,
-            15.6704,
-            9.46286
-          ],
-          "enabled": true,
-          "autoUv": false,
-          "snapUV": false,
-          "windMode": [
-            0,
-            0,
-            0,
-            0
-          ]
-        },
-        "west": {
-          "texture": "#base",
-          "uv": [
-            9.04,
-            8.63036,
-            15.6704,
-            9.46286
-          ],
-          "enabled": true,
-          "autoUv": false,
-          "snapUV": false,
-          "windMode": [
-            0,
-            0,
-            0,
-            0
-          ]
-        },
-        "up": {
-          "texture": "#base",
-          "uv": [
-            11.01333,
-            10.21607,
-            14.2496,
-            12
-          ],
-          "enabled": true,
-          "autoUv": false,
-          "snapUV": false,
-          "windMode": [
-            0,
-            0,
-            0,
-            0
-          ]
-        },
-        "down": {
-          "texture": "#base",
-          "uv": [
-            10.85547,
-            13.25536,
-            14.32853,
-            15.2375
+            8.65,
+            8.65,
+            10.4996,
+            10.2276
           ],
           "enabled": true,
           "autoUv": false,
@@ -761,14 +193,14 @@
     {
       "name": "Pepper-fruit-2-core",
       "from": [
-        6.91519,
-        9.242,
-        6.90965
+        6.78914,
+        9.227,
+        6.96281
       ],
       "to": [
-        9.40369,
-        10.005,
-        9.19835
+        9.32055,
+        10.06,
+        9.12196
       ],
       "rotationOrigin": [
         8,
@@ -786,10 +218,10 @@
         "north": {
           "texture": "#base",
           "uv": [
-            9.04,
-            9.32411,
-            15.6704,
-            10.29536
+            8.89,
+            8.82,
+            11.42141,
+            9.653
           ],
           "enabled": true,
           "autoUv": false,
@@ -804,10 +236,10 @@
         "east": {
           "texture": "#base",
           "uv": [
-            9.04,
-            9.32411,
-            15.6704,
-            10.29536
+            8.89,
+            8.82,
+            11.04915,
+            9.653
           ],
           "enabled": true,
           "autoUv": false,
@@ -822,10 +254,10 @@
         "south": {
           "texture": "#base",
           "uv": [
-            9.04,
-            9.32411,
-            15.6704,
-            10.29536
+            8.89,
+            8.82,
+            11.42141,
+            9.653
           ],
           "enabled": true,
           "autoUv": false,
@@ -840,10 +272,10 @@
         "west": {
           "texture": "#base",
           "uv": [
-            9.04,
-            9.32411,
-            15.6704,
-            10.29536
+            8.89,
+            8.82,
+            11.04915,
+            9.653
           ],
           "enabled": true,
           "autoUv": false,
@@ -858,10 +290,10 @@
         "up": {
           "texture": "#base",
           "uv": [
-            11.01333,
-            10.21607,
-            14.2496,
-            12
+            8.89,
+            8.82,
+            11.42141,
+            10.97915
           ],
           "enabled": true,
           "autoUv": false,
@@ -876,578 +308,10 @@
         "down": {
           "texture": "#base",
           "uv": [
-            10.85547,
-            13.25536,
-            14.32853,
-            15.2375
-          ],
-          "enabled": true,
-          "autoUv": false,
-          "snapUV": false,
-          "windMode": [
-            0,
-            0,
-            0,
-            0
-          ]
-        }
-      },
-      "children": [],
-      "stepParentName": "HabaneroItemRoot",
-      "renderPass": -1,
-      "uv": [
-        0,
-        0
-      ]
-    },
-    {
-      "name": "Pepper-fruit-2-left",
-      "from": [
-        6.38194,
-        9.242,
-        7.09522
-      ],
-      "to": [
-        6.95074,
-        10.005,
-        8.95093
-      ],
-      "rotationOrigin": [
-        8,
-        10.55,
-        8
-      ],
-      "rotationX": 0,
-      "rotationY": 0,
-      "rotationZ": 0,
-      "shade": true,
-      "scaleX": 1,
-      "scaleY": 1,
-      "scaleZ": 1,
-      "faces": {
-        "north": {
-          "texture": "#base",
-          "uv": [
-            9.04,
-            9.32411,
-            15.6704,
-            10.29536
-          ],
-          "enabled": true,
-          "autoUv": false,
-          "snapUV": false,
-          "windMode": [
-            0,
-            0,
-            0,
-            0
-          ]
-        },
-        "east": {
-          "texture": "#base",
-          "uv": [
-            9.04,
-            9.32411,
-            15.6704,
-            10.29536
-          ],
-          "enabled": true,
-          "autoUv": false,
-          "snapUV": false,
-          "windMode": [
-            0,
-            0,
-            0,
-            0
-          ]
-        },
-        "south": {
-          "texture": "#base",
-          "uv": [
-            9.04,
-            9.32411,
-            15.6704,
-            10.29536
-          ],
-          "enabled": true,
-          "autoUv": false,
-          "snapUV": false,
-          "windMode": [
-            0,
-            0,
-            0,
-            0
-          ]
-        },
-        "west": {
-          "texture": "#base",
-          "uv": [
-            9.04,
-            9.32411,
-            15.6704,
-            10.29536
-          ],
-          "enabled": true,
-          "autoUv": false,
-          "snapUV": false,
-          "windMode": [
-            0,
-            0,
-            0,
-            0
-          ]
-        },
-        "up": {
-          "texture": "#base",
-          "uv": [
-            11.01333,
-            10.21607,
-            14.2496,
-            12
-          ],
-          "enabled": true,
-          "autoUv": false,
-          "snapUV": false,
-          "windMode": [
-            0,
-            0,
-            0,
-            0
-          ]
-        },
-        "down": {
-          "texture": "#base",
-          "uv": [
-            10.85547,
-            13.25536,
-            14.32853,
-            15.2375
-          ],
-          "enabled": true,
-          "autoUv": false,
-          "snapUV": false,
-          "windMode": [
-            0,
-            0,
-            0,
-            0
-          ]
-        }
-      },
-      "children": [],
-      "stepParentName": "HabaneroItemRoot",
-      "renderPass": -1,
-      "uv": [
-        0,
-        0
-      ]
-    },
-    {
-      "name": "Pepper-fruit-2-right",
-      "from": [
-        9.36814,
-        9.242,
-        7.188
-      ],
-      "to": [
-        9.90139,
-        10.005,
-        9.04371
-      ],
-      "rotationOrigin": [
-        8,
-        10.55,
-        8
-      ],
-      "rotationX": 0,
-      "rotationY": 0,
-      "rotationZ": 0,
-      "shade": true,
-      "scaleX": 1,
-      "scaleY": 1,
-      "scaleZ": 1,
-      "faces": {
-        "north": {
-          "texture": "#base",
-          "uv": [
-            9.04,
-            9.32411,
-            15.6704,
-            10.29536
-          ],
-          "enabled": true,
-          "autoUv": false,
-          "snapUV": false,
-          "windMode": [
-            0,
-            0,
-            0,
-            0
-          ]
-        },
-        "east": {
-          "texture": "#base",
-          "uv": [
-            9.04,
-            9.32411,
-            15.6704,
-            10.29536
-          ],
-          "enabled": true,
-          "autoUv": false,
-          "snapUV": false,
-          "windMode": [
-            0,
-            0,
-            0,
-            0
-          ]
-        },
-        "south": {
-          "texture": "#base",
-          "uv": [
-            9.04,
-            9.32411,
-            15.6704,
-            10.29536
-          ],
-          "enabled": true,
-          "autoUv": false,
-          "snapUV": false,
-          "windMode": [
-            0,
-            0,
-            0,
-            0
-          ]
-        },
-        "west": {
-          "texture": "#base",
-          "uv": [
-            9.04,
-            9.32411,
-            15.6704,
-            10.29536
-          ],
-          "enabled": true,
-          "autoUv": false,
-          "snapUV": false,
-          "windMode": [
-            0,
-            0,
-            0,
-            0
-          ]
-        },
-        "up": {
-          "texture": "#base",
-          "uv": [
-            11.01333,
-            10.21607,
-            14.2496,
-            12
-          ],
-          "enabled": true,
-          "autoUv": false,
-          "snapUV": false,
-          "windMode": [
-            0,
-            0,
-            0,
-            0
-          ]
-        },
-        "down": {
-          "texture": "#base",
-          "uv": [
-            10.85547,
-            13.25536,
-            14.32853,
-            15.2375
-          ],
-          "enabled": true,
-          "autoUv": false,
-          "snapUV": false,
-          "windMode": [
-            0,
-            0,
-            0,
-            0
-          ]
-        }
-      },
-      "children": [],
-      "stepParentName": "HabaneroItemRoot",
-      "renderPass": -1,
-      "uv": [
-        0,
-        0
-      ]
-    },
-    {
-      "name": "Pepper-fruit-2-front",
-      "from": [
-        7.02184,
-        9.242,
-        6.5385
-      ],
-      "to": [
-        9.33259,
-        10.005,
-        6.94057
-      ],
-      "rotationOrigin": [
-        8,
-        10.55,
-        8
-      ],
-      "rotationX": 0,
-      "rotationY": 0,
-      "rotationZ": 0,
-      "shade": true,
-      "scaleX": 1,
-      "scaleY": 1,
-      "scaleZ": 1,
-      "faces": {
-        "north": {
-          "texture": "#base",
-          "uv": [
-            9.04,
-            9.32411,
-            15.6704,
-            10.29536
-          ],
-          "enabled": true,
-          "autoUv": false,
-          "snapUV": false,
-          "windMode": [
-            0,
-            0,
-            0,
-            0
-          ]
-        },
-        "east": {
-          "texture": "#base",
-          "uv": [
-            9.04,
-            9.32411,
-            15.6704,
-            10.29536
-          ],
-          "enabled": true,
-          "autoUv": false,
-          "snapUV": false,
-          "windMode": [
-            0,
-            0,
-            0,
-            0
-          ]
-        },
-        "south": {
-          "texture": "#base",
-          "uv": [
-            9.04,
-            9.32411,
-            15.6704,
-            10.29536
-          ],
-          "enabled": true,
-          "autoUv": false,
-          "snapUV": false,
-          "windMode": [
-            0,
-            0,
-            0,
-            0
-          ]
-        },
-        "west": {
-          "texture": "#base",
-          "uv": [
-            9.04,
-            9.32411,
-            15.6704,
-            10.29536
-          ],
-          "enabled": true,
-          "autoUv": false,
-          "snapUV": false,
-          "windMode": [
-            0,
-            0,
-            0,
-            0
-          ]
-        },
-        "up": {
-          "texture": "#base",
-          "uv": [
-            11.01333,
-            10.21607,
-            14.2496,
-            12
-          ],
-          "enabled": true,
-          "autoUv": false,
-          "snapUV": false,
-          "windMode": [
-            0,
-            0,
-            0,
-            0
-          ]
-        },
-        "down": {
-          "texture": "#base",
-          "uv": [
-            10.85547,
-            13.25536,
-            14.32853,
-            15.2375
-          ],
-          "enabled": true,
-          "autoUv": false,
-          "snapUV": false,
-          "windMode": [
-            0,
-            0,
-            0,
-            0
-          ]
-        }
-      },
-      "children": [],
-      "stepParentName": "HabaneroItemRoot",
-      "renderPass": -1,
-      "uv": [
-        0,
-        0
-      ]
-    },
-    {
-      "name": "Pepper-fruit-2-back",
-      "from": [
-        7.12849,
-        9.242,
-        9.16743
-      ],
-      "to": [
-        9.26149,
-        10.005,
-        9.53857
-      ],
-      "rotationOrigin": [
-        8,
-        10.55,
-        8
-      ],
-      "rotationX": 0,
-      "rotationY": 0,
-      "rotationZ": 0,
-      "shade": true,
-      "scaleX": 1,
-      "scaleY": 1,
-      "scaleZ": 1,
-      "faces": {
-        "north": {
-          "texture": "#base",
-          "uv": [
-            9.04,
-            9.32411,
-            15.6704,
-            10.29536
-          ],
-          "enabled": true,
-          "autoUv": false,
-          "snapUV": false,
-          "windMode": [
-            0,
-            0,
-            0,
-            0
-          ]
-        },
-        "east": {
-          "texture": "#base",
-          "uv": [
-            9.04,
-            9.32411,
-            15.6704,
-            10.29536
-          ],
-          "enabled": true,
-          "autoUv": false,
-          "snapUV": false,
-          "windMode": [
-            0,
-            0,
-            0,
-            0
-          ]
-        },
-        "south": {
-          "texture": "#base",
-          "uv": [
-            9.04,
-            9.32411,
-            15.6704,
-            10.29536
-          ],
-          "enabled": true,
-          "autoUv": false,
-          "snapUV": false,
-          "windMode": [
-            0,
-            0,
-            0,
-            0
-          ]
-        },
-        "west": {
-          "texture": "#base",
-          "uv": [
-            9.04,
-            9.32411,
-            15.6704,
-            10.29536
-          ],
-          "enabled": true,
-          "autoUv": false,
-          "snapUV": false,
-          "windMode": [
-            0,
-            0,
-            0,
-            0
-          ]
-        },
-        "up": {
-          "texture": "#base",
-          "uv": [
-            11.01333,
-            10.21607,
-            14.2496,
-            12
-          ],
-          "enabled": true,
-          "autoUv": false,
-          "snapUV": false,
-          "windMode": [
-            0,
-            0,
-            0,
-            0
-          ]
-        },
-        "down": {
-          "texture": "#base",
-          "uv": [
-            10.85547,
-            13.25536,
-            14.32853,
-            15.2375
+            8.89,
+            8.82,
+            11.42141,
+            10.97915
           ],
           "enabled": true,
           "autoUv": false,
@@ -1471,14 +335,14 @@
     {
       "name": "Pepper-fruit-3-core",
       "from": [
-        6.7319,
-        8.37,
-        6.71739
+        6.74272,
+        8.345,
+        6.91468
       ],
       "to": [
-        9.7559,
-        9.351,
-        9.49861
+        9.40228,
+        9.325,
+        9.18312
       ],
       "rotationOrigin": [
         8,
@@ -1496,10 +360,10 @@
         "north": {
           "texture": "#base",
           "uv": [
-            9.04,
-            10.15661,
-            15.6704,
-            11.40536
+            9.13,
+            8.99,
+            11.78956,
+            9.97
           ],
           "enabled": true,
           "autoUv": false,
@@ -1514,10 +378,10 @@
         "east": {
           "texture": "#base",
           "uv": [
-            9.04,
-            10.15661,
-            15.6704,
-            11.40536
+            9.13,
+            8.99,
+            11.39844,
+            9.97
           ],
           "enabled": true,
           "autoUv": false,
@@ -1532,10 +396,10 @@
         "south": {
           "texture": "#base",
           "uv": [
-            9.04,
-            10.15661,
-            15.6704,
-            11.40536
+            9.13,
+            8.99,
+            11.78956,
+            9.97
           ],
           "enabled": true,
           "autoUv": false,
@@ -1550,10 +414,10 @@
         "west": {
           "texture": "#base",
           "uv": [
-            9.04,
-            10.15661,
-            15.6704,
-            11.40536
+            9.13,
+            8.99,
+            11.39844,
+            9.97
           ],
           "enabled": true,
           "autoUv": false,
@@ -1568,10 +432,10 @@
         "up": {
           "texture": "#base",
           "uv": [
-            11.01333,
-            10.21607,
-            14.2496,
-            12
+            9.13,
+            8.99,
+            11.78956,
+            11.25844
           ],
           "enabled": true,
           "autoUv": false,
@@ -1586,578 +450,10 @@
         "down": {
           "texture": "#base",
           "uv": [
-            10.85547,
-            13.25536,
-            14.32853,
-            15.2375
-          ],
-          "enabled": true,
-          "autoUv": false,
-          "snapUV": false,
-          "windMode": [
-            0,
-            0,
-            0,
-            0
-          ]
-        }
-      },
-      "children": [],
-      "stepParentName": "HabaneroItemRoot",
-      "renderPass": -1,
-      "uv": [
-        0,
-        0
-      ]
-    },
-    {
-      "name": "Pepper-fruit-3-left",
-      "from": [
-        6.0839,
-        8.37,
-        6.9429
-      ],
-      "to": [
-        6.7751,
-        9.351,
-        9.19794
-      ],
-      "rotationOrigin": [
-        8,
-        10.55,
-        8
-      ],
-      "rotationX": 0,
-      "rotationY": 0,
-      "rotationZ": 0,
-      "shade": true,
-      "scaleX": 1,
-      "scaleY": 1,
-      "scaleZ": 1,
-      "faces": {
-        "north": {
-          "texture": "#base",
-          "uv": [
-            9.04,
-            10.15661,
-            15.6704,
-            11.40536
-          ],
-          "enabled": true,
-          "autoUv": false,
-          "snapUV": false,
-          "windMode": [
-            0,
-            0,
-            0,
-            0
-          ]
-        },
-        "east": {
-          "texture": "#base",
-          "uv": [
-            9.04,
-            10.15661,
-            15.6704,
-            11.40536
-          ],
-          "enabled": true,
-          "autoUv": false,
-          "snapUV": false,
-          "windMode": [
-            0,
-            0,
-            0,
-            0
-          ]
-        },
-        "south": {
-          "texture": "#base",
-          "uv": [
-            9.04,
-            10.15661,
-            15.6704,
-            11.40536
-          ],
-          "enabled": true,
-          "autoUv": false,
-          "snapUV": false,
-          "windMode": [
-            0,
-            0,
-            0,
-            0
-          ]
-        },
-        "west": {
-          "texture": "#base",
-          "uv": [
-            9.04,
-            10.15661,
-            15.6704,
-            11.40536
-          ],
-          "enabled": true,
-          "autoUv": false,
-          "snapUV": false,
-          "windMode": [
-            0,
-            0,
-            0,
-            0
-          ]
-        },
-        "up": {
-          "texture": "#base",
-          "uv": [
-            11.01333,
-            10.21607,
-            14.2496,
-            12
-          ],
-          "enabled": true,
-          "autoUv": false,
-          "snapUV": false,
-          "windMode": [
-            0,
-            0,
-            0,
-            0
-          ]
-        },
-        "down": {
-          "texture": "#base",
-          "uv": [
-            10.85547,
-            13.25536,
-            14.32853,
-            15.2375
-          ],
-          "enabled": true,
-          "autoUv": false,
-          "snapUV": false,
-          "windMode": [
-            0,
-            0,
-            0,
-            0
-          ]
-        }
-      },
-      "children": [],
-      "stepParentName": "HabaneroItemRoot",
-      "renderPass": -1,
-      "uv": [
-        0,
-        0
-      ]
-    },
-    {
-      "name": "Pepper-fruit-3-right",
-      "from": [
-        9.7127,
-        8.37,
-        7.05565
-      ],
-      "to": [
-        10.3607,
-        9.351,
-        9.31069
-      ],
-      "rotationOrigin": [
-        8,
-        10.55,
-        8
-      ],
-      "rotationX": 0,
-      "rotationY": 0,
-      "rotationZ": 0,
-      "shade": true,
-      "scaleX": 1,
-      "scaleY": 1,
-      "scaleZ": 1,
-      "faces": {
-        "north": {
-          "texture": "#base",
-          "uv": [
-            9.04,
-            10.15661,
-            15.6704,
-            11.40536
-          ],
-          "enabled": true,
-          "autoUv": false,
-          "snapUV": false,
-          "windMode": [
-            0,
-            0,
-            0,
-            0
-          ]
-        },
-        "east": {
-          "texture": "#base",
-          "uv": [
-            9.04,
-            10.15661,
-            15.6704,
-            11.40536
-          ],
-          "enabled": true,
-          "autoUv": false,
-          "snapUV": false,
-          "windMode": [
-            0,
-            0,
-            0,
-            0
-          ]
-        },
-        "south": {
-          "texture": "#base",
-          "uv": [
-            9.04,
-            10.15661,
-            15.6704,
-            11.40536
-          ],
-          "enabled": true,
-          "autoUv": false,
-          "snapUV": false,
-          "windMode": [
-            0,
-            0,
-            0,
-            0
-          ]
-        },
-        "west": {
-          "texture": "#base",
-          "uv": [
-            9.04,
-            10.15661,
-            15.6704,
-            11.40536
-          ],
-          "enabled": true,
-          "autoUv": false,
-          "snapUV": false,
-          "windMode": [
-            0,
-            0,
-            0,
-            0
-          ]
-        },
-        "up": {
-          "texture": "#base",
-          "uv": [
-            11.01333,
-            10.21607,
-            14.2496,
-            12
-          ],
-          "enabled": true,
-          "autoUv": false,
-          "snapUV": false,
-          "windMode": [
-            0,
-            0,
-            0,
-            0
-          ]
-        },
-        "down": {
-          "texture": "#base",
-          "uv": [
-            10.85547,
-            13.25536,
-            14.32853,
-            15.2375
-          ],
-          "enabled": true,
-          "autoUv": false,
-          "snapUV": false,
-          "windMode": [
-            0,
-            0,
-            0,
-            0
-          ]
-        }
-      },
-      "children": [],
-      "stepParentName": "HabaneroItemRoot",
-      "renderPass": -1,
-      "uv": [
-        0,
-        0
-      ]
-    },
-    {
-      "name": "Pepper-fruit-3-front",
-      "from": [
-        6.8615,
-        8.37,
-        6.26638
-      ],
-      "to": [
-        9.6695,
-        9.351,
-        6.75498
-      ],
-      "rotationOrigin": [
-        8,
-        10.55,
-        8
-      ],
-      "rotationX": 0,
-      "rotationY": 0,
-      "rotationZ": 0,
-      "shade": true,
-      "scaleX": 1,
-      "scaleY": 1,
-      "scaleZ": 1,
-      "faces": {
-        "north": {
-          "texture": "#base",
-          "uv": [
-            9.04,
-            10.15661,
-            15.6704,
-            11.40536
-          ],
-          "enabled": true,
-          "autoUv": false,
-          "snapUV": false,
-          "windMode": [
-            0,
-            0,
-            0,
-            0
-          ]
-        },
-        "east": {
-          "texture": "#base",
-          "uv": [
-            9.04,
-            10.15661,
-            15.6704,
-            11.40536
-          ],
-          "enabled": true,
-          "autoUv": false,
-          "snapUV": false,
-          "windMode": [
-            0,
-            0,
-            0,
-            0
-          ]
-        },
-        "south": {
-          "texture": "#base",
-          "uv": [
-            9.04,
-            10.15661,
-            15.6704,
-            11.40536
-          ],
-          "enabled": true,
-          "autoUv": false,
-          "snapUV": false,
-          "windMode": [
-            0,
-            0,
-            0,
-            0
-          ]
-        },
-        "west": {
-          "texture": "#base",
-          "uv": [
-            9.04,
-            10.15661,
-            15.6704,
-            11.40536
-          ],
-          "enabled": true,
-          "autoUv": false,
-          "snapUV": false,
-          "windMode": [
-            0,
-            0,
-            0,
-            0
-          ]
-        },
-        "up": {
-          "texture": "#base",
-          "uv": [
-            11.01333,
-            10.21607,
-            14.2496,
-            12
-          ],
-          "enabled": true,
-          "autoUv": false,
-          "snapUV": false,
-          "windMode": [
-            0,
-            0,
-            0,
-            0
-          ]
-        },
-        "down": {
-          "texture": "#base",
-          "uv": [
-            10.85547,
-            13.25536,
-            14.32853,
-            15.2375
-          ],
-          "enabled": true,
-          "autoUv": false,
-          "snapUV": false,
-          "windMode": [
-            0,
-            0,
-            0,
-            0
-          ]
-        }
-      },
-      "children": [],
-      "stepParentName": "HabaneroItemRoot",
-      "renderPass": -1,
-      "uv": [
-        0,
-        0
-      ]
-    },
-    {
-      "name": "Pepper-fruit-3-back",
-      "from": [
-        6.9911,
-        8.37,
-        9.46102
-      ],
-      "to": [
-        9.5831,
-        9.351,
-        9.91203
-      ],
-      "rotationOrigin": [
-        8,
-        10.55,
-        8
-      ],
-      "rotationX": 0,
-      "rotationY": 0,
-      "rotationZ": 0,
-      "shade": true,
-      "scaleX": 1,
-      "scaleY": 1,
-      "scaleZ": 1,
-      "faces": {
-        "north": {
-          "texture": "#base",
-          "uv": [
-            9.04,
-            10.15661,
-            15.6704,
-            11.40536
-          ],
-          "enabled": true,
-          "autoUv": false,
-          "snapUV": false,
-          "windMode": [
-            0,
-            0,
-            0,
-            0
-          ]
-        },
-        "east": {
-          "texture": "#base",
-          "uv": [
-            9.04,
-            10.15661,
-            15.6704,
-            11.40536
-          ],
-          "enabled": true,
-          "autoUv": false,
-          "snapUV": false,
-          "windMode": [
-            0,
-            0,
-            0,
-            0
-          ]
-        },
-        "south": {
-          "texture": "#base",
-          "uv": [
-            9.04,
-            10.15661,
-            15.6704,
-            11.40536
-          ],
-          "enabled": true,
-          "autoUv": false,
-          "snapUV": false,
-          "windMode": [
-            0,
-            0,
-            0,
-            0
-          ]
-        },
-        "west": {
-          "texture": "#base",
-          "uv": [
-            9.04,
-            10.15661,
-            15.6704,
-            11.40536
-          ],
-          "enabled": true,
-          "autoUv": false,
-          "snapUV": false,
-          "windMode": [
-            0,
-            0,
-            0,
-            0
-          ]
-        },
-        "up": {
-          "texture": "#base",
-          "uv": [
-            11.01333,
-            10.21607,
-            14.2496,
-            12
-          ],
-          "enabled": true,
-          "autoUv": false,
-          "snapUV": false,
-          "windMode": [
-            0,
-            0,
-            0,
-            0
-          ]
-        },
-        "down": {
-          "texture": "#base",
-          "uv": [
-            10.85547,
-            13.25536,
-            14.32853,
-            15.2375
+            9.13,
+            8.99,
+            11.78956,
+            11.25844
           ],
           "enabled": true,
           "autoUv": false,
@@ -2181,14 +477,14 @@
     {
       "name": "Pepper-fruit-4-core",
       "from": [
-        6.63864,
-        7.171,
-        6.71345
+        6.88872,
+        7.512,
+        6.97673
       ],
       "to": [
-        9.78864,
-        8.479,
-        9.61055
+        9.31752,
+        8.443,
+        9.04835
       ],
       "rotationOrigin": [
         8,
@@ -2206,10 +502,10 @@
         "north": {
           "texture": "#base",
           "uv": [
-            9.04,
-            11.26661,
-            15.6704,
-            12.93161
+            9.37,
+            9.16,
+            11.7988,
+            10.091
           ],
           "enabled": true,
           "autoUv": false,
@@ -2224,10 +520,10 @@
         "east": {
           "texture": "#base",
           "uv": [
-            9.04,
-            11.26661,
-            15.6704,
-            12.93161
+            9.37,
+            9.16,
+            11.44162,
+            10.091
           ],
           "enabled": true,
           "autoUv": false,
@@ -2242,10 +538,10 @@
         "south": {
           "texture": "#base",
           "uv": [
-            9.04,
-            11.26661,
-            15.6704,
-            12.93161
+            9.37,
+            9.16,
+            11.7988,
+            10.091
           ],
           "enabled": true,
           "autoUv": false,
@@ -2260,10 +556,10 @@
         "west": {
           "texture": "#base",
           "uv": [
-            9.04,
-            11.26661,
-            15.6704,
-            12.93161
+            9.37,
+            9.16,
+            11.44162,
+            10.091
           ],
           "enabled": true,
           "autoUv": false,
@@ -2278,10 +574,10 @@
         "up": {
           "texture": "#base",
           "uv": [
-            11.01333,
-            10.21607,
-            14.2496,
-            12
+            9.37,
+            9.16,
+            11.7988,
+            11.23162
           ],
           "enabled": true,
           "autoUv": false,
@@ -2296,578 +592,10 @@
         "down": {
           "texture": "#base",
           "uv": [
-            10.85547,
-            13.25536,
-            14.32853,
-            15.2375
-          ],
-          "enabled": true,
-          "autoUv": false,
-          "snapUV": false,
-          "windMode": [
-            0,
-            0,
-            0,
-            0
-          ]
-        }
-      },
-      "children": [],
-      "stepParentName": "HabaneroItemRoot",
-      "renderPass": -1,
-      "uv": [
-        0,
-        0
-      ]
-    },
-    {
-      "name": "Pepper-fruit-4-left",
-      "from": [
-        5.96364,
-        7.171,
-        6.94835
-      ],
-      "to": [
-        6.68364,
-        8.479,
-        9.29735
-      ],
-      "rotationOrigin": [
-        8,
-        10.55,
-        8
-      ],
-      "rotationX": 0,
-      "rotationY": 0,
-      "rotationZ": 0,
-      "shade": true,
-      "scaleX": 1,
-      "scaleY": 1,
-      "scaleZ": 1,
-      "faces": {
-        "north": {
-          "texture": "#base",
-          "uv": [
-            9.04,
-            11.26661,
-            15.6704,
-            12.93161
-          ],
-          "enabled": true,
-          "autoUv": false,
-          "snapUV": false,
-          "windMode": [
-            0,
-            0,
-            0,
-            0
-          ]
-        },
-        "east": {
-          "texture": "#base",
-          "uv": [
-            9.04,
-            11.26661,
-            15.6704,
-            12.93161
-          ],
-          "enabled": true,
-          "autoUv": false,
-          "snapUV": false,
-          "windMode": [
-            0,
-            0,
-            0,
-            0
-          ]
-        },
-        "south": {
-          "texture": "#base",
-          "uv": [
-            9.04,
-            11.26661,
-            15.6704,
-            12.93161
-          ],
-          "enabled": true,
-          "autoUv": false,
-          "snapUV": false,
-          "windMode": [
-            0,
-            0,
-            0,
-            0
-          ]
-        },
-        "west": {
-          "texture": "#base",
-          "uv": [
-            9.04,
-            11.26661,
-            15.6704,
-            12.93161
-          ],
-          "enabled": true,
-          "autoUv": false,
-          "snapUV": false,
-          "windMode": [
-            0,
-            0,
-            0,
-            0
-          ]
-        },
-        "up": {
-          "texture": "#base",
-          "uv": [
-            11.01333,
-            10.21607,
-            14.2496,
-            12
-          ],
-          "enabled": true,
-          "autoUv": false,
-          "snapUV": false,
-          "windMode": [
-            0,
-            0,
-            0,
-            0
-          ]
-        },
-        "down": {
-          "texture": "#base",
-          "uv": [
-            10.85547,
-            13.25536,
-            14.32853,
-            15.2375
-          ],
-          "enabled": true,
-          "autoUv": false,
-          "snapUV": false,
-          "windMode": [
-            0,
-            0,
-            0,
-            0
-          ]
-        }
-      },
-      "children": [],
-      "stepParentName": "HabaneroItemRoot",
-      "renderPass": -1,
-      "uv": [
-        0,
-        0
-      ]
-    },
-    {
-      "name": "Pepper-fruit-4-right",
-      "from": [
-        9.74364,
-        7.171,
-        7.0658
-      ],
-      "to": [
-        10.41864,
-        8.479,
-        9.4148
-      ],
-      "rotationOrigin": [
-        8,
-        10.55,
-        8
-      ],
-      "rotationX": 0,
-      "rotationY": 0,
-      "rotationZ": 0,
-      "shade": true,
-      "scaleX": 1,
-      "scaleY": 1,
-      "scaleZ": 1,
-      "faces": {
-        "north": {
-          "texture": "#base",
-          "uv": [
-            9.04,
-            11.26661,
-            15.6704,
-            12.93161
-          ],
-          "enabled": true,
-          "autoUv": false,
-          "snapUV": false,
-          "windMode": [
-            0,
-            0,
-            0,
-            0
-          ]
-        },
-        "east": {
-          "texture": "#base",
-          "uv": [
-            9.04,
-            11.26661,
-            15.6704,
-            12.93161
-          ],
-          "enabled": true,
-          "autoUv": false,
-          "snapUV": false,
-          "windMode": [
-            0,
-            0,
-            0,
-            0
-          ]
-        },
-        "south": {
-          "texture": "#base",
-          "uv": [
-            9.04,
-            11.26661,
-            15.6704,
-            12.93161
-          ],
-          "enabled": true,
-          "autoUv": false,
-          "snapUV": false,
-          "windMode": [
-            0,
-            0,
-            0,
-            0
-          ]
-        },
-        "west": {
-          "texture": "#base",
-          "uv": [
-            9.04,
-            11.26661,
-            15.6704,
-            12.93161
-          ],
-          "enabled": true,
-          "autoUv": false,
-          "snapUV": false,
-          "windMode": [
-            0,
-            0,
-            0,
-            0
-          ]
-        },
-        "up": {
-          "texture": "#base",
-          "uv": [
-            11.01333,
-            10.21607,
-            14.2496,
-            12
-          ],
-          "enabled": true,
-          "autoUv": false,
-          "snapUV": false,
-          "windMode": [
-            0,
-            0,
-            0,
-            0
-          ]
-        },
-        "down": {
-          "texture": "#base",
-          "uv": [
-            10.85547,
-            13.25536,
-            14.32853,
-            15.2375
-          ],
-          "enabled": true,
-          "autoUv": false,
-          "snapUV": false,
-          "windMode": [
-            0,
-            0,
-            0,
-            0
-          ]
-        }
-      },
-      "children": [],
-      "stepParentName": "HabaneroItemRoot",
-      "renderPass": -1,
-      "uv": [
-        0,
-        0
-      ]
-    },
-    {
-      "name": "Pepper-fruit-4-front",
-      "from": [
-        6.77364,
-        7.171,
-        6.24365
-      ],
-      "to": [
-        9.69864,
-        8.479,
-        6.7526
-      ],
-      "rotationOrigin": [
-        8,
-        10.55,
-        8
-      ],
-      "rotationX": 0,
-      "rotationY": 0,
-      "rotationZ": 0,
-      "shade": true,
-      "scaleX": 1,
-      "scaleY": 1,
-      "scaleZ": 1,
-      "faces": {
-        "north": {
-          "texture": "#base",
-          "uv": [
-            9.04,
-            11.26661,
-            15.6704,
-            12.93161
-          ],
-          "enabled": true,
-          "autoUv": false,
-          "snapUV": false,
-          "windMode": [
-            0,
-            0,
-            0,
-            0
-          ]
-        },
-        "east": {
-          "texture": "#base",
-          "uv": [
-            9.04,
-            11.26661,
-            15.6704,
-            12.93161
-          ],
-          "enabled": true,
-          "autoUv": false,
-          "snapUV": false,
-          "windMode": [
-            0,
-            0,
-            0,
-            0
-          ]
-        },
-        "south": {
-          "texture": "#base",
-          "uv": [
-            9.04,
-            11.26661,
-            15.6704,
-            12.93161
-          ],
-          "enabled": true,
-          "autoUv": false,
-          "snapUV": false,
-          "windMode": [
-            0,
-            0,
-            0,
-            0
-          ]
-        },
-        "west": {
-          "texture": "#base",
-          "uv": [
-            9.04,
-            11.26661,
-            15.6704,
-            12.93161
-          ],
-          "enabled": true,
-          "autoUv": false,
-          "snapUV": false,
-          "windMode": [
-            0,
-            0,
-            0,
-            0
-          ]
-        },
-        "up": {
-          "texture": "#base",
-          "uv": [
-            11.01333,
-            10.21607,
-            14.2496,
-            12
-          ],
-          "enabled": true,
-          "autoUv": false,
-          "snapUV": false,
-          "windMode": [
-            0,
-            0,
-            0,
-            0
-          ]
-        },
-        "down": {
-          "texture": "#base",
-          "uv": [
-            10.85547,
-            13.25536,
-            14.32853,
-            15.2375
-          ],
-          "enabled": true,
-          "autoUv": false,
-          "snapUV": false,
-          "windMode": [
-            0,
-            0,
-            0,
-            0
-          ]
-        }
-      },
-      "children": [],
-      "stepParentName": "HabaneroItemRoot",
-      "renderPass": -1,
-      "uv": [
-        0,
-        0
-      ]
-    },
-    {
-      "name": "Pepper-fruit-4-back",
-      "from": [
-        6.90864,
-        7.171,
-        9.5714
-      ],
-      "to": [
-        9.60864,
-        8.479,
-        10.0412
-      ],
-      "rotationOrigin": [
-        8,
-        10.55,
-        8
-      ],
-      "rotationX": 0,
-      "rotationY": 0,
-      "rotationZ": 0,
-      "shade": true,
-      "scaleX": 1,
-      "scaleY": 1,
-      "scaleZ": 1,
-      "faces": {
-        "north": {
-          "texture": "#base",
-          "uv": [
-            9.04,
-            11.26661,
-            15.6704,
-            12.93161
-          ],
-          "enabled": true,
-          "autoUv": false,
-          "snapUV": false,
-          "windMode": [
-            0,
-            0,
-            0,
-            0
-          ]
-        },
-        "east": {
-          "texture": "#base",
-          "uv": [
-            9.04,
-            11.26661,
-            15.6704,
-            12.93161
-          ],
-          "enabled": true,
-          "autoUv": false,
-          "snapUV": false,
-          "windMode": [
-            0,
-            0,
-            0,
-            0
-          ]
-        },
-        "south": {
-          "texture": "#base",
-          "uv": [
-            9.04,
-            11.26661,
-            15.6704,
-            12.93161
-          ],
-          "enabled": true,
-          "autoUv": false,
-          "snapUV": false,
-          "windMode": [
-            0,
-            0,
-            0,
-            0
-          ]
-        },
-        "west": {
-          "texture": "#base",
-          "uv": [
-            9.04,
-            11.26661,
-            15.6704,
-            12.93161
-          ],
-          "enabled": true,
-          "autoUv": false,
-          "snapUV": false,
-          "windMode": [
-            0,
-            0,
-            0,
-            0
-          ]
-        },
-        "up": {
-          "texture": "#base",
-          "uv": [
-            11.01333,
-            10.21607,
-            14.2496,
-            12
-          ],
-          "enabled": true,
-          "autoUv": false,
-          "snapUV": false,
-          "windMode": [
-            0,
-            0,
-            0,
-            0
-          ]
-        },
-        "down": {
-          "texture": "#base",
-          "uv": [
-            10.85547,
-            13.25536,
-            14.32853,
-            15.2375
+            9.37,
+            9.16,
+            11.7988,
+            11.23162
           ],
           "enabled": true,
           "autoUv": false,
@@ -2891,14 +619,14 @@
     {
       "name": "Pepper-fruit-5-core",
       "from": [
-        6.74416,
-        6.299,
-        6.98473
+        7.05541,
+        6.679,
+        7.0095
       ],
       "to": [
-        9.42166,
-        7.28,
-        9.44727
+        9.23381,
+        7.61,
+        8.86755
       ],
       "rotationOrigin": [
         8,
@@ -2916,10 +644,10 @@
         "north": {
           "texture": "#base",
           "uv": [
-            9.04,
-            12.79286,
-            15.6704,
-            14.04161
+            8.65,
+            9.33,
+            10.8284,
+            10.261
           ],
           "enabled": true,
           "autoUv": false,
@@ -2934,10 +662,10 @@
         "east": {
           "texture": "#base",
           "uv": [
-            9.04,
-            12.79286,
-            15.6704,
-            14.04161
+            8.65,
+            9.33,
+            10.50805,
+            10.261
           ],
           "enabled": true,
           "autoUv": false,
@@ -2952,10 +680,10 @@
         "south": {
           "texture": "#base",
           "uv": [
-            9.04,
-            12.79286,
-            15.6704,
-            14.04161
+            8.65,
+            9.33,
+            10.8284,
+            10.261
           ],
           "enabled": true,
           "autoUv": false,
@@ -2970,10 +698,10 @@
         "west": {
           "texture": "#base",
           "uv": [
-            9.04,
-            12.79286,
-            15.6704,
-            14.04161
+            8.65,
+            9.33,
+            10.50805,
+            10.261
           ],
           "enabled": true,
           "autoUv": false,
@@ -2988,10 +716,10 @@
         "up": {
           "texture": "#base",
           "uv": [
-            11.01333,
-            10.21607,
-            14.2496,
-            12
+            8.65,
+            9.33,
+            10.8284,
+            11.18805
           ],
           "enabled": true,
           "autoUv": false,
@@ -3006,578 +734,10 @@
         "down": {
           "texture": "#base",
           "uv": [
-            10.85547,
-            13.25536,
-            14.32853,
-            15.2375
-          ],
-          "enabled": true,
-          "autoUv": false,
-          "snapUV": false,
-          "windMode": [
-            0,
-            0,
-            0,
-            0
-          ]
-        }
-      },
-      "children": [],
-      "stepParentName": "HabaneroItemRoot",
-      "renderPass": -1,
-      "uv": [
-        0,
-        0
-      ]
-    },
-    {
-      "name": "Pepper-fruit-5-left",
-      "from": [
-        6.17041,
-        6.299,
-        7.1844
-      ],
-      "to": [
-        6.78241,
-        7.28,
-        9.18105
-      ],
-      "rotationOrigin": [
-        8,
-        10.55,
-        8
-      ],
-      "rotationX": 0,
-      "rotationY": 0,
-      "rotationZ": 0,
-      "shade": true,
-      "scaleX": 1,
-      "scaleY": 1,
-      "scaleZ": 1,
-      "faces": {
-        "north": {
-          "texture": "#base",
-          "uv": [
-            9.04,
-            12.79286,
-            15.6704,
-            14.04161
-          ],
-          "enabled": true,
-          "autoUv": false,
-          "snapUV": false,
-          "windMode": [
-            0,
-            0,
-            0,
-            0
-          ]
-        },
-        "east": {
-          "texture": "#base",
-          "uv": [
-            9.04,
-            12.79286,
-            15.6704,
-            14.04161
-          ],
-          "enabled": true,
-          "autoUv": false,
-          "snapUV": false,
-          "windMode": [
-            0,
-            0,
-            0,
-            0
-          ]
-        },
-        "south": {
-          "texture": "#base",
-          "uv": [
-            9.04,
-            12.79286,
-            15.6704,
-            14.04161
-          ],
-          "enabled": true,
-          "autoUv": false,
-          "snapUV": false,
-          "windMode": [
-            0,
-            0,
-            0,
-            0
-          ]
-        },
-        "west": {
-          "texture": "#base",
-          "uv": [
-            9.04,
-            12.79286,
-            15.6704,
-            14.04161
-          ],
-          "enabled": true,
-          "autoUv": false,
-          "snapUV": false,
-          "windMode": [
-            0,
-            0,
-            0,
-            0
-          ]
-        },
-        "up": {
-          "texture": "#base",
-          "uv": [
-            11.01333,
-            10.21607,
-            14.2496,
-            12
-          ],
-          "enabled": true,
-          "autoUv": false,
-          "snapUV": false,
-          "windMode": [
-            0,
-            0,
-            0,
-            0
-          ]
-        },
-        "down": {
-          "texture": "#base",
-          "uv": [
-            10.85547,
-            13.25536,
-            14.32853,
-            15.2375
-          ],
-          "enabled": true,
-          "autoUv": false,
-          "snapUV": false,
-          "windMode": [
-            0,
-            0,
-            0,
-            0
-          ]
-        }
-      },
-      "children": [],
-      "stepParentName": "HabaneroItemRoot",
-      "renderPass": -1,
-      "uv": [
-        0,
-        0
-      ]
-    },
-    {
-      "name": "Pepper-fruit-5-right",
-      "from": [
-        9.38341,
-        6.299,
-        7.28423
-      ],
-      "to": [
-        9.95716,
-        7.28,
-        9.28088
-      ],
-      "rotationOrigin": [
-        8,
-        10.55,
-        8
-      ],
-      "rotationX": 0,
-      "rotationY": 0,
-      "rotationZ": 0,
-      "shade": true,
-      "scaleX": 1,
-      "scaleY": 1,
-      "scaleZ": 1,
-      "faces": {
-        "north": {
-          "texture": "#base",
-          "uv": [
-            9.04,
-            12.79286,
-            15.6704,
-            14.04161
-          ],
-          "enabled": true,
-          "autoUv": false,
-          "snapUV": false,
-          "windMode": [
-            0,
-            0,
-            0,
-            0
-          ]
-        },
-        "east": {
-          "texture": "#base",
-          "uv": [
-            9.04,
-            12.79286,
-            15.6704,
-            14.04161
-          ],
-          "enabled": true,
-          "autoUv": false,
-          "snapUV": false,
-          "windMode": [
-            0,
-            0,
-            0,
-            0
-          ]
-        },
-        "south": {
-          "texture": "#base",
-          "uv": [
-            9.04,
-            12.79286,
-            15.6704,
-            14.04161
-          ],
-          "enabled": true,
-          "autoUv": false,
-          "snapUV": false,
-          "windMode": [
-            0,
-            0,
-            0,
-            0
-          ]
-        },
-        "west": {
-          "texture": "#base",
-          "uv": [
-            9.04,
-            12.79286,
-            15.6704,
-            14.04161
-          ],
-          "enabled": true,
-          "autoUv": false,
-          "snapUV": false,
-          "windMode": [
-            0,
-            0,
-            0,
-            0
-          ]
-        },
-        "up": {
-          "texture": "#base",
-          "uv": [
-            11.01333,
-            10.21607,
-            14.2496,
-            12
-          ],
-          "enabled": true,
-          "autoUv": false,
-          "snapUV": false,
-          "windMode": [
-            0,
-            0,
-            0,
-            0
-          ]
-        },
-        "down": {
-          "texture": "#base",
-          "uv": [
-            10.85547,
-            13.25536,
-            14.32853,
-            15.2375
-          ],
-          "enabled": true,
-          "autoUv": false,
-          "snapUV": false,
-          "windMode": [
-            0,
-            0,
-            0,
-            0
-          ]
-        }
-      },
-      "children": [],
-      "stepParentName": "HabaneroItemRoot",
-      "renderPass": -1,
-      "uv": [
-        0,
-        0
-      ]
-    },
-    {
-      "name": "Pepper-fruit-5-front",
-      "from": [
-        6.85891,
-        6.299,
-        6.5854
-      ],
-      "to": [
-        9.34516,
-        7.28,
-        7.01801
-      ],
-      "rotationOrigin": [
-        8,
-        10.55,
-        8
-      ],
-      "rotationX": 0,
-      "rotationY": 0,
-      "rotationZ": 0,
-      "shade": true,
-      "scaleX": 1,
-      "scaleY": 1,
-      "scaleZ": 1,
-      "faces": {
-        "north": {
-          "texture": "#base",
-          "uv": [
-            9.04,
-            12.79286,
-            15.6704,
-            14.04161
-          ],
-          "enabled": true,
-          "autoUv": false,
-          "snapUV": false,
-          "windMode": [
-            0,
-            0,
-            0,
-            0
-          ]
-        },
-        "east": {
-          "texture": "#base",
-          "uv": [
-            9.04,
-            12.79286,
-            15.6704,
-            14.04161
-          ],
-          "enabled": true,
-          "autoUv": false,
-          "snapUV": false,
-          "windMode": [
-            0,
-            0,
-            0,
-            0
-          ]
-        },
-        "south": {
-          "texture": "#base",
-          "uv": [
-            9.04,
-            12.79286,
-            15.6704,
-            14.04161
-          ],
-          "enabled": true,
-          "autoUv": false,
-          "snapUV": false,
-          "windMode": [
-            0,
-            0,
-            0,
-            0
-          ]
-        },
-        "west": {
-          "texture": "#base",
-          "uv": [
-            9.04,
-            12.79286,
-            15.6704,
-            14.04161
-          ],
-          "enabled": true,
-          "autoUv": false,
-          "snapUV": false,
-          "windMode": [
-            0,
-            0,
-            0,
-            0
-          ]
-        },
-        "up": {
-          "texture": "#base",
-          "uv": [
-            11.01333,
-            10.21607,
-            14.2496,
-            12
-          ],
-          "enabled": true,
-          "autoUv": false,
-          "snapUV": false,
-          "windMode": [
-            0,
-            0,
-            0,
-            0
-          ]
-        },
-        "down": {
-          "texture": "#base",
-          "uv": [
-            10.85547,
-            13.25536,
-            14.32853,
-            15.2375
-          ],
-          "enabled": true,
-          "autoUv": false,
-          "snapUV": false,
-          "windMode": [
-            0,
-            0,
-            0,
-            0
-          ]
-        }
-      },
-      "children": [],
-      "stepParentName": "HabaneroItemRoot",
-      "renderPass": -1,
-      "uv": [
-        0,
-        0
-      ]
-    },
-    {
-      "name": "Pepper-fruit-5-back",
-      "from": [
-        6.97366,
-        6.299,
-        9.41399
-      ],
-      "to": [
-        9.26866,
-        7.28,
-        9.81332
-      ],
-      "rotationOrigin": [
-        8,
-        10.55,
-        8
-      ],
-      "rotationX": 0,
-      "rotationY": 0,
-      "rotationZ": 0,
-      "shade": true,
-      "scaleX": 1,
-      "scaleY": 1,
-      "scaleZ": 1,
-      "faces": {
-        "north": {
-          "texture": "#base",
-          "uv": [
-            9.04,
-            12.79286,
-            15.6704,
-            14.04161
-          ],
-          "enabled": true,
-          "autoUv": false,
-          "snapUV": false,
-          "windMode": [
-            0,
-            0,
-            0,
-            0
-          ]
-        },
-        "east": {
-          "texture": "#base",
-          "uv": [
-            9.04,
-            12.79286,
-            15.6704,
-            14.04161
-          ],
-          "enabled": true,
-          "autoUv": false,
-          "snapUV": false,
-          "windMode": [
-            0,
-            0,
-            0,
-            0
-          ]
-        },
-        "south": {
-          "texture": "#base",
-          "uv": [
-            9.04,
-            12.79286,
-            15.6704,
-            14.04161
-          ],
-          "enabled": true,
-          "autoUv": false,
-          "snapUV": false,
-          "windMode": [
-            0,
-            0,
-            0,
-            0
-          ]
-        },
-        "west": {
-          "texture": "#base",
-          "uv": [
-            9.04,
-            12.79286,
-            15.6704,
-            14.04161
-          ],
-          "enabled": true,
-          "autoUv": false,
-          "snapUV": false,
-          "windMode": [
-            0,
-            0,
-            0,
-            0
-          ]
-        },
-        "up": {
-          "texture": "#base",
-          "uv": [
-            11.01333,
-            10.21607,
-            14.2496,
-            12
-          ],
-          "enabled": true,
-          "autoUv": false,
-          "snapUV": false,
-          "windMode": [
-            0,
-            0,
-            0,
-            0
-          ]
-        },
-        "down": {
-          "texture": "#base",
-          "uv": [
-            10.85547,
-            13.25536,
-            14.32853,
-            15.2375
+            8.65,
+            9.33,
+            10.8284,
+            11.18805
           ],
           "enabled": true,
           "autoUv": false,
@@ -3601,14 +761,14 @@
     {
       "name": "Pepper-fruit-6-core",
       "from": [
-        6.93668,
-        5.4815,
-        7.3719
+        7.22301,
+        5.993,
+        7.02464
       ],
       "to": [
-        8.88968,
-        6.408,
-        9.1681
+        9.16199,
+        6.777,
+        8.67847
       ],
       "rotationOrigin": [
         8,
@@ -3626,10 +786,10 @@
         "north": {
           "texture": "#base",
           "uv": [
-            9.04,
-            13.90286,
-            15.6704,
-            15.08223
+            8.89,
+            8.65,
+            10.82898,
+            9.434
           ],
           "enabled": true,
           "autoUv": false,
@@ -3644,10 +804,10 @@
         "east": {
           "texture": "#base",
           "uv": [
-            9.04,
-            13.90286,
-            15.6704,
-            15.08223
+            8.89,
+            8.65,
+            10.54383,
+            9.434
           ],
           "enabled": true,
           "autoUv": false,
@@ -3662,10 +822,10 @@
         "south": {
           "texture": "#base",
           "uv": [
-            9.04,
-            13.90286,
-            15.6704,
-            15.08223
+            8.89,
+            8.65,
+            10.82898,
+            9.434
           ],
           "enabled": true,
           "autoUv": false,
@@ -3680,10 +840,10 @@
         "west": {
           "texture": "#base",
           "uv": [
-            9.04,
-            13.90286,
-            15.6704,
-            15.08223
+            8.89,
+            8.65,
+            10.54383,
+            9.434
           ],
           "enabled": true,
           "autoUv": false,
@@ -3698,10 +858,10 @@
         "up": {
           "texture": "#base",
           "uv": [
-            11.01333,
-            10.21607,
-            14.2496,
-            12
+            8.89,
+            8.65,
+            10.82898,
+            10.30383
           ],
           "enabled": true,
           "autoUv": false,
@@ -3716,578 +876,10 @@
         "down": {
           "texture": "#base",
           "uv": [
-            10.85547,
-            13.25536,
-            14.32853,
-            15.2375
-          ],
-          "enabled": true,
-          "autoUv": false,
-          "snapUV": false,
-          "windMode": [
-            0,
-            0,
-            0,
-            0
-          ]
-        }
-      },
-      "children": [],
-      "stepParentName": "HabaneroItemRoot",
-      "renderPass": -1,
-      "uv": [
-        0,
-        0
-      ]
-    },
-    {
-      "name": "Pepper-fruit-6-left",
-      "from": [
-        6.51818,
-        5.4815,
-        7.51754
-      ],
-      "to": [
-        6.96458,
-        6.408,
-        8.97392
-      ],
-      "rotationOrigin": [
-        8,
-        10.55,
-        8
-      ],
-      "rotationX": 0,
-      "rotationY": 0,
-      "rotationZ": 0,
-      "shade": true,
-      "scaleX": 1,
-      "scaleY": 1,
-      "scaleZ": 1,
-      "faces": {
-        "north": {
-          "texture": "#base",
-          "uv": [
-            9.04,
-            13.90286,
-            15.6704,
-            15.08223
-          ],
-          "enabled": true,
-          "autoUv": false,
-          "snapUV": false,
-          "windMode": [
-            0,
-            0,
-            0,
-            0
-          ]
-        },
-        "east": {
-          "texture": "#base",
-          "uv": [
-            9.04,
-            13.90286,
-            15.6704,
-            15.08223
-          ],
-          "enabled": true,
-          "autoUv": false,
-          "snapUV": false,
-          "windMode": [
-            0,
-            0,
-            0,
-            0
-          ]
-        },
-        "south": {
-          "texture": "#base",
-          "uv": [
-            9.04,
-            13.90286,
-            15.6704,
-            15.08223
-          ],
-          "enabled": true,
-          "autoUv": false,
-          "snapUV": false,
-          "windMode": [
-            0,
-            0,
-            0,
-            0
-          ]
-        },
-        "west": {
-          "texture": "#base",
-          "uv": [
-            9.04,
-            13.90286,
-            15.6704,
-            15.08223
-          ],
-          "enabled": true,
-          "autoUv": false,
-          "snapUV": false,
-          "windMode": [
-            0,
-            0,
-            0,
-            0
-          ]
-        },
-        "up": {
-          "texture": "#base",
-          "uv": [
-            11.01333,
-            10.21607,
-            14.2496,
-            12
-          ],
-          "enabled": true,
-          "autoUv": false,
-          "snapUV": false,
-          "windMode": [
-            0,
-            0,
-            0,
-            0
-          ]
-        },
-        "down": {
-          "texture": "#base",
-          "uv": [
-            10.85547,
-            13.25536,
-            14.32853,
-            15.2375
-          ],
-          "enabled": true,
-          "autoUv": false,
-          "snapUV": false,
-          "windMode": [
-            0,
-            0,
-            0,
-            0
-          ]
-        }
-      },
-      "children": [],
-      "stepParentName": "HabaneroItemRoot",
-      "renderPass": -1,
-      "uv": [
-        0,
-        0
-      ]
-    },
-    {
-      "name": "Pepper-fruit-6-right",
-      "from": [
-        8.86178,
-        5.4815,
-        7.59036
-      ],
-      "to": [
-        9.28028,
-        6.408,
-        9.04674
-      ],
-      "rotationOrigin": [
-        8,
-        10.55,
-        8
-      ],
-      "rotationX": 0,
-      "rotationY": 0,
-      "rotationZ": 0,
-      "shade": true,
-      "scaleX": 1,
-      "scaleY": 1,
-      "scaleZ": 1,
-      "faces": {
-        "north": {
-          "texture": "#base",
-          "uv": [
-            9.04,
-            13.90286,
-            15.6704,
-            15.08223
-          ],
-          "enabled": true,
-          "autoUv": false,
-          "snapUV": false,
-          "windMode": [
-            0,
-            0,
-            0,
-            0
-          ]
-        },
-        "east": {
-          "texture": "#base",
-          "uv": [
-            9.04,
-            13.90286,
-            15.6704,
-            15.08223
-          ],
-          "enabled": true,
-          "autoUv": false,
-          "snapUV": false,
-          "windMode": [
-            0,
-            0,
-            0,
-            0
-          ]
-        },
-        "south": {
-          "texture": "#base",
-          "uv": [
-            9.04,
-            13.90286,
-            15.6704,
-            15.08223
-          ],
-          "enabled": true,
-          "autoUv": false,
-          "snapUV": false,
-          "windMode": [
-            0,
-            0,
-            0,
-            0
-          ]
-        },
-        "west": {
-          "texture": "#base",
-          "uv": [
-            9.04,
-            13.90286,
-            15.6704,
-            15.08223
-          ],
-          "enabled": true,
-          "autoUv": false,
-          "snapUV": false,
-          "windMode": [
-            0,
-            0,
-            0,
-            0
-          ]
-        },
-        "up": {
-          "texture": "#base",
-          "uv": [
-            11.01333,
-            10.21607,
-            14.2496,
-            12
-          ],
-          "enabled": true,
-          "autoUv": false,
-          "snapUV": false,
-          "windMode": [
-            0,
-            0,
-            0,
-            0
-          ]
-        },
-        "down": {
-          "texture": "#base",
-          "uv": [
-            10.85547,
-            13.25536,
-            14.32853,
-            15.2375
-          ],
-          "enabled": true,
-          "autoUv": false,
-          "snapUV": false,
-          "windMode": [
-            0,
-            0,
-            0,
-            0
-          ]
-        }
-      },
-      "children": [],
-      "stepParentName": "HabaneroItemRoot",
-      "renderPass": -1,
-      "uv": [
-        0,
-        0
-      ]
-    },
-    {
-      "name": "Pepper-fruit-6-front",
-      "from": [
-        7.02038,
-        5.4815,
-        7.08062
-      ],
-      "to": [
-        8.83388,
-        6.408,
-        7.39617
-      ],
-      "rotationOrigin": [
-        8,
-        10.55,
-        8
-      ],
-      "rotationX": 0,
-      "rotationY": 0,
-      "rotationZ": 0,
-      "shade": true,
-      "scaleX": 1,
-      "scaleY": 1,
-      "scaleZ": 1,
-      "faces": {
-        "north": {
-          "texture": "#base",
-          "uv": [
-            9.04,
-            13.90286,
-            15.6704,
-            15.08223
-          ],
-          "enabled": true,
-          "autoUv": false,
-          "snapUV": false,
-          "windMode": [
-            0,
-            0,
-            0,
-            0
-          ]
-        },
-        "east": {
-          "texture": "#base",
-          "uv": [
-            9.04,
-            13.90286,
-            15.6704,
-            15.08223
-          ],
-          "enabled": true,
-          "autoUv": false,
-          "snapUV": false,
-          "windMode": [
-            0,
-            0,
-            0,
-            0
-          ]
-        },
-        "south": {
-          "texture": "#base",
-          "uv": [
-            9.04,
-            13.90286,
-            15.6704,
-            15.08223
-          ],
-          "enabled": true,
-          "autoUv": false,
-          "snapUV": false,
-          "windMode": [
-            0,
-            0,
-            0,
-            0
-          ]
-        },
-        "west": {
-          "texture": "#base",
-          "uv": [
-            9.04,
-            13.90286,
-            15.6704,
-            15.08223
-          ],
-          "enabled": true,
-          "autoUv": false,
-          "snapUV": false,
-          "windMode": [
-            0,
-            0,
-            0,
-            0
-          ]
-        },
-        "up": {
-          "texture": "#base",
-          "uv": [
-            11.01333,
-            10.21607,
-            14.2496,
-            12
-          ],
-          "enabled": true,
-          "autoUv": false,
-          "snapUV": false,
-          "windMode": [
-            0,
-            0,
-            0,
-            0
-          ]
-        },
-        "down": {
-          "texture": "#base",
-          "uv": [
-            10.85547,
-            13.25536,
-            14.32853,
-            15.2375
-          ],
-          "enabled": true,
-          "autoUv": false,
-          "snapUV": false,
-          "windMode": [
-            0,
-            0,
-            0,
-            0
-          ]
-        }
-      },
-      "children": [],
-      "stepParentName": "HabaneroItemRoot",
-      "renderPass": -1,
-      "uv": [
-        0,
-        0
-      ]
-    },
-    {
-      "name": "Pepper-fruit-6-back",
-      "from": [
-        7.10408,
-        5.4815,
-        9.14383
-      ],
-      "to": [
-        8.77808,
-        6.408,
-        9.4351
-      ],
-      "rotationOrigin": [
-        8,
-        10.55,
-        8
-      ],
-      "rotationX": 0,
-      "rotationY": 0,
-      "rotationZ": 0,
-      "shade": true,
-      "scaleX": 1,
-      "scaleY": 1,
-      "scaleZ": 1,
-      "faces": {
-        "north": {
-          "texture": "#base",
-          "uv": [
-            9.04,
-            13.90286,
-            15.6704,
-            15.08223
-          ],
-          "enabled": true,
-          "autoUv": false,
-          "snapUV": false,
-          "windMode": [
-            0,
-            0,
-            0,
-            0
-          ]
-        },
-        "east": {
-          "texture": "#base",
-          "uv": [
-            9.04,
-            13.90286,
-            15.6704,
-            15.08223
-          ],
-          "enabled": true,
-          "autoUv": false,
-          "snapUV": false,
-          "windMode": [
-            0,
-            0,
-            0,
-            0
-          ]
-        },
-        "south": {
-          "texture": "#base",
-          "uv": [
-            9.04,
-            13.90286,
-            15.6704,
-            15.08223
-          ],
-          "enabled": true,
-          "autoUv": false,
-          "snapUV": false,
-          "windMode": [
-            0,
-            0,
-            0,
-            0
-          ]
-        },
-        "west": {
-          "texture": "#base",
-          "uv": [
-            9.04,
-            13.90286,
-            15.6704,
-            15.08223
-          ],
-          "enabled": true,
-          "autoUv": false,
-          "snapUV": false,
-          "windMode": [
-            0,
-            0,
-            0,
-            0
-          ]
-        },
-        "up": {
-          "texture": "#base",
-          "uv": [
-            11.01333,
-            10.21607,
-            14.2496,
-            12
-          ],
-          "enabled": true,
-          "autoUv": false,
-          "snapUV": false,
-          "windMode": [
-            0,
-            0,
-            0,
-            0
-          ]
-        },
-        "down": {
-          "texture": "#base",
-          "uv": [
-            10.85547,
-            13.25536,
-            14.32853,
-            15.2375
+            8.89,
+            8.65,
+            10.82898,
+            10.30383
           ],
           "enabled": true,
           "autoUv": false,
@@ -4311,14 +903,14 @@
     {
       "name": "Pepper-fruit-7-core",
       "from": [
-        7.28028,
-        5.1,
-        7.86046
+        7.37245,
+        5.797,
+        7.07228
       ],
       "to": [
-        8.28828,
-        5.5905,
-        8.78754
+        9.07699,
+        6.091,
+        8.52614
       ],
       "rotationOrigin": [
         8,
@@ -4336,10 +928,10 @@
         "north": {
           "texture": "#base",
           "uv": [
-            9.04,
-            14.94348,
-            15.6704,
-            15.56786
+            9.13,
+            8.82,
+            10.83454,
+            9.114
           ],
           "enabled": true,
           "autoUv": false,
@@ -4354,10 +946,10 @@
         "east": {
           "texture": "#base",
           "uv": [
-            9.04,
-            14.94348,
-            15.6704,
-            15.56786
+            9.13,
+            8.82,
+            10.58386,
+            9.114
           ],
           "enabled": true,
           "autoUv": false,
@@ -4372,10 +964,10 @@
         "south": {
           "texture": "#base",
           "uv": [
-            9.04,
-            14.94348,
-            15.6704,
-            15.56786
+            9.13,
+            8.82,
+            10.83454,
+            9.114
           ],
           "enabled": true,
           "autoUv": false,
@@ -4390,10 +982,10 @@
         "west": {
           "texture": "#base",
           "uv": [
-            9.04,
-            14.94348,
-            15.6704,
-            15.56786
+            9.13,
+            8.82,
+            10.58386,
+            9.114
           ],
           "enabled": true,
           "autoUv": false,
@@ -4408,10 +1000,10 @@
         "up": {
           "texture": "#base",
           "uv": [
-            11.01333,
-            10.21607,
-            14.2496,
-            12
+            9.13,
+            8.82,
+            10.83454,
+            10.27386
           ],
           "enabled": true,
           "autoUv": false,
@@ -4426,10 +1018,10 @@
         "down": {
           "texture": "#base",
           "uv": [
-            10.85547,
-            13.25536,
-            14.32853,
-            15.2375
+            9.13,
+            8.82,
+            10.83454,
+            10.27386
           ],
           "enabled": true,
           "autoUv": false,
@@ -4451,25 +1043,25 @@
       ]
     },
     {
-      "name": "Pepper-fruit-7-left",
+      "name": "Pepper-fruit-fold-left-1",
       "from": [
-        7.06428,
-        5.1,
-        7.93563
+        6.65578,
+        10.1475,
+        7.29363
       ],
       "to": [
-        7.29468,
-        5.5905,
-        8.68731
+        7.39978,
+        10.6597,
+        8.68243
       ],
       "rotationOrigin": [
-        8,
-        10.55,
-        8
+        7.02778,
+        10.1825,
+        7.98803
       ],
-      "rotationX": 0,
-      "rotationY": 0,
-      "rotationZ": 0,
+      "rotationX": -178.74947,
+      "rotationY": 0.56077,
+      "rotationZ": -131.69589,
       "shade": true,
       "scaleX": 1,
       "scaleY": 1,
@@ -4478,10 +1070,10 @@
         "north": {
           "texture": "#base",
           "uv": [
-            9.04,
-            14.94348,
-            15.6704,
-            15.56786
+            9.37,
+            8.99,
+            10.114,
+            9.5022
           ],
           "enabled": true,
           "autoUv": false,
@@ -4496,10 +1088,10 @@
         "east": {
           "texture": "#base",
           "uv": [
-            9.04,
-            14.94348,
-            15.6704,
-            15.56786
+            9.37,
+            8.99,
+            10.7588,
+            9.5022
           ],
           "enabled": true,
           "autoUv": false,
@@ -4514,10 +1106,10 @@
         "south": {
           "texture": "#base",
           "uv": [
-            9.04,
-            14.94348,
-            15.6704,
-            15.56786
+            9.37,
+            8.99,
+            10.114,
+            9.5022
           ],
           "enabled": true,
           "autoUv": false,
@@ -4532,10 +1124,10 @@
         "west": {
           "texture": "#base",
           "uv": [
-            9.04,
-            14.94348,
-            15.6704,
-            15.56786
+            9.37,
+            8.99,
+            10.7588,
+            9.5022
           ],
           "enabled": true,
           "autoUv": false,
@@ -4550,10 +1142,10 @@
         "up": {
           "texture": "#base",
           "uv": [
-            11.01333,
-            10.21607,
-            14.2496,
-            12
+            9.37,
+            8.99,
+            10.114,
+            10.3788
           ],
           "enabled": true,
           "autoUv": false,
@@ -4568,10 +1160,10 @@
         "down": {
           "texture": "#base",
           "uv": [
-            10.85547,
-            13.25536,
-            14.32853,
-            15.2375
+            9.37,
+            8.99,
+            10.114,
+            10.3788
           ],
           "enabled": true,
           "autoUv": false,
@@ -4593,25 +1185,25 @@
       ]
     },
     {
-      "name": "Pepper-fruit-7-right",
+      "name": "Pepper-fruit-fold-left-2",
       "from": [
-        8.27388,
-        5.1,
-        7.97322
+        6.24714,
+        9.6085,
+        6.99547
       ],
       "to": [
-        8.48988,
-        5.5905,
-        8.7249
+        7.29354,
+        10.27604,
+        8.94875
       ],
       "rotationOrigin": [
-        8,
-        10.55,
-        8
+        6.77034,
+        9.6435,
+        7.97211
       ],
-      "rotationX": 0,
-      "rotationY": 0,
-      "rotationZ": 0,
+      "rotationX": -178.47295,
+      "rotationY": 0.34585,
+      "rotationZ": -154.47906,
       "shade": true,
       "scaleX": 1,
       "scaleY": 1,
@@ -4620,10 +1212,10 @@
         "north": {
           "texture": "#base",
           "uv": [
-            9.04,
-            14.94348,
-            15.6704,
-            15.56786
+            8.65,
+            9.16,
+            9.6964,
+            9.82754
           ],
           "enabled": true,
           "autoUv": false,
@@ -4638,10 +1230,10 @@
         "east": {
           "texture": "#base",
           "uv": [
-            9.04,
-            14.94348,
-            15.6704,
-            15.56786
+            8.65,
+            9.16,
+            10.60328,
+            9.82754
           ],
           "enabled": true,
           "autoUv": false,
@@ -4656,10 +1248,10 @@
         "south": {
           "texture": "#base",
           "uv": [
-            9.04,
-            14.94348,
-            15.6704,
-            15.56786
+            8.65,
+            9.16,
+            9.6964,
+            9.82754
           ],
           "enabled": true,
           "autoUv": false,
@@ -4674,10 +1266,10 @@
         "west": {
           "texture": "#base",
           "uv": [
-            9.04,
-            14.94348,
-            15.6704,
-            15.56786
+            8.65,
+            9.16,
+            10.60328,
+            9.82754
           ],
           "enabled": true,
           "autoUv": false,
@@ -4692,10 +1284,10 @@
         "up": {
           "texture": "#base",
           "uv": [
-            11.01333,
-            10.21607,
-            14.2496,
-            12
+            8.65,
+            9.16,
+            9.6964,
+            11.11328
           ],
           "enabled": true,
           "autoUv": false,
@@ -4710,10 +1302,10 @@
         "down": {
           "texture": "#base",
           "uv": [
-            10.85547,
-            13.25536,
-            14.32853,
-            15.2375
+            8.65,
+            9.16,
+            9.6964,
+            11.11328
           ],
           "enabled": true,
           "autoUv": false,
@@ -4735,25 +1327,25 @@
       ]
     },
     {
-      "name": "Pepper-fruit-7-front",
+      "name": "Pepper-fruit-fold-left-3",
       "from": [
-        7.32348,
-        5.1,
-        7.71013
+        6.10647,
+        9.0205,
+        6.84894
       ],
       "to": [
-        8.25948,
-        5.5905,
-        7.87299
+        7.30007,
+        9.68238,
+        9.07699
       ],
       "rotationOrigin": [
-        8,
-        10.55,
-        8
+        6.70327,
+        9.0555,
+        7.96296
       ],
-      "rotationX": 0,
-      "rotationY": 0,
-      "rotationZ": 0,
+      "rotationX": -179.11454,
+      "rotationY": 0.05033,
+      "rotationZ": -173.49398,
       "shade": true,
       "scaleX": 1,
       "scaleY": 1,
@@ -4762,10 +1354,10 @@
         "north": {
           "texture": "#base",
           "uv": [
-            9.04,
-            14.94348,
-            15.6704,
-            15.56786
+            8.89,
+            9.33,
+            10.0836,
+            9.99188
           ],
           "enabled": true,
           "autoUv": false,
@@ -4780,10 +1372,10 @@
         "east": {
           "texture": "#base",
           "uv": [
-            9.04,
-            14.94348,
-            15.6704,
-            15.56786
+            8.89,
+            9.33,
+            11.11805,
+            9.99188
           ],
           "enabled": true,
           "autoUv": false,
@@ -4798,10 +1390,10 @@
         "south": {
           "texture": "#base",
           "uv": [
-            9.04,
-            14.94348,
-            15.6704,
-            15.56786
+            8.89,
+            9.33,
+            10.0836,
+            9.99188
           ],
           "enabled": true,
           "autoUv": false,
@@ -4816,10 +1408,10 @@
         "west": {
           "texture": "#base",
           "uv": [
-            9.04,
-            14.94348,
-            15.6704,
-            15.56786
+            8.89,
+            9.33,
+            11.11805,
+            9.99188
           ],
           "enabled": true,
           "autoUv": false,
@@ -4834,10 +1426,10 @@
         "up": {
           "texture": "#base",
           "uv": [
-            11.01333,
-            10.21607,
-            14.2496,
-            12
+            8.89,
+            9.33,
+            10.0836,
+            11.55805
           ],
           "enabled": true,
           "autoUv": false,
@@ -4852,10 +1444,10 @@
         "down": {
           "texture": "#base",
           "uv": [
-            10.85547,
-            13.25536,
-            14.32853,
-            15.2375
+            8.89,
+            9.33,
+            10.0836,
+            11.55805
           ],
           "enabled": true,
           "autoUv": false,
@@ -4877,25 +1469,25 @@
       ]
     },
     {
-      "name": "Pepper-fruit-7-back",
+      "name": "Pepper-fruit-fold-left-4",
       "from": [
-        7.36668,
-        5.1,
-        8.77501
+        6.19389,
+        8.3345,
+        6.87607
       ],
       "to": [
-        8.23068,
-        5.5905,
-        8.92534
+        7.36056,
+        9.09448,
+        9.05384
       ],
       "rotationOrigin": [
-        8,
-        10.55,
-        8
+        6.77723,
+        8.3695,
+        7.96495
       ],
-      "rotationX": 0,
-      "rotationY": 0,
-      "rotationZ": 0,
+      "rotationX": 179.8346,
+      "rotationY": 0.00889,
+      "rotationZ": 173.84714,
       "shade": true,
       "scaleX": 1,
       "scaleY": 1,
@@ -4904,10 +1496,10 @@
         "north": {
           "texture": "#base",
           "uv": [
-            9.04,
-            14.94348,
-            15.6704,
-            15.56786
+            9.13,
+            8.65,
+            10.29667,
+            9.40998
           ],
           "enabled": true,
           "autoUv": false,
@@ -4922,10 +1514,10 @@
         "east": {
           "texture": "#base",
           "uv": [
-            9.04,
-            14.94348,
-            15.6704,
-            15.56786
+            9.13,
+            8.65,
+            11.30777,
+            9.40998
           ],
           "enabled": true,
           "autoUv": false,
@@ -4940,10 +1532,10 @@
         "south": {
           "texture": "#base",
           "uv": [
-            9.04,
-            14.94348,
-            15.6704,
-            15.56786
+            9.13,
+            8.65,
+            10.29667,
+            9.40998
           ],
           "enabled": true,
           "autoUv": false,
@@ -4958,10 +1550,10 @@
         "west": {
           "texture": "#base",
           "uv": [
-            9.04,
-            14.94348,
-            15.6704,
-            15.56786
+            9.13,
+            8.65,
+            11.30777,
+            9.40998
           ],
           "enabled": true,
           "autoUv": false,
@@ -4976,10 +1568,10 @@
         "up": {
           "texture": "#base",
           "uv": [
-            11.01333,
-            10.21607,
-            14.2496,
-            12
+            9.13,
+            8.65,
+            10.29667,
+            10.82777
           ],
           "enabled": true,
           "autoUv": false,
@@ -4994,10 +1586,3986 @@
         "down": {
           "texture": "#base",
           "uv": [
-            10.85547,
-            13.25536,
-            14.32853,
-            15.2375
+            9.13,
+            8.65,
+            10.29667,
+            10.82777
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "children": [],
+      "stepParentName": "HabaneroItemRoot",
+      "renderPass": -1,
+      "uv": [
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Pepper-fruit-fold-left-5",
+      "from": [
+        6.41668,
+        7.5995,
+        6.96732
+      ],
+      "to": [
+        7.49245,
+        8.42562,
+        8.97542
+      ],
+      "rotationOrigin": [
+        6.95457,
+        7.6345,
+        7.97137
+      ],
+      "rotationX": 179.51399,
+      "rotationY": 0.0578,
+      "rotationZ": 166.43558,
+      "shade": true,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1,
+      "faces": {
+        "north": {
+          "texture": "#base",
+          "uv": [
+            9.37,
+            8.82,
+            10.44577,
+            9.64612
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "east": {
+          "texture": "#base",
+          "uv": [
+            9.37,
+            8.82,
+            11.3781,
+            9.64612
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "south": {
+          "texture": "#base",
+          "uv": [
+            9.37,
+            8.82,
+            10.44577,
+            9.64612
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "west": {
+          "texture": "#base",
+          "uv": [
+            9.37,
+            8.82,
+            11.3781,
+            9.64612
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "up": {
+          "texture": "#base",
+          "uv": [
+            9.37,
+            8.82,
+            10.44577,
+            10.8281
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "down": {
+          "texture": "#base",
+          "uv": [
+            9.37,
+            8.82,
+            10.44577,
+            10.8281
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "children": [],
+      "stepParentName": "HabaneroItemRoot",
+      "renderPass": -1,
+      "uv": [
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Pepper-fruit-fold-left-6",
+      "from": [
+        6.60526,
+        6.8155,
+        7.052
+      ],
+      "to": [
+        7.5762,
+        7.68134,
+        8.86443
+      ],
+      "rotationOrigin": [
+        7.09073,
+        6.8505,
+        7.95822
+      ],
+      "rotationX": -179.05301,
+      "rotationY": -0.08161,
+      "rotationZ": 170.14883,
+      "shade": true,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1,
+      "faces": {
+        "north": {
+          "texture": "#base",
+          "uv": [
+            8.65,
+            8.99,
+            9.62094,
+            9.85584
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "east": {
+          "texture": "#base",
+          "uv": [
+            8.65,
+            8.99,
+            10.46243,
+            9.85584
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "south": {
+          "texture": "#base",
+          "uv": [
+            8.65,
+            8.99,
+            9.62094,
+            9.85584
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "west": {
+          "texture": "#base",
+          "uv": [
+            8.65,
+            8.99,
+            10.46243,
+            9.85584
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "up": {
+          "texture": "#base",
+          "uv": [
+            8.65,
+            8.99,
+            9.62094,
+            10.80243
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "down": {
+          "texture": "#base",
+          "uv": [
+            8.65,
+            8.99,
+            9.62094,
+            10.80243
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "children": [],
+      "stepParentName": "HabaneroItemRoot",
+      "renderPass": -1,
+      "uv": [
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Pepper-fruit-fold-left-7",
+      "from": [
+        6.82247,
+        6.154,
+        7.09276
+      ],
+      "to": [
+        7.70147,
+        6.90879,
+        8.73356
+      ],
+      "rotationOrigin": [
+        7.26197,
+        6.189,
+        7.91316
+      ],
+      "rotationX": -176.22707,
+      "rotationY": -0.47954,
+      "rotationZ": 165.51806,
+      "shade": true,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1,
+      "faces": {
+        "north": {
+          "texture": "#base",
+          "uv": [
+            8.89,
+            9.16,
+            9.769,
+            9.91479
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "east": {
+          "texture": "#base",
+          "uv": [
+            8.89,
+            9.16,
+            10.5308,
+            9.91479
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "south": {
+          "texture": "#base",
+          "uv": [
+            8.89,
+            9.16,
+            9.769,
+            9.91479
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "west": {
+          "texture": "#base",
+          "uv": [
+            8.89,
+            9.16,
+            10.5308,
+            9.91479
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "up": {
+          "texture": "#base",
+          "uv": [
+            8.89,
+            9.16,
+            9.769,
+            10.8008
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "down": {
+          "texture": "#base",
+          "uv": [
+            8.89,
+            9.16,
+            9.769,
+            10.8008
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "children": [],
+      "stepParentName": "HabaneroItemRoot",
+      "renderPass": -1,
+      "uv": [
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Pepper-fruit-fold-left-8",
+      "from": [
+        7.07457,
+        5.713,
+        7.15307
+      ],
+      "to": [
+        7.83523,
+        6.26696,
+        8.57298
+      ],
+      "rotationOrigin": [
+        7.4549,
+        5.748,
+        7.86303
+      ],
+      "rotationX": -174.05345,
+      "rotationY": -1.23793,
+      "rotationZ": 156.5003,
+      "shade": true,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1,
+      "faces": {
+        "north": {
+          "texture": "#base",
+          "uv": [
+            9.13,
+            9.33,
+            9.89066,
+            9.88396
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "east": {
+          "texture": "#base",
+          "uv": [
+            9.13,
+            9.33,
+            10.54991,
+            9.88396
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "south": {
+          "texture": "#base",
+          "uv": [
+            9.13,
+            9.33,
+            9.89066,
+            9.88396
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "west": {
+          "texture": "#base",
+          "uv": [
+            9.13,
+            9.33,
+            10.54991,
+            9.88396
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "up": {
+          "texture": "#base",
+          "uv": [
+            9.13,
+            9.33,
+            9.89066,
+            10.74991
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "down": {
+          "texture": "#base",
+          "uv": [
+            9.13,
+            9.33,
+            9.89066,
+            10.74991
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "children": [],
+      "stepParentName": "HabaneroItemRoot",
+      "renderPass": -1,
+      "uv": [
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Pepper-fruit-fold-front-1",
+      "from": [
+        7.53125,
+        9.9025,
+        8.38954
+      ],
+      "to": [
+        8.39525,
+        10.70049,
+        9.85718
+      ],
+      "rotationOrigin": [
+        7.96325,
+        9.9375,
+        9.12336
+      ],
+      "rotationX": -111.11538,
+      "rotationY": -89.37677,
+      "rotationZ": -68.88462,
+      "shade": true,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1,
+      "faces": {
+        "north": {
+          "texture": "#base",
+          "uv": [
+            9.37,
+            8.65,
+            10.234,
+            9.44799
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "east": {
+          "texture": "#base",
+          "uv": [
+            9.37,
+            8.65,
+            10.83764,
+            9.44799
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "south": {
+          "texture": "#base",
+          "uv": [
+            9.37,
+            8.65,
+            10.234,
+            9.44799
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "west": {
+          "texture": "#base",
+          "uv": [
+            9.37,
+            8.65,
+            10.83764,
+            9.44799
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "up": {
+          "texture": "#base",
+          "uv": [
+            9.37,
+            8.65,
+            10.234,
+            10.11764
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "down": {
+          "texture": "#base",
+          "uv": [
+            9.37,
+            8.65,
+            10.234,
+            10.11764
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "children": [],
+      "stepParentName": "HabaneroItemRoot",
+      "renderPass": -1,
+      "uv": [
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Pepper-fruit-fold-front-2",
+      "from": [
+        7.43142,
+        9.3635,
+        8.34455
+      ],
+      "to": [
+        8.54182,
+        9.99747,
+        10.23075
+      ],
+      "rotationOrigin": [
+        7.98662,
+        9.3985,
+        9.28765
+      ],
+      "rotationX": 81.52789,
+      "rotationY": -87.59877,
+      "rotationZ": 98.47211,
+      "shade": true,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1,
+      "faces": {
+        "north": {
+          "texture": "#base",
+          "uv": [
+            8.65,
+            8.82,
+            9.7604,
+            9.45397
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "east": {
+          "texture": "#base",
+          "uv": [
+            8.65,
+            8.82,
+            10.5362,
+            9.45397
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "south": {
+          "texture": "#base",
+          "uv": [
+            8.65,
+            8.82,
+            9.7604,
+            9.45397
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "west": {
+          "texture": "#base",
+          "uv": [
+            8.65,
+            8.82,
+            10.5362,
+            9.45397
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "up": {
+          "texture": "#base",
+          "uv": [
+            8.65,
+            8.82,
+            9.7604,
+            10.7062
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "down": {
+          "texture": "#base",
+          "uv": [
+            8.65,
+            8.82,
+            9.7604,
+            10.7062
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "children": [],
+      "stepParentName": "HabaneroItemRoot",
+      "renderPass": -1,
+      "uv": [
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Pepper-fruit-fold-front-3",
+      "from": [
+        7.44766,
+        8.7755,
+        8.2697
+      ],
+      "to": [
+        8.63566,
+        9.43614,
+        10.28772
+      ],
+      "rotationOrigin": [
+        8.04166,
+        8.8105,
+        9.27871
+      ],
+      "rotationX": 90.43469,
+      "rotationY": -84.65308,
+      "rotationZ": 89.56531,
+      "shade": true,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1,
+      "faces": {
+        "north": {
+          "texture": "#base",
+          "uv": [
+            8.89,
+            8.99,
+            10.078,
+            9.65064
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "east": {
+          "texture": "#base",
+          "uv": [
+            8.89,
+            8.99,
+            10.90802,
+            9.65064
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "south": {
+          "texture": "#base",
+          "uv": [
+            8.89,
+            8.99,
+            10.078,
+            9.65064
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "west": {
+          "texture": "#base",
+          "uv": [
+            8.89,
+            8.99,
+            10.90802,
+            9.65064
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "up": {
+          "texture": "#base",
+          "uv": [
+            8.89,
+            8.99,
+            10.078,
+            11.00802
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "down": {
+          "texture": "#base",
+          "uv": [
+            8.89,
+            8.99,
+            10.078,
+            11.00802
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "children": [],
+      "stepParentName": "HabaneroItemRoot",
+      "renderPass": -1,
+      "uv": [
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Pepper-fruit-fold-front-4",
+      "from": [
+        7.54914,
+        8.0895,
+        8.19381
+      ],
+      "to": [
+        8.70247,
+        8.85862,
+        10.15294
+      ],
+      "rotationOrigin": [
+        8.1258,
+        8.1245,
+        9.17337
+      ],
+      "rotationX": 94.34879,
+      "rotationY": -83.06744,
+      "rotationZ": 85.65121,
+      "shade": true,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1,
+      "faces": {
+        "north": {
+          "texture": "#base",
+          "uv": [
+            9.13,
+            9.16,
+            10.28333,
+            9.92912
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "east": {
+          "texture": "#base",
+          "uv": [
+            9.13,
+            9.16,
+            11.08913,
+            9.92912
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "south": {
+          "texture": "#base",
+          "uv": [
+            9.13,
+            9.16,
+            10.28333,
+            9.92912
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "west": {
+          "texture": "#base",
+          "uv": [
+            9.13,
+            9.16,
+            11.08913,
+            9.92912
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "up": {
+          "texture": "#base",
+          "uv": [
+            9.13,
+            9.16,
+            10.28333,
+            11.11913
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "down": {
+          "texture": "#base",
+          "uv": [
+            9.13,
+            9.16,
+            10.28333,
+            11.11913
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "children": [],
+      "stepParentName": "HabaneroItemRoot",
+      "renderPass": -1,
+      "uv": [
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Pepper-fruit-fold-front-5",
+      "from": [
+        7.69225,
+        7.3545,
+        8.12047
+      ],
+      "to": [
+        8.72566,
+        8.18465,
+        9.87589
+      ],
+      "rotationOrigin": [
+        8.20896,
+        7.3895,
+        8.99818
+      ],
+      "rotationX": 96.68304,
+      "rotationY": -83.67665,
+      "rotationZ": 83.31696,
+      "shade": true,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1,
+      "faces": {
+        "north": {
+          "texture": "#base",
+          "uv": [
+            9.37,
+            9.33,
+            10.40341,
+            10.16015
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "east": {
+          "texture": "#base",
+          "uv": [
+            9.37,
+            9.33,
+            11.12542,
+            10.16015
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "south": {
+          "texture": "#base",
+          "uv": [
+            9.37,
+            9.33,
+            10.40341,
+            10.16015
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "west": {
+          "texture": "#base",
+          "uv": [
+            9.37,
+            9.33,
+            11.12542,
+            10.16015
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "up": {
+          "texture": "#base",
+          "uv": [
+            9.37,
+            9.33,
+            10.40341,
+            11.08542
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "down": {
+          "texture": "#base",
+          "uv": [
+            9.37,
+            9.33,
+            10.40341,
+            11.08542
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "children": [],
+      "stepParentName": "HabaneroItemRoot",
+      "renderPass": -1,
+      "uv": [
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Pepper-fruit-fold-front-6",
+      "from": [
+        7.78822,
+        6.5705,
+        8.01245
+      ],
+      "to": [
+        8.73446,
+        7.44707,
+        9.61979
+      ],
+      "rotationOrigin": [
+        8.26134,
+        6.6055,
+        8.81612
+      ],
+      "rotationX": 96.52995,
+      "rotationY": -86.252,
+      "rotationZ": 83.47005,
+      "shade": true,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1,
+      "faces": {
+        "north": {
+          "texture": "#base",
+          "uv": [
+            8.65,
+            8.65,
+            9.59624,
+            9.52657
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "east": {
+          "texture": "#base",
+          "uv": [
+            8.65,
+            8.65,
+            10.25734,
+            9.52657
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "south": {
+          "texture": "#base",
+          "uv": [
+            8.65,
+            8.65,
+            9.59624,
+            9.52657
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "west": {
+          "texture": "#base",
+          "uv": [
+            8.65,
+            8.65,
+            10.25734,
+            9.52657
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "up": {
+          "texture": "#base",
+          "uv": [
+            8.65,
+            8.65,
+            9.59624,
+            10.25734
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "down": {
+          "texture": "#base",
+          "uv": [
+            8.65,
+            8.65,
+            9.59624,
+            10.25734
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "children": [],
+      "stepParentName": "HabaneroItemRoot",
+      "renderPass": -1,
+      "uv": [
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Pepper-fruit-fold-front-7",
+      "from": [
+        7.84276,
+        6.154,
+        7.96173
+      ],
+      "to": [
+        8.70033,
+        6.65927,
+        9.41846
+      ],
+      "rotationOrigin": [
+        8.27155,
+        6.189,
+        8.69009
+      ],
+      "rotationX": 98.41616,
+      "rotationY": -88.64169,
+      "rotationZ": 81.58384,
+      "shade": true,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1,
+      "faces": {
+        "north": {
+          "texture": "#base",
+          "uv": [
+            8.89,
+            8.82,
+            9.74757,
+            9.32527
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "east": {
+          "texture": "#base",
+          "uv": [
+            8.89,
+            8.82,
+            10.34673,
+            9.32527
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "south": {
+          "texture": "#base",
+          "uv": [
+            8.89,
+            8.82,
+            9.74757,
+            9.32527
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "west": {
+          "texture": "#base",
+          "uv": [
+            8.89,
+            8.82,
+            10.34673,
+            9.32527
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "up": {
+          "texture": "#base",
+          "uv": [
+            8.89,
+            8.82,
+            9.74757,
+            10.27673
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "down": {
+          "texture": "#base",
+          "uv": [
+            8.89,
+            8.82,
+            9.74757,
+            10.27673
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "children": [],
+      "stepParentName": "HabaneroItemRoot",
+      "renderPass": -1,
+      "uv": [
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Pepper-fruit-fold-front-8",
+      "from": [
+        7.90707,
+        5.5415,
+        7.81723
+      ],
+      "to": [
+        8.6374,
+        6.27403,
+        9.05783
+      ],
+      "rotationOrigin": [
+        8.27223,
+        5.5765,
+        8.43753
+      ],
+      "rotationX": 101.20441,
+      "rotationY": -89.93948,
+      "rotationZ": 78.79559,
+      "shade": true,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1,
+      "faces": {
+        "north": {
+          "texture": "#base",
+          "uv": [
+            9.13,
+            8.99,
+            9.86033,
+            9.72253
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "east": {
+          "texture": "#base",
+          "uv": [
+            9.13,
+            8.99,
+            10.3706,
+            9.72253
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "south": {
+          "texture": "#base",
+          "uv": [
+            9.13,
+            8.99,
+            9.86033,
+            9.72253
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "west": {
+          "texture": "#base",
+          "uv": [
+            9.13,
+            8.99,
+            10.3706,
+            9.72253
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "up": {
+          "texture": "#base",
+          "uv": [
+            9.13,
+            8.99,
+            9.86033,
+            10.2306
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "down": {
+          "texture": "#base",
+          "uv": [
+            9.13,
+            8.99,
+            9.86033,
+            10.2306
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "children": [],
+      "stepParentName": "HabaneroItemRoot",
+      "renderPass": -1,
+      "uv": [
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Pepper-fruit-fold-right-1",
+      "from": [
+        8.73072,
+        9.976,
+        7.30477
+      ],
+      "to": [
+        9.55872,
+        10.69588,
+        8.85037
+      ],
+      "rotationOrigin": [
+        9.14472,
+        10.011,
+        8.07757
+      ],
+      "rotationX": 0.33153,
+      "rotationY": 0.13479,
+      "rotationZ": 44.24938,
+      "shade": true,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1,
+      "faces": {
+        "north": {
+          "texture": "#base",
+          "uv": [
+            9.37,
+            9.16,
+            10.198,
+            9.87988
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "east": {
+          "texture": "#base",
+          "uv": [
+            9.37,
+            9.16,
+            10.9156,
+            9.87988
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "south": {
+          "texture": "#base",
+          "uv": [
+            9.37,
+            9.16,
+            10.198,
+            9.87988
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "west": {
+          "texture": "#base",
+          "uv": [
+            9.37,
+            9.16,
+            10.9156,
+            9.87988
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "up": {
+          "texture": "#base",
+          "uv": [
+            9.37,
+            9.16,
+            10.198,
+            10.7056
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "down": {
+          "texture": "#base",
+          "uv": [
+            9.37,
+            9.16,
+            10.198,
+            10.7056
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "children": [],
+      "stepParentName": "HabaneroItemRoot",
+      "renderPass": -1,
+      "uv": [
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Pepper-fruit-fold-right-2",
+      "from": [
+        8.75732,
+        9.437,
+        7.03199
+      ],
+      "to": [
+        9.84852,
+        10.06939,
+        9.06889
+      ],
+      "rotationOrigin": [
+        9.30292,
+        9.472,
+        8.05044
+      ],
+      "rotationX": 2.76466,
+      "rotationY": 0.39694,
+      "rotationZ": 16.3379,
+      "shade": true,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1,
+      "faces": {
+        "north": {
+          "texture": "#base",
+          "uv": [
+            8.65,
+            9.33,
+            9.7412,
+            9.96239
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "east": {
+          "texture": "#base",
+          "uv": [
+            8.65,
+            9.33,
+            10.6869,
+            9.96239
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "south": {
+          "texture": "#base",
+          "uv": [
+            8.65,
+            9.33,
+            9.7412,
+            9.96239
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "west": {
+          "texture": "#base",
+          "uv": [
+            8.65,
+            9.33,
+            10.6869,
+            9.96239
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "up": {
+          "texture": "#base",
+          "uv": [
+            8.65,
+            9.33,
+            9.7412,
+            11.3669
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "down": {
+          "texture": "#base",
+          "uv": [
+            8.65,
+            9.33,
+            9.7412,
+            11.3669
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "children": [],
+      "stepParentName": "HabaneroItemRoot",
+      "renderPass": -1,
+      "uv": [
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Pepper-fruit-fold-right-3",
+      "from": [
+        8.73579,
+        8.849,
+        6.89044
+      ],
+      "to": [
+        9.92779,
+        9.50962,
+        9.11551
+      ],
+      "rotationOrigin": [
+        9.33179,
+        8.884,
+        8.00297
+      ],
+      "rotationX": 4.6098,
+      "rotationY": 0.11282,
+      "rotationZ": 2.80245,
+      "shade": true,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1,
+      "faces": {
+        "north": {
+          "texture": "#base",
+          "uv": [
+            8.89,
+            8.65,
+            10.082,
+            9.31062
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "east": {
+          "texture": "#base",
+          "uv": [
+            8.89,
+            8.65,
+            11.11507,
+            9.31062
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "south": {
+          "texture": "#base",
+          "uv": [
+            8.89,
+            8.65,
+            10.082,
+            9.31062
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "west": {
+          "texture": "#base",
+          "uv": [
+            8.89,
+            8.65,
+            11.11507,
+            9.31062
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "up": {
+          "texture": "#base",
+          "uv": [
+            8.89,
+            8.65,
+            10.082,
+            10.87507
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "down": {
+          "texture": "#base",
+          "uv": [
+            8.89,
+            8.65,
+            10.082,
+            10.87507
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "children": [],
+      "stepParentName": "HabaneroItemRoot",
+      "renderPass": -1,
+      "uv": [
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Pepper-fruit-fold-right-4",
+      "from": [
+        8.70495,
+        8.163,
+        6.86226
+      ],
+      "to": [
+        9.86229,
+        8.92335,
+        9.02262
+      ],
+      "rotationOrigin": [
+        9.28362,
+        8.198,
+        7.94244
+      ],
+      "rotationX": 5.0303,
+      "rotationY": -0.17583,
+      "rotationZ": -4.00119,
+      "shade": true,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1,
+      "faces": {
+        "north": {
+          "texture": "#base",
+          "uv": [
+            9.13,
+            8.82,
+            10.28734,
+            9.58035
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "east": {
+          "texture": "#base",
+          "uv": [
+            9.13,
+            8.82,
+            11.29036,
+            9.58035
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "south": {
+          "texture": "#base",
+          "uv": [
+            9.13,
+            8.82,
+            10.28734,
+            9.58035
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "west": {
+          "texture": "#base",
+          "uv": [
+            9.13,
+            8.82,
+            11.29036,
+            9.58035
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "up": {
+          "texture": "#base",
+          "uv": [
+            9.13,
+            8.82,
+            10.28734,
+            10.98036
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "down": {
+          "texture": "#base",
+          "uv": [
+            9.13,
+            8.82,
+            10.28734,
+            10.98036
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "children": [],
+      "stepParentName": "HabaneroItemRoot",
+      "renderPass": -1,
+      "uv": [
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Pepper-fruit-fold-right-5",
+      "from": [
+        8.66901,
+        7.428,
+        6.9144
+      ],
+      "to": [
+        9.71512,
+        8.24048,
+        8.86715
+      ],
+      "rotationOrigin": [
+        9.19207,
+        7.463,
+        7.89078
+      ],
+      "rotationX": 3.99001,
+      "rotationY": -0.24705,
+      "rotationZ": -7.08333,
+      "shade": true,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1,
+      "faces": {
+        "north": {
+          "texture": "#base",
+          "uv": [
+            9.37,
+            8.99,
+            10.41611,
+            9.80248
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "east": {
+          "texture": "#base",
+          "uv": [
+            9.37,
+            8.99,
+            11.32275,
+            9.80248
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "south": {
+          "texture": "#base",
+          "uv": [
+            9.37,
+            8.99,
+            10.41611,
+            9.80248
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "west": {
+          "texture": "#base",
+          "uv": [
+            9.37,
+            8.99,
+            11.32275,
+            9.80248
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "up": {
+          "texture": "#base",
+          "uv": [
+            9.37,
+            8.99,
+            10.41611,
+            10.94275
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "down": {
+          "texture": "#base",
+          "uv": [
+            9.37,
+            8.99,
+            10.41611,
+            10.94275
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "children": [],
+      "stepParentName": "HabaneroItemRoot",
+      "renderPass": -1,
+      "uv": [
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Pepper-fruit-fold-right-6",
+      "from": [
+        8.66815,
+        6.644,
+        6.96749
+      ],
+      "to": [
+        9.62179,
+        7.50012,
+        8.74763
+      ],
+      "rotationOrigin": [
+        9.14497,
+        6.679,
+        7.85756
+      ],
+      "rotationX": 2.42213,
+      "rotationY": -0.07263,
+      "rotationZ": -3.43451,
+      "shade": true,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1,
+      "faces": {
+        "north": {
+          "texture": "#base",
+          "uv": [
+            8.65,
+            9.16,
+            9.60364,
+            10.01612
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "east": {
+          "texture": "#base",
+          "uv": [
+            8.65,
+            9.16,
+            10.43014,
+            10.01612
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "south": {
+          "texture": "#base",
+          "uv": [
+            8.65,
+            9.16,
+            9.60364,
+            10.01612
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "west": {
+          "texture": "#base",
+          "uv": [
+            8.65,
+            9.16,
+            10.43014,
+            10.01612
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "up": {
+          "texture": "#base",
+          "uv": [
+            8.65,
+            9.16,
+            9.60364,
+            10.94014
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "down": {
+          "texture": "#base",
+          "uv": [
+            8.65,
+            9.16,
+            9.60364,
+            10.94014
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "children": [],
+      "stepParentName": "HabaneroItemRoot",
+      "renderPass": -1,
+      "uv": [
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Pepper-fruit-fold-right-7",
+      "from": [
+        8.65469,
+        6.154,
+        7.03638
+      ],
+      "to": [
+        9.51869,
+        6.71768,
+        8.64918
+      ],
+      "rotationOrigin": [
+        9.08669,
+        6.189,
+        7.84278
+      ],
+      "rotationX": 1.71518,
+      "rotationY": -0.10161,
+      "rotationZ": -6.78044,
+      "shade": true,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1,
+      "faces": {
+        "north": {
+          "texture": "#base",
+          "uv": [
+            8.89,
+            9.33,
+            9.754,
+            9.89368
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "east": {
+          "texture": "#base",
+          "uv": [
+            8.89,
+            9.33,
+            10.5028,
+            9.89368
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "south": {
+          "texture": "#base",
+          "uv": [
+            8.89,
+            9.33,
+            9.754,
+            9.89368
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "west": {
+          "texture": "#base",
+          "uv": [
+            8.89,
+            9.33,
+            10.5028,
+            9.89368
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "up": {
+          "texture": "#base",
+          "uv": [
+            8.89,
+            9.33,
+            9.754,
+            10.9428
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "down": {
+          "texture": "#base",
+          "uv": [
+            8.89,
+            9.33,
+            9.754,
+            10.9428
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "children": [],
+      "stepParentName": "HabaneroItemRoot",
+      "renderPass": -1,
+      "uv": [
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Pepper-fruit-fold-right-8",
+      "from": [
+        8.6071,
+        5.7865,
+        7.10828
+      ],
+      "to": [
+        9.38077,
+        6.23573,
+        8.55246
+      ],
+      "rotationOrigin": [
+        8.99394,
+        5.8215,
+        7.83037
+      ],
+      "rotationX": 1.87514,
+      "rotationY": -0.23286,
+      "rotationZ": -14.15686,
+      "shade": true,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1,
+      "faces": {
+        "north": {
+          "texture": "#base",
+          "uv": [
+            9.13,
+            8.65,
+            9.90367,
+            9.09923
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "east": {
+          "texture": "#base",
+          "uv": [
+            9.13,
+            8.65,
+            10.57418,
+            9.09923
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "south": {
+          "texture": "#base",
+          "uv": [
+            9.13,
+            8.65,
+            9.90367,
+            9.09923
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "west": {
+          "texture": "#base",
+          "uv": [
+            9.13,
+            8.65,
+            10.57418,
+            9.09923
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "up": {
+          "texture": "#base",
+          "uv": [
+            9.13,
+            8.65,
+            9.90367,
+            10.09418
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "down": {
+          "texture": "#base",
+          "uv": [
+            9.13,
+            8.65,
+            9.90367,
+            10.09418
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "children": [],
+      "stepParentName": "HabaneroItemRoot",
+      "renderPass": -1,
+      "uv": [
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Pepper-fruit-fold-back-1",
+      "from": [
+        7.64084,
+        10.0985,
+        6.26071
+      ],
+      "to": [
+        8.40884,
+        10.66426,
+        7.69431
+      ],
+      "rotationOrigin": [
+        8.02484,
+        10.1335,
+        6.97751
+      ],
+      "rotationX": 113.04251,
+      "rotationY": 86.34741,
+      "rotationZ": -66.95749,
+      "shade": true,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1,
+      "faces": {
+        "north": {
+          "texture": "#base",
+          "uv": [
+            9.37,
+            8.82,
+            10.138,
+            9.38576
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "east": {
+          "texture": "#base",
+          "uv": [
+            9.37,
+            8.82,
+            10.8036,
+            9.38576
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "south": {
+          "texture": "#base",
+          "uv": [
+            9.37,
+            8.82,
+            10.138,
+            9.38576
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "west": {
+          "texture": "#base",
+          "uv": [
+            9.37,
+            8.82,
+            10.8036,
+            9.38576
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "up": {
+          "texture": "#base",
+          "uv": [
+            9.37,
+            8.82,
+            10.138,
+            10.2536
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "down": {
+          "texture": "#base",
+          "uv": [
+            9.37,
+            8.82,
+            10.138,
+            10.2536
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "children": [],
+      "stepParentName": "HabaneroItemRoot",
+      "renderPass": -1,
+      "uv": [
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Pepper-fruit-fold-back-2",
+      "from": [
+        7.46087,
+        9.5595,
+        5.79382
+      ],
+      "to": [
+        8.52007,
+        10.20375,
+        7.77099
+      ],
+      "rotationOrigin": [
+        7.99047,
+        9.5945,
+        6.7824
+      ],
+      "rotationX": 99.94053,
+      "rotationY": 86.51609,
+      "rotationZ": -80.05947,
+      "shade": true,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1,
+      "faces": {
+        "north": {
+          "texture": "#base",
+          "uv": [
+            8.65,
+            8.99,
+            9.7092,
+            9.63425
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "east": {
+          "texture": "#base",
+          "uv": [
+            8.65,
+            8.99,
+            10.62717,
+            9.63425
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "south": {
+          "texture": "#base",
+          "uv": [
+            8.65,
+            8.99,
+            9.7092,
+            9.63425
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "west": {
+          "texture": "#base",
+          "uv": [
+            8.65,
+            8.99,
+            10.62717,
+            9.63425
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "up": {
+          "texture": "#base",
+          "uv": [
+            8.65,
+            8.99,
+            9.7092,
+            10.96717
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "down": {
+          "texture": "#base",
+          "uv": [
+            8.65,
+            8.99,
+            9.7092,
+            10.96717
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "children": [],
+      "stepParentName": "HabaneroItemRoot",
+      "renderPass": -1,
+      "uv": [
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Pepper-fruit-fold-back-3",
+      "from": [
+        7.38134,
+        8.9715,
+        5.61129
+      ],
+      "to": [
+        8.58001,
+        9.63191,
+        7.8488
+      ],
+      "rotationOrigin": [
+        7.98067,
+        9.0065,
+        6.73005
+      ],
+      "rotationX": 92.54411,
+      "rotationY": 89.04887,
+      "rotationZ": -87.45589,
+      "shade": true,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1,
+      "faces": {
+        "north": {
+          "texture": "#base",
+          "uv": [
+            8.89,
+            9.16,
+            10.08867,
+            9.82041
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "east": {
+          "texture": "#base",
+          "uv": [
+            8.89,
+            9.16,
+            11.12751,
+            9.82041
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "south": {
+          "texture": "#base",
+          "uv": [
+            8.89,
+            9.16,
+            10.08867,
+            9.82041
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "west": {
+          "texture": "#base",
+          "uv": [
+            8.89,
+            9.16,
+            11.12751,
+            9.82041
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "up": {
+          "texture": "#base",
+          "uv": [
+            8.89,
+            9.16,
+            10.08867,
+            11.39751
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "down": {
+          "texture": "#base",
+          "uv": [
+            8.89,
+            9.16,
+            10.08867,
+            11.39751
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "children": [],
+      "stepParentName": "HabaneroItemRoot",
+      "renderPass": -1,
+      "uv": [
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Pepper-fruit-fold-back-4",
+      "from": [
+        7.43297,
+        8.2855,
+        5.68336
+      ],
+      "to": [
+        8.59697,
+        9.0435,
+        7.85616
+      ],
+      "rotationOrigin": [
+        8.01497,
+        8.3205,
+        6.76976
+      ],
+      "rotationX": -91.65556,
+      "rotationY": 87.14162,
+      "rotationZ": 88.34444,
+      "shade": true,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1,
+      "faces": {
+        "north": {
+          "texture": "#base",
+          "uv": [
+            9.13,
+            9.33,
+            10.294,
+            10.088
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "east": {
+          "texture": "#base",
+          "uv": [
+            9.13,
+            9.33,
+            11.3028,
+            10.088
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "south": {
+          "texture": "#base",
+          "uv": [
+            9.13,
+            9.33,
+            10.294,
+            10.088
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "west": {
+          "texture": "#base",
+          "uv": [
+            9.13,
+            9.33,
+            11.3028,
+            10.088
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "up": {
+          "texture": "#base",
+          "uv": [
+            9.13,
+            9.33,
+            10.294,
+            11.5028
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "down": {
+          "texture": "#base",
+          "uv": [
+            9.13,
+            9.33,
+            10.294,
+            11.5028
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "children": [],
+      "stepParentName": "HabaneroItemRoot",
+      "renderPass": -1,
+      "uv": [
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Pepper-fruit-fold-back-5",
+      "from": [
+        7.56509,
+        7.5505,
+        5.86269
+      ],
+      "to": [
+        8.63238,
+        8.3656,
+        7.85498
+      ],
+      "rotationOrigin": [
+        8.09874,
+        7.5855,
+        6.85884
+      ],
+      "rotationX": -93.44411,
+      "rotationY": 83.5332,
+      "rotationZ": 86.55589,
+      "shade": true,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1,
+      "faces": {
+        "north": {
+          "texture": "#base",
+          "uv": [
+            9.37,
+            8.65,
+            10.43729,
+            9.4651
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "east": {
+          "texture": "#base",
+          "uv": [
+            9.37,
+            8.65,
+            11.36229,
+            9.4651
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "south": {
+          "texture": "#base",
+          "uv": [
+            9.37,
+            8.65,
+            10.43729,
+            9.4651
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "west": {
+          "texture": "#base",
+          "uv": [
+            9.37,
+            8.65,
+            11.36229,
+            9.4651
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "up": {
+          "texture": "#base",
+          "uv": [
+            9.37,
+            8.65,
+            10.43729,
+            10.64229
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "down": {
+          "texture": "#base",
+          "uv": [
+            9.37,
+            8.65,
+            10.43729,
+            10.64229
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "children": [],
+      "stepParentName": "HabaneroItemRoot",
+      "renderPass": -1,
+      "uv": [
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Pepper-fruit-fold-back-6",
+      "from": [
+        7.72743,
+        6.7665,
+        5.96437
+      ],
+      "to": [
+        8.69343,
+        7.62845,
+        7.76757
+      ],
+      "rotationOrigin": [
+        8.21043,
+        6.8015,
+        6.86597
+      ],
+      "rotationX": -90.25932,
+      "rotationY": 81.89238,
+      "rotationZ": 89.74068,
+      "shade": true,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1,
+      "faces": {
+        "north": {
+          "texture": "#base",
+          "uv": [
+            8.65,
+            8.82,
+            9.616,
+            9.68195
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "east": {
+          "texture": "#base",
+          "uv": [
+            8.65,
+            8.82,
+            10.4532,
+            9.68195
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "south": {
+          "texture": "#base",
+          "uv": [
+            8.65,
+            8.82,
+            9.616,
+            9.68195
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "west": {
+          "texture": "#base",
+          "uv": [
+            8.65,
+            8.82,
+            10.4532,
+            9.68195
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "up": {
+          "texture": "#base",
+          "uv": [
+            8.65,
+            8.82,
+            9.616,
+            10.6232
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "down": {
+          "texture": "#base",
+          "uv": [
+            8.65,
+            8.82,
+            9.616,
+            10.6232
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "children": [],
+      "stepParentName": "HabaneroItemRoot",
+      "renderPass": -1,
+      "uv": [
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Pepper-fruit-fold-back-7",
+      "from": [
+        7.84998,
+        6.154,
+        6.09483
+      ],
+      "to": [
+        8.72469,
+        6.84297,
+        7.72763
+      ],
+      "rotationOrigin": [
+        8.28734,
+        6.189,
+        6.91123
+      ],
+      "rotationX": -92.10467,
+      "rotationY": 82.85735,
+      "rotationZ": 87.89533,
+      "shade": true,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1,
+      "faces": {
+        "north": {
+          "texture": "#base",
+          "uv": [
+            8.89,
+            8.99,
+            9.76471,
+            9.67897
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "east": {
+          "texture": "#base",
+          "uv": [
+            8.89,
+            8.99,
+            10.5228,
+            9.67897
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "south": {
+          "texture": "#base",
+          "uv": [
+            8.89,
+            8.99,
+            9.76471,
+            9.67897
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "west": {
+          "texture": "#base",
+          "uv": [
+            8.89,
+            8.99,
+            10.5228,
+            9.67897
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "up": {
+          "texture": "#base",
+          "uv": [
+            8.89,
+            8.99,
+            9.76471,
+            10.6228
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "down": {
+          "texture": "#base",
+          "uv": [
+            8.89,
+            8.99,
+            9.76471,
+            10.6228
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "children": [],
+      "stepParentName": "HabaneroItemRoot",
+      "renderPass": -1,
+      "uv": [
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Pepper-fruit-fold-back-8",
+      "from": [
+        7.9634,
+        5.615,
+        6.34813
+      ],
+      "to": [
+        8.70673,
+        6.24167,
+        7.73569
+      ],
+      "rotationOrigin": [
+        8.33506,
+        5.65,
+        7.04191
+      ],
+      "rotationX": -96.80179,
+      "rotationY": 85.04661,
+      "rotationZ": 83.19821,
+      "shade": true,
+      "scaleX": 1,
+      "scaleY": 1,
+      "scaleZ": 1,
+      "faces": {
+        "north": {
+          "texture": "#base",
+          "uv": [
+            9.13,
+            9.16,
+            9.87333,
+            9.78667
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "east": {
+          "texture": "#base",
+          "uv": [
+            9.13,
+            9.16,
+            10.51756,
+            9.78667
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "south": {
+          "texture": "#base",
+          "uv": [
+            9.13,
+            9.16,
+            9.87333,
+            9.78667
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "west": {
+          "texture": "#base",
+          "uv": [
+            9.13,
+            9.16,
+            10.51756,
+            9.78667
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "up": {
+          "texture": "#base",
+          "uv": [
+            9.13,
+            9.16,
+            9.87333,
+            10.54756
+          ],
+          "enabled": true,
+          "autoUv": false,
+          "snapUV": false,
+          "windMode": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "down": {
+          "texture": "#base",
+          "uv": [
+            9.13,
+            9.16,
+            9.87333,
+            10.54756
           ],
           "enabled": true,
           "autoUv": false,
@@ -5021,14 +5589,14 @@
     {
       "name": "Pepper-calyx-collar",
       "from": [
-        6.965,
+        7.24,
         10.49,
-        7.1
+        7.32
       ],
       "to": [
-        9.035,
+        8.76,
         10.65,
-        8.9
+        8.68
       ],
       "rotationOrigin": [
         8,
@@ -5163,14 +5731,14 @@
     {
       "name": "Pepper-calyx-cross-A",
       "from": [
-        6.695,
-        10.47,
-        7.5725
+        7,
+        10.46,
+        7.72
       ],
       "to": [
-        9.305,
-        10.59,
-        8.4275
+        9,
+        10.585,
+        8.28
       ],
       "rotationOrigin": [
         8,
@@ -5305,14 +5873,14 @@
     {
       "name": "Pepper-calyx-cross-B",
       "from": [
-        7.5725,
-        10.47,
-        6.785
+        7.7,
+        10.475,
+        7.06
       ],
       "to": [
-        8.4275,
-        10.59,
-        9.215
+        8.3,
+        10.575,
+        8.94
       ],
       "rotationOrigin": [
         8,

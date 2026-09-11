@@ -20,3 +20,9 @@ four. A regression test loads the actual PNG through the game's bitmap decoder
 and checks every pixel after insertion into the game's texture atlas.
 Prepared shapes reference it directly with padded quadrant UVs. No existing raw
 texture or handmade model was changed.
+
+Habanero now uses its dedicated atlas at
+`assets/peppermod/textures/block/plant/habanero/pepper.png`, including the new
+Charred Habanero skin. Other varieties continue using the shared prepared atlas.
+See [Habanero Fruit Rework](habanero-fruit-rework.md) for the current artwork,
+processing details, and preservation checks.
